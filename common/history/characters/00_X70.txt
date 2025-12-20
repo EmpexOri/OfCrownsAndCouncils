@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:X70 = {
+		create_character = {
+			first_name = "Tsauninot_I"
+			last_name = "Kadohadacho"
+			ruler = yes
+			culture = cu:mexican
+			religion = rel:catholic
+			birth_date = 1817.2.16
+			traits = {
+				basic_political_operator tactful 
+			}
+		}
+
+	}
+}

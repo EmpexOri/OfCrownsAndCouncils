@@ -1,0 +1,73 @@
+﻿CHARACTERS = {
+	c:YEM = {
+		create_character = {
+			first_name = "Aram_Jomaa"
+			is_admiral = yes
+			commander_rank = commander_rank_2
+			birth_date = 1801.7.27
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Aghlab_Saab"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1809.11.9
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Murad_Khalil"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1798.2.16
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Ishani"
+			last_name = "al-Qasimi"
+			female = yes
+			culture = cu:yemenite
+			religion = rel:sunni
+			birth_date = 1785.12.15
+			traits = {
+				experienced_political_operator meticulous 
+			}
+		}
+
+		create_character = {
+			first_name = "Aghlab"
+			last_name = "Harb"
+			heir = yes
+			culture = cu:yemenite
+			religion = rel:sunni
+			birth_date = 1809.11.16
+			traits = {
+				basic_colonial_administrator romantic 
+			}
+		}
+
+		create_character = {
+			first_name = "Fadil_V"
+			last_name = "Harb"
+			ruler = yes
+			culture = cu:yemenite
+			religion = rel:sunni
+			birth_date = 1778.8.18
+			traits = {
+				imperious 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

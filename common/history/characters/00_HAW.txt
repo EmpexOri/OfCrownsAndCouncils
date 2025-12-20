@@ -1,0 +1,50 @@
+﻿CHARACTERS = {
+	c:HAW = {
+		create_character = {
+			first_name = "Oke_Makani"
+			is_general = yes
+			birth_date = 1792.6.1
+			traits = {
+				inexperienced 
+			}
+		}
+
+		create_character = {
+			first_name = "Mauli_Kimo"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1812.2.27
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Keona"
+			last_name = "Makaleka"
+			female = yes
+			culture = cu:hawaiian
+			religion = rel:animist
+			birth_date = 1772.9.21
+			traits = {
+				cruel 
+			}
+		}
+
+		create_character = {
+			first_name = "Keoni_I"
+			last_name = "Anuenue"
+			ruler = yes
+			culture = cu:hawaiian
+			religion = rel:animist
+			birth_date = 1779.2.14
+			traits = {
+				basic_political_operator hedonist 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

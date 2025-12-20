@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:X68 = {
+		create_character = {
+			first_name = "Jah0nd0r_Sh0h_Beg"
+			ruler = yes
+			culture = cu:hindustani
+			religion = rel:sunni
+			birth_date = 1796.10.2
+			traits = {
+				charismatic 
+			}
+		}
+
+	}
+}

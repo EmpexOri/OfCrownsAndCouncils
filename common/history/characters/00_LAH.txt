@@ -1,0 +1,28 @@
+﻿CHARACTERS = {
+	c:LAH = {
+		create_character = {
+			first_name = "_Abd_al-Wahh0b"
+			last_name = "Nabhani"
+			heir = yes
+			culture = cu:yemenite
+			religion = rel:sunni
+			birth_date = 1835.2.3
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Sal0h_ad-Din__Amir_I"
+			last_name = "Nabhani"
+			ruler = yes
+			culture = cu:yemenite
+			religion = rel:sunni
+			birth_date = 1815.12.28
+			traits = {
+				direct experienced_colonial_administrator 
+			}
+		}
+
+	}
+}

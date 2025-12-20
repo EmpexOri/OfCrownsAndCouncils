@@ -1,0 +1,80 @@
+﻿CHARACTERS = {
+	c:MEX = {
+		create_character = {
+			first_name = "Ana"
+			last_name = "Garmendia"
+			female = yes
+			culture = cu:central_american
+			religion = rel:catholic
+			birth_date = 1809.7.4
+			traits = {
+				experienced_diplomat imposing 
+			}
+		}
+
+		create_character = {
+			first_name = "Alfonso"
+			last_name = "de_Castro"
+			heir = yes
+			culture = cu:central_american
+			religion = rel:catholic
+			birth_date = 1835.7.27
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Ordonu_V"
+			last_name = "de_Castro"
+			ruler = yes
+			culture = cu:central_american
+			religion = rel:catholic
+			birth_date = 1814.6.20
+			traits = {
+				basic_diplomat charismatic 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Menendo_Orellana"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1807.10.21
+			traits = {
+				shellshocked 
+			}
+		}
+
+		create_character = {
+			first_name = "Mauregato_Fonseca"
+			is_admiral = yes
+			commander_rank = commander_rank_2
+			birth_date = 1799.1.9
+			traits = {
+				shellshocked 
+			}
+		}
+
+		create_character = {
+			first_name = "Gil_Gomez"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1801.8.16
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Ordonu_de_Castilla"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1768.6.6
+		}
+
+	}
+}

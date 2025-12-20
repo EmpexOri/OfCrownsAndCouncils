@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:BOR = {
+		create_character = {
+			first_name = "Z_diant"
+			last_name = "al-Ilighi"
+			female = yes
+			culture = cu:berber
+			religion = rel:sunni
+			birth_date = 1780.10.31
+			traits = {
+				basic_political_operator cautious 
+			}
+		}
+
+		create_character = {
+			first_name = "Adam"
+			last_name = "Awellimid"
+			heir = yes
+			culture = cu:berber
+			religion = rel:sunni
+			birth_date = 1809.12.13
+			traits = {
+				basic_political_operator charismatic 
+			}
+		}
+
+		create_character = {
+			first_name = "Adam_VI"
+			last_name = "Awellimid"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_2
+			culture = cu:berber
+			religion = rel:sunni
+			birth_date = 1794.12.13
+			traits = {
+				cautious 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Yusuf_Deby"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1774.7.3
+			traits = {
+				meticulous 
+			}
+		}
+
+	}
+}

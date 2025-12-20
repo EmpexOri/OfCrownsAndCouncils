@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:BLF = {
+		create_character = {
+			first_name = "Akkakitcipimiwotas_Sikahpuniks"
+			ruler = yes
+			culture = cu:algonquian
+			religion = rel:animist
+			birth_date = 1725.3.12
+			traits = {
+				basic_diplomat senile 
+			}
+		}
+
+	}
+}

@@ -1,0 +1,127 @@
+﻿CHARACTERS = {
+	c:NOR = {
+		create_character = {
+			first_name = "Austmod_Norheim"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1804.1.6
+			traits = {
+				shellshocked 
+			}
+		}
+
+		create_character = {
+			first_name = "Flosi_Olavsson"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1813.12.25
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Knud_Sigurdsson"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1808.9.17
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Magnus"
+			last_name = "Paijkull"
+			heir = yes
+			culture = cu:estonian
+			religion = rel:protestant
+			birth_date = 1825.12.18
+			interest_group = ig_industrialists
+			ideology = ideology_market_liberal
+			traits = {
+				basic_colonial_administrator trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Knud_Magnusson"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1784.9.13
+			traits = {
+				grifter 
+			}
+		}
+
+		create_character = {
+			first_name = "Eirikr_Magnusson"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1785.4.18
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Hakon"
+			last_name = "Tott"
+			culture = cu:estonian
+			religion = rel:protestant
+			birth_date = 1786.8.8
+			traits = {
+				basic_diplomat innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Hrani_Olavsson"
+			is_admiral = yes
+			commander_rank = commander_rank_2
+			birth_date = 1775.7.19
+			traits = {
+				opium_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Aasa_IV"
+			last_name = "Paijkull"
+			ruler = yes
+			female = yes
+			culture = cu:estonian
+			religion = rel:protestant
+			birth_date = 1788.7.16
+			interest_group = ig_devout
+			ideology = ideology_royalist
+			traits = {
+				cruel 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Hasteinn_Torsson"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1760.12.23
+			traits = {
+				opium_addiction sickly 
+			}
+		}
+
+		create_character = {
+			first_name = "Kollr_Arnesson"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1761.3.16
+			traits = {
+				cancer grifter 
+			}
+		}
+
+	}
+}

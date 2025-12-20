@@ -1,0 +1,28 @@
+﻿CHARACTERS = {
+	c:OMA = {
+		create_character = {
+			first_name = "_Umar"
+			last_name = "Tahiride"
+			heir = yes
+			culture = cu:bedouin
+			religion = rel:sunni
+			birth_date = 1835.11.7
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Makhz0m_I"
+			last_name = "Tahiride"
+			ruler = yes
+			culture = cu:bedouin
+			religion = rel:sunni
+			birth_date = 1816.6.19
+			traits = {
+				bigoted 
+			}
+		}
+
+	}
+}

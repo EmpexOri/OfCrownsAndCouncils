@@ -1,0 +1,43 @@
+﻿CHARACTERS = {
+	c:BJA = {
+		create_character = {
+			first_name = "Nuha"
+			last_name = "Hadendiwa"
+			female = yes
+			culture = cu:beja
+			religion = rel:oriental_orthodox
+			birth_date = 1817.8.4
+			traits = {
+				ambitious experienced_political_operator 
+			}
+		}
+
+		create_character = {
+			first_name = "Mohammed"
+			last_name = "Hadareb"
+			heir = yes
+			culture = cu:beja
+			religion = rel:oriental_orthodox
+			birth_date = 1835.7.11
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Ibrahim_I"
+			last_name = "Hadareb"
+			ruler = yes
+			culture = cu:beja
+			religion = rel:oriental_orthodox
+			birth_date = 1816.12.28
+			traits = {
+				tactful 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

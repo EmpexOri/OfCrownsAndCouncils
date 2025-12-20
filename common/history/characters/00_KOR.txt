@@ -1,0 +1,120 @@
+﻿CHARACTERS = {
+	c:KOR = {
+		create_character = {
+			first_name = "Hongwi"
+			last_name = "Bae"
+			heir = yes
+			culture = cu:korean
+			religion = rel:confucian
+			birth_date = 1834.3.31
+			traits = {
+				basic_political_operator trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Kang_Go"
+			is_admiral = yes
+			commander_rank = commander_rank_3
+			birth_date = 1795.4.28
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Hongwi_Jin"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1807.5.28
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Jeongmyeong"
+			last_name = "Do"
+			female = yes
+			culture = cu:korean
+			religion = rel:confucian
+			birth_date = 1798.12.15
+			traits = {
+				ambitious experienced_political_operator 
+			}
+		}
+
+		create_character = {
+			first_name = "Bu_V"
+			last_name = "Bae"
+			ruler = yes
+			culture = cu:korean
+			religion = rel:confucian
+			birth_date = 1813.3.7
+			traits = {
+				basic_political_operator compliant 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Hwang_Choi"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1796.6.24
+			traits = {
+				opium_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Busik_Noh"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1805.8.19
+		}
+
+		create_character = {
+			first_name = "Museon_Seok"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1795.11.9
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Gyun_Wang"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1803.12.10
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Yung_Gye"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1784.12.23
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Jangchun_Seok"
+			is_admiral = yes
+			commander_rank = commander_rank_2
+			birth_date = 1772.2.4
+			traits = {
+				psychological_affliction 
+			}
+		}
+
+	}
+}

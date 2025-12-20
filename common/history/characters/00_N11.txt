@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:N11 = {
+		create_character = {
+			first_name = "Neguscawit_Panawahpskek"
+			ruler = yes
+			culture = cu:algonquian
+			religion = rel:animist
+			birth_date = 1568.11.10
+			traits = {
+				kidney_stones 
+			}
+		}
+
+	}
+}

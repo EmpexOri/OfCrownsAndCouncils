@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:W50 = {
+		create_character = {
+			first_name = "Otto_II"
+			last_name = "von_Neusohl"
+			ruler = yes
+			culture = cu:north_german
+			religion = rel:protestant
+			birth_date = 1817.5.10
+			traits = {
+				imperious 
+			}
+		}
+
+	}
+}

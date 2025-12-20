@@ -1,0 +1,35 @@
+{
+	"name" : "Of Crowns and Councils",
+	"id" : "",
+	"version" : "",
+	"picture" : "thumbnail.png",
+	"supported_game_version" : "",
+	"short_description" : "Beginning in the 11th century, history fractures as unlikely powers rise, empires collapse, and new worlds are claimed. Guide dynasties and councils through the 19th century of a millennium of divergence, conquest, and rebirth.",
+	"tags" : ["Alternative History", "Conversion"],
+	"relationships" : [],
+	"game_custom_data" : {
+		"multiplayer_synchronized" : true,
+		"replace_paths" : [
+			"common/cultures",
+			"common/country_definitions",
+			"common/history/buildings",
+			"common/history/characters",
+			"common/history/countries",
+			"common/history/diplomacy",
+			"common/history/diplomatic_plays",
+			"common/history/governments",
+			"common/history/interests",
+			"common/history/lobbies",
+			"common/history/military_deployments",
+			"common/history/military_formations",
+			"common/history/pops",
+			"common/history/population",
+			"common/history/power_blocs",
+			"common/history/production_methods",
+			"common/history/states",
+			"common/history/trade",
+			"common/history/treaties",
+			"common/religions"
+		]
+	}
+}

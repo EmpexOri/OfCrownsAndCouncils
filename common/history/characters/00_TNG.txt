@@ -1,0 +1,53 @@
+﻿CHARACTERS = {
+	c:TNG = {
+		create_character = {
+			first_name = "Akamu"
+			last_name = "Tu_i_Tonga"
+			heir = yes
+			culture = cu:polynesian
+			religion = rel:animist
+			birth_date = 1830.7.3
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Kaili_Pekelo"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1799.7.10
+			traits = {
+				grifter 
+			}
+		}
+
+		create_character = {
+			first_name = "Liliha"
+			last_name = "_Ehukai"
+			female = yes
+			culture = cu:polynesian
+			religion = rel:animist
+			birth_date = 1795.10.22
+			traits = {
+				innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Akamu_VIII"
+			last_name = "Tu_i_Tonga"
+			ruler = yes
+			culture = cu:polynesian
+			religion = rel:animist
+			birth_date = 1799.12.15
+			traits = {
+				arrogant basic_political_operator 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

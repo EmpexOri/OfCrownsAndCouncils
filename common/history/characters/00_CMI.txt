@@ -1,0 +1,36 @@
+﻿CHARACTERS = {
+	c:CMI = {
+		create_character = {
+			first_name = "Saikham_Santi_Suk"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1797.4.30
+			traits = {
+				expensive_tastes 
+			}
+		}
+
+		create_character = {
+			first_name = "Mangraenara_Lampang"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1805.6.2
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Cheputarai"
+			last_name = "Le"
+			heir = yes
+			culture = cu:vietnamese
+			religion = rel:theravada
+			birth_date = 1823.11.1
+			traits = {
+				basic_political_operator trait_child 
+			}
+		}
+
+	}
+}

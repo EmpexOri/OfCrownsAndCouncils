@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:X10 = {
+		create_character = {
+			first_name = "Dethard_IV"
+			last_name = "von_Dreistrom"
+			ruler = yes
+			culture = cu:south_german
+			religion = rel:protestant
+			birth_date = 1816.6.3
+			traits = {
+				basic_diplomat romantic 
+			}
+		}
+
+	}
+}

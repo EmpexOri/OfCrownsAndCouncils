@@ -1,0 +1,43 @@
+﻿CHARACTERS = {
+	c:W59 = {
+		create_character = {
+			first_name = "Abu_Hayat"
+			last_name = "Tidore"
+			heir = yes
+			culture = cu:moluccan
+			religion = rel:animist
+			birth_date = 1826.8.9
+			traits = {
+				basic_diplomat trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Hafeeza"
+			last_name = "Makassar"
+			female = yes
+			culture = cu:moluccan
+			religion = rel:theravada
+			birth_date = 1804.2.19
+			traits = {
+				experienced_colonial_administrator romantic 
+			}
+		}
+
+		create_character = {
+			first_name = "Tabariji_I"
+			last_name = "Tidore"
+			ruler = yes
+			culture = cu:moluccan
+			religion = rel:animist
+			birth_date = 1807.5.31
+			traits = {
+				basic_political_operator wrathful 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

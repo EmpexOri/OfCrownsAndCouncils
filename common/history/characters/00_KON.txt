@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:KON = {
+		create_character = {
+			first_name = "Afonso_VI"
+			last_name = "Kazembe"
+			ruler = yes
+			culture = cu:bakongo
+			religion = rel:catholic
+			birth_date = 1776.7.21
+			traits = {
+				charismatic experienced_colonial_administrator 
+			}
+		}
+
+	}
+}

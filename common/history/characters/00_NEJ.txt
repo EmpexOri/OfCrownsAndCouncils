@@ -1,0 +1,23 @@
+﻿CHARACTERS = {
+	c:NEJ = {
+		create_character = {
+			first_name = "Idris_Al_Nubi"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1807.7.30
+		}
+
+		create_character = {
+			first_name = "Abd_al_Aziz_I"
+			last_name = "Saud"
+			ruler = yes
+			culture = cu:bedouin
+			religion = rel:shiite
+			birth_date = 1815.3.1
+			traits = {
+				basic_diplomat charismatic 
+			}
+		}
+
+	}
+}

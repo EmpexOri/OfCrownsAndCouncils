@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:N06 = {
+		create_character = {
+			first_name = "Yonaguska_Onacona"
+			ruler = yes
+			culture = cu:paiute
+			religion = rel:animist
+			birth_date = 1690.2.4
+			traits = {
+				basic_diplomat senile 
+			}
+		}
+
+	}
+}

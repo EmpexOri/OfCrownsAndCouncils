@@ -1,0 +1,25 @@
+﻿CHARACTERS = {
+	c:COL = {
+		create_character = {
+			first_name = "Iemitsu_Toyotomi"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1806.10.28
+			traits = {
+				inexperienced 
+			}
+		}
+
+		create_character = {
+			first_name = "Yoshizumi_Uragami"
+			ruler = yes
+			culture = cu:neo-canada_colony-japanese
+			religion = rel:mahayana
+			birth_date = 1771.10.4
+			traits = {
+				experienced_political_operator meticulous 
+			}
+		}
+
+	}
+}

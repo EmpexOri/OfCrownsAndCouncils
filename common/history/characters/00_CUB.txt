@@ -1,0 +1,56 @@
+﻿CHARACTERS = {
+	c:CUB = {
+		create_character = {
+			first_name = "Folquet_de_Cordes"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1803.11.2
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Aton_de_Grimaud"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1795.1.26
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Folquet_d_Entrecasteaux"
+			is_general = yes
+			birth_date = 1801.2.21
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Folquet_Coquerel"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_2
+			culture = cu:neo-caribbean_colony-arpitan
+			religion = rel:protestant
+			birth_date = 1790.12.15
+			traits = {
+				direct expert_colonial_administrator 
+			}
+		}
+
+		create_character = {
+			first_name = "Aton_de_Sabran"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1774.10.30
+			traits = {
+				alcoholic 
+			}
+		}
+
+	}
+}

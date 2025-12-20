@@ -1,0 +1,64 @@
+﻿CHARACTERS = {
+	c:NTO = {
+		create_character = {
+			first_name = "Ahika_Kamaka"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1802.12.29
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Rui"
+			last_name = "Ngati_Hine"
+			female = yes
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1807.2.6
+			traits = {
+				charismatic 
+			}
+		}
+
+		create_character = {
+			first_name = "Aaria"
+			last_name = "Ngati_Pukenga"
+			heir = yes
+			female = yes
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1833.2.6
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Ieni_I"
+			last_name = "Ngati_Pukenga"
+			ruler = yes
+			interest_group = ig_industrialists
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1818.2.6
+			traits = {
+				aesthete 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Hehu_Nikau"
+			is_admiral = yes
+			birth_date = 1788.6.3
+			traits = {
+				opium_addiction 
+			}
+		}
+
+	}
+}

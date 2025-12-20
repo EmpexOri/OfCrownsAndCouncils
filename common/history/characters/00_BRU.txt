@@ -1,0 +1,53 @@
+﻿CHARACTERS = {
+	c:BRU = {
+		create_character = {
+			first_name = "Kam0l_ad-D0n_Ahmad"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1796.1.21
+			traits = {
+				grifter 
+			}
+		}
+
+		create_character = {
+			first_name = "Aisha"
+			last_name = "Kutai"
+			female = yes
+			culture = cu:neo-peru_colony-bornean
+			religion = rel:sunni
+			birth_date = 1778.10.17
+			traits = {
+				ambitious basic_colonial_administrator 
+			}
+		}
+
+		create_character = {
+			first_name = "_Abd_al-Jal0l"
+			last_name = "Kutai"
+			heir = yes
+			culture = cu:neo-peru_colony-bornean
+			religion = rel:sunni
+			birth_date = 1806.9.2
+			traits = {
+				meticulous 
+			}
+		}
+
+		create_character = {
+			first_name = "Sayf_ar-Rijal_I"
+			last_name = "Kutai"
+			ruler = yes
+			culture = cu:neo-peru_colony-bornean
+			religion = rel:sunni
+			birth_date = 1778.6.7
+			traits = {
+				ambitious experienced_political_operator 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

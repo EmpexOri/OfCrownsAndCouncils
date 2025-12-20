@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:ALD = {
+		create_character = {
+			first_name = "Amennay_Hacini"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1815.10.23
+			traits = {
+				basic_offensive_planner 
+			}
+		}
+
+		create_character = {
+			first_name = "Adergazuz"
+			last_name = "Sayfawa"
+			heir = yes
+			culture = cu:maghrebi
+			religion = rel:sunni
+			birth_date = 1822.5.1
+			traits = {
+				basic_diplomat trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Dara"
+			last_name = "Ouled_Sidi_Cheikh"
+			female = yes
+			culture = cu:maghrebi
+			religion = rel:sunni
+			birth_date = 1796.6.23
+			traits = {
+				bigoted 
+			}
+		}
+
+		create_character = {
+			first_name = "Abd-al-Baqi_V"
+			last_name = "Sayfawa"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_2
+			culture = cu:maghrebi
+			religion = rel:sunni
+			birth_date = 1783.5.24
+			traits = {
+				innovative meticulous 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

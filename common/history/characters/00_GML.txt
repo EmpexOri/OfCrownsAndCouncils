@@ -1,0 +1,35 @@
+﻿CHARACTERS = {
+	c:GML = {
+		create_character = {
+			first_name = "Apari_Akama"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1809.2.24
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Miro_Balun"
+			ruler = yes
+			culture = cu:aborigine
+			religion = rel:animist
+			birth_date = 1808.8.26
+			traits = {
+				basic_diplomat persistent 
+			}
+		}
+
+		create_character = {
+			first_name = "Dural_Monti"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1756.7.9
+			traits = {
+				inept sickly 
+			}
+		}
+
+	}
+}

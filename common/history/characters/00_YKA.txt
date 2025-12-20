@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:YKA = {
+		create_character = {
+			first_name = "Mukulu_II"
+			last_name = "Kikondja"
+			ruler = yes
+			culture = cu:lunda
+			religion = rel:animist
+			birth_date = 1818.2.16
+			traits = {
+				arrogant experienced_political_operator 
+			}
+		}
+
+	}
+}

@@ -1,0 +1,39 @@
+﻿CHARACTERS = {
+	c:WLG = {
+		create_character = {
+			first_name = "Ali_Shewo"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1797.8.19
+			traits = {
+				shellshocked 
+			}
+		}
+
+		create_character = {
+			first_name = "Chael"
+			last_name = "Azim"
+			heir = yes
+			culture = cu:nilotic
+			religion = rel:oriental_orthodox
+			birth_date = 1816.4.27
+			traits = {
+				expert_colonial_administrator innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Chael_III"
+			last_name = "Azim"
+			ruler = yes
+			interest_group = ig_industrialists
+			culture = cu:nilotic
+			religion = rel:oriental_orthodox
+			birth_date = 1791.12.6
+			traits = {
+				basic_political_operator direct 
+			}
+		}
+
+	}
+}

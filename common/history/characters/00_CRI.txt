@@ -1,0 +1,50 @@
+﻿CHARACTERS = {
+	c:CRI = {
+		create_character = {
+			first_name = "Bugidai_Bektore"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1782.11.8
+			traits = {
+				opium_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Kuntuvdi"
+			last_name = "Borjigin"
+			heir = yes
+			culture = cu:tatar
+			religion = rel:sunni
+			birth_date = 1824.4.4
+			traits = {
+				trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Paschalis_III"
+			last_name = "Borjigin"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_3
+			culture = cu:tatar
+			religion = rel:sunni
+			birth_date = 1801.9.9
+			traits = {
+				imperious meticulous 
+			}
+		}
+
+		create_character = {
+			first_name = "Jochi_Asanin"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1781.5.28
+			traits = {
+				tactful 
+			}
+		}
+
+	}
+}

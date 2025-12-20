@@ -1,0 +1,48 @@
+﻿CHARACTERS = {
+	c:X86 = {
+		create_character = {
+			first_name = "Tui_Nikau"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1795.6.15
+		}
+
+		create_character = {
+			first_name = "Mahaka_Hehu"
+			is_admiral = yes
+			commander_rank = commander_rank_2
+			birth_date = 1802.1.12
+			traits = {
+				shellshocked 
+			}
+		}
+
+		create_character = {
+			first_name = "Aaria"
+			last_name = "Ngati_Pukenga"
+			heir = yes
+			female = yes
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1828.3.11
+			traits = {
+				basic_colonial_administrator trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Aaria_IV"
+			last_name = "Ngati_Pukenga"
+			ruler = yes
+			female = yes
+			interest_group = ig_industrialists
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1805.2.20
+			traits = {
+				basic_diplomat imperious 
+			}
+		}
+
+	}
+}

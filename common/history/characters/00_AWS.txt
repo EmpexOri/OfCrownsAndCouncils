@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:AWS = {
+		create_character = {
+			first_name = "Ahmad_I"
+			last_name = "Muzaffar"
+			ruler = yes
+			culture = cu:afar
+			religion = rel:oriental_orthodox
+			birth_date = 1815.6.19
+			traits = {
+				basic_diplomat cruel 
+			}
+		}
+
+	}
+}

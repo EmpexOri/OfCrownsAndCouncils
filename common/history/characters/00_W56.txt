@@ -1,0 +1,34 @@
+﻿CHARACTERS = {
+	c:W56 = {
+		create_character = {
+			first_name = "Kaihautu_Te-Ariki"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1813.3.7
+		}
+
+		create_character = {
+			first_name = "Aaria_V"
+			last_name = "Ngati_Pukenga"
+			ruler = yes
+			female = yes
+			culture = cu:maori
+			religion = rel:animist
+			birth_date = 1801.3.20
+			traits = {
+				hedonist 
+			}
+		}
+
+		create_character = {
+			first_name = "Nikau_Hau"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1770.9.17
+			traits = {
+				opium_addiction 
+			}
+		}
+
+	}
+}

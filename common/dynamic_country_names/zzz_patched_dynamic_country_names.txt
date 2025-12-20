@@ -1,0 +1,687 @@
+﻿# patching PDX issues.
+
+SAV = {
+	dynamic_country_name = {
+		name = dyn_c_lyon
+		adjective = SAV_ADJ
+		
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				exists = capital
+				capital = { 
+					state_region = s:STATE_RHONE 
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_romandy
+		adjective = SAV_ADJ
+		
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				exists = capital
+				capital = { 
+					state_region = s:STATE_WEST_SWITZERLAND
+				}
+			}
+		}
+	}
+}
+
+SAX = {
+    dynamic_country_name = {
+        name = dyn_c_hanover_monarchy
+        adjective = SAX_ADJ
+        is_main_tag_only = yes
+        priority = 1
+
+        trigger = {
+            OR = {
+                AND = {
+                    scope:actor ?= { is_subject = yes }
+                    scope:actor.overlord ?= {
+                        has_law_or_variant = law_type:law_monarchy
+                    }
+                }
+                scope:actor ?= {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_hanover_republic
+        adjective = SAX_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            scope:actor ?= {
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_union_riverine_states
+        adjective = SAX_ADJ
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+}
+
+NOR = {
+    dynamic_country_name = {
+        name = dyn_c_norway_monarchy
+        adjective = NOR_ADJ
+        is_main_tag_only = yes
+        priority = 1
+
+        trigger = {
+            OR = {
+                AND = {
+                    scope:actor ?= { is_subject = yes }
+                    scope:actor.overlord ?= {
+                        has_law_or_variant = law_type:law_monarchy
+                    }
+                }
+                scope:actor ?= {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_norway_republic
+        adjective = NOR_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            scope:actor ?= {
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_norway_communist
+        adjective = NOR_ADJ
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+}
+
+GBR = {
+    dynamic_country_name = {
+        name = dyn_c_scot_monarchy
+        adjective = GBR_ADJ
+        is_main_tag_only = yes
+        priority = 1
+
+        trigger = {
+            OR = {
+                AND = {
+                    scope:actor ?= { is_subject = yes }
+                    scope:actor.overlord ?= {
+                        has_law_or_variant = law_type:law_monarchy
+                    }
+                }
+                scope:actor ?= {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_scot_republic
+        adjective = GBR_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            scope:actor ?= {
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_scot_communist
+        adjective = GBR_ADJ
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+}
+
+W38 = {
+    dynamic_country_name = {
+        name = dyn_c_w38_monarchy
+        adjective = W38_ADJ
+
+        is_main_tag_only = yes
+        priority = 1
+
+        trigger = {
+            OR = {
+                AND = {
+                    scope:actor ?= { is_subject = yes }
+                    scope:actor.overlord ?= {
+                        has_law_or_variant = law_type:law_monarchy
+                    }
+                }
+                scope:actor ?= {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_w38_republic
+        adjective = W38_ADJ
+
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            scope:actor ?= {
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_w38_communist
+        adjective = W38_ADJ
+
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+}
+
+PLC = {
+	dynamic_country_name = {
+		name = dyn_c_polish_lithuanian_commonwealth
+		adjective = PLC_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_polish_lithuanian_republic
+		adjective = PLC_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_polish_lithuanian_peoples_republic
+		adjective = PLC_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_polish_lithuanian_state
+		adjective = PLC_ADJ
+
+		is_main_tag_only = yes
+		priority = 2
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_monarchy
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+ETH = {
+	dynamic_country_name = {
+		name = dyn_c_eth_monarchy
+		adjective = ETH_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_eth_republic
+		adjective = ETH_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_eth_communist
+		adjective = ETH_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_eth_state
+		adjective = ETH_ADJ
+
+		is_main_tag_only = yes
+		priority = 2
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_monarchy
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+MUG = {
+
+	# THEOCRACY (absolute top)
+	dynamic_country_name = {
+		name = dyn_c_caliphate_of_hindustan
+		adjective = MUG_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	# AUTOCRATIC / SINGLE PARTY STATE (OVERRIDES REPUBLIC)
+	dynamic_country_name = {
+		name = dyn_c_mughal_state
+		adjective = MUG_ADJ
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+				NOT = { has_law_or_variant = law_type:law_theocracy }
+			}
+		}
+	}
+
+	# MONARCHY
+	dynamic_country_name = {
+		name = dyn_c_mughal_empire
+		adjective = MUG_ADJ
+		is_main_tag_only = yes
+		priority = 15
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	# REPUBLIC (ONLY when not autocratic)
+	dynamic_country_name = {
+		name = dyn_c_mughal_republic
+		adjective = MUG_ADJ
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+			}
+		}
+	}
+
+	# COUNCIL REPUBLIC
+	dynamic_country_name = {
+		name = dyn_c_mughal_peoples_republic
+		adjective = MUG_ADJ
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+SLV = {
+	dynamic_country_name = {
+		name = dyn_c_slovak_monarchy
+		adjective = SLV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_slovak_republic
+		adjective = SLV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_slovak_communist
+		adjective = SLV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_slovak_state
+		adjective = SLV_ADJ
+
+		is_main_tag_only = yes
+		priority = 2
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_monarchy
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+BAV = {
+	# =====================================
+	# Bavarian–Slovak Dual Monarchy (Subject Slovakia)
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_slovak_dual_monarchy
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+				exists = scope:overlord
+				scope:overlord = {
+					country = c:SLV
+				}
+			}
+		}
+	}
+
+	# =====================================
+	# Bavarian–Slovak Dual Republic
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_slovak_federation
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				exists = scope:overlord
+				scope:overlord = {
+					country = c:SLV
+				}
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+
+	# =====================================
+	# Base Bavarian Monarchy
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_monarchy
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	# =====================================
+	# Base Bavarian Republic
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_republic
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+
+	# =====================================
+	# Communist Bavaria
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_communist
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	# =====================================
+	# Authoritarian / Single-Party Bavaria
+	# =====================================
+	dynamic_country_name = {
+		name = dyn_c_bavarian_state
+		adjective = BAV_ADJ
+
+		is_main_tag_only = yes
+		priority = 2
+
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_single_party_state
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_monarchy
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+CHI = {
+    dynamic_country_name = {
+        name = dyn_c_shun_dynasty
+        adjective = CHI_ADJ
+        is_main_tag_only = yes
+        priority = 1
+
+        trigger = {
+            OR = {
+                AND = {
+                    scope:actor ?= { is_subject = yes }
+                    scope:actor.overlord ?= {
+                        has_law_or_variant = law_type:law_monarchy
+                    }
+                }
+                scope:actor ?= {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
+        }
+    }
+}

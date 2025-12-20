@@ -1,0 +1,53 @@
+﻿CHARACTERS = {
+	c:PLT = {
+		create_character = {
+			first_name = "Isabel"
+			last_name = "de_Rocamora"
+			female = yes
+			culture = cu:platinean
+			religion = rel:catholic
+			birth_date = 1810.11.10
+			traits = {
+				cruel 
+			}
+		}
+
+		create_character = {
+			first_name = "Alfonso"
+			last_name = "de_Castro"
+			heir = yes
+			culture = cu:platinean
+			religion = rel:catholic
+			birth_date = 1835.7.29
+			traits = {
+				basic_diplomat trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Ansur_II"
+			last_name = "de_Castro"
+			ruler = yes
+			culture = cu:platinean
+			religion = rel:catholic
+			birth_date = 1817.6.20
+			traits = {
+				innovative 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Pelagio_de_Zuniga"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1800.10.5
+			traits = {
+				inept 
+			}
+		}
+
+	}
+}

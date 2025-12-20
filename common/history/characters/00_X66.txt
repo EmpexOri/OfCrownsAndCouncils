@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:X66 = {
+		create_character = {
+			first_name = "Hakim_Sh0h_Ameerun"
+			ruler = yes
+			culture = cu:hindustani
+			religion = rel:sunni
+			birth_date = 1787.7.8
+			traits = {
+				ambitious expert_colonial_administrator 
+			}
+		}
+
+	}
+}

@@ -1,0 +1,18 @@
+l_english:
+
+ # Norwegian Interest Groups (Custom)
+
+ NOR_ig_landowners: "The Östra Göinge Officials"
+ NOR_ig_landowners_desc: "Named after their founder, Lord Vidkun Östra Göinge, the Östra Göinge are the reactionary elite of Norway, dominating land, law, and royal administration."
+
+ NOR_ig_petite_bourgeoisie: "Herremænd Parliament"
+ NOR_ig_petite_bourgeoisie_desc: "The Herremænd represent the lesser nobility and upper middle classes, advocating civic rights, property ownership, and limited reform within the Norwegian state."
+
+ NOR_ig_trade_unions: "Jaabæker's"
+ NOR_ig_trade_unions_desc: "Jaabæker's are an emerging workers’ movement centered around dockworkers, craftsmen, and industrial laborers pushing for collective bargaining and labor protections."
+
+ NOR_ig_armed_forces: "Forsvaret"
+ NOR_ig_armed_forces_desc: "Forsvaret is the unified Norwegian armed forces, committed to national defense, military tradition, and the preservation of state sovereignty."
+
+ NOR_ig_devout: "Church of Norway"
+ NOR_ig_devout_desc: "The Church of Norway is the dominant Lutheran institution of the realm, deeply intertwined with the state and shaping moral, cultural, and political life."

@@ -1,0 +1,63 @@
+﻿CHARACTERS = {
+	c:WAL = {
+		create_character = {
+			first_name = "Alexandru"
+			last_name = "Ghica"
+			heir = yes
+			culture = cu:romanian
+			religion = rel:protestant
+			birth_date = 1828.4.7
+			traits = {
+				experienced_political_operator trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Bozena"
+			last_name = "Ostrogski"
+			female = yes
+			culture = cu:polish
+			religion = rel:protestant
+			birth_date = 1800.7.6
+			traits = {
+				ambitious 
+			}
+		}
+
+		create_character = {
+			first_name = "Alexandru_V"
+			last_name = "Ghica"
+			ruler = yes
+			culture = cu:romanian
+			religion = rel:protestant
+			birth_date = 1809.5.1
+			traits = {
+				experienced_diplomat romantic 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Vladut_Ipsilanti"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1776.2.28
+			traits = {
+				inept 
+			}
+		}
+
+		create_character = {
+			first_name = "Besarab_Ipsilanti"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1798.1.8
+			traits = {
+				opium_addiction 
+			}
+		}
+
+	}
+}

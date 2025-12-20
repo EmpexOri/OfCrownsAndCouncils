@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:X79 = {
+		create_character = {
+			first_name = "G0n_I"
+			last_name = "Shaybanid"
+			ruler = yes
+			culture = cu:mongol
+			religion = rel:gelugpa
+			birth_date = 1814.6.3
+			traits = {
+				basic_political_operator bigoted 
+			}
+		}
+
+	}
+}

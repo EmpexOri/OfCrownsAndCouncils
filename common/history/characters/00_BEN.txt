@@ -1,0 +1,63 @@
+﻿CHARACTERS = {
+	c:BEN = {
+		create_character = {
+			first_name = "Osaevbie_Ahomadegbe"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1816.4.3
+			traits = {
+				basic_offensive_planner 
+			}
+		}
+
+		create_character = {
+			first_name = "Orunmiyan_Maga"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1789.2.11
+			traits = {
+				resupply_commander 
+			}
+		}
+
+		create_character = {
+			first_name = "Moogo"
+			last_name = "Addy"
+			culture = cu:mossi
+			religion = rel:sunni
+			birth_date = 1784.8.3
+			traits = {
+				pious 
+			}
+		}
+
+		create_character = {
+			first_name = "Orunmiyan"
+			last_name = "Kouandete"
+			heir = yes
+			culture = cu:mossi
+			religion = rel:sunni
+			birth_date = 1804.3.29
+			traits = {
+				experienced_political_operator hedonist 
+			}
+		}
+
+		create_character = {
+			first_name = "Aichata_III"
+			last_name = "Kouandete"
+			ruler = yes
+			female = yes
+			culture = cu:mossi
+			religion = rel:sunni
+			birth_date = 1788.5.26
+			traits = {
+				direct 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

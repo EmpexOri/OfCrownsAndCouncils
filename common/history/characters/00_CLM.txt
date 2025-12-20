@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:CLM = {
+		create_character = {
+			first_name = "Ramiru_de_Benavides"
+			ruler = yes
+			culture = cu:north_andean
+			religion = rel:catholic
+			birth_date = 1804.6.21
+			traits = {
+				cautious 
+			}
+		}
+
+		create_character = {
+			first_name = "Fruella_de_Luna"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1806.7.4
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Vela_de_la_Cueva"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1808.1.4
+			traits = {
+				inept 
+			}
+		}
+
+		create_character = {
+			first_name = "Gil_de_Guzman"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1793.5.2
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Sancho_de_Villena"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1777.5.28
+			traits = {
+				expensive_tastes 
+			}
+		}
+
+	}
+}

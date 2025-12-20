@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:CEY = {
+		create_character = {
+			first_name = "Manavanna_VI"
+			last_name = "Gampolan"
+			ruler = yes
+			culture = cu:sinhala
+			religion = rel:hindu
+			birth_date = 1816.3.1
+			traits = {
+				basic_diplomat innovative 
+			}
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:IRC = {
+		create_character = {
+			first_name = "Stamixosok_I"
+			last_name = "Unskaha"
+			ruler = yes
+			culture = cu:siouan
+			religion = rel:catholic
+			birth_date = 1693.2.16
+			traits = {
+				ambitious cancer 
+			}
+		}
+
+	}
+}

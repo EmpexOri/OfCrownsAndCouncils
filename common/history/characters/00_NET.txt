@@ -1,0 +1,56 @@
+﻿CHARACTERS = {
+	c:NET = {
+		create_character = {
+			first_name = "Christoffel_De_Grouwe"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1810.7.12
+			traits = {
+				basic_offensive_planner 
+			}
+		}
+
+		create_character = {
+			first_name = "Hugo_Martena"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1813.3.14
+			traits = {
+				basic_defensive_strategist 
+			}
+		}
+
+		create_character = {
+			first_name = "Lodewijk_Van_Haren"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1803.1.15
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Filips_Willem_I"
+			last_name = "van_Oranje"
+			ruler = yes
+			culture = cu:dutch
+			religion = rel:catholic
+			birth_date = 1815.5.19
+			traits = {
+				experienced_diplomat reserved 
+			}
+		}
+
+		create_character = {
+			first_name = "Abel_Tasman"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1806.5.29
+			traits = {
+				explorer 
+			}
+		}
+
+	}
+}

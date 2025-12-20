@@ -1,0 +1,38 @@
+﻿CHARACTERS = {
+	c:TUN = {
+		create_character = {
+			first_name = "Ahmad"
+			last_name = "Banu_Muhammad"
+			heir = yes
+			culture = cu:maghrebi
+			religion = rel:sunni
+			birth_date = 1835.12.2
+			traits = {
+				basic_diplomat trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "_Usman_Akimi"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1807.7.14
+			traits = {
+				expensive_tastes 
+			}
+		}
+
+		create_character = {
+			first_name = "Husayn_I"
+			last_name = "Banu_Muhammad"
+			ruler = yes
+			culture = cu:maghrebi
+			religion = rel:sunni
+			birth_date = 1814.12.28
+			traits = {
+				hedonist 
+			}
+		}
+
+	}
+}

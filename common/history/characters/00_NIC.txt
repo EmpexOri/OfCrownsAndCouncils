@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:NIC = {
+		create_character = {
+			first_name = "Olafr_Nansen"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1794.11.9
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Gandalfr_Bolt"
+			is_admiral = yes
+			commander_rank = commander_rank_3
+			birth_date = 1806.10.14
+			traits = {
+				expensive_tastes 
+			}
+		}
+
+		create_character = {
+			first_name = "Nahkol_Larsson"
+			ruler = yes
+			culture = cu:estonian
+			religion = rel:protestant
+			birth_date = 1789.1.30
+			traits = {
+				basic_political_operator bigoted 
+			}
+		}
+
+		create_character = {
+			first_name = "Nahkol_Egilsson"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1799.10.26
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Magnus_Bjelke"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1787.4.12
+			traits = {
+				shellshocked 
+			}
+		}
+
+	}
+}

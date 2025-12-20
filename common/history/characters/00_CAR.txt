@@ -1,0 +1,93 @@
+﻿CHARACTERS = {
+	c:CAR = {
+		create_character = {
+			first_name = "Nandaprabhanjanavarman_Sastri"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1805.3.1
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Amutrao_Reddy"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1801.7.25
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Prithivarman_Mudaliar"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1788.4.28
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Mailaladevi"
+			last_name = "Ganga"
+			female = yes
+			culture = cu:deccani
+			religion = rel:hindu
+			birth_date = 1799.7.20
+			traits = {
+				basic_political_operator innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Pulakesi"
+			last_name = "Chandravansha"
+			heir = yes
+			culture = cu:deccani
+			religion = rel:hindu
+			birth_date = 1822.8.17
+			traits = {
+				experienced_diplomat trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Amoghavarsha_IX"
+			last_name = "Chandravansha"
+			ruler = yes
+			culture = cu:deccani
+			religion = rel:hindu
+			birth_date = 1804.4.6
+			traits = {
+				hedonist 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Karka_Bahadur"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1790.1.21
+			traits = {
+				grifter 
+			}
+		}
+
+		create_character = {
+			first_name = "Santikaradeva_Thondaiman"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1771.3.11
+			traits = {
+				alcoholic 
+			}
+		}
+
+	}
+}

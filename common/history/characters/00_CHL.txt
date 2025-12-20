@@ -1,0 +1,38 @@
+﻿CHARACTERS = {
+	c:CHL = {
+		create_character = {
+			first_name = "Folquet_d_Aiguieres"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1797.5.20
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+		create_character = {
+			first_name = "Clintavian_III"
+			last_name = "de_Penthievre"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_1
+			culture = cu:neo-argentine_colony-arpitan
+			religion = rel:protestant
+			birth_date = 1815.6.4
+			traits = {
+				basic_diplomat romantic 
+			}
+		}
+
+		create_character = {
+			first_name = "Folquet_de_Pena"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1790.6.27
+			traits = {
+				cocaine_addiction 
+			}
+		}
+
+	}
+}

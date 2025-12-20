@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:DAI = {
+		create_character = {
+			first_name = "Phuc_Thuan_I"
+			last_name = "Bae"
+			ruler = yes
+			culture = cu:korean
+			religion = rel:confucian
+			birth_date = 1820.7.2
+			traits = {
+				basic_diplomat imperious 
+			}
+		}
+
+		create_character = {
+			first_name = "Phuc_Chu_Pham"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1786.5.11
+			traits = {
+				inept 
+			}
+		}
+
+		create_character = {
+			first_name = "Hoang_Cao"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1784.7.15
+			traits = {
+				surveyor 
+			}
+		}
+
+		create_character = {
+			first_name = "Phuc_Lan_Mac"
+			is_admiral = yes
+			birth_date = 1793.2.7
+			traits = {
+				inept 
+			}
+		}
+
+		create_character = {
+			first_name = "Phuc_Nguyen_Banh"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1775.11.9
+			traits = {
+				explorer 
+			}
+		}
+
+	}
+}

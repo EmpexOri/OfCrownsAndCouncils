@@ -1,0 +1,26 @@
+﻿CHARACTERS = {
+	c:SUD = {
+		create_character = {
+			first_name = "Mikail_Zangi"
+			is_general = yes
+			commander_rank = commander_rank_1
+			birth_date = 1812.5.11
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Dakin_al-_Adil_I"
+			last_name = "Bigawi"
+			ruler = yes
+			culture = cu:bedouin
+			religion = rel:shiite
+			birth_date = 1816.12.28
+			traits = {
+				direct experienced_colonial_administrator 
+			}
+		}
+
+	}
+}

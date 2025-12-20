@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:TWT = {
+		create_character = {
+			first_name = "Anquimarca_II"
+			last_name = "Cusi"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_2
+			culture = cu:quechua
+			religion = rel:animist
+			birth_date = 1715.4.11
+			traits = {
+				ambitious experienced_political_operator 
+			}
+		}
+
+	}
+}

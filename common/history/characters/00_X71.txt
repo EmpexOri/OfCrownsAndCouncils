@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:X71 = {
+		create_character = {
+			first_name = "Ganizani_I"
+			last_name = "Loanga"
+			ruler = yes
+			culture = cu:swahili
+			religion = rel:sunni
+			birth_date = 1815.2.16
+			traits = {
+				ambitious basic_diplomat 
+			}
+		}
+
+	}
+}

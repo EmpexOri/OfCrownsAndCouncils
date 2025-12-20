@@ -1,0 +1,83 @@
+﻿CHARACTERS = {
+	c:MHR = {
+		create_character = {
+			first_name = "Afshar_Bhonsle"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1801.8.25
+			traits = {
+				alcoholic 
+			}
+		}
+
+		create_character = {
+			first_name = "Dhruva_Bhoit"
+			is_admiral = yes
+			commander_rank = commander_rank_3
+			birth_date = 1798.2.11
+			traits = {
+				syphilis 
+			}
+		}
+
+		create_character = {
+			first_name = "Hambirao_Narsala"
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			birth_date = 1783.12.2
+			traits = {
+				explorer 
+			}
+		}
+
+		create_character = {
+			first_name = "Shantaladevi"
+			last_name = "Ruddha"
+			female = yes
+			culture = cu:marathi
+			religion = rel:hindu
+			birth_date = 1789.12.21
+			traits = {
+				reserved 
+			}
+		}
+
+		create_character = {
+			first_name = "Indra"
+			last_name = "Koli"
+			heir = yes
+			culture = cu:marathi
+			religion = rel:hindu
+			birth_date = 1807.3.24
+			traits = {
+				romantic 
+			}
+		}
+
+		create_character = {
+			first_name = "Afshar_IV"
+			last_name = "Koli"
+			ruler = yes
+			culture = cu:marathi
+			religion = rel:hindu
+			birth_date = 1792.3.24
+			traits = {
+				basic_political_operator imposing 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Pullashakti_Gujar"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1771.8.23
+			traits = {
+				surveyor 
+			}
+		}
+
+	}
+}

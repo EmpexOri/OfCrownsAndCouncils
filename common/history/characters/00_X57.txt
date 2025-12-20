@@ -1,0 +1,38 @@
+﻿CHARACTERS = {
+	c:X57 = {
+		create_character = {
+			first_name = "Kushruh_Shahabuddin"
+			is_general = yes
+			commander_rank = commander_rank_2
+			birth_date = 1800.7.14
+			traits = {
+				charismatic 
+			}
+		}
+
+		create_character = {
+			first_name = "_Abu_Nasr"
+			last_name = "Borjigin"
+			heir = yes
+			culture = cu:hindustani
+			religion = rel:sunni
+			birth_date = 1811.10.30
+			traits = {
+				charismatic 
+			}
+		}
+
+		create_character = {
+			first_name = "Abdul-Karim_I"
+			last_name = "Borjigin"
+			ruler = yes
+			culture = cu:hindustani
+			religion = rel:sunni
+			birth_date = 1791.11.27
+			traits = {
+				innovative 
+			}
+		}
+
+	}
+}

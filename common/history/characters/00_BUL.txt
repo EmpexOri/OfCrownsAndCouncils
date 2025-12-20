@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:BUL = {
+		create_character = {
+			first_name = "Simeon_II"
+			last_name = "Terter"
+			ruler = yes
+			culture = cu:bulgarian
+			religion = rel:orthodox
+			birth_date = 1816.4.16
+			traits = {
+				basic_colonial_administrator pious 
+			}
+		}
+
+	}
+}

@@ -1,0 +1,43 @@
+﻿CHARACTERS = {
+	c:BAL = {
+		create_character = {
+			first_name = "Angkasa"
+			last_name = "Samprangan"
+			female = yes
+			culture = cu:javan
+			religion = rel:sunni
+			birth_date = 1780.6.7
+			traits = {
+				experienced_political_operator persistent 
+			}
+		}
+
+		create_character = {
+			first_name = "Ketut_Ngulesir"
+			last_name = "Cirebon"
+			heir = yes
+			culture = cu:javan
+			religion = rel:sunni
+			birth_date = 1801.2.4
+			traits = {
+				cautious experienced_diplomat 
+			}
+		}
+
+		create_character = {
+			first_name = "Sri_Aji_Baturenggong_I"
+			last_name = "Cirebon"
+			ruler = yes
+			culture = cu:javan
+			religion = rel:sunni
+			birth_date = 1786.2.4
+			traits = {
+				basic_colonial_administrator cautious 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

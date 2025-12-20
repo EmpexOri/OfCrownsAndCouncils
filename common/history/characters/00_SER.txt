@@ -1,0 +1,55 @@
+﻿CHARACTERS = {
+	c:SER = {
+		create_character = {
+			first_name = "Branka"
+			last_name = "Sokolovic"
+			female = yes
+			culture = cu:serb
+			religion = rel:orthodox
+			birth_date = 1811.11.24
+			traits = {
+				innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Stefan"
+			last_name = "Vukovic"
+			heir = yes
+			culture = cu:serb
+			religion = rel:orthodox
+			birth_date = 1831.10.21
+			traits = {
+				basic_political_operator trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Darko_Bojovic"
+			is_general = yes
+			commander_rank = commander_rank_3
+			birth_date = 1809.2.26
+			traits = {
+				basic_defensive_strategist cruel 
+			}
+		}
+
+		create_character = {
+			first_name = "Djuradj_I"
+			last_name = "Vukovic"
+			ruler = yes
+			is_general = yes
+			commander_rank = commander_rank_1
+			culture = cu:serb
+			religion = rel:orthodox
+			birth_date = 1807.3.9
+			traits = {
+				charismatic 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

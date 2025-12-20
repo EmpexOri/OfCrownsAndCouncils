@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:X22 = {
+		create_character = {
+			first_name = "Hakon_Torsson"
+			ruler = yes
+			culture = cu:neo-usa_north_colony-estonian
+			religion = rel:protestant
+			birth_date = 1793.10.19
+			traits = {
+				romantic 
+			}
+		}
+
+		create_character = {
+			first_name = "Olafr_Amundsen"
+			is_general = yes
+			birth_date = 1774.9.20
+			traits = {
+				inexperienced 
+			}
+		}
+
+	}
+}

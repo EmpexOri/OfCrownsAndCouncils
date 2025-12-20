@@ -1,0 +1,43 @@
+﻿CHARACTERS = {
+	c:X80 = {
+		create_character = {
+			first_name = "Marguerite"
+			last_name = "von_Wassel"
+			female = yes
+			culture = cu:north_german
+			religion = rel:protestant
+			birth_date = 1815.5.10
+			traits = {
+				experienced_colonial_administrator innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Gotzelo"
+			last_name = "von_Eppstein"
+			heir = yes
+			culture = cu:north_german
+			religion = rel:protestant
+			birth_date = 1835.6.9
+			traits = {
+				alcoholic trait_child 
+			}
+		}
+
+		create_character = {
+			first_name = "Otto_II"
+			last_name = "von_Eppstein"
+			ruler = yes
+			culture = cu:north_german
+			religion = rel:protestant
+			birth_date = 1815.5.10
+			traits = {
+				bigoted 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}

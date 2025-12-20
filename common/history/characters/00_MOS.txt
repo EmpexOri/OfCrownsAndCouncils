@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:MOS = {
+		create_character = {
+			first_name = "Baongo_I"
+			last_name = "Sadami"
+			ruler = yes
+			culture = cu:mossi
+			religion = rel:sunni
+			birth_date = 1815.2.16
+			traits = {
+				cautious expert_political_operator 
+			}
+		}
+
+	}
+}

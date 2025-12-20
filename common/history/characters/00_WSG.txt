@@ -1,0 +1,44 @@
+﻿CHARACTERS = {
+	c:WSG = {
+		create_character = {
+			first_name = "Saaman"
+			last_name = "Dir"
+			female = yes
+			culture = cu:bedouin
+			religion = rel:sunni
+			birth_date = 1796.1.17
+			traits = {
+				tactful 
+			}
+		}
+
+		create_character = {
+			first_name = "Abd_al-Ghafur"
+			last_name = "Dir"
+			heir = yes
+			culture = cu:somali
+			religion = rel:sunni
+			birth_date = 1819.6.24
+			traits = {
+				innovative 
+			}
+		}
+
+		create_character = {
+			first_name = "Abd_al-Ghafur_VII"
+			last_name = "Dir"
+			ruler = yes
+			interest_group = ig_devout
+			culture = cu:somali
+			religion = rel:sunni
+			birth_date = 1804.6.24
+			traits = {
+				aesthete 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+	}
+}
