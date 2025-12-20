@@ -5,3 +5,5 @@
 je_group_converter_new = {
 
 }
+
+je_group_tanzimat_mug = {}

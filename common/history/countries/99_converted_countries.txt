@@ -3395,6 +3395,9 @@
 			institution = institution_home_affairs
 			level = 1
 		}
+		trigger_event = {
+			id = sick_man_mug.1
+		}
 	}
 	c:N04 ?= {
 		effect_native_conscription_3 = yes
