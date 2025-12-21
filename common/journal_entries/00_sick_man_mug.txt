@@ -370,7 +370,7 @@ je_sick_man_mug_bureaucracy = {
 			name = sick_man_mug_var
 			add = 1
 		}
-		remove_modifier = outmoded_bureaucracy
+		remove_modifier = outmoded_bureaucracy_mug
 	}
 
 	# on_monthly_pulse = {
@@ -423,7 +423,7 @@ je_sick_man_mug_sovereignity = {
 	on_fail = {
 		set_variable = failed_sick_man_mug_sovereignity
 		add_radicals = {
-			0.1
+			value = 0.1
 		}
 	}
 
