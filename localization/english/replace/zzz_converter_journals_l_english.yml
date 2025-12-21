@@ -57,3 +57,7 @@
     sick_man_mug.3.a:0 "We belong to Allah, and to Him do we return."
 
     je_sick_man_mug_advance:0 "Advances the [concept_journal_entry] #b $je_sick_man_mug_main$#!"
+
+    sick_man_of_asia: "Sick Man of Asia"
+    outmoded_bureaucracy_mug: "Outmoded Bureaucracy"
+

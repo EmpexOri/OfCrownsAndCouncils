@@ -374,7 +374,7 @@
 				add_ownership = {
 					country = {
 						country = c:MUG
-						levels = 14
+						levels = 19
 					}
 				}
 				reserves = 1
@@ -9879,7 +9879,7 @@
 					building = {
 						type = building_government_administration
 						country = c:MUG
-						levels = 12
+						levels = 18
 						region = STATE_DELHI
 					}
 				}
