@@ -423,7 +423,7 @@ je_sick_man_mug_sovereignity = {
 	on_fail = {
 		set_variable = failed_sick_man_mug_sovereignity
 		add_radicals = {
-			0.1
+			value = 0.1
 		}
 	}
 

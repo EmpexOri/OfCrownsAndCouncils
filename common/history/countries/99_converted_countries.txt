@@ -1259,6 +1259,9 @@
 			remove_ideology = ideology_paternalistic
  			add_ideology = ideology_scholar_paternalistic
  		}
+		trigger_event = {
+			id = opium_wars.1
+		}
 	}
 	c:CHK ?= {
 		add_technology_researched = enclosure
