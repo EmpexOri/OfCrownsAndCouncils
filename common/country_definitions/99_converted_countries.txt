@@ -10671,7 +10671,7 @@ W95 ?= {
 	tier = principality
 	cultures = { tatar }
 	religion = protestant
-	capital = STATE_TAURIDA
+	capital = STATE_ASTRAKHAN
 }
 
 W96 ?= {
@@ -11400,7 +11400,7 @@ X65 ?= {
 	tier = principality
 	cultures = { sorb }
 	religion = protestant
-	capital = STATE_MECKLENBURG
+	capital = STATE_BRANDENBURG
 }
 
 X66 ?= {

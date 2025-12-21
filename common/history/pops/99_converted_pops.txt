@@ -6511,12 +6511,12 @@
 	s:STATE_BOHEMIA = {
 		region_state:SAX = {
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = catholic
 				size = 318043
 			}
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = protestant
 				size = 487724
 			}
@@ -6686,12 +6686,12 @@
 				size = 2946
 			}
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = catholic
 				size = 207858
 			}
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = protestant
 				size = 316376
 			}
@@ -7270,12 +7270,12 @@
 	s:STATE_BRANDENBURG = {
 		region_state:PLC = {
 			create_pop = {
-				culture = polish
+				culture = north_german
 				religion = catholic
 				size = 22706
 			}
 			create_pop = {
-				culture = polish
+				culture = north_german
 				religion = protestant
 				size = 34940
 			}
@@ -7379,12 +7379,12 @@
 				size = 1141
 			}
 			create_pop = {
-				culture = sorb
+				culture = north_german
 				religion = catholic
 				size = 87476
 			}
 			create_pop = {
-				culture = sorb
+				culture = north_german
 				religion = protestant
 				size = 135525
 			}
@@ -7415,7 +7415,7 @@
 			}
 			create_pop = {
 				culture = north_german
-				religion = slavic_pagan_reformed
+				religion = protestant
 				size = 50935
 			}
 			create_pop = {
@@ -30134,12 +30134,12 @@
 				size = 1359
 			}
 			create_pop = {
-				culture = sorb
+				culture = north_german
 				religion = catholic
 				size = 82478
 			}
 			create_pop = {
-				culture = sorb
+				culture = north_german
 				religion = protestant
 				size = 133924
 			}
@@ -32300,12 +32300,12 @@
 	s:STATE_MORAVIA = {
 		region_state:SAX = {
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = catholic
 				size = 46696
 			}
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = protestant
 				size = 71420
 			}
@@ -32368,12 +32368,12 @@
 		}
 		region_state:SLV = {
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = catholic
 				size = 211412
 			}
 			create_pop = {
-				culture = czech
+				culture = north_german
 				religion = protestant
 				size = 342257
 			}
@@ -40692,12 +40692,12 @@
 				size = 573
 			}
 			create_pop = {
-				culture = polish
+				culture = north_german
 				religion = catholic
 				size = 15708
 			}
 			create_pop = {
-				culture = polish
+				culture = north_german
 				religion = protestant
 				size = 22971
 			}
@@ -42475,6 +42475,16 @@
 				culture = estonian
 				religion = protestant
 				size = 36914
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 500
+			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 23943
 			}
 			create_pop = {
 				culture = polish
