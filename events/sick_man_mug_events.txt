@@ -1,0 +1,213 @@
+﻿namespace = sick_man_mug
+
+# start event
+sick_man_mug.1 = {
+	type = country_event
+	placement = root
+	title = sick_man_mug.1.t
+	desc = sick_man_mug.1.d
+	flavor = sick_man_mug.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	# icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			name = sick_man_mug_var
+			value = 0
+		}
+		set_variable = {
+			name = sick_man_mug_separatist_var
+			value = 0
+		}
+		add_modifier = {
+			name = sick_man_of_asia
+			months = -1
+		}
+		add_modifier = {
+			name = outmoded_bureaucracy_mug
+			months = -1
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_main
+		}
+	}
+
+	option = {
+		name = sick_man_mug.1.a
+		add_journal_entry = {
+			type = je_sick_man_mug_serfdom
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_economy
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_education
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_separatism
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_army
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_bureaucracy
+		}
+		add_journal_entry = {
+			type = je_sick_man_mug_sovereignity
+		}
+		show_as_tooltip = {
+			add_modifier = {
+				name = sick_man_of_asia
+				months = -1
+			}
+			add_modifier = {
+				name = outmoded_bureaucracy_mug
+				months = -1
+			}
+		}
+	}
+}
+
+# Success event
+sick_man_mug.2 = {
+	type = country_event
+	placement = root
+	title = sick_man_mug.2.t
+	desc = sick_man_mug.2.desc
+	flavor = sick_man_mug.2.f
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = sick_man_mug_complete
+		remove_modifier = outmoded_bureaucracy_mug
+	}
+
+	option = {
+		name = sick_man_mug.2.a
+		default_option = yes
+		trigger = {
+			has_variable = completed_sick_man_mug_army_je
+		}
+		add_modifier = {
+			name = mughal_army_reform
+			days = normal_modifier_time
+		}
+	}
+	option = {
+		name = sick_man_mug.2.c
+		trigger = {
+			has_variable = completed_sick_man_mug_economy_je
+		}
+		add_modifier = {
+			name = mughal_urbanization
+			days = normal_modifier_time
+		}
+	}
+	option = {
+		name = sick_man_mug.2.d
+		trigger = {
+			has_variable = completed_sick_man_mug_education_je
+		}
+		add_modifier = {
+			name = mughal_education
+			days = normal_modifier_time
+		}
+	}
+	option = {
+		name = sick_man_mug.2.e
+		trigger = {
+			has_variable = completed_sick_man_mug_bureaucracy_je
+		}
+		add_modifier = {
+			name = mughal_bureaucracy
+			days = normal_modifier_time
+		}
+	}
+}
+
+# Fail event
+sick_man_mug.3 = {
+	type = country_event
+	placement = root
+	title = sick_man_mug.3.t
+	desc = sick_man_mug.3.d
+	flavor = sick_man_mug.3.f
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = sick_man_mug_complete
+		remove_modifier = outmoded_bureaucracy_mug
+		ruler = {
+			save_scope_as = ottoman_sultan
+		}
+	}
+
+	option = {
+		name = sick_man_mug.3.a
+		if = {
+			limit = {
+				is_subject = no
+				any_subject_or_below = {
+					NOT = { any_overlord_or_above = { NOT = { ROOT = this } } }
+					NOT = {
+						is_country_type = unrecognized
+					}
+				}
+			}
+			every_subject_or_below = {
+				limit = {
+					NOT = { any_overlord_or_above = { NOT = { ROOT = this } } }
+					OR = {
+						NOT = {
+							is_country_type = unrecognized
+						}
+						is_subject_type = subject_type_protectorate
+						is_subject_type = subject_type_dominion
+						is_subject_type = subject_type_puppet
+						is_subject_type = subject_type_colony
+						is_subject_type = subject_type_chartered_company
+					}
+				}
+				make_independent = yes
+			}
+		}
+		set_country_type = unrecognized
+		ruler = {
+			kill_character = yes
+		}
+	}
+}
