@@ -1,8 +1,8 @@
-﻿outmoded_bureaucracy_mug = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_bureaucracy_mult = -0.25
-	state_tax_capacity_mult = -0.25
-	state_tax_waste_add = 0.25
+﻿outmoded_bureaucracy = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+    country_bureaucracy_mult = -0.25
+    state_tax_capacity_mult = -0.25
+    state_tax_waste_add = 0.25
 }
 
 sick_man_of_asia = {
