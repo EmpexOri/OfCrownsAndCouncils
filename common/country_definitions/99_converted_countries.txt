@@ -6043,7 +6043,7 @@ MUG ?= {
 	cultures = { hindustani }
 	dynamic_country_name = yes
 	religion = sunni
-	capital = STATE_AGRA
+	capital = STATE_DELHI
 }
 
 MUI ?= {
