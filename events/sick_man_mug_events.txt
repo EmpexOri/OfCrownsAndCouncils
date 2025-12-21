@@ -106,8 +106,32 @@ sick_man_mug.2 = {
 	}
 
 	option = {
-		name = sick_man_mug.2.a
+		name = sick_man_mug.2.b
 		default_option = yes
+		s:STATE_MADRAS = {
+			add_claim = ROOT
+		}
+		s:STATE_KURNOOL = {
+			add_claim = ROOT
+		}
+		s:STATE_CEYLON = {
+			add_claim = ROOT
+		}
+		s:STATE_HYDERABAD = {
+			add_claim = ROOT
+		}
+		s:STATE_TRAVANCORE = {
+			add_claim = ROOT
+		}
+		s:STATE_MYSORE = {
+			add_claim = ROOT
+		}
+		s:STATE_CIRCARS = {
+			add_claim = ROOT
+		}
+	}
+	option = {
+		name = sick_man_mug.2.a
 		trigger = {
 			has_variable = completed_sick_man_mug_army_je
 		}
