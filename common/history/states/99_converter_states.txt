@@ -862,7 +862,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x0279A0 x0BAF8C x109CC0 x113E0B x1161D9 x17D8AB x1D0224 x1EF53E x2B7441 x2E7961 x2FF46D x35754E x3C9B5F x3EFD1E x407060 x4070E0 x43F4B8 x4529BD x45F2DD x4B2EAD x4DC3FF x4E09C5 x4F800F x556C63 x56CF62 x5CBA3C x61D696 x626396 x62BEAA x675BCE x6D6D6B x782112 x7D60E7 x7FE584 x8DC922 x8ED831 x951063 x954C12 x968562 x978421 x97C017 x9EED5C xA3655B xA55509 xB0F79E xB2AAA7 xB7B2BD xBAE3D2 xBB836E xC070E0 xC6D9E8 xC6E602 xCD77FD xD4EC50 xD575B0 xD6DD8A xDEE571 xDF30A0 xE712E1 xE7A309 xE87BBF xE92A58 xEC696F xF1414C xF78D0D xF9577D }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:baluchi
 		add_homeland = cu:hindustani_proper
@@ -2361,7 +2361,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x025A94 x0C82AB x117060 x1E0385 x30B0A0 x3E5D45 x40F5CE x4123FE x474C54 x475FC4 x55F631 x6F1170 x71E2DE x92DA2C x93E9F4 xA605E3 xAC2CB6 xB06FC2 xC81678 xCA47BA xCB5C0A xD06FA1 xD28E5F xD2E951 xDA53DA xDFA414 xE6CD14 xF04684 xF3A964 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		create_state = {
 			country = c:X11
@@ -3162,7 +3162,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x03C674 x075A8E x0A4C7A x0C6CB1 x128888 x164DBB x30D060 x30E365 x3151E0 x31D0E0 x3FFA53 x4133D4 x49DDB8 x4EB354 x5B6745 x697511 x73656F x7E0401 x8F568D x90052D x90B589 x9C8D06 xADD2A3 xB05060 xB0D060 xB11F7B xB3D1CD xB89EF0 xB9D851 xBBB2BD xC0310F xC7C3FD xCC1D23 xD31590 xD77765 xD8CEF7 xEB1229 xEB6009 xECB4F5 xF01160 xF64FA2 xF87E91 xFC0FC1 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:dynamic-kannada-marathi-culture-num1
 		add_homeland = cu:gujarati
@@ -3353,7 +3353,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x11C815 x25994F x29576A x4D5FC1 x605021 x6E233E x73C2C6 x812FBE x833D63 x920B51 xA228F8 xA2C234 xA5D1EB xAF11F0 xAF5B29 xBCD18E xC13072 xC1C87A xC6179B xC6D4A8 xCE4DAE xE18F72 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		create_state = {
 			country = c:W64
@@ -3454,7 +3454,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x0607C9 x0B9150 x1E32E0 x49EAE4 x5E950F x6B578E x6C4C5A x774B02 x782368 x90B0A0 x9257D2 xA1516D xACAC7B xB4928F xC90323 xD7D0CD xDE9FE5 xE2709D xE7E1D9 xF189CD xFDC9AD }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		create_state = {
 			country = c:W98
@@ -3785,7 +3785,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x01CB5D x2130A0 x272245 x3D34F8 x3F6DF7 x401B5D x40F059 x4DE0D5 x5DF6B2 x6B01D6 x70FE4E x7C90B0 x885677 x8D643D x90FCC5 x91126C xA54030 xA89F7A xBAA598 xBB54C2 xD37042 xDCB746 xDFF634 xE0898D xE40309 xE81774 xEF9ECA xF7D682 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:dynamic-kashmiri-persian-culture-num1
 		add_homeland = cu:panjabi
@@ -3902,7 +3902,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x00161D x07D342 x150D2C x15F552 x18CED8 x1F1AF7 x217021 x21F020 x24EF26 x2969A3 x2B6E7C x2D5D46 x2DDFDB x2FF385 x37C3E4 x3FDA5A x43B99F x504561 x56684E x5990A7 x5A0252 x6326A6 x6AA44A x72F7C2 x808216 x874936 x963360 x964219 x9666D9 xA09736 xA875F3 xAA60FC xB0FE2D xB4AA65 xB637A4 xC49B8C xCCD333 xCDB7DB xD107A3 xD25436 xD71AAB xEDCC3E xF28F90 xF469BC xF48515 xF8D822 xFD692B }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:dynamic-kashmiri-persian-culture-num1
 		add_homeland = cu:kashmiri
@@ -6544,7 +6544,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x022D2B x051899 x0EC528 x12D43A x19E5C0 x1D3609 x2DBD82 x30122F x3631C3 x36E637 x402C84 x4E722C x50D414 x61F7C9 x67DD93 x6C44CE x706940 x7074E3 x713583 x767A66 x80F0E0 x8F5440 x918140 x91DEAB x94A5A8 x97232F x9AB208 x9B38C0 x9CEEC1 xA0B0A0 xA1CA4A xA6DAD0 xAA60D3 xB4E322 xB94359 xCA516D xCA5BC1 xCD3942 xCD3E9A xCEAF5E xCF602F xD458B6 xD597DC xD921CB xDB08EC xE03121 xE0C4D2 xE2230E xE3CCA0 xEFC3B4 xF58253 xF8614B }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:dynamic-kashmiri-persian-culture-num1
 		add_homeland = cu:hindustani_proper
@@ -7245,7 +7245,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x02BBA0 x105356 x11152D x1507B8 x16F3F6 x1A04E6 x23DFA9 x268E58 x315160 x3FFB31 x56F6E9 x59EE31 x5AF594 x60B021 x6E9D54 x705060 x73A9E3 x808515 x882A58 x8C4F5A x8FC69D xAE1ED1 xB2850D xC7D26A xCC14D7 xD7517F xDB079F xDD447A xE4B4A2 xF5592F xF90BDE xFBDCF5 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:hindustani_proper
 		add_claim = c:X13
@@ -8836,7 +8836,7 @@
 		create_state = {
 			country = c:MUG
 			owned_provinces = { x0A2277 x13A493 x1DBB94 x272AEE x2FF791 x397092 x802A5E x82150A x844FCF x89538D x89D769 x8F846C xBF385A xD0B0DF xD2FEA1 xE2E92B xEF5060 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		add_homeland = cu:bengali
 		add_homeland = cu:dynamic-kannada-oriya-culture-num1

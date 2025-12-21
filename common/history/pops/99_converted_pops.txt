@@ -10078,6 +10078,7 @@
 			create_pop = {
 				culture = gondi
 				religion = hindu
+				pop_type = slaves
 				size = 318359
 			}
 			create_pop = {
@@ -10093,12 +10094,14 @@
 			create_pop = {
 				culture = gondi
 				religion = hindu
+				pop_type = slaves
 				size = 159409
 			}
 			create_pop = {
 				culture = chhattisgarhi
 				religion = mahayana
-				size = 42558
+				pop_type = slaves
+				size = 82558
 			}
 			create_pop = {
 				culture = chhattisgarhi
@@ -10118,6 +10121,7 @@
 			create_pop = {
 				culture = gondi
 				religion = hindu
+				pop_type = slaves
 				size = 262992
 			}
 			create_pop = {
@@ -10128,6 +10132,7 @@
 			create_pop = {
 				culture = gondi
 				religion = hindu
+				pop_type = slaves
 				size = 318359
 			}
 			create_pop = {
@@ -13894,6 +13899,7 @@
 			create_pop = {
 				culture = kamarupan
 				religion = hindu
+				pop_type = slaves
 				size = 243854
 			}
 			create_pop = {
@@ -13924,6 +13930,7 @@
 			create_pop = {
 				culture = kamarupan
 				religion = hindu
+				pop_type = slaves
 				size = 795174
 			}
 			create_pop = {
@@ -23750,6 +23757,7 @@
 			create_pop = {
 				culture = tatar
 				religion = sikh
+				pop_type = slaves
 				size = 110931
 			}
 			create_pop = {

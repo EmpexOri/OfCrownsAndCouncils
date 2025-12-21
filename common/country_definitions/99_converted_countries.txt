@@ -11322,6 +11322,7 @@ X57 ?= {
 	country_type = recognized
 	tier = principality
 	cultures = { tatar }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_JETISY
 }
@@ -11331,6 +11332,7 @@ X58 ?= {
 	country_type = recognized
 	tier = kingdom
 	cultures = { tatar }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_UZBEKIA
 }
@@ -11340,6 +11342,7 @@ X59 ?= {
 	country_type = unrecognized
 	tier = principality
 	cultures = { mashriqi }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_SYRIA
 }
@@ -11349,6 +11352,7 @@ X60 ?= {
 	country_type = unrecognized
 	tier = kingdom
 	cultures = { mashriqi }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_PALESTINE
 }
@@ -11358,6 +11362,7 @@ X61 ?= {
 	country_type = unrecognized
 	tier = kingdom
 	cultures = { mongol }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_TIANSHAN
 }
@@ -11412,6 +11417,7 @@ X67 ?= {
 	country_type = unrecognized
 	tier = principality
 	cultures = { bedouin }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_HEDJAZ
 }
@@ -11421,6 +11427,7 @@ X68 ?= {
 	country_type = unrecognized
 	tier = kingdom
 	cultures = { hindustani }
+	dynamic_country_name = yes
 	religion = sunni
 	capital = STATE_HAIL
 }

@@ -374,7 +374,7 @@
 				add_ownership = {
 					country = {
 						country = c:MUG
-						levels = 228
+						levels = 14
 					}
 				}
 				reserves = 1
@@ -4631,7 +4631,7 @@
 				add_ownership = {
 					country = {
 						country = c:MUG
-						levels = 149
+						levels = 9
 					}
 				}
 				reserves = 1
@@ -9871,19 +9871,91 @@
 	}
 	s:STATE_DELHI = {
 		region_state:MUG = {
+
+			### CORE IMPERIAL ADMINISTRATION ###
 			create_building = {
-				building = "building_logging_camp"
+				building = "building_government_administration"
 				add_ownership = {
 					building = {
-						type = building_logging_camp
+						type = building_government_administration
 						country = c:MUG
-						levels = 1
+						levels = 12
 						region = STATE_DELHI
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_no_hardwood" "pm_saw_mills" }
 			}
+
+			### IMPERIAL ARMY PRESENCE ###
+			create_building = {
+				building = "building_barracks"
+				add_ownership = {
+					building = {
+						type = building_barracks
+						country = c:MUG
+						levels = 8
+						region = STATE_DELHI
+					}
+				}
+				reserves = 1
+			}
+
+			### RELIGIOUS / SCHOLARLY CENTER ###
+			create_building = {
+				building = "building_university"
+				add_ownership = {
+					building = {
+						type = building_university
+						country = c:MUG
+						levels = 3
+						region = STATE_DELHI
+					}
+				}
+				reserves = 1
+			}
+
+			### URBAN INDUSTRY (ARTISAN CORE) ###
+			create_building = {
+				building = "building_textile_mills"
+				add_ownership = {
+					building = {
+						type = building_textile_mills
+						country = c:MUG
+						levels = 6
+						region = STATE_DELHI
+					}
+				}
+				reserves = 1
+			}
+
+			create_building = {
+				building = "building_paper_mills"
+				add_ownership = {
+					building = {
+						type = building_paper_mills
+						country = c:MUG
+						levels = 4
+						region = STATE_DELHI
+					}
+				}
+				reserves = 1
+			}
+
+			### SUPPORTING AGRICULTURE (REDUCED, NOT DOMINANT) ###
+			create_building = {
+				building = "building_wheat_farm"
+				add_ownership = {
+					building = {
+						type = building_manor_house
+						country = c:MUG
+						levels = 5
+						region = STATE_DELHI
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_no_secondary" }
+			}
+
 			create_building = {
 				building = "building_livestock_ranch"
 				add_ownership = {
@@ -9895,33 +9967,6 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
-				building = "building_sugar_plantation"
-				add_ownership = {
-					building = {
-						type = building_manor_house
-						country = c:MUG
-						levels = 6
-						region = STATE_DELHI
-					}
-				}
-				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
-				building = "building_wheat_farm"
-				add_ownership = {
-					building = {
-						type = building_manor_house
-						country = c:MUG
-						levels = 8
-						region = STATE_DELHI
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_no_secondary" }
 			}
 		}
 	}
@@ -11142,6 +11187,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_basic_port" }
+			}
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 11
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" }
 			}
 		}
 	}
@@ -15989,6 +16045,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_no_secondary" }
+			}
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 11
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" }
 			}
 		}
 	}

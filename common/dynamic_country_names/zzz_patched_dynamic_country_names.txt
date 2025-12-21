@@ -685,3 +685,632 @@ CHI = {
         }
     }
 }
+
+X58 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING) ###
+    dynamic_country_name = {
+        name = dyn_c_x58_mug_subject
+        adjective = X58_ADJ
+        use_overlord_prefix = yes
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x58_monarchy
+        adjective = X58_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x58_republic
+        adjective = X58_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x58_communist
+        adjective = X58_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x58_state
+        adjective = X58_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X57 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING) ###
+    dynamic_country_name = {
+        name = dyn_c_x57_mug_subject
+        adjective = X57_ADJ
+        use_overlord_prefix = yes
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x57_monarchy
+        adjective = X57_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x57_republic
+        adjective = X57_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x57_communist
+        adjective = X57_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x57_state
+        adjective = X57_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X61 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING) ###
+    dynamic_country_name = {
+        name = dyn_c_x61_mug_subject
+        adjective = X61_ADJ
+        use_overlord_prefix = yes
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x61_monarchy
+        adjective = X61_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x61_republic
+        adjective = X61_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x61_communist
+        adjective = X61_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x61_state
+        adjective = X61_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X68 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING) ###
+    dynamic_country_name = {
+        name = dyn_c_x68_mug_subject
+        adjective = X68_ADJ
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x68_monarchy
+        adjective = X68_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x68_republic
+        adjective = X68_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x68_communist
+        adjective = X68_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x68_state
+        adjective = X68_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X59 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING, keeps original name) ###
+    dynamic_country_name = {
+        name = dyn_c_x59_mug_subject
+        adjective = X59_ADJ
+        use_overlord_prefix = no   # Keep “Syrian Raj” as-is
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x59_monarchy
+        adjective = X59_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x59_republic
+        adjective = X59_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x59_communist
+        adjective = X59_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x59_state
+        adjective = X59_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X60 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING, keeps original name) ###
+    dynamic_country_name = {
+        name = dyn_c_x60_mug_subject
+        adjective = X60_ADJ
+        use_overlord_prefix = no   # Keep “Izraeli Raj” as-is
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x60_monarchy
+        adjective = X60_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x60_republic
+        adjective = X60_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x60_communist
+        adjective = X60_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x60_state
+        adjective = X60_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X67 = {
+
+    ### SUBJECT OF MUG (PUPPET) ###
+    dynamic_country_name = {
+        name = dyn_c_x67_mug_subject
+        adjective = X67_ADJ
+        use_overlord_prefix = yes   # Optional, can show "Mughal Sultanate of Makramid"
+
+        priority = 80   # Lower than full vassals to show semi-independence
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = MUG
+                }
+            }
+        }
+    }
+
+    ### MONARCHY ###
+    dynamic_country_name = {
+        name = dyn_c_x67_monarchy
+        adjective = X67_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ### REPUBLIC ###
+    dynamic_country_name = {
+        name = dyn_c_x67_republic
+        adjective = X67_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_presidential_republic
+                }
+            }
+        }
+    }
+
+    ### COMMUNIST ###
+    dynamic_country_name = {
+        name = dyn_c_x67_communist
+        adjective = X67_ADJ
+
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    ### AUTHORITARIAN STATE ###
+    dynamic_country_name = {
+        name = dyn_c_x67_state
+        adjective = X67_ADJ
+
+        is_main_tag_only = yes
+        priority = 9
+
+        trigger = {
+            scope:actor ?= {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_single_party_state
+                }
+                NOT = { has_law_or_variant = law_type:law_monarchy }
+                NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
