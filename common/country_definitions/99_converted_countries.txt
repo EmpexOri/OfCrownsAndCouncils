@@ -10677,10 +10677,10 @@ W95 ?= {
 W96 ?= {
 	color = { 20 16 38 }
 	country_type = recognized
-	tier = city_state
-	cultures = { tatar }
+	tier = principality
+	cultures = { ugrian }
 	religion = sunni
-	capital = STATE_SAMARA
+	capital = STATE_TOBOLSK
 }
 
 W97 ?= {

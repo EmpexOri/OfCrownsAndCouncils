@@ -356,6 +356,7 @@
 		set_relations = { country = c:TAR value = 35 }
 		set_relations = { country = c:VEN value = 50 }
 		set_relations = { country = c:W95 value = 35 }
+		set_relations = { country = c:W96 value = 45 }
 		set_relations = { country = c:WAL value = 35 }
 		set_relations = { country = c:X65 value = 35 }
 	}
@@ -639,6 +640,9 @@
 		set_relations = { country = c:X41 value = -100 }
 	}
 	c:W95 ?= {
+		set_relations = { country = c:PLC value = 35 }
+	}
+	c:W96 ?= {
 		set_relations = { country = c:PLC value = 35 }
 	}
 	c:W97 ?= {

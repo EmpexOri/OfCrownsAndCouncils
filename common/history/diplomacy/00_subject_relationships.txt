@@ -462,6 +462,15 @@
 		}
 	}
 	c:W95 ?= {
+		add_liberty_desire = -30.712
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:W96
+			type = puppet
+		}
+	}
+	c:W96 ?= {
 		add_liberty_desire = -40.712
 	}
 	c:PLC ?= {

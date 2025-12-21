@@ -2651,6 +2651,28 @@
 				activate_production_methods = { "pm_no_organization" }
 			}
 			create_building = {
+				building = "building_opium_plantation"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 30
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_trade_center"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 20
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
 				building = "building_dye_plantation"
 				add_ownership = {
 					building = {
@@ -4535,6 +4557,28 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_no_organization" }
+			}
+			create_building = {
+				building = "building_opium_plantation"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 30
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_trade_center"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 20
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 			create_building = {
 				building = "building_dye_plantation"
@@ -8367,7 +8411,7 @@
 				add_ownership = {
 					country = {
 						country = c:CHI
-						levels = 161
+						levels = 30
 					}
 				}
 				reserves = 1
@@ -9879,7 +9923,7 @@
 					building = {
 						type = building_government_administration
 						country = c:MUG
-						levels = 18
+						levels = 25
 						region = STATE_DELHI
 					}
 				}
@@ -14598,13 +14642,13 @@
 		}
 	}
 	s:STATE_GUANGDONG = {
-		region_state:DAI = {
+		region_state:CHI = {
 			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_GUANGDONG
 					}
@@ -14612,7 +14656,7 @@
 				add_ownership = {
 					building = {
 						type = building_logging_camp
-						country = c:DAI
+						country = c:CHI
 						levels = 4
 						region = STATE_GUANGDONG
 					}
@@ -14624,7 +14668,7 @@
 				building = "building_naval_base"
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 5
 					}
 				}
@@ -14632,11 +14676,22 @@
 				activate_production_methods = { "pm_no_naval_theory" }
 			}
 			create_building = {
+				building = "building_trade_center"
+				add_ownership = {
+					country = {
+						country = c:CHI
+						levels = 25
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
 				building = "building_rice_farm"
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 8
 						region = STATE_GUANGDONG
 					}
@@ -14649,7 +14704,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 11
 						region = STATE_GUANGDONG
 					}
@@ -14662,14 +14717,14 @@
 				add_ownership = {
 					building = {
 						type = building_paper_mills
-						country = c:DAI
+						country = c:CHI
 						levels = 3
 						region = STATE_GUANGDONG
 					}
 				}
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 					}
 				}
@@ -14681,7 +14736,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_GUANGDONG
 					}
@@ -14689,7 +14744,7 @@
 				add_ownership = {
 					building = {
 						type = building_glassworks
-						country = c:DAI
+						country = c:CHI
 						levels = 4
 						region = STATE_GUANGDONG
 					}
@@ -14701,7 +14756,7 @@
 				building = "building_port"
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 					}
 				}
@@ -14827,13 +14882,11 @@
 				reserves = 1
 				activate_production_methods = { }
 			}
-		}
-		region_state:DAI = {
 			create_building = {
 				building = "building_construction_sector"
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 					}
 				}
@@ -14844,7 +14897,7 @@
 				building = "building_barracks"
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 23
 					}
 				}
@@ -14856,7 +14909,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_GUANGXI
 					}
@@ -14864,7 +14917,7 @@
 				add_ownership = {
 					building = {
 						type = building_logging_camp
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_GUANGXI
 					}
@@ -14877,7 +14930,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 3
 						region = STATE_GUANGXI
 					}
@@ -14890,7 +14943,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 7
 						region = STATE_GUANGXI
 					}
@@ -14903,7 +14956,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 4
 						region = STATE_GUANGXI
 					}
@@ -15144,20 +15197,7 @@
 					building = {
 						type = building_manor_house
 						country = c:CHI
-						levels = 3
-						region = STATE_GUIZHOU
-					}
-				}
-				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				add_ownership = {
-					building = {
-						type = building_manor_house
-						country = c:CHI
-						levels = 5
+						levels = 8
 						region = STATE_GUIZHOU
 					}
 				}
@@ -15723,7 +15763,7 @@
 				add_ownership = {
 					country = {
 						country = c:CHI
-						levels = 165
+						levels = 30
 					}
 				}
 				reserves = 1
@@ -19472,7 +19512,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 1
+						levels = 5
 						region = STATE_KIEV
 					}
 				}
@@ -25916,12 +25956,12 @@
 				activate_production_methods = { "pm_basic_port" }
 			}
 		}
-		region_state:W95 = {
+		region_state:W96 = {
 			create_building = {
 				building = "building_port"
 				add_ownership = {
 					country = {
-						country = c:W95
+						country = c:PLC
 						levels = 1
 					}
 				}
@@ -28060,13 +28100,14 @@
 		}
 	}
 	s:STATE_NOVGOROD = {
-		region_state:PLC = {
+		region_state:W66 = {
 			create_building = {
+				create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
 						type = building_logging_camp
-						country = c:PLC
+						country = c:W66
 						levels = 1
 						region = STATE_NOVGOROD
 					}
@@ -28079,7 +28120,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:PLC
+						country = c:W66
 						levels = 1
 						region = STATE_NOVGOROD
 					}
@@ -28087,9 +28128,6 @@
 				reserves = 1
 				activate_production_methods = { "pm_no_secondary" }
 			}
-		}
-		region_state:W66 = {
-			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
@@ -29777,30 +29815,6 @@
 				activate_production_methods = { "pm_no_hardwood" "pm_saw_mills" }
 			}
 		}
-		region_state:W95 = {
-			create_building = {
-				building = "building_construction_sector"
-				add_ownership = {
-					country = {
-						country = c:W95
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
-				building = "building_barracks"
-				add_ownership = {
-					country = {
-						country = c:W95
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_no_organization" }
-			}
-		}
 	}
 	s:STATE_PERNAMBUCO = {
 		region_state:BRZ = {
@@ -30501,13 +30515,13 @@
 		}
 	}
 	s:STATE_PSKOV = {
-		region_state:PLC = {
+		region_state:W66 = {
 			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
 						type = building_logging_camp
-						country = c:PLC
+						country = c:W66
 						levels = 1
 						region = STATE_PSKOV
 					}
@@ -30520,7 +30534,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:PLC
+						country = c:W66
 						levels = 1
 						region = STATE_PSKOV
 					}
@@ -30533,7 +30547,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:PLC
+						country = c:W66
 						levels = 2
 						region = STATE_PSKOV
 					}
@@ -33302,7 +33316,7 @@
 				add_ownership = {
 					country = {
 						country = c:CHI
-						levels = 140
+						levels = 30
 					}
 				}
 				reserves = 1
@@ -33737,14 +33751,12 @@
 				reserves = 1
 				activate_production_methods = { "pm_basic_port" }
 			}
-		}
-		region_state:DAI = {
 			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
 						type = building_logging_camp
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_SHAOZHOU
 					}
@@ -33757,7 +33769,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 3
 						region = STATE_SHAOZHOU
 					}
@@ -33770,7 +33782,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:DAI
+						country = c:CHI
 						levels = 9
 						region = STATE_SHAOZHOU
 					}
@@ -33783,7 +33795,7 @@
 				add_ownership = {
 					building = {
 						type = building_iron_mine
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 						region = STATE_SHAOZHOU
 					}
@@ -33795,7 +33807,7 @@
 				building = "building_port"
 				add_ownership = {
 					country = {
-						country = c:DAI
+						country = c:CHI
 						levels = 1
 					}
 				}
@@ -33962,25 +33974,12 @@
 				activate_production_methods = { "pm_no_hardwood" "pm_saw_mills" }
 			}
 			create_building = {
-				building = "building_opium_plantation"
-				add_ownership = {
-					building = {
-						type = building_manor_house
-						country = c:CHI
-						levels = 11
-						region = STATE_SICHUAN
-					}
-				}
-				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
 				building = "building_livestock_ranch"
 				add_ownership = {
 					building = {
 						type = building_manor_house
 						country = c:CHI
-						levels = 8
+						levels = 19
 						region = STATE_SICHUAN
 					}
 				}
@@ -33992,7 +33991,7 @@
 				add_ownership = {
 					country = {
 						country = c:CHI
-						levels = 128
+						levels = 25
 					}
 				}
 				reserves = 1
@@ -35739,7 +35738,7 @@
 				add_ownership = {
 					country = {
 						country = c:W73
-						levels = 724
+						levels = 90
 					}
 				}
 				reserves = 1
@@ -37002,13 +37001,13 @@
 		}
 	}
 	s:STATE_TOBOLSK = {
-		region_state:W95 = {
+		region_state:W96 = {
 			create_building = {
 				building = "building_rye_farm"
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:W95
+						country = c:W96
 						levels = 2
 						region = STATE_TOBOLSK
 					}
@@ -37021,7 +37020,7 @@
 				add_ownership = {
 					building = {
 						type = building_coal_mine
-						country = c:W95
+						country = c:W96
 						levels = 1
 						region = STATE_TOBOLSK
 					}
@@ -37033,7 +37032,7 @@
 				building = "building_government_administration"
 				add_ownership = {
 					country = {
-						country = c:W95
+						country = c:W96
 						levels = 2
 					}
 				}
@@ -38814,13 +38813,13 @@
 		}
 	}
 	s:STATE_URAL = {
-		region_state:W95 = {
+		region_state:TAR = {
 			create_building = {
 				building = "building_livestock_ranch"
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:W95
+						country = c:TAR
 						levels = 1
 						region = STATE_URAL
 					}
@@ -38833,7 +38832,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:W95
+						country = c:TAR
 						levels = 2
 						region = STATE_URAL
 					}
@@ -40864,11 +40863,22 @@
 				activate_production_methods = { }
 			}
 			create_building = {
+				building = "building_opium_plantation"
+				add_ownership = {
+					country = {
+						country = c:MUG
+						levels = 25
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
 				building = "building_trade_center"
 				add_ownership = {
 					country = {
 						country = c:MUG
-						levels = 2
+						levels = 10
 					}
 				}
 				reserves = 1

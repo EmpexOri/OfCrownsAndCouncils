@@ -1126,6 +1126,19 @@
 			10 = { set_strategy = ai_strategy_progressive_agenda }
 		}
 	}
+	c:W96 = {
+		set_strategy = ai_strategy_placate_population
+		random_list = {
+			75 = { set_strategy = ai_strategy_armed_isolationism }
+			25 = { set_strategy = ai_strategy_colonial_expansion }
+			50 = { set_strategy = ai_strategy_economic_imperialism }
+			50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			10 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}
 	c:W97 = {
 		random_list = {
 			25 = { set_strategy = ai_strategy_placate_population }

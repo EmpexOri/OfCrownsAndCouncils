@@ -89,7 +89,7 @@
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_hereditary_bureaucrats
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
@@ -101,11 +101,11 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_tenant_farmers
-		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_no_womens_rights
 		ig:ig_landowners = {
 			add_ideology = ideology_dummy_pious_01
  			add_ideology = ideology_dummy_pious_02
@@ -125,10 +125,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:ALK ?= {
@@ -189,7 +185,7 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_parliamentary_republic
 		activate_law = law_type:law_protectionism
-		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_women_own_property
@@ -204,10 +200,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:ARP ?= {
@@ -259,8 +251,8 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urbanization
 		activate_law = law_type:law_closed_borders
-		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_mercantilism
@@ -273,8 +265,8 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
@@ -285,10 +277,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:AYI ?= {
@@ -340,17 +328,13 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:BAV ?= {
@@ -431,7 +415,7 @@
 		}
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 2
 		}
 	}
 	c:BEN ?= {
@@ -512,8 +496,8 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
 		ig:ig_landowners = {
@@ -527,16 +511,12 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:BLE ?= {
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
 		effect_starting_technology_tier_7_tech = yes
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slave_trade
 	}
 	c:BLF ?= {
 		add_technology_researched = enclosure
@@ -572,13 +552,13 @@
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
 		effect_starting_technology_tier_7_tech = yes
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slave_trade
 	}
 	c:BOB ?= {
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
 		effect_starting_technology_tier_7_tech = yes
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slave_trade
 	}
 	c:BOR ?= {
 		add_technology_researched = academia
@@ -843,7 +823,7 @@
 		}
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 2
 		}
 	}
 	c:BYZ ?= {
@@ -972,7 +952,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_no_womens_rights
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 1
@@ -1074,7 +1054,7 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_serfdom
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
@@ -1212,7 +1192,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_tenant_farmers
 		ig:ig_landowners = {
@@ -1225,10 +1205,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:CHI ?= {
@@ -1255,7 +1231,7 @@
 		add_technology_researched = urbanization
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_canton_system
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_no_police
 		activate_law = law_type:law_closed_borders
@@ -1273,7 +1249,7 @@
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_no_womens_rights
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
  			remove_ideology = ideology_pious
@@ -1283,10 +1259,6 @@
 			remove_ideology = ideology_paternalistic
  			add_ideology = ideology_scholar_paternalistic
  		}
-		set_institution_investment_level = {
-			institution = institution_police
-			level = 1
-		}
 	}
 	c:CHK ?= {
 		add_technology_researched = enclosure
@@ -1473,10 +1445,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:CMI ?= {
 		add_technology_researched = admiralty
@@ -1645,10 +1613,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:CUB ?= {
 		add_technology_researched = academia
@@ -1725,10 +1689,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:DA0 ?= {
 		effect_native_conscription_3 = yes
@@ -1784,7 +1744,7 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_serfdom
 	}
 	c:DAK ?= {
 		effect_native_conscription_3 = yes
@@ -1935,10 +1895,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:EI1 ?= {
 		effect_native_conscription_3 = yes
@@ -1996,10 +1952,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:FNG ?= {
@@ -2389,7 +2341,7 @@
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
 		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_hereditary_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_no_police
@@ -2413,6 +2365,7 @@
 			institution = institution_police
 			level = 1
 		}
+		add_journal_entry = { type = je_terakoya }
 	}
 	c:K03 ?= {
 		effect_native_conscription_3 = yes
@@ -2526,7 +2479,7 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_serfdom
@@ -2540,10 +2493,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:KG1 ?= {
@@ -2594,7 +2543,7 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
@@ -2602,10 +2551,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:KOR ?= {
@@ -2716,10 +2661,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:L04 ?= {
 		effect_native_conscription_3 = yes
@@ -2789,10 +2730,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:LAN ?= {
 		add_technology_researched = admiralty
@@ -2845,10 +2782,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:LAO ?= {
@@ -3031,7 +2964,7 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
@@ -3046,10 +2979,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:MAL ?= {
@@ -3094,10 +3023,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:MDK ?= {
@@ -3277,10 +3202,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:MPH ?= {
@@ -3658,10 +3579,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:NET ?= {
 		add_technology_researched = academia
@@ -3811,10 +3728,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:NOR ?= {
@@ -4029,10 +3942,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:OUA ?= {
 		effect_native_conscription_3 = yes
@@ -4151,7 +4060,7 @@
 		activate_law = law_type:law_no_police
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_traditionalism
@@ -4164,10 +4073,6 @@
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:PLC ?= {
@@ -4225,10 +4130,10 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_no_schools
-		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_subjecthood
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slavery_banned
 		set_ruling_interest_groups = {
 			ig_industrialists 
 		}
@@ -4243,16 +4148,8 @@
 			add_ideology = ideology_paternalistic
 		}
 		set_institution_investment_level = {
-			institution = institution_colonial_affairs
-			level = 1
-		}
-		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:PLT ?= {
@@ -4438,7 +4335,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_local_police
-		activate_law = law_type:law_poor_laws
+		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_religious_schools
@@ -4449,10 +4346,6 @@
 		ig:ig_landowners = {
 			add_ideology = ideology_dummy_pious_02
  		}
-		set_institution_investment_level = {
-			institution = institution_colonial_affairs
-			level = 1
-		}
 		set_institution_investment_level = {
 			institution = institution_health_system
 			level = 1
@@ -4537,10 +4430,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:SG1 ?= {
@@ -4700,7 +4589,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
@@ -4715,10 +4604,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:SM1 ?= {
@@ -4773,10 +4658,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:T01 ?= {
@@ -4903,17 +4784,13 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_serfdom
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:TBI ?= {
@@ -5047,10 +4924,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:TWT ?= {
@@ -5260,10 +5133,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:V19 ?= {
 		add_technology_researched = enclosure
@@ -5334,10 +5203,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_traditionalism
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:V23 ?= {
 		add_technology_researched = academia
@@ -5397,7 +5262,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
@@ -5405,10 +5270,6 @@
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:V28 ?= {
@@ -5468,7 +5329,7 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_protectionism
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_traditionalism
@@ -5479,10 +5340,6 @@
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:V30 ?= {
@@ -5514,7 +5371,7 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_traditionalism
@@ -5522,10 +5379,6 @@
 			add_ideology = ideology_dummy_pious_01
  			add_ideology = ideology_dummy_pious_02
  		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:V35 ?= {
 		add_technology_researched = centralization
@@ -5805,8 +5658,8 @@
 		effect_starting_technology_tier_7_tech = yes
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_local_police
@@ -5818,22 +5671,18 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_serfdom
 		ig:ig_landowners = {
 			add_ideology = ideology_dummy_pious_01
  		}
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W29 ?= {
@@ -5958,7 +5807,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
@@ -5970,10 +5819,6 @@
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W37 ?= {
@@ -6165,10 +6010,10 @@
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_dedicated_police
-		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_national_supremacy
@@ -6178,17 +6023,18 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_serfdom
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
  			remove_ideology = ideology_pious
  			add_ideology = ideology_confucian
  		}
 		ig:ig_landowners = {
-			add_ideology = ideology_dummy_pious_02
+			remove_ideology = ideology_paternalistic
+ 			add_ideology = ideology_scholar_paternalistic
  		}
 		set_institution_investment_level = {
 			institution = institution_home_affairs
@@ -6197,10 +6043,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W42 ?= {
@@ -6353,7 +6195,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
@@ -6369,10 +6211,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W52 ?= {
@@ -6593,8 +6431,8 @@
 		activate_law = law_type:law_no_health_system
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
@@ -6610,10 +6448,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W64 ?= {
@@ -6668,10 +6502,6 @@
 			institution = institution_home_affairs
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:W66 ?= {
 		add_technology_researched = academia
@@ -6723,7 +6553,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_serfdom
@@ -6743,10 +6573,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W69 ?= {
@@ -6871,7 +6697,7 @@
 		add_technology_researched = urbanization
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_closed_borders
-		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_isolationism
@@ -6888,21 +6714,17 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_tenant_farmers
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
  			remove_ideology = ideology_pious
  			add_ideology = ideology_confucian
  		}
-		set_institution_investment_level = {
-			institution = institution_home_affairs
-			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
+		ig:ig_landowners = {
+			remove_ideology = ideology_paternalistic
+ 			add_ideology = ideology_scholar_paternalistic
+ 		}
 	}
 	c:W74 ?= {
 		add_technology_researched = academia
@@ -7157,10 +6979,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:W81 ?= {
@@ -7493,9 +7311,73 @@
 			institution = institution_police
 			level = 1
 		}
+	}
+	c:W96 ?= {
+		add_technology_researched = academia
+		add_technology_researched = admiralty
+		add_technology_researched = army_reserves
+		add_technology_researched = artillery
+		add_technology_researched = banking
+		add_technology_researched = centralization
+		add_technology_researched = colonization
+		add_technology_researched = cotton_gin
+		add_technology_researched = currency_standards
+		add_technology_researched = democracy
+		add_technology_researched = dialectics
+		add_technology_researched = distillation
+		add_technology_researched = drydocks
+		add_technology_researched = empiricism
+		add_technology_researched = enclosure
+		add_technology_researched = gunsmithing
+		add_technology_researched = international_relations
+		add_technology_researched = international_trade
+		add_technology_researched = law_enforcement
+		add_technology_researched = line_infantry
+		add_technology_researched = mandatory_service
+		add_technology_researched = manufacturies
+		add_technology_researched = mass_communication
+		add_technology_researched = medical_degrees
+		add_technology_researched = military_drill
+		add_technology_researched = napoleonic_warfare
+		add_technology_researched = navigation
+		add_technology_researched = prospecting
+		add_technology_researched = rationalism
+		add_technology_researched = romanticism
+		add_technology_researched = shaft_mining
+		add_technology_researched = standing_army
+		add_technology_researched = steelworking
+		add_technology_researched = stock_exchange
+		add_technology_researched = tech_bureaucracy
+		add_technology_researched = urban_planning
+		add_technology_researched = urbanization
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_no_social_security
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_no_workers_rights
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_serfdom
 		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
+			institution = institution_colonial_affairs
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
 		}
 	}
 	c:W97 ?= {
@@ -7556,10 +7438,6 @@
 			institution = institution_home_affairs
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:W98 ?= {
 		add_technology_researched = academia
@@ -7618,10 +7496,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:WAL ?= {
@@ -7693,10 +7567,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:WLG ?= {
@@ -7803,10 +7673,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:WTI ?= {
 		effect_native_conscription_3 = yes
@@ -7875,10 +7741,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X10 ?= {
@@ -8063,10 +7925,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:X13 ?= {
 		add_technology_researched = academia
@@ -8165,7 +8023,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
@@ -8182,10 +8040,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X15 ?= {
@@ -8228,7 +8082,7 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
@@ -8242,10 +8096,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X19 ?= {
@@ -8371,10 +8221,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X25 ?= {
@@ -8871,7 +8717,7 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_slavery_banned
@@ -8884,10 +8730,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X57 ?= {
@@ -9033,10 +8875,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:X59 ?= {
 		add_technology_researched = academia
@@ -9140,7 +8978,7 @@
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_no_schools
-		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
@@ -9156,10 +8994,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X61 ?= {
@@ -9197,7 +9031,7 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_no_womens_rights
@@ -9208,10 +9042,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X62 ?= {
@@ -9269,9 +9099,9 @@
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_traditionalism
@@ -9354,7 +9184,7 @@
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_no_womens_rights
@@ -9468,8 +9298,8 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
-		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_no_colonial_affairs
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_hereditary_bureaucrats
@@ -9484,9 +9314,9 @@
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_state_religion
 		set_ruling_interest_groups = {
@@ -9606,7 +9436,7 @@
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_elected_bureaucrats
 		activate_law = law_type:law_free_trade
-		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_no_home_affairs
@@ -9662,7 +9492,7 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_no_home_affairs
 		activate_law = law_type:law_no_colonial_affairs
@@ -9673,9 +9503,9 @@
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_serfdom
 		ig:ig_landowners = {
 			remove_ideology = ideology_paternalistic
  			add_ideology = ideology_republican_paternalistic
@@ -9687,10 +9517,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:X69 ?= {
@@ -9935,10 +9761,6 @@
 			institution = institution_police
 			level = 1
 		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:X79 ?= {
 		add_technology_researched = admiralty
@@ -9982,10 +9804,6 @@
 		ig:ig_landowners = {
 			add_ideology = ideology_dummy_pious_01
  		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
-		}
 	}
 	c:X80 ?= {
 		add_technology_researched = academia
@@ -10168,9 +9986,9 @@
 		activate_law = law_type:law_protectionism
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_interventionism
 		ig:ig_landowners = {
 			add_ideology = ideology_dummy_pious_02
  		}
@@ -10474,10 +10292,6 @@
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 1
-		}
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 3
 		}
 	}
 	c:ZND ?= {
