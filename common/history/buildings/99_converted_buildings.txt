@@ -4832,6 +4832,7 @@
 				reserves = 1
 				activate_production_methods = { "pm_atmospheric_engine_pump_building_coal_mine" }
 			}
+			
 			create_building = {
 				building = "building_furniture_manufacturies"
 				add_ownership = {
@@ -4873,6 +4874,32 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_pot_stills" }
+			}
+			create_building = {
+				building = "building_iron_mine"
+				add_ownership = {
+					building = {
+						type = building_iron_mine
+						country = c:SAX
+						levels = 3
+						region = STATE_BOHEMIA
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_steel_mills"
+				add_ownership = {
+					building = {
+						type = building_steel_mills
+						country = c:SAX
+						levels = 3
+						region = STATE_BOHEMIA
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 		}
 	}
@@ -12157,7 +12184,7 @@
 					building = {
 						type = building_financial_district
 						country = c:X40
-						levels = 1
+						levels = 2
 						region = STATE_EMILIA
 					}
 				}
@@ -12882,6 +12909,19 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_basic_port" }
+			}
+			create_building = {
+				building = "building_sugar_plantation"
+				add_ownership = {
+					building = {
+						type = building_manor_house
+						country = c:X69
+						levels = 15
+						region = STATE_FLORIDA
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 		}
 	}
@@ -15482,7 +15522,7 @@
 					building = {
 						type = building_financial_district
 						country = c:SAX
-						levels = 1
+						levels = 4
 						region = STATE_HANNOVER
 					}
 				}
@@ -15527,7 +15567,7 @@
 					building = {
 						type = building_manor_house
 						country = c:SAX
-						levels = 4
+						levels = 5
 						region = STATE_HANNOVER
 					}
 				}
@@ -15553,7 +15593,33 @@
 					building = {
 						type = building_tooling_workshops
 						country = c:SAX
-						levels = 1
+						levels = 3
+						region = STATE_HANNOVER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
+				building = "building_paper_mills"
+				add_ownership = {
+					building = {
+						type = building_paper_mills
+						country = c:SAX
+						levels = 2
+						region = STATE_HANNOVER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
+				building = "building_arms_industry"
+				add_ownership = {
+					building = {
+						type = building_arms_industry
+						country = c:SAX
+						levels = 2
 						region = STATE_HANNOVER
 					}
 				}
@@ -15565,7 +15631,7 @@
 				add_ownership = {
 					country = {
 						country = c:SAX
-						levels = 7
+						levels = 9
 					}
 				}
 				reserves = 1
@@ -32896,6 +32962,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_vertical_filing_cabinets" }
+			}
+			create_building = {
+				building = "building_livestock_ranch"
+				add_ownership = {
+					building = {
+						type = building_manor_house
+						country = c:SAX
+						levels = 7
+					}
+				}
+				reserves = 1
 			}
 		}
 		region_state:X41 = {
