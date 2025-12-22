@@ -2072,7 +2072,7 @@
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_no_home_affairs
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_type:law_poor_laws
+		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_protectionism
 		activate_law = law_type:law_interventionism
@@ -2104,10 +2104,6 @@
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 3
-		}
-		set_institution_investment_level = {
-			institution = institution_social_security
-			level = 1
 		}
 	}
 	c:GML ?= {
