@@ -73,7 +73,12 @@ GLOBAL = {
 	c:PLC ?= {
 		trigger_event = {
 			id = eastern_snow.1
-			days = 1
+			days = 30
+		}
+	}
+	c:PLC ?= {
+		trigger_event = {
+			id = polish_regency.1
 		}
 	}
 # maybe a future event to generate starting radicals from unrest?

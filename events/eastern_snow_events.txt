@@ -58,7 +58,6 @@ eastern_snow.2 = {
     duration = 3
     cooldown = { days = very_long_modifier_time }
 
-    # Trigger normally after March 1
     trigger = {
         c:PLC ?= ROOT
         NOT = { has_variable = eastern_snow_je_added }
@@ -75,5 +74,45 @@ eastern_snow.2 = {
     option = {
         name = eastern_snow.2.a
         default_option = yes
+    }
+}
+
+namespace = polish_regency
+
+polish_regency.1 = {
+    type = country_event
+    placement = root
+
+    title = polish_regency.1.t
+    desc = polish_regency.1.d
+    flavor  = polish_regency.1.f
+    icon = "gfx/interface/icons/event_icons/event_snow.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+    trigger = {
+        c:PLC ?= ROOT
+        NOT = { has_variable = je_polish_regency }
+    }
+
+    immediate = {
+        if = {
+            limit = { c:PLC = ROOT }
+            add_journal_entry = { type = je_polish_regency }
+            set_variable = polish_regency_je_added
+        }
+    }
+
+    option = {
+        name = polish_regency.1.a
+        default_option = yes
+		add_modifier = {
+			name = modifier_regency_of_aasa
+			years = 15
+		}
     }
 }

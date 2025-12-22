@@ -53,3 +53,14 @@ arts_of_the_eastern_snow = {
 
 	desc = arts_of_the_eastern_snow_desc
 }
+
+modifier_regency_of_aasa = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds"
+
+	interest_group_ig_armed_forces_approval_add = -3
+	interest_group_ig_devout_approval_add = -3
+	interest_group_ig_intelligentsia_pol_str_mult = 0.05
+	months = 240
+
+	desc = modifier_regency_of_aasa_desc
+}
