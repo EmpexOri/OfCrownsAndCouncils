@@ -1,0 +1,22 @@
+﻿country_event = {
+	id = eastern_snow.1
+	title = eastern_snow.1.t
+	desc = eastern_snow.1.d
+	picture = "gfx/interface/icons/event_icons/event_snow.dds"
+
+	trigger = {
+		has_country_tag = PLC
+		has_journal_entry = je_seeking_glory_in_eastern_snow
+	}
+
+	immediate = {
+		change_variable = {
+			name = eastern_snow_var
+			add = 1
+		}
+	}
+
+	option = {
+		name = eastern_snow.1.a
+	}
+}

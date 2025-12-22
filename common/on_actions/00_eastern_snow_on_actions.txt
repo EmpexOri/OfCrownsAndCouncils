@@ -1,0 +1,15 @@
+﻿on_war_ended = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = {
+					has_country_tag = PLC
+					has_journal_entry = je_seeking_glory_in_eastern_snow
+				}
+			}
+			trigger_event = {
+				id = eastern_snow.1
+			}
+		}
+	}
+}

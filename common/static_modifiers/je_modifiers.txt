@@ -42,3 +42,12 @@ mughal_bureaucracy = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_bureaucracy_mult = 0.20
 }
+
+arts_of_the_eastern_snow = {
+	icon = "gfx/interface/icons/modifiers/modifier_intelligentsia.dds"
+
+	intelligentsia_political_strength_mult = 0.20
+	prestige_mult = 0.05
+
+	desc = arts_of_the_eastern_snow_desc
+}

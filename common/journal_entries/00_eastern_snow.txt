@@ -1,0 +1,47 @@
+﻿je_seeking_glory_in_eastern_snow = {
+	icon = "gfx/interface/icons/event_icons/event_snow.dds"
+
+	group = je_group_poland
+
+	# Show only for PLC, same pattern as your Mughal JEs
+	is_shown_in_lobby = {
+		c:PLC = THIS
+	}
+
+	# Completion is goal-based, not tag-based
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	# Progress tracking
+	current_value = {
+		value = var:eastern_snow_var
+	}
+
+	goal_add_value = {
+		add = 3
+	}
+
+	progressbar = yes
+
+	# Reward
+	on_complete = {
+		add_modifier = {
+			name = arts_of_the_eastern_snow
+			duration = 3650 # 10 years
+		}
+		set_variable = eastern_snow_complete
+	}
+
+	# Optional timeout (mirrors Tanzimat pacing)
+	timeout = 10950
+
+	on_timeout = {
+		set_variable = eastern_snow_failed
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

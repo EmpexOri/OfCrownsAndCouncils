@@ -63,6 +63,10 @@ converter_game_started = {
 					remove_variable = potential_atheist_culture
 				}
 			}
+			if = {
+				limit = { has_country_tag = PLC }
+				add_journal_entry = je_seeking_glory_in_eastern_snow
+			}
 		}
 	}
 }
