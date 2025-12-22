@@ -54,7 +54,7 @@ eastern_snow.2 = {
     title = eastern_snow.2.t
     desc = eastern_snow.2.d
     flavor  = eastern_snow.2.f
-    icon = "gfx/interface/icons/event_icons/event_snow.dds"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
     cooldown = { days = very_long_modifier_time }
 
@@ -86,13 +86,15 @@ polish_regency.1 = {
     title = polish_regency.1.t
     desc = polish_regency.1.d
     flavor  = polish_regency.1.f
-    icon = "gfx/interface/icons/event_icons/event_snow.dds"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
     cooldown = { days = very_long_modifier_time }
 
 	event_image = {
 		video = "votp_monarch_holding_court"
 	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
     trigger = {
         c:PLC ?= ROOT
@@ -114,5 +116,30 @@ polish_regency.1 = {
 			name = modifier_regency_of_aasa
 			years = 15
 		}
+    }
+}
+
+polish_regency.2 = {
+    type = country_event
+    placement = root
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+    title = polish_regency.2.t
+    desc = polish_regency.2.d
+    flavor = polish_regency.2.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    trigger = {
+        tag = PLC
+        NOT = { has_variable = je_polish_regency }
+    }
+
+    option = {
+        name = polish_regency.2.a
+        default_option = yes
+        remove_modifier = modifier_regency_of_aasa
     }
 }
