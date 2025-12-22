@@ -1,0 +1,27 @@
+﻿je_reclaiming_meridia = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_french_america
+
+	is_shown_in_lobby = {
+		c:W38 = THIS
+    }
+
+	complete = {
+		OR = {
+            c:BRZ = { is_subject_of = ROOT }
+            c:BRZ = { 
+                gdp_ownership_ratio = {
+                    target = ROOT
+                    value > 0.3
+                }
+            }
+        }
+	}
+
+	on_complete = {
+		set_variable = reclaiming_meridia_completed
+	}
+
+    weight = 10000
+}

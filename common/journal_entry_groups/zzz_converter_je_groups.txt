@@ -7,3 +7,5 @@ je_group_converter_new = {
 }
 
 je_group_tanzimat_mug = {}
+
+je_french_america = {}

@@ -81,5 +81,10 @@ GLOBAL = {
 			id = polish_regency.1
 		}
 	}
+	c:W38 ?= {
+		trigger_event = {
+			id = reclaiming_meridia.1
+		}
+	}
 # maybe a future event to generate starting radicals from unrest?
 }
