@@ -43,8 +43,8 @@
 			first_name = "Shoh_Jahon"
 			last_name = "Borjigin"
 			heir = yes
-			interest_group = ig_landowners
-			ideology = ideology_land_reformer
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
 			culture = cu:mongol
 			religion = rel:tengri_pagan_reformed
 			birth_date = 1800.8.7
@@ -59,8 +59,8 @@
 			ruler = yes
 			is_general = yes
 			commander_rank = commander_rank_2
-			interest_group = ig_landowners
-			ideology = ideology_authoritarian
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
 			culture = cu:mongol
 			religion = rel:tengri_pagan_reformed
 			birth_date = 1769.11.24
