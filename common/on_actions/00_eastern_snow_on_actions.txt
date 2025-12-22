@@ -13,3 +13,9 @@
 		}
 	}
 }
+c:PLC ?= {
+	trigger_event = {
+		id = eastern_snow.1
+		days = 1
+	}
+}

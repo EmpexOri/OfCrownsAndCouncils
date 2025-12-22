@@ -44,10 +44,12 @@ mughal_bureaucracy = {
 }
 
 arts_of_the_eastern_snow = {
-	icon = "gfx/interface/icons/modifiers/modifier_intelligentsia.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds"
 
-	intelligentsia_political_strength_mult = 0.20
-	prestige_mult = 0.05
+	interest_group_ig_intelligentsia_approval_add = 2
+	interest_group_ig_landowners_approval_add = 2
+	interest_group_ig_intelligentsia_pol_str_mult = 0.05
+	months = 120
 
 	desc = arts_of_the_eastern_snow_desc
 }

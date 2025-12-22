@@ -13,15 +13,26 @@
 	}
 
 	complete = {
-		c:W66 = {
-			is_subject_of = ROOT
+		OR = {
+			OR = {
+				exists = c:W66
+				c:W66 = { is_subject_of = ROOT }
+			}
+			OR = {
+				exists = c:PLC
+				c:PLC = {
+					owns_entire_state_region = STATE_PSKOV
+					owns_entire_state_region = STATE_NOVGOROD
+					owns_entire_state_region = STATE_TVER
+				}
+			}
 		}
 	}
 
 	on_complete = {
 		add_modifier = {
 			name = arts_of_the_eastern_snow
-			duration = 3650  # 10 years
+			months = 120
 		}
 		set_variable = eastern_snow_complete
 	}
