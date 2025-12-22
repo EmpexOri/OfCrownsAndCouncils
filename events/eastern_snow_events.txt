@@ -7,9 +7,13 @@ eastern_snow.1 = {
     title = eastern_snow.1.t
     desc = eastern_snow.1.d
     flavor  = eastern_snow.1.f
-    icon = "gfx/interface/icons/event_icons/event_snow.dds"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
     cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
 
     # Trigger normally after March 1
     trigger = {
@@ -39,6 +43,37 @@ eastern_snow.1 = {
 
     option = {
         name = eastern_snow.1.a
+        default_option = yes
+    }
+}
+
+eastern_snow.2 = {
+    type = country_event
+    placement = root
+
+    title = eastern_snow.2.t
+    desc = eastern_snow.2.d
+    flavor  = eastern_snow.2.f
+    icon = "gfx/interface/icons/event_icons/event_snow.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+    # Trigger normally after March 1
+    trigger = {
+        c:PLC ?= ROOT
+        NOT = { has_variable = eastern_snow_je_added }
+    }
+
+    immediate = {
+        if = {
+            limit = { c:PLC = ROOT }
+            add_journal_entry = { type = je_seeking_glory_in_eastern_snow }
+            set_variable = eastern_snow_je_added
+        }
+    }
+
+    option = {
+        name = eastern_snow.2.a
         default_option = yes
     }
 }

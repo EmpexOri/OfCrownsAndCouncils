@@ -14,17 +14,11 @@
 
 	complete = {
 		OR = {
-			OR = {
-				exists = c:W66
-				c:W66 = { is_subject_of = ROOT }
-			}
-			OR = {
-				exists = c:PLC
-				c:PLC = {
-					owns_entire_state_region = STATE_PSKOV
-					owns_entire_state_region = STATE_NOVGOROD
-					owns_entire_state_region = STATE_TVER
-				}
+			c:W66 = { is_subject_of = ROOT }
+			c:PLC = {
+				owns_entire_state_region = STATE_PSKOV
+				owns_entire_state_region = STATE_NOVGOROD
+				owns_entire_state_region = STATE_TVER
 			}
 		}
 	}
