@@ -1,22 +1,22 @@
-﻿country_event = {
-	id = eastern_snow.1
+﻿namespace = eastern_snow
+
+country_event = {
+	id = 1
+
 	title = eastern_snow.1.t
 	desc = eastern_snow.1.d
-	picture = "gfx/interface/icons/event_icons/event_snow.dds"
+
+	icon = "gfx/interface/icons/event_icons/event_snow.dds"
 
 	trigger = {
-		has_country_tag = PLC
-		has_journal_entry = je_seeking_glory_in_eastern_snow
-	}
-
-	immediate = {
-		change_variable = {
-			name = eastern_snow_var
-			add = 1
-		}
+		c:PLC = ROOT
 	}
 
 	option = {
 		name = eastern_snow.1.a
+
+		add_journal_entry = {
+			type = je_seeking_glory_in_eastern_snow
+		}
 	}
 }

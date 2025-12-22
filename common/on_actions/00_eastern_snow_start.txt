@@ -1,0 +1,13 @@
+﻿on_game_start = {
+	effect = {
+		if = {
+			limit = {
+				c:PLC = ROOT
+				NOT = { has_journal_entry = je_seeking_glory_in_eastern_snow }
+			}
+			trigger_event = {
+				id = eastern_snow.1
+			}
+		}
+	}
+}

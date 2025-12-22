@@ -10406,7 +10406,7 @@ W65 ?= {
 
 W66 ?= {
 	color = { 136 158 183 }
-	country_type = recognized
+	country_type = unrecognized
 	tier = principality
 	cultures = { estonian }
 	religion = catholic
