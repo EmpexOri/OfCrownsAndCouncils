@@ -26,9 +26,13 @@
 	on_complete = {
 		add_modifier = {
 			name = arts_of_the_eastern_snow
-			months = 120
+			months = 121
 		}
 		set_variable = eastern_snow_complete
+        trigger_event = {
+            id = eastern_snow.2
+            popup = yes
+        }
 	}
 
 	weight = 10000
@@ -92,3 +96,64 @@ je_polish_regency = {
     should_be_pinned_by_default = yes
 }
 
+je_gold_of_golden_horde = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_poland
+
+	is_shown_in_lobby = {
+		c:PLC = THIS
+	}
+
+	possible = {
+		# Optional: require tech or milestone
+		#has_technology_researched = nationalism
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	complete = {
+		OR = {
+			c:X45 = { is_subject_of = ROOT }
+			c:PLC = {
+				owns_entire_state_region = STATE_TOMSK
+				owns_entire_state_region = STATE_SURGUT
+				owns_entire_state_region = STATE_OB
+				owns_entire_state_region = STATE_UPPER_YENISEYSK
+				owns_entire_state_region = STATE_KRASNOYARSK
+				owns_entire_state_region = STATE_YAKUTSK
+				owns_entire_state_region = STATE_OKHOTSK
+				owns_entire_state_region = STATE_KOLYMA
+				owns_entire_state_region = STATE_CHUKOTKA
+				owns_entire_state_region = STATE_KAMCHATKA
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_gold_golden_horde
+			years = 10
+		}
+		set_variable = gold_golden_horde_complete
+        trigger_event = {
+            id = eastern_snow.3
+            popup = yes
+        }
+	}
+
+	# Dynamic tooltip showing the ruler’s name
+	custom_tooltip = {
+		text = golden_horde_quest_tt
+		variables = {
+			ruler_name = ruler_scope.GetFirstName
+			pronoun = ruler_scope.GetHerHis
+		}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

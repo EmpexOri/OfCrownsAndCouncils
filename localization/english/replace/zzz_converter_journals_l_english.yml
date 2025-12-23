@@ -80,3 +80,13 @@
     polish_regency.2.d: "The Empress Takes Her Crown"
     polish_regency.2.f: "At eighteen years of age, Aasa Ostrogski stood before the assembled estates and received the crown in her own right, bringing an end to the long Regency that had ruled in her name. As Empress of Poland and Queen of Lithuania, her oath bound two realms together once more, and the weight of the crown now rested fully upon her shoulders."
     polish_regency.2.a: "The Regency Is Ended"
+
+    je_gold_of_golden_horde: "The Gold of the Golden Horde"
+    je_gold_of_golden_horde_reason: "The Commonwealth seeks to claim the Golden Horde’s eastern remnants to demonstrate its restored imperial might, secure the wealth of the Siberian steppes, and legitimize its monarchy in the eyes of nobles, clergy, and foreign observers. Conquest brings prestige, resource bonuses, and enhanced governmental legitimacy."
+    modifier_gold_golden_horde: "Gold of the far East"
+    modifier_polish_internal: "An Internal Focus"
+    eastern_snow.2.t: "The Golden East"
+    eastern_snow.2.d: "The Golden East"
+    eastern_snow.2.f: "Following the successes of the eastern campaigns, the Royal Council turns its attention to the steppes once ruled by the Golden Horde. Buoyed by recent victories and the prestige they brought, merchants, generals, and administrators see the wealth of Siberia’s forests and mineral-rich mountains as the next prize for the Commonwealth, and a chance to further strengthen the state and its legitimacy in the eyes of the nation. Yet not all voices are united, some argue that the time might be better spent consolidating the realm internally rather than venturing further into war."
+    eastern_snow.2.a: "The Council Prepares the Campaign"
+    eastern_snow.2.b: "Perhaps we should instead focus internally, away from war?"
