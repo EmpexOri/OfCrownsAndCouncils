@@ -27,6 +27,9 @@ reclaiming_meridia.1 = {
         add_journal_entry = {
 			type = je_reclaiming_meridia
 		}
+        add_journal_entry = {
+            type = je_reclaiming_aurora
+        }
         add_modifier = {
 			name = modifier_sardo_crown_jewels
 		}
@@ -59,6 +62,37 @@ reclaiming_meridia.2 = {
         name = reclaiming_meridia.2.a
         default_option = yes
         remove_modifier = modifier_sardo_crown_jewels
+        add_modifier = {
+            name = modifier_sardo_crown_jewels_restored
+            years = 5
+        }
+        custom_tooltip = {
+			text = company_possible_tt
+		}
+    }
+}
+
+reclaiming_aurora.1 = {
+    type = country_event
+    placement = root
+
+    title = reclaiming_aurora.1.t
+    desc = reclaiming_aurora.1.d
+    flavor  = reclaiming_aurora.1.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+    trigger = {}
+
+    option = {
+        name = reclaiming_aurora.1.a
+        default_option = yes
         add_modifier = {
             name = modifier_sardo_crown_jewels_restored
             years = 5

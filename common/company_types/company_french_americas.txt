@@ -25,10 +25,7 @@ company_cam = {
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			OR = {
-				has_journal_entry = je_reclaiming_meridia
-				has_variable = reclaiming_meridia_completed
-			}
+			has_variable = reclaiming_meridia_completed
 		}
 	}
 
