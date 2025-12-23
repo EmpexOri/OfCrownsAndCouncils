@@ -117,3 +117,19 @@
     reclaiming_meridia.2.d: "Meridia is Ours"
     reclaiming_meridia.2.f: "With the levers of trade, administration, and finance in Sardo-Burgandian hands once more, Magna Meridia is no longer a distant memory of imperial decline but a functioning pillar of the Empire’s economic order. The great trading houses reclaim their routes, bureaucrats reassert regulation over colonial revenues, and investors speak openly of renewed confidence in overseas enterprise. Though scars of its loss remain, control over Meridia’s economy signals to rival powers that the Empire’s reach, and relevance, has been restored."
     reclaiming_meridia.2.a: "Viva La Meridia! Viva La Sardo-Burgandy!"
+
+    #NOR JE
+    norwegian_century.1.t: "The Norweigan Century Begins"
+    norwegian_century.1.d: "The Norweigan Century Begins"
+    norwegian_century.1.f: "Following the collapse of our empire in the late fifteenth century, the crowns of Norway passed through hardship and division. Under the rule of the Sten dynasty, and later the House of Paijkull, the realm was reunited and raised beyond its former stature. With the passing of Prince Vidkun X Göinge, authority now rests with his consort, Her Majesty Queen Aasa Paijkull, whose long life has witnessed Norway’s transformation into one of Europe’s foremost centers of scientific thought. In the twilight of her reign, the Queen and her council look not to conquest, but to learning, innovation, and the strengthening of both the homeland and the American colonies. In her honor, we commit ourselves to the advancement of knowledge and the founding of universities, marking the dawn of what shall be remembered as the Norwegian Century."
+    norwegian_century.1.a: "Let this century be remembered!"
+    je_the_northern_century_begins: "The Norwegian Century Begins"
+    je_the_northern_century_begins_reason: "To secure Norway’s place as a leading power of innovation and learning, the Crown seeks to expand scientific institutions and universities across the realm. Through sustained investment in education and research, Norway shall define the coming age by knowledge rather than conquest."
+    norwegian_century.2.t: "The Direction of National Enlightenment"
+    norwegian_century.2.d: "The Direction of National Enlightenment"
+    norwegian_century.2.f: "With the ambitions of the Norwegian Century set in motion, Parliament now convenes to determine the proper application of the realm’s expanding scientific capacity. Statesmen, scholars, and industrial patrons alike agree that knowledge must serve the nation, but differ sharply on whether its purpose lies in material strength or social advancement. The choice made in this chamber will guide Norway’s development for the decade to come and shape how progress is felt by its people."
+    norwegian_century.2.a: "Direct our sciences toward industry and production."
+    norwegian_century.2.b: "Devote our sciences to society and the public good."
+    modifier_norway_focus_production: "Focus on Production"
+    modifier_norway_focus_society: "Focus on Society"
+

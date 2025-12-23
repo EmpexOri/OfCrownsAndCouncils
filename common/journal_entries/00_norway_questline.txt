@@ -1,0 +1,36 @@
+﻿je_the_northern_century_begins = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_norway
+
+	is_shown_in_lobby = {
+		c:NOR = THIS
+	}
+
+	possible = {
+		# Optional: you could require some tech or milestone
+		#has_technology_researched = nationalism
+	}
+
+	complete = {
+		OR = {
+            has_technology_researched = railways
+            any_scope_building = {
+                is_building_type = building_arts_academy
+                occupancy >= 0.9
+                level >= 5
+            }
+		}
+	}
+
+	on_complete = {
+		set_variable = century_begins_complete
+        trigger_event = {
+            id = norwegian_century.2
+            popup = yes
+        }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

@@ -86,5 +86,10 @@ GLOBAL = {
 			id = reclaiming_meridia.1
 		}
 	}
+	c:NOR ?= {
+		trigger_event = {
+			id = norwegian_century.1
+		}
+	}
 # maybe a future event to generate starting radicals from unrest?
 }

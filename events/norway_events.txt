@@ -1,0 +1,77 @@
+﻿namespace = norwegian_century
+
+norwegian_century.1 = {
+    type = country_event
+    placement = root
+
+    title = norwegian_century.1.t
+    desc = norwegian_century.1.d
+    flavor  = norwegian_century.1.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "ip2_telegraph_dictate"
+	}
+
+    # Trigger normally after March 1
+    trigger = {
+        c:NOR ?= ROOT
+        NOT = { has_variable = norwegian_century_je_added }
+    }
+
+    immediate = {
+        if = {
+            limit = { c:PLC = ROOT }
+            set_variable = norwegian_century_je_added
+        }
+    }
+
+    option = {
+        name = norwegian_century.1.a
+        default_option = yes
+        add_journal_entry = { type = je_the_northern_century_begins }
+    }
+}
+
+norwegian_century.2 = {
+    type = country_event
+    placement = root
+
+    title = norwegian_century.2.t
+    desc = norwegian_century.2.d
+    flavor  = norwegian_century.2.f
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "ip2_telegraph_dictate"
+	}
+
+    immediate = {
+        if = {
+            limit = { c:PLC = ROOT }
+            set_variable = norwegian_century_je_complete
+        }
+    }
+
+    option = {
+        name = norwegian_century.2.a
+        default_option = yes
+        set_variable = focus_production_true
+		add_modifier = {
+			name = modifier_norway_focus_production
+			years = 10
+		}
+    }
+    option = {
+        name = norwegian_century.2.b
+        set_variable = focus_society_true
+		add_modifier = {
+			name = modifier_norway_focus_society
+			years = 10
+		}
+    }
+}
