@@ -59,6 +59,7 @@
 			traits = {
 				basic_colonial_administrator trait_child 
 			}
+			set_variable = { name = aasa_character }  # store her for later reference
 		}
 
 		create_character = {

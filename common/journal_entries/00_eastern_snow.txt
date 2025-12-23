@@ -49,11 +49,16 @@ je_polish_regency = {
         #has_technology_researched = nationalism
     }
 
-    fail = {
-        NOT = {
-            has_law_or_variant = law_type:law_monarchy
-        }
-    }
+	fail = {
+		OR = {
+			NOT = { 
+				has_law_or_variant = law_type:law_monarchy 
+			}
+			NOT = { 
+				ruler = { is_character = var:aasa_character } 
+			}
+		}
+	}
 
     timeout = 4015
 
