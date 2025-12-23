@@ -105,6 +105,8 @@
     eastern_snow.3.a: "Write the Marzec's"
 
     #SB JE's
+    je_french_america: "Sardo-Burgundian Americas"
+
     reclaiming_meridia.1.t: "The Crown Jewel"
     reclaiming_meridia.1.d: "The Crown Jewel of Sardo-Burgandia"
     reclaiming_meridia.1.f: "The chaos of the late eighteenth century left the Sardo-Burgandian throne shaken, as Emperor Clintavian IX abdicated in the aftermath of the Castillian Wars and the realm descended into a decade of civil war. From this strife, the House von Glaublitz emerged victorious, with Luidolf I claiming the crown, though not without cost, for the conflict saw the loss of the crown jewels of empire, most grievously the colonies of Magna Meridia and Arden Aurora in South America. Now, under the rule of Emperor Luidolf III, the Empire seeks to reclaim its prestige and standing among the Great Powers, not through empty ceremony, but through decisive action. The vast riches of the Amazon and the Andes lie within reach, and their exploitation has been decreed as the foremost goal of the Sardo-Burgandian state, a means by which the Empire shall restore its merit, wealth, and authority upon the world stage."
@@ -126,3 +128,11 @@
     modifier_arden_gold_mines: "The Mining of the Andes"
     je_reclaiming_aurora: "Reclaiming the Southern Colony"
     je_reclaiming_aurora_reason: "Weakened by civil war and the loss of South American colonies, the Sardo-Burgandian Empire must restore its prestige and standing among the Great Powers. Exploiting the riches of the Andes will be of great help to both our economy and our global standing."
+
+    reclaiming_aurora.2.t: "The Gold of the South"
+    reclaiming_aurora.2.d: "The Gold of the South"
+    reclaiming_aurora.2.f: "With the construction of the Panama Canal the ships with gold from mines in Andes mountains can travel quicker and cheaper than ever."
+    reclaiming_aurora.2.a: "Now, profits!"
+    modifier_southern_gold: "The Gold of the South"
+    je_sb_panama_canal: "Construction of the Panama Canal"
+    je_sb_panama_canal_reason: "Now that we control mining operations in Arden Aurora we must secure a quicker and more profitable root back to Europe. Panama has been suggested as a possible location of a canal that would massively decrease travel time and cost."

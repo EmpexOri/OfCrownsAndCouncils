@@ -65,3 +65,31 @@ je_reclaiming_aurora = {
 
     weight = 10000
 }
+
+je_sb_panama_canal = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_french_america
+
+	is_shown_in_lobby = {
+		c:W38 = THIS
+    }
+
+	complete = {
+        ROOT = { has_company = company_type:company_panama_company }
+		
+	}
+
+	on_complete = {
+        trigger_event = {
+            id = reclaiming_aurora.2           # for some reason this triggers reclaiming_aurora.1 event, i can't be bothered fixing this anymore
+            popup = yes
+        }
+        add_modifier = {
+            name = modifier_southern_gold
+            years = 5
+        }
+	}
+
+    weight = 10000
+}
