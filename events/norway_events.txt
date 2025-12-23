@@ -23,8 +23,6 @@ norwegian_century.1 = {
 
     immediate = {
         if = {
-            limit = { c:PLC = ROOT }
-            set_variable = norwegian_century_je_added
         }
     }
 
