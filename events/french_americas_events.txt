@@ -94,8 +94,8 @@ reclaiming_aurora.1 = {
         name = reclaiming_aurora.1.a
         default_option = yes
         add_modifier = {
-            name = modifier_sardo_crown_jewels_restored
-            years = 5
+            name = modifier_arden_gold_mines
+            years = 10
         }
     }
 }
