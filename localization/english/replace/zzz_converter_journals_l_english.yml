@@ -61,6 +61,7 @@
     sick_man_of_asia: "Sick Man of Asia"
     outmoded_bureaucracy_mug: "Outmoded Bureaucracy"
 
+    #Polish Journal Entries
     je_seeking_glory_in_eastern_snow: "Seeking Glory in the Eastern Snow"
     je_seeking_glory_in_eastern_snow_reason: "The intelligentsia and elites of Polish-Lithuanian high society have set their sights on the eastern frontier, a narrow corridor of land linking the heart of the Commonwealth to the city of St. Bolesław. Control over these territories promises strategic advantage and access to vast natural resources that could enrich the Commonwealth’s landowners for generations."
     arts_of_the_eastern_snow: "The Culture of the Corridor"
@@ -90,3 +91,11 @@
     eastern_snow.2.f: "Following the successes of the eastern campaigns, the Royal Council turns its attention to the steppes once ruled by the Golden Horde. Buoyed by recent victories and the prestige they brought, merchants, generals, and administrators see the wealth of Siberia’s forests and mineral-rich mountains as the next prize for the Commonwealth, and a chance to further strengthen the state and its legitimacy in the eyes of the nation. Yet not all voices are united, some argue that the time might be better spent consolidating the realm internally rather than venturing further into war."
     eastern_snow.2.a: "The Council Prepares the Campaign"
     eastern_snow.2.b: "Perhaps we should instead focus internally, away from war?"
+
+    #SB JE's
+    reclaiming_meridia.1.t: "The Crowl Jewel"
+    reclaiming_meridia.1.d: "The Crown Jewel of Sardo-Burgandia"
+    reclaiming_meridia.1.f: "The chaos of the late eighteenth century left the Sardo-Burgandian throne shaken, as Emperor Clintavian IX abdicated in the aftermath of the Castillian Wars and the realm descended into a decade of civil war. From this strife, the House von Glaublitz emerged victorious, with Luidolf I claiming the crown, though not without cost, for the conflict saw the loss of the crown jewels of empire, most grievously the colony of Magna Meridia in South America. Now, under the rule of Emperor Luidolf III, the Empire seeks to reclaim its prestige and standing among the Great Powers, not through empty ceremony, but through decisive action. The vast riches of the Amazon lie within reach, and their exploitation has been decreed as the foremost goal of the Sardo-Burgandian state, a means by which the Empire shall restore its merit, wealth, and authority upon the world stage."
+    reclaiming_meridia.1.a: "Viva la Meridia!"
+    je_reclaiming_meridia: "Reclaiming the Crown Jewel"
+    je_reclaiming_meridia_reason: "Weakened by civil war and the loss of Magna Meridia, the Sardo-Burgandian Empire must restore its prestige and standing among the Great Powers. By exploiting the riches of the Amazon, the Empire seeks to reclaim its wealth, authority, and influence on the global stage."
