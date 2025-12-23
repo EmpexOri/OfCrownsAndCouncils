@@ -1,0 +1,13 @@
+﻿#on_game_start = {
+#	effect = {
+#		if = {
+#			limit = {
+#				c:W38 = ROOT
+#				NOT = { has_journal_entry = je_reclaiming_meridia }
+#			}
+#			trigger_event = {
+#				id = eastern_snow.1
+#			}
+#		}
+#	}
+#}

@@ -1,0 +1,52 @@
+﻿# Société Meridian Amazon
+company_sma = {
+	icon = "gfx/interface/icons/company_icons/basic_forestry.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_logging_camp
+		building_rubber_plantation
+	}
+
+	extension_building_types = {
+		building_paper_mills
+		building_sulfur_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_rosewood
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_fish_complete_tt
+			has_variable = prestige_good_generic_fish_var
+		}
+	}
+
+	potential = {
+		c:W38 = THIS
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			c:W38 = THIS
+		}
+	}
+
+	possible = {
+		has_variable = reclaiming_meridia_completed
+	}
+
+	prosperity_modifier = {
+		building_automotive_industry_throughput_add = 0.1
+		building_furniture_manufacturies_throughput_add = 0.1
+		building_rubber_plantation_throughput_add = 0.15
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
