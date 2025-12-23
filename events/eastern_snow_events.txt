@@ -89,6 +89,42 @@ eastern_snow.2 = {
     }
 }
 
+eastern_snow.3 = {
+    type = country_event
+    placement = root
+
+	event_image = {
+		video = "africa_desert_expedition"
+	}
+
+    title = eastern_snow.3.t
+    desc = eastern_snow.3.d
+    flavor  = eastern_snow.3.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+    trigger = {
+        c:PLC ?= ROOT
+        NOT = { has_variable = je_polish_southern_expedition }
+    }
+
+    immediate = {
+        if = {
+            limit = { c:PLC = ROOT }
+        }
+    }
+
+    option = {
+        name = eastern_snow.3.a
+        default_option = yes
+            add_journal_entry = { type = je_polish_southern_expedition }
+            add_journal_entry = { type = je_polish_western_expedition }
+            add_journal_entry = { type = je_polish_northern_expedition }
+            set_variable = je_polish_southern_expedition_added
+    }
+}
+
 namespace = polish_regency
 
 polish_regency.1 = {

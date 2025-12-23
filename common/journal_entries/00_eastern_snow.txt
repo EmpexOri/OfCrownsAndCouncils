@@ -110,12 +110,6 @@ je_gold_of_golden_horde = {
 		#has_technology_researched = nationalism
 	}
 
-	immediate = {
-		ruler ?= {
-			save_scope_as = ruler_scope
-		}
-	}
-
 	complete = {
 		OR = {
 			c:X45 = { is_subject_of = ROOT }
@@ -147,12 +141,188 @@ je_gold_of_golden_horde = {
 	}
 
 	# Dynamic tooltip showing the ruler’s name
-	custom_tooltip = {
-		text = golden_horde_quest_tt
-		variables = {
-			ruler_name = ruler_scope.GetFirstName
-			pronoun = ruler_scope.GetHerHis
+custom_tooltip = {
+    text = golden_horde_quest_tt
+    variables = {
+        ruler_name = ruler_scope.GetFirstName
+        pronoun = ruler_scope.GetHerHis
+    }
+}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_polish_southern_expedition = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_poland
+
+	possible = {
+		# Optional: require tech or milestone
+		#has_technology_researched = nationalism
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = ruler_scope
 		}
+	}
+
+	complete = {
+		OR = {
+
+			# Direct ownership by PLC
+			c:PLC = {
+				owns_entire_state_region = STATE_AZERBAIJAN
+				owns_entire_state_region = STATE_ELIZAVETPOL
+				owns_entire_state_region = STATE_TABRIZ
+				owns_entire_state_region = STATE_MAZANDARAN
+				owns_entire_state_region = STATE_TURKMENIA
+				owns_entire_state_region = STATE_URALSK
+				owns_entire_state_region = STATE_KHIVA
+				owns_entire_state_region = STATE_SYRDARYA
+				owns_entire_state_region = STATE_UZBEKIA
+				owns_entire_state_region = STATE_MERZ
+			}
+
+			# Ownership via subjects
+			any_country = {
+				is_subject_of = c:PLC
+
+				AND = {
+					owns_entire_state_region = STATE_AZERBAIJAN
+					owns_entire_state_region = STATE_ELIZAVETPOL
+					owns_entire_state_region = STATE_TABRIZ
+					owns_entire_state_region = STATE_MAZANDARAN
+					owns_entire_state_region = STATE_TURKMENIA
+					owns_entire_state_region = STATE_URALSK
+					owns_entire_state_region = STATE_KHIVA
+					owns_entire_state_region = STATE_SYRDARYA
+					owns_entire_state_region = STATE_UZBEKIA
+					owns_entire_state_region = STATE_MERZ
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_polish_southern_glory
+			years = 10
+		}
+		set_variable = je_polish_southern_expedition_complete
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_polish_northern_expedition = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_poland
+
+	possible = {
+		# Optional: require tech or milestone
+		#has_technology_researched = nationalism
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	complete = {
+		OR = {
+
+			# Direct ownership by PLC
+			c:PLC = {
+				owns_entire_state_region = STATE_COURLAND
+				owns_entire_state_region = STATE_RIGA
+				owns_entire_state_region = STATE_TARTU
+				owns_entire_state_region = STATE_TALINN
+			}
+
+			# Ownership via subjects
+			any_country = {
+				is_subject_of = c:PLC
+
+				AND = {
+					owns_entire_state_region = STATE_COURLAND
+					owns_entire_state_region = STATE_RIGA
+					owns_entire_state_region = STATE_TARTU
+					owns_entire_state_region = STATE_TALINN
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_polish_northern_glory
+			years = 10
+		}
+		set_variable = je_polish_northern_expedition_complete
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_polish_western_expedition = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_poland
+
+	possible = {
+		# Optional: require tech or milestone
+		#has_technology_researched = nationalism
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	complete = {
+		OR = {
+
+			# Direct ownership by PLC
+			c:PLC = {
+				owns_entire_state_region = STATE_LOWER_SILESIA
+				owns_entire_state_region = STATE_BRANDENBURG
+				owns_entire_state_region = STATE_MECKLENBURG
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+				owns_entire_state_region = STATE_SAXONY
+				owns_entire_state_region = STATE_BOHEMIA
+			}
+
+			# Ownership via subjects
+			any_country = {
+				is_subject_of = c:PLC
+
+				AND = {
+					owns_entire_state_region = STATE_LOWER_SILESIA
+					owns_entire_state_region = STATE_BRANDENBURG
+					owns_entire_state_region = STATE_MECKLENBURG
+					owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+					owns_entire_state_region = STATE_SAXONY
+					owns_entire_state_region = STATE_BOHEMIA
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_polish_western_glory
+			years = 10
+		}
+		set_variable = je_polish_western_expedition_complete
+	}
 
 	weight = 10000
 	should_be_pinned_by_default = yes

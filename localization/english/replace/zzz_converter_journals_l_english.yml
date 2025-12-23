@@ -92,6 +92,18 @@
     eastern_snow.2.a: "The Council Prepares the Campaign"
     eastern_snow.2.b: "Perhaps we should instead focus internally, away from war?"
 
+    je_polish_southern_expedition: "Marzec: Southern Expedition"
+    je_polish_southern_expedition_reason: "Old wounds linger from past wars with the Mughal Empire, and the loss of a treaty port remains an insult yet unanswered. By carving away the empire’s vulnerable Caucasian territories, the Commonwealth seeks both retribution and the restoration of its honor."
+    je_polish_western_expedition: "Marzec: Western Expedition"
+    je_polish_western_expedition_reason: "The fractured German states remain the key to dominance in Central Europe, and the Commonwealth cannot allow rivals to consolidate where it is strongest. Through force or submission, Poland-Lithuania will assert itself as the unquestioned arbiter of the German heartlands."
+    je_polish_northern_expedition: "Marzec: Northern Expedition"
+    je_polish_northern_expedition_reason: "The Crown looks north toward Estonia, ancestral homeland of the Norwegian royal house, where conquest promises little in material gain but much in glory. Reclaiming these lands would cement the Commonwealth’s prestige as a power that shapes history, not merely borders."
+
+    eastern_snow.3.t: "The Three Horizons"
+    eastern_snow.3.d: "The Three Horizons"
+    eastern_snow.3.f: "The Commonwealth prepares to assert its influence across multiple fronts. In the north, the homeland of the Norwegian kings in Estonia beckons, a venture undertaken as much for glory as for strategic advantage. To the west, the German states must be brought into line to secure Poland-Lithuania’s position as the dominant power in Central Europe, ensuring our authority among the continent’s great powers. In the south, old rivalries with the Mughal Empire call for decisive action to reclaim lost territories in the Caucasus and restore our access to vital ports. These campaigns will test the resolve of our council, the skill of our generals, and the loyalty of our allies, yet their success promises prestige, legitimacy, and the expansion of our economic and military power.."
+    eastern_snow.3.a: "Write the Marzec's"
+
     #SB JE's
     reclaiming_meridia.1.t: "The Crowl Jewel"
     reclaiming_meridia.1.d: "The Crown Jewel of Sardo-Burgandia"

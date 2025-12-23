@@ -94,6 +94,47 @@ modifier_polish_internal = {
 	desc = modifier_gold_golden_horde_desc
 }
 
+modifier_polish_southern_glory= {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+
+	country_authority_mult = 0.05
+	country_prestige_add = 25
+	building_opium_plantation_throughput_add = 0.1
+	country_standard_of_living_full_acceptance_add = 1.0
+
+	months = 240
+
+	desc = modifier_gold_golden_horde_desc
+}
+
+modifier_polish_northern_glory= {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+
+	country_authority_mult = 0.05
+	country_prestige_add = 25
+	building_tooling_workshops_throughput_add = 0.1
+	state_lower_strata_standard_of_living_add = 1.0
+
+	months = 240
+
+	desc = modifier_gold_golden_horde_desc
+}
+
+modifier_polish_western_glory= {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+
+	country_authority_mult = 0.05
+	country_prestige_add = 25
+	building_arms_industry_throughput_add = 0.1
+	building_group_bg_manufacturing_machinists_standard_of_living_add = 1.0
+
+	months = 240
+
+	desc = modifier_gold_golden_horde_desc
+}
+
+#SB
+
 modifier_sardo_crown_jewels = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 
