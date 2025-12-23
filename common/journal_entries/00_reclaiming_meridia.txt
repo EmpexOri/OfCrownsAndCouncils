@@ -21,6 +21,10 @@
 
 	on_complete = {
 		set_variable = reclaiming_meridia_completed
+        trigger_event = {
+            id = reclaiming_meridia.2
+            popup = yes
+        }
 	}
 
     weight = 10000

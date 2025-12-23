@@ -93,3 +93,19 @@ modifier_polish_internal = {
 
 	desc = modifier_gold_golden_horde_desc
 }
+
+modifier_sardo_crown_jewels = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+
+	country_prestige_mult = -0.05
+
+	desc = modifier_gold_golden_horde_desc
+}
+
+modifier_sardo_crown_jewels_restored = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+
+	interest_group_ig_industrialists_pol_str_mult = 0.1
+
+	desc = modifier_gold_golden_horde_desc
+}
