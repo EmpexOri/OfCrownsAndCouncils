@@ -1,0 +1,68 @@
+﻿# Compagnie Amazon de Meridia
+company_cam = {
+	icon = "gfx/interface/icons/company_icons/basic_forestry.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_logging_camp
+		building_rubber_plantation
+	}
+
+	extension_building_types = {
+		building_paper_mills
+		building_sulfur_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_rosewood
+	}
+
+	potential = {
+		c:W38 ?= this
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			OR = {
+				has_journal_entry = je_reclaiming_meridia
+				has_variable = reclaiming_meridia_completed
+			}
+		}
+	}
+
+	possible = {
+		AND = {
+			has_variable = reclaiming_meridia_completed
+			OR = {
+				any_subject_or_below = {
+					any_scope_state = {
+						region = sr:region_brazil
+						any_scope_building = {
+							is_building_type = building_rubber_plantation
+							level >= 5
+						}
+					}
+				}
+				any_scope_state = {
+					region = sr:region_brazil
+					any_scope_building = {
+						is_building_type = building_rubber_plantation
+						level >= 5
+					}
+				}
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_automotive_industry_throughput_add = 0.1
+		building_furniture_manufacturies_throughput_add = 0.1
+		building_rubber_plantation_throughput_add = 0.15
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
