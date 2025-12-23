@@ -146,9 +146,29 @@ modifier_sardo_crown_jewels = {
 modifier_sardo_crown_jewels_restored = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 
+	country_legitimacy_base_add = 5
 	interest_group_ig_industrialists_pol_str_mult = 0.1
 
 	desc = modifier_gold_golden_horde_desc
+}
+
+modifier_arden_gold_mines = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+
+	building_gold_mine_throughput_add = 0.15
+	building_iron_mine_throughput_add = 0.05
+	building_lead_mine_throughput_add = 0.05
+
+	desc = modifier_arden_gold_mines
+}
+
+modifier_southern_gold = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+
+	building_gold_mine_throughput_add = 0.1
+	country_minting_mult = 0.1
+
+	desc = modifier_southern_gold
 }
 
 #NOR
@@ -171,4 +191,3 @@ modifier_norway_focus_society = {
 	interest_group_ig_industrialists_approval_add = -3
 
 	desc = modifier_norway_focus_society_desc
-}

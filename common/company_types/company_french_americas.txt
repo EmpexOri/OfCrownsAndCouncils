@@ -1,7 +1,7 @@
-﻿# Société Meridian Amazon
-company_sma = {
+﻿# Compagnie Amazon de Meridia
+company_cam = {
 	icon = "gfx/interface/icons/company_icons/basic_forestry.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	flavored_company = yes
 
@@ -19,25 +19,38 @@ company_sma = {
 		prestige_good_rosewood
 	}
 
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_fish_complete_tt
-			has_variable = prestige_good_generic_fish_var
-		}
-	}
-
 	potential = {
-		c:W38 = THIS
+		c:W38 ?= this
 	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			c:W38 = THIS
+			has_variable = reclaiming_meridia_completed
 		}
 	}
 
 	possible = {
-		has_variable = reclaiming_meridia_completed
+		AND = {
+			has_variable = reclaiming_meridia_completed
+			OR = {
+				any_subject_or_below = {
+					any_scope_state = {
+						region = sr:region_brazil
+						any_scope_building = {
+							is_building_type = building_rubber_plantation
+							level >= 5
+						}
+					}
+				}
+				any_scope_state = {
+					region = sr:region_brazil
+					any_scope_building = {
+						is_building_type = building_rubber_plantation
+						level >= 5
+					}
+				}
+			}
+		}
 	}
 
 	prosperity_modifier = {
