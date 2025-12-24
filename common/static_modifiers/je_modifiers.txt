@@ -183,6 +183,49 @@ modifier_norway_focus_production = {
 	desc = modifier_norway_focus_production_desc
 }
 
+modifier_norway_let_the_furnace_burn = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+
+	building_coal_mine_throughput_add = 0.1
+	building_iron_mine_throughput_add = 0.1
+
+	desc = modifier_norway_let_the_furnace_burn_desc
+}
+
+modifier_norway_century_of_steel = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+
+	building_coal_mine_throughput_add = 0.15
+	building_iron_mine_throughput_add = 0.15
+	building_steel_mills_throughput_add = 0.15
+	country_capitalists_pol_str_mult = 0.5
+	country_prestige_mult = 0.2
+
+	desc = modifier_norway_century_of_steel_desc
+}
+
+modifier_norway_century_of_steel_realized = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+
+	building_group_bg_heavy_industry_throughput_add = 0.25
+	country_capitalists_pol_str_mult = 0.25
+	country_prestige_mult = 0.25
+
+	desc = modifier_norway_century_of_steel_realized_desc
+}
+
+modifier_norway_century_of_steel_unrealized = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds"
+
+	building_group_bg_heavy_industry_throughput_add = -0.1
+	country_prestige_mult = -0.25
+	interest_group_ig_trade_unions_pol_str_mult = 0.5
+	interest_group_ig_trade_unions_pop_attraction_mult = 1.0
+	political_movement_radicalism_add = 0.5
+
+	desc = modifier_norway_century_of_steel_unrealized_desc
+}
+
 modifier_norway_focus_society = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 
@@ -191,3 +234,4 @@ modifier_norway_focus_society = {
 	interest_group_ig_industrialists_approval_add = -3
 
 	desc = modifier_norway_focus_society_desc
+}

@@ -73,3 +73,136 @@ norwegian_century.2 = {
 		}
     }
 }
+
+namespace = iron_century
+
+iron_century.1 = {
+    type = country_event
+    placement = root
+
+    title = iron_century.1.t
+    desc = iron_century.1.d
+    flavor  = iron_century.1.f
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+    option = {
+        name = iron_century.1.a
+        default_option = yes
+    }
+}
+
+iron_century.2 = {
+    type = country_event
+    placement = root
+
+    title = iron_century.2.t
+    desc = iron_century.2.d
+    flavor  = iron_century.2.f
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+    immediate = {
+        if = {
+            set_variable = norwegian_iron_century_je_complete
+        }
+    }
+
+    option = {
+        name = iron_century.2.a
+        default_option = yes
+        set_variable = modifier_norway_focus_steel
+        trigger_event = {
+            id = steel_century.1
+            popup = yes
+        }
+    }
+}
+
+namespace = steel_century
+
+steel_century.1 = {
+    type = country_event
+    placement = root
+
+    title = steel_century.1.t
+    desc = steel_century.1.d
+    flavor  = steel_century.1.f
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "unspecific_airship"
+	}
+
+    immediate = {
+        if = {
+        }
+    }
+
+    option = {
+        name = steel_century.1.a
+        default_option = yes
+        add_journal_entry = { type = je_norway_the_century_of_steel }
+    }
+}
+
+steel_century.2 = {
+    type = country_event
+    placement = root
+
+    title = steel_century.2.t
+    desc = steel_century.2.d
+    flavor  = steel_century.2.f
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+    option = {
+        name = steel_century.2.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_norway_century_of_steel_realized
+        }
+    }
+}
+
+forgotten_prodigy.1 = {
+    type = country_event
+    placement = root
+
+    title = forgotten_prodigy.1.t
+    desc = forgotten_prodigy.1.d
+    flavor  = forgotten_prodigy.1.f
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+    option = {
+        name = forgotten_prodigy.1.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_norway_century_of_steel_unrealized
+            years = 5
+        }
+    }
+}

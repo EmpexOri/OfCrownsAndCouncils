@@ -34,3 +34,129 @@
 	weight = 10000
 	should_be_pinned_by_default = yes
 }
+
+je_the_century_of_iron = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_norway
+
+	is_shown_in_lobby = {
+		c:NOR = THIS
+	}
+    is_shown_when_inactive = {
+        is_player = yes
+        NOT = { has_variable = modifier_norway_focus_production }
+        has_technology_researched = railways
+    }
+
+	possible = {
+		date >= 1840.1.1
+		has_technology_researched = bessemer_process
+		has_variable = focus_production_true
+	}
+
+	immediate = {
+		trigger_event = {
+			id = iron_century.1
+			popup = yes
+		}
+	}
+
+	modifiers_while_active = {
+		modifier_norway_let_the_furnace_burn
+	}
+
+	complete = {
+		AND = {
+			OR = {
+				has_technology_researched = open_hearth_process
+				has_technology_researched = mechanized_workshop
+				any_scope_building = {
+					is_building_type = building_iron_mine
+					level >= 10
+					occupancy >= 0.9
+				}
+			}
+			OR = {
+				any_scope_building = {
+					is_building_type = building_steel_mills
+					level >= 5
+					occupancy >= 0.9
+				}
+				any_scope_building = {
+					is_building_type = building_tooling_workshops
+					level >= 5
+					occupancy >= 0.9
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		set_variable = century_begins_complete
+        trigger_event = {
+            id = iron_century.2
+            popup = yes
+        }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_norway_the_century_of_steel = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_norway
+
+	is_shown_in_lobby = {
+		c:NOR = THIS
+	}
+
+	possible = {
+		is_player = yes
+		has_variable = focus_production_true
+	}
+
+	on_add = {
+		trigger_event = {
+			id = steel_century.1
+			popup = yes
+		}
+	}
+
+	modifiers_while_active = {
+		modifier_norway_century_of_steel
+	}
+
+	# Progressive completion over time
+	timeout = 3650 # 10 years
+
+	on_timeout = {
+		trigger_event = {
+			id = steel_century.2
+			popup = yes
+		}
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = forgotten_prodigy.1
+			popup = yes
+		}
+	}
+
+	fail = {
+		OR = {
+			has_law_or_variant = law_type:law_industry_banned
+			has_law_or_variant = law_type:law_compulsory_primary_school
+			c:NOR = { is_in_revolution = yes }
+			NOT = { c:NBS = { is_subject_of = ROOT } }
+			NOT = { c:X22 = { is_subject_of = ROOT } }
+			NOT = { c:X25 = { is_subject_of = ROOT } }
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
