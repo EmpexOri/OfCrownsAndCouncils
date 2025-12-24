@@ -186,3 +186,18 @@
     forgotten_prodigy.1.d: "The ambitious plans of the Steel Century have faltered. Norway’s industrial potential has been squandered, leaving the nation behind its continental rivals."
     forgotten_prodigy.1.f: "Despite years of planning, the furnaces and workshops of the Steel Century have failed to achieve their intended scale. Investments in steel mills, tool factories, and iron mines yielded only modest returns, and the industrial leadership of Norway has faltered. Once poised to compete with Europe’s great powers, the nation now risks being remembered more for lost potential than for achievement. The Parliament must reassess its strategy as other nations surge ahead in industrial prowess."
     forgotten_prodigy.1.a: "Mourn the Lost Century"
+
+    #Society Path Norway
+    art_century.1.t: "A Royal Decree of Learning"
+    art_century.1.d: "At the urging of scholars, artists, and reformers, the Crown has issued a sweeping decree: higher learning is no longer to be the privilege of the few, but a right of all within the realm."
+    art_century.1.f: "From the halls of Christiania to the farthest incorporated provinces, Norway turns its gaze toward enlightenment. Royal funds are redirected to universities, academies, and learned societies, while patronage of the arts is elevated to a matter of state importance. The Monarch’s proclamation declares that a nation cannot prosper by iron and industry alone, culture, science, and education must stand as equal pillars of progress. The task ahead is immense: to expand the capital into a true center of urban life, and to ensure that learning takes root across the country, even in its smallest states."
+    art_century.1.a: "Let Knowledge Be the Foundation of the Realm"
+    je_the_century_of_art: "Århundre, The Century of Art"
+    je_the_century_of_art_reason: "Through royal decree and public investment, Norway turns toward the cultivation of art, science, and learning, seeking to raise both its cities and its people through knowledge."
+    modifier_norway_century_of_art_realized: "Århundre, The Century of Art"
+    modifier_norway_thousand_ideas_state: "Let a thousand ideas bloom"
+    art_century.2.t: "The Century of Art Realized"
+    art_century.2.d: "With the objectives of the Century of Art fulfilled, Norway stands as a beacon of knowledge, innovation, and cultural prosperity. Universities thrive, new artistic institutions flourish, and the capital of Christiana has grown into a hub of intellectual activity."
+    art_century.2.f: "The nation's commitment to education and the arts has borne remarkable fruit. Across Norway, ideas blossom in every university and academy, and the capital pulses with creativity and learning. Yet, as innovation spreads, dissenting circles quietly form, questioning the monarchy and the current order. The Century of Knowledge is at its zenith, but its continuation may depend on the stability of the realm. Norway must safeguard its intellectual and cultural achievements against the shadows of revolution."
+    art_century.2.a: "We Must Preserve Our Knowledge"
+    modifier_norway_century_of_art_rebels: "Blomstrende, Blooming Minds"

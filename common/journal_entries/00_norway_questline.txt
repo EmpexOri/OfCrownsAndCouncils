@@ -169,6 +169,13 @@ je_the_century_of_art = {
         is_player = yes
     }
 
+    immediate = {
+        trigger_event = {
+            id = art_century.1
+            popup = yes
+        }
+    }
+
     possible = {
         # Must be Norway player
         is_player = yes
@@ -190,7 +197,7 @@ je_the_century_of_art = {
     #}
 
     modifiers_while_active = {
-        modifier_norway_focus_society
+        modifier_norway_thousand_ideas_state
     }
 
 	complete = {
@@ -205,13 +212,14 @@ je_the_century_of_art = {
 			}
 		}
 
-		# Capital must have an urban center of at least size 15
+		# Capital must have an urban center of at least size 10
 		c:NOR = {
 			capital = {
 				any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 10
-				occupancy >= 0.9
+					is_building_type = building_urban_center
+					level >= 10
+					occupancy >= 0.9
+				}
 			}
 		}
 
@@ -225,6 +233,9 @@ je_the_century_of_art = {
             id = art_century.2
             popup = yes
         }
+		add_modifier = {
+			name = modifier_norway_century_of_art_realized
+		}
     }
 
     weight = 10000
