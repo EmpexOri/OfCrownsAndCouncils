@@ -16,7 +16,7 @@
 		OR = {
             has_technology_researched = railways
             any_scope_building = {
-                is_building_type = building_arts_academy
+                is_building_type = building_university
                 occupancy >= 0.9
                 level >= 5
             }
