@@ -45,8 +45,6 @@ je_the_century_of_iron = {
 	}
     is_shown_when_inactive = {
         is_player = yes
-        NOT = { has_variable = modifier_norway_focus_production }
-        has_technology_researched = railways
     }
 
 	possible = {
@@ -109,10 +107,6 @@ je_norway_the_century_of_steel = {
 
 	group = je_group_norway
 
-	is_shown_in_lobby = {
-		c:NOR = THIS
-	}
-
 	possible = {
 		is_player = yes
 		has_variable = focus_production_true
@@ -159,4 +153,80 @@ je_norway_the_century_of_steel = {
 
 	weight = 10000
 	should_be_pinned_by_default = yes
+}
+
+je_the_century_of_art = {
+    icon = "gfx/interface/icons/event_icons/event_egalitarian_society.dds"
+
+    group = je_group_norway
+
+    is_shown_in_lobby = {
+        c:NOR = THIS
+    }
+
+    # Only show if the player is Norway
+    is_shown_when_inactive = {
+        is_player = yes
+    }
+
+    possible = {
+        # Must be Norway player
+        is_player = yes
+        c:NOR = ROOT
+        # Must be after 1840
+        date >= 1840.1.1
+        # Player must have chosen society
+        has_variable = focus_society_true
+        # Requires relevant tech
+        has_technology_researched = egalitarianism
+    }
+
+    # Remove immediate trigger — let player activate it as journal
+    #immediate = {
+    #    trigger_event = {
+    #        id = art_century.1
+    #        popup = yes
+    #    }
+    #}
+
+    modifiers_while_active = {
+        modifier_norway_focus_society
+    }
+
+	complete = {
+		# 50% of incorporated states have at least 1 university
+		any_scope_state = {
+			filter = { is_incorporated = yes }
+			percent >= 0.25
+			any_scope_building = {
+				is_building_type = building_university
+				level >= 1
+				occupancy >= 0.9
+			}
+		}
+
+		# Capital must have an urban center of at least size 15
+		c:NOR = {
+			capital = {
+				any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+				occupancy >= 0.9
+			}
+		}
+
+		# Must have researched corporate charters
+		has_technology_researched = corporate_charters
+	}
+
+    on_complete = {
+        set_variable = art_century_begins_complete
+        trigger_event = {
+            id = art_century.2
+            popup = yes
+        }
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
 }

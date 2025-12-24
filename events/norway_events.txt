@@ -206,3 +206,29 @@ forgotten_prodigy.1 = {
         }
     }
 }
+
+namespace = art_century
+
+art_century.1 = {
+    type = country_event
+    placement = root
+
+    title = art_century.1.t
+    desc = art_century.1.d
+    flavor  = art_century.1.f
+    icon = "gfx/interface/icons/event_icons/event_egalitarian_society.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+    option = {
+        name = art_century.1.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_norway_century_of_steel_realized
+        }
+    }
+}
