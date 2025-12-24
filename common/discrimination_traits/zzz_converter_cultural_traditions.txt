@@ -10,3 +10,7 @@ tradition_matriarchal = {
 tradition_feminist = {
 	type = tradition
 }
+
+tradition_arpitan = {
+	type = tradition
+}

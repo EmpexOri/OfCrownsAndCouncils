@@ -171,6 +171,22 @@ modifier_southern_gold = {
 	desc = modifier_southern_gold
 }
 
+modifier_language_rights = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+
+	state_assimilation_mult = -0.5
+
+	desc = modifier_language_rights
+}
+
+modifier_forced_french_in_schools = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+
+	state_assimilation_mult = 0.2
+
+	desc = modifier_forced_french_in_schools
+}
+
 #NOR
 
 modifier_norway_focus_production = {

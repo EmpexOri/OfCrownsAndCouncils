@@ -72,6 +72,8 @@ reclaiming_meridia.2 = {
     }
 }
 
+namespace = reclaiming_aurora
+
 reclaiming_aurora.1 = {
     type = country_event
     placement = root

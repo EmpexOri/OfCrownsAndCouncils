@@ -196,7 +196,7 @@
 
 south_german={
 	color= hsv{ 0.50 0.43 0.45 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_germanic
 	language = language_germanophone
 	traditions = { }
@@ -2020,6 +2020,7 @@ swedish={
 	traditions = { }
 	obsessions = {
 		coffee
+		fish
 	}
 
 	male_common_first_names={
@@ -2263,6 +2264,7 @@ danish={
 	traditions = { }
 	obsessions = {
 		tea
+		fish
 	}
 	male_common_first_names={
 		dk_Abraham dk_Adam dk_Adolf dk_Adrian dk_Aksel dk_Albert dk_Alexander dk_Alf
@@ -2415,6 +2417,9 @@ norwegian={
 	heritage = heritage_nordic
 	language = language_scandinavian
 	traditions = { }
+	obsessions = {
+		fish
+	}
 	male_common_first_names={
 		no_Aage no_Abraham no_Adam no_Adel no_Adolf no_Adrian no_Age no_Aksel no_Albert
 		no_Alexander no_Alf no_Alfred no_Amund no_Anders no_Andreas no_Andres no_Anker
@@ -3113,7 +3118,7 @@ british={ # "English" in localization
 
 irish={
 	color= hsv{ 0.35 0.58 0.54 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_british
 	language = language_gaelic
 	traditions = { }
@@ -3470,10 +3475,10 @@ australian={
 
 north_italian={
 	color= hsv{ 0.38 0.27 0.86 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_italic
 	language = language_italian
-	traditions = { }
+	traditions = { tradition_arpitan }
 	
 	obsessions = {
 		wine
@@ -6206,10 +6211,10 @@ portuguese={
 
 french={
 	color= rgb{ 76 118 155 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_gallic
 	language = language_francophone
-	traditions = { }
+	traditions = { tradition_arpitan }
 	
 	obsessions = {
 		wine
@@ -6698,7 +6703,7 @@ french={
 }
 occitan={
 	color= rgb{ 164 193 223 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_gallic
 	language = language_occitano_romance
 	traditions = { }
@@ -7923,7 +7928,7 @@ albanian={
 
 slovene={
 	color= rgb{ 159 174 96 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_south_slavic
 	language = language_slovene
 	traditions = { }
@@ -8213,7 +8218,7 @@ bosniak={
 
 romanian={
 	color = { 0.12 0.41 0.54 }
-	religion = orthodox
+	religion = protestant
 	heritage = heritage_romanian
 	language = language_eastern_romance
 	traditions = { }
@@ -8630,7 +8635,7 @@ hungarian={
 
 polish={
 	color= hsv{ 0 0.22 0.5 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_west_slavic
 	language = language_west_slavic
 	traditions = { }
@@ -9117,7 +9122,7 @@ polish={
 
 lithuanian={
 	color= hsv{ 0.42 0.48 0.83 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_baltic
 	language = language_baltic
 	traditions = { }
@@ -9431,7 +9436,7 @@ czech={
 
 slovak={
 	color= hsv{ 0.50 0.32 0.79 }
-	religion = catholic
+	religion = protestant
 	heritage = heritage_west_slavic
 	language = language_west_slavic
 	traditions = { }
@@ -9678,7 +9683,7 @@ slovak={
 
 russian={
 	color= hsv{ 0.35 0.40 0.37 }
-	religion = orthodox
+	religion = catholic
 	heritage = heritage_east_slavic
 	language = language_east_slavic
 	traditions = { tradition_russosphere }
@@ -9883,7 +9888,7 @@ russian={
 
 byelorussian={
 	color= hsv{ 0.37 0.28 0.54 }
-	religion = orthodox
+	religion = catholic
 	heritage = heritage_east_slavic
 	language = language_east_slavic
 	traditions = { }
@@ -10014,7 +10019,7 @@ byelorussian={
 
 ukrainian={
 	color= hsv{ 0.16 0.32 0.62 }
-	religion = orthodox
+	religion = protestant
 	heritage = heritage_east_slavic
 	language = language_east_slavic
 	traditions = { }
@@ -10182,7 +10187,7 @@ ukrainian={
 
 ugrian={
 	color= hsv{ 0.50 0.32 0.62 }
-	religion = animist
+	religion = sunni
 	heritage = heritage_siberian
 	language = language_ugric
 	traditions = { }
@@ -11869,7 +11874,7 @@ maghrebi={
 
 misri={
 	color= rgb{ 226 218 112 }
-	religion = sunni
+	religion = shiite
 	obsessions = {
 		coffee
 	}
@@ -12057,7 +12062,7 @@ misri={
 
 mashriqi={
 	color= hsv{ 0.34 0.48 0.71 }
-	religion = shiite
+	religion = sunni
 	heritage = heritage_arab
 	language = language_arabic
 	traditions = { }
@@ -12556,7 +12561,7 @@ berber={ # Amazigh
 
 persian={
 	color= hsv{ 0.1 0.43 0.56 }
-	religion = shiite
+	religion = sunni
 	heritage = heritage_iranian
 	language = language_persian
 	traditions = { tradition_persianate }
@@ -13370,7 +13375,7 @@ kurdish={
 
 tatar={
 	color= hsv{ 0.53 0.24 0.28 }
-	religion = sunni
+	religion = protestant
 	heritage = heritage_tatar
 	language = language_kipchak
 	traditions = { tradition_russosphere }
@@ -39814,7 +39819,7 @@ buryat={ # partially Russified namelist
 
 mordvin={
 	color= rgb{ 222 147 226 }
-	religion = orthodox
+	religion = protestant
 	heritage = heritage_volga_uralic
 	language = language_mordvinic
 	traditions = { }
