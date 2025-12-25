@@ -20040,7 +20040,7 @@
 	s:STATE_HESSE = {
 		region_state:SAX = {
 			create_pop = {
-				culture = french
+				culture = south_german
 				religion = catholic
 				size = 91173
 			}
@@ -44269,7 +44269,7 @@
 	s:STATE_SAXONY = {
 		region_state:SAX = {
 			create_pop = {
-				culture = north_german
+				culture = south_german
 				religion = catholic
 				size = 214476
 			}

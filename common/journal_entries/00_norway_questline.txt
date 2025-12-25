@@ -44,7 +44,6 @@ je_the_century_of_iron = {
 		c:NOR = THIS
 	}
     is_shown_when_inactive = {
-        is_player = yes
 		c:NOR = THIS
     }
 
@@ -166,7 +165,6 @@ je_the_century_of_art = {
 
     # Only show if the player is Norway
     is_shown_when_inactive = {
-        is_player = yes
 		c:NOR = THIS
     }
 

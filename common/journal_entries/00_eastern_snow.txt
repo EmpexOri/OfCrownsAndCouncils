@@ -337,7 +337,6 @@ je_polish_controversial_queen = {
     }
 
     is_shown_when_inactive = {
-        is_player = yes
         c:PLC = THIS
     }
 
