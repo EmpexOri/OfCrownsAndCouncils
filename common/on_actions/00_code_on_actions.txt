@@ -328,6 +328,9 @@ on_monthly_pulse_country = {
 
 		# Austria Events
 		#eastern_question_austria.1
+
+		# Sardo Burgundy Events
+		arvorigeg_question.1
 	}
 
 	effect = {

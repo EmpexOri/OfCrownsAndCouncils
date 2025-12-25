@@ -176,3 +176,11 @@
  zzz_cc_confederation.31.a:0 "Unity in Diversity!"
  zzz_cc_confederation.32.d:0 "The colonies of South Africa have been consolidated into a single government under the direction of [ROOT.GetCountry.GetName]. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has formally congratulated the [SCOPE.sCharacter('canada_country_ruler').GetPrimaryRoleTitle] of [SCOPE.sCountry('canada_country').GetName] for leading the integration efforts."
  
+
+ arvorigeg_question.1.t: "The Arvorigeg Question"
+ arvorigeg_question.1.d: "The Arvorigeg live on the continent, practise our customs and now are under our rule. Yet they insist on speaking in their own tongue, closely related to the languages used on the Scottish Isles."
+ arvorigeg_question.1.f: "As a concepts of Sard-Burgundian nationalism spreads throughout the nation, the question arises: are Arvorigeg French?"
+ arvorigeg_question.1.a: "Of course! And they should learn to speak French too!"
+ arvorigeg_question.1.b: "We can give them a measure of autonomy to preserve their language."
+ modifier_language_rights: "Language rights"
+ modifier_forced_french_in_schools: "French in schools"

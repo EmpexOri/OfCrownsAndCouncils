@@ -82,12 +82,8 @@ je_sb_panama_canal = {
 
 	on_complete = {
         trigger_event = {
-            id = reclaiming_aurora.2           # for some reason this triggers reclaiming_aurora.1 event, i can't be bothered fixing this anymore
+            id = reclaiming_aurora.2
             popup = yes
-        }
-        add_modifier = {
-            name = modifier_southern_gold
-            years = 5
         }
 	}
 

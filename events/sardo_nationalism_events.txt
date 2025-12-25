@@ -1,0 +1,71 @@
+namespace = arvorigeg_question
+
+arvorigeg_question.1 = {
+
+    type = country_event
+    placement = root
+
+    title = arvorigeg_question.1.t
+    desc = arvorigeg_question.1.d
+    flavor  = arvorigeg_question.1.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+
+    trigger = {
+        AND = {
+            has_technology_researched = nationalism
+            OR = {
+                c:W38 ?= this
+                was_formed_from = W38
+            }
+            any_scope_state = {
+				state_region = {
+					is_homeland = cu:dynamic-breton-normand-culture-num1
+				}
+				count >= 2
+			}
+        }
+    }
+
+    immediate = {
+        set_variable = arvorigeg_question_asked
+    }
+
+    option = {
+        name = arvorigeg_question.1.a
+        default_option = yes
+        set_variable = arvorigeg_assimilation
+        add_radicals = {
+            culture = cu:dynamic-breton-normand-culture-num1
+            value = 0.2
+        }
+        add_modifier = {
+            name = modifier_forced_french_in_schools
+            years = 15
+        }
+    }
+
+    option = {
+        name = arvorigeg_question.1.b
+        set_variable = arvorigeg_autonomy
+        add_loyalists = {
+            culture = cu:dynamic-breton-normand-culture-num1
+            value = 0.2
+        }
+        add_modifier = {
+            name = modifier_language_rights
+            years = 30
+        }
+        cu:dynamic-breton-normand-culture-num1 = {
+			add_tradition_trait = tradition_arpitan
+		}
+    }
+}
