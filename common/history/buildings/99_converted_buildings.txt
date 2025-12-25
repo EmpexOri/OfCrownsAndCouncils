@@ -10771,7 +10771,7 @@
 				add_ownership = {
 					country = {
 						country = c:NOR
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1

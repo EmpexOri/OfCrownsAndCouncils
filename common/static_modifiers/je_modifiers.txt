@@ -241,6 +241,7 @@ modifier_norway_thousand_ideas_state = {
  
 	building_group_bg_government_construction_efficiency_add = 0.20
     state_infrastructure_mult = 0.10
+	state_migration_pull_add = 25
 
     desc = modifier_norway_thousand_ideas_desc
 }
