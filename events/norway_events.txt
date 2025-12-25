@@ -9,7 +9,7 @@ norwegian_century.1 = {
     flavor  = norwegian_century.1.f
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
-    cooldown = { days = very_long_modifier_time }
+    cooldown = { days = never_fire_again_modifier_time }
 
 	event_image = {
 		video = "ip2_telegraph_dictate"
@@ -17,12 +17,9 @@ norwegian_century.1 = {
 
     # Trigger normally after March 1
     trigger = {
-        c:NOR ?= ROOT
-        NOT = { has_variable = norwegian_century_je_added }
-    }
-
-    immediate = {
-        if = {
+        OR = {
+            c:NOR ?= ROOT
+            was_formed_from = NOR
         }
     }
 
@@ -49,10 +46,7 @@ norwegian_century.2 = {
 	}
 
     immediate = {
-        if = {
-            limit = { c:PLC = ROOT }
-            set_variable = norwegian_century_je_complete
-        }
+        set_variable = norwegian_century_je_complete
     }
 
     option = {
@@ -113,9 +107,7 @@ iron_century.2 = {
 	}
 
     immediate = {
-        if = {
-            set_variable = norwegian_iron_century_je_complete
-        }
+        set_variable = norwegian_iron_century_je_complete
     }
 
     option = {
@@ -145,11 +137,6 @@ steel_century.1 = {
 	event_image = {
 		video = "unspecific_airship"
 	}
-
-    immediate = {
-        if = {
-        }
-    }
 
     option = {
         name = steel_century.1.a
@@ -181,6 +168,8 @@ steel_century.2 = {
         }
     }
 }
+
+namespace = forgotten_prodigy
 
 forgotten_prodigy.1 = {
     type = country_event

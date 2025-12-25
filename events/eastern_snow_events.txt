@@ -9,7 +9,7 @@ eastern_snow.1 = {
     flavor  = eastern_snow.1.f
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
-    cooldown = { days = very_long_modifier_time }
+    cooldown = { days = never_fire_again_modifier_time }
 
 	event_image = {
 		video = "europenorthamerica_capitalists_meeting"
@@ -17,8 +17,10 @@ eastern_snow.1 = {
 
     # Trigger normally after March 1
     trigger = {
-        c:PLC ?= ROOT
-        NOT = { has_variable = eastern_snow_je_added }
+        OR = {
+            c:PLC ?= ROOT
+            was_formed_from = PLC
+        }
     }
 
     # Immediate check for game start
@@ -34,11 +36,8 @@ eastern_snow.1 = {
 #    }
 
     immediate = {
-        if = {
-            limit = { c:PLC = ROOT }
-            add_journal_entry = { type = je_seeking_glory_in_eastern_snow }
-            set_variable = eastern_snow_je_added
-        }
+        add_journal_entry = { type = je_seeking_glory_in_eastern_snow }
+        set_variable = eastern_snow_je_added
     }
 
     option = {
@@ -60,18 +59,9 @@ eastern_snow.2 = {
     flavor  = eastern_snow.2.f
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
-    cooldown = { days = very_long_modifier_time }
+    cooldown = { days = never_fire_again_modifier_time }
 
-    trigger = {
-        c:PLC ?= ROOT
-        NOT = { has_variable = je_gold_of_golden_horde }
-    }
-
-    immediate = {
-        if = {
-            limit = { c:PLC = ROOT }
-        }
-    }
+    trigger = { }
 
     option = {
         name = eastern_snow.2.a
@@ -102,18 +92,9 @@ eastern_snow.3 = {
     flavor  = eastern_snow.3.f
     icon = "gfx/interface/icons/event_icons/event_military.dds"
     duration = 3
-    cooldown = { days = very_long_modifier_time }
+    cooldown = { days = never_fire_again_modifier_time }
 
-    trigger = {
-        c:PLC ?= ROOT
-        NOT = { has_variable = je_polish_southern_expedition }
-    }
-
-    immediate = {
-        if = {
-            limit = { c:PLC = ROOT }
-        }
-    }
+    trigger = { }
 
     option = {
         name = eastern_snow.3.a
@@ -136,7 +117,7 @@ polish_regency.1 = {
     flavor  = polish_regency.1.f
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     duration = 3
-    cooldown = { days = very_long_modifier_time }
+    cooldown = { days = never_fire_again_modifier_time }
 
 	event_image = {
 		video = "votp_monarch_holding_court"
@@ -144,17 +125,11 @@ polish_regency.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
-    trigger = {
-        c:PLC ?= ROOT
-        NOT = { has_variable = je_polish_regency }
-    }
+    trigger = { }
 
     immediate = {
-        if = {
-            limit = { c:PLC = ROOT }
-            add_journal_entry = { type = je_polish_regency }
-            set_variable = polish_regency_je_added
-        }
+        add_journal_entry = { type = je_polish_regency }
+        set_variable = polish_regency_je_added
     }
 
     option = {
@@ -180,10 +155,7 @@ polish_regency.2 = {
     flavor = polish_regency.2.f
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-    trigger = {
-        tag = PLC
-        NOT = { has_variable = je_polish_regency }
-    }
+    trigger = { }
 
     option = {
         name = polish_regency.2.a
@@ -208,9 +180,7 @@ polish_queen_rise.1 = {
     flavor = polish_queen_rise.1.f
     icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-    trigger = {
-        tag = PLC
-    }
+    trigger = { }
 
     option = {
         name = polish_queen_rise.1.a
@@ -241,9 +211,7 @@ polish_queen_rise.2 = {
     flavor = polish_queen_rise.2.f
     icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-    trigger = {
-        tag = PLC
-    }
+    trigger = { }
 
     option = {
         name = polish_queen_rise.2.a
@@ -269,9 +237,7 @@ polish_queen_rise.3 = {
     flavor = polish_queen_rise.3.f
     icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-    trigger = {
-        tag = PLC
-    }
+    trigger = { }
 
     option = {
         name = polish_queen_rise.3.a

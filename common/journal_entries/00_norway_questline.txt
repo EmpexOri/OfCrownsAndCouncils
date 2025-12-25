@@ -44,7 +44,10 @@ je_the_century_of_iron = {
 		c:NOR = THIS
 	}
     is_shown_when_inactive = {
-		c:NOR = THIS
+		OR = {
+            c:NOR ?= THIS
+            was_formed_from = NOR
+        }
     }
 
 	possible = {
@@ -143,7 +146,7 @@ je_norway_the_century_of_steel = {
 		OR = {
 			has_law_or_variant = law_type:law_industry_banned
 			has_law_or_variant = law_type:law_compulsory_primary_school
-			c:NOR = { is_in_revolution = yes }
+			has_revolution = yes
 			NOT = { c:NBS = { is_subject_of = ROOT } }
 			NOT = { c:X22 = { is_subject_of = ROOT } }
 			NOT = { c:X25 = { is_subject_of = ROOT } }
@@ -165,7 +168,10 @@ je_the_century_of_art = {
 
     # Only show if the player is Norway
     is_shown_when_inactive = {
-		c:NOR = THIS
+		OR = {
+            c:NOR ?= THIS
+            was_formed_from = NOR
+        }
     }
 
     immediate = {
@@ -176,7 +182,10 @@ je_the_century_of_art = {
     }
 
     possible = {
-        c:NOR = ROOT
+        OR = {
+            c:NOR ?= THIS
+            was_formed_from = NOR
+        }
         # Must be after 1840
         date >= 1840.1.1
         # Player must have chosen society
