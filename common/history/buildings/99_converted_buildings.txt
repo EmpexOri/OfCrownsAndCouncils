@@ -14672,7 +14672,7 @@
 						type = building_tooling_workshops
 						country = c:PLC
 						levels = 2
-						region = STATE_GUYENNE
+						region = STATE_GREATER_POLAND
 					}
 				}
 				reserves = 1
