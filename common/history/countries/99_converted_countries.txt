@@ -3311,6 +3311,7 @@
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_hindu_caste_codified
 		set_institution_investment_level = {
 			institution = institution_home_affairs
 			level = 1
@@ -3318,6 +3319,7 @@
 		trigger_event = {
 			id = sick_man_mug.1
 		}
+    	set_country_flag = uses_caste_system
 	}
 	c:N04 ?= {
 		effect_native_conscription_3 = yes

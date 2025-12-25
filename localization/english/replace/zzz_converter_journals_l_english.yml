@@ -10,6 +10,7 @@
     je_group_converter_historical_content:0 "Converter Historical Content"
     je_group_converter_new:0 "Converter Affairs"
 
+    MUG_FLAVOR_TEXT:0 "The once-mighty Mughal Empire, founded by the descendants of the Mongol Mughals, now struggles under the aged Padishah Humoyon I. Stagnation has set in across its vast territories, and with a population nearing 150 million, internal pressures strain the nation. The culling of the Rajput has weakened both its military and administrative reach, slowing economic growth and exposing an outdated bureaucracy. Known by some as the 'Sick Man of Asia,' the Empire faces a critical choice: embrace modernization and reform to restore its former glory, or risk further decline while rivals and neighbors advance."
     je_group_tanzimat_mug: "Tanzeem-e nau"
     je_sick_man_mug_main:0 "The Sick Man of Asia"
     je_sick_man_mug_main_reason:0 "We must modernize and restore the Mughal Empire."
@@ -62,6 +63,7 @@
     outmoded_bureaucracy_mug: "Outmoded Bureaucracy"
 
     #Polish Journal Entries
+    PLC_FLAVOR_TEXT:0 "In late 1835, Emperor Bolesław Ostrogski succumbed to typhoid fever, leaving the throne to his seven-year-old daughter, Aasa Ostrogski. The King’s Royal Council, dominated by Artists and Aristocrats, upheld her succession through a Regency, a decision that has sparked tension with the traditionalist Army and Church. With the young Queen now in power, the Council seeks to define the Empire’s path forward, weighing the expansion of influence into Siberia against the need to resolve internal divisions and strengthen the nation from within. The decisions taken now will shape whether Poland focuses outward or consolidates its power at home."
     je_seeking_glory_in_eastern_snow: "Seeking Glory in the Eastern Snow"
     je_seeking_glory_in_eastern_snow_reason: "The intelligentsia and elites of Polish-Lithuanian high society have set their sights on the eastern frontier, a narrow corridor of land linking the heart of the Commonwealth to the city of St. Bolesław. Control over these territories promises strategic advantage and access to vast natural resources that could enrich the Commonwealth’s landowners for generations."
     arts_of_the_eastern_snow: "The Culture of the Corridor"
@@ -103,8 +105,23 @@
     eastern_snow.3.d: "The Three Horizons"
     eastern_snow.3.f: "The Commonwealth prepares to assert its influence across multiple fronts. In the north, the homeland of the Norwegian kings in Estonia beckons, a venture undertaken as much for glory as for strategic advantage. To the west, the German states must be brought into line to secure Poland-Lithuania’s position as the dominant power in Central Europe, ensuring our authority among the continent’s great powers. In the south, old rivalries with the Mughal Empire call for decisive action to reclaim lost territories in the Caucasus and restore our access to vital ports. These campaigns will test the resolve of our council, the skill of our generals, and the loyalty of our allies, yet their success promises prestige, legitimacy, and the expansion of our economic and military power.."
     eastern_snow.3.a: "Write the Marzec's"
+    je_polish_controversial_queen_tt: "With [SCOPE.sCharacter('ruler_scope').GetName] now ruling, the Parliament debates how to define Poland’s next era. [SCOPE.sCharacter('ruler_scope').GetHerHis] youth and vision divide the nation, inspiring both hope and controversy.”
+
+    je_polish_controversial_queen: "A controversy in Government"
+    je_polish_controversial_queen_progress_bar:0 "Rise of the Controversial Queen"
+    je_polish_controversial_queen_progress_bar_desc:0 "Discontent with the Monarchy."
+
+    je_progress_autocracy_penalty:0 "Autocracy resists (+ -25)"
+    je_progress_oligarchy_penalty:0 "Oligarchy resists (+ -10)"
+    je_progress_landed_voting_bonus:0 "Landed voting supports (+10)"
+    je_progress_wealth_voting_bonus:0 "Wealth voting supports (+25)"
+    je_progress_army_discontent:0 "Army opposition (+25)"
+    je_progress_devout_unhappy:0 "Devout opposition (+25)"
+    je_progress_political_agitation:0 "Political agitation (+25)"
+    je_progress_not_top_great_power:0 "Not most powerful Great Power (+25)"
 
     #SB JE's
+    W38_FLAVOR_TEXT:0 "Under the rule of Kyloravian IV von Glaublitz, cousin of Hanover’s Luidolf III, the Sardo-Burgandian Empire seeks to reclaim its place among the great powers. The Emperor aims to restore the Empire’s lost colonial holdings in Magna Meridia, and Arden Aurora, while eyeing the weakened Egyptian territories, now fractured after Tunisia and Nejd reclaimed their former lands. Reestablishing control over these regions would bring great honor to the Imperial nation. Despite its military might, the Empire still lags behind many others in industrial and political development, making careful strategy and calculated expansion essential for its rise."
     je_french_america: "Sardo-Burgundian Americas"
 
     reclaiming_meridia.1.t: "The Crown Jewel"
@@ -138,12 +155,16 @@
     je_sb_panama_canal_reason: "Now that we control mining operations in Arden Aurora we must secure a quicker and more profitable root back to Europe. Panama has been suggested as a possible location of a canal that would massively decrease travel time and cost."
 
     #NOR JE
+    NOR_FLAVOR_TEXT:0 "Following the recent passing of the beloved Queen’s Prince, Lord Vidkun X Göinge, Norway finds itself at a crossroads. A patron of the arts and sciences, his death has left the conservative Aasa IV Paijkull poised to rule, worrying Parliament that the nation may lag behind its neighbors. Discussions abound on how Norway can make the 19th century its own, whether by fostering social sciences, advancing industrial growth, or expanding knowledge through universities. The choices made now will shape the nation's path toward Norway’s Century."
+
+    je_group_norway: "The Norweigan Century"
     norwegian_century.1.t: "The Norweigan Century Begins"
     norwegian_century.1.d: "The Norweigan Century Begins"
     norwegian_century.1.f: "Following the collapse of our empire in the late fifteenth century, the crowns of Norway passed through hardship and division. Under the rule of the Sten dynasty, and later the House of Paijkull, the realm was reunited and raised beyond its former stature. With the passing of Prince Vidkun X Göinge, authority now rests with his consort, Her Majesty Queen Aasa Paijkull, whose long life has witnessed Norway’s transformation into one of Europe’s foremost centers of scientific thought. In the twilight of her reign, the Queen and her council look not to conquest, but to learning, innovation, and the strengthening of both the homeland and the American colonies. In her honor, we commit ourselves to the advancement of knowledge and the founding of universities, marking the dawn of what shall be remembered as the Norwegian Century."
     norwegian_century.1.a: "Let this century be remembered!"
     je_the_northern_century_begins: "The Norwegian Century Begins"
     je_the_northern_century_begins_reason: "To secure Norway’s place as a leading power of innovation and learning, the Crown seeks to expand scientific institutions and universities across the realm. Through sustained investment in education and research, Norway shall define the coming age by knowledge rather than conquest."
+    je_the_northern_century_begins_lobby: "Academic institutions, enlightened bureaucrats, and urban reformers advocate for a future led by science and structured learning. They argue that sustained investment in research, administration, and higher education will allow Norway to dominate through innovation, efficiency, and intellectual prestige."  
     norwegian_century.2.t: "The Direction of National Enlightenment"
     norwegian_century.2.d: "The Direction of National Enlightenment"
     norwegian_century.2.f: "With the ambitions of the Norwegian Century set in motion, Parliament now convenes to determine the proper application of the realm’s expanding scientific capacity. Statesmen, scholars, and industrial patrons alike agree that knowledge must serve the nation, but differ sharply on whether its purpose lies in material strength or social advancement. The choice made in this chamber will guide Norway’s development for the decade to come and shape how progress is felt by its people."
@@ -158,6 +179,7 @@
     iron_century.1.a: "Let the Furnaces Burn"
     je_the_century_of_iron: "Jernalderen, The Iron Century"
     je_the_century_of_iron_reason: "The future strength of Norway lies in the disciplined expansion of its heavy industry. By investing in steel, tools, and iron extraction, the nation seeks to secure lasting economic and political power for the century ahead."
+    je_the_century_of_iron_lobby: "Industrialists, military planners, and economic hardliners press the Crown to prioritize iron, steel, and heavy industry. They claim that factories, foundries, and disciplined labor will secure Norway’s independence, fuel its armies, and anchor its power in material strength rather than ideals."
     modifier_norway_let_the_furnace_burn: "Let the Furnace Burn"
     iron_century.2.t: "The Iron Century Realized"
     iron_century.2.d: "The Iron Century Realized"
@@ -194,6 +216,7 @@
     art_century.1.a: "Let Knowledge Be the Foundation of the Realm"
     je_the_century_of_art: "Århundre, The Century of Art"
     je_the_century_of_art_reason: "Through royal decree and public investment, Norway turns toward the cultivation of art, science, and learning, seeking to raise both its cities and its people through knowledge."
+    je_the_century_of_art_lobby: "Influential scholars, artists, and reform-minded elites argue that true national greatness is built through education and cultural refinement. They believe investment in universities, public learning, and the arts will elevate Norway’s people, strengthen civic identity, and quietly reshape society for generations to come."
     modifier_norway_century_of_art_realized: "Århundre, The Century of Art"
     modifier_norway_thousand_ideas_state: "Let a thousand ideas bloom"
     art_century.2.t: "The Century of Art Realized"
@@ -201,3 +224,12 @@
     art_century.2.f: "The nation's commitment to education and the arts has borne remarkable fruit. Across Norway, ideas blossom in every university and academy, and the capital pulses with creativity and learning. Yet, as innovation spreads, dissenting circles quietly form, questioning the monarchy and the current order. The Century of Knowledge is at its zenith, but its continuation may depend on the stability of the realm. Norway must safeguard its intellectual and cultural achievements against the shadows of revolution."
     art_century.2.a: "We Must Preserve Our Knowledge"
     modifier_norway_century_of_art_rebels: "Blomstrende, Blooming Minds"
+
+    #GBR JE's
+    GBR_FLAVOR_TEXT:0 "Under the rule of Robert VI Forbes, the Greater Scottish Empire remains a resilient but humbled power. Fifty years ago, most of its colonial holdings in the New World were lost, leaving only a small loyalist coalition in Florida and Georgia, known as 'Nova Scotia.' Despite these setbacks, Scotland retains its influence, yet it faces the urgent need to rebuild a formidable navy and assert dominance among the great powers. Within Parliament, particular attention turns to the weakened Mughal Empire, whose struggles over internal administration and trade present opportunities to control the lucrative production of opium for both medicine and export, bolstering the Empire’s recovery and ambition."
+
+    #SAX JE's
+    SAX_FLAVOR_TEXT:0 "As the preeminent power of the German territories and heir to the legacy of the Holy Transalpine Riverine Empire, Hanover stands at the center of opportunity and tension. Though the HTRE dissolved during the Protestant Reformation, its traditions and authority endure, shaping Hanover’s identity and fueling rivalry with the Bavaro-Slovak Kingdom. Across the kingdom, both the lower and upper classes grow restless, inspired by visions of a new German state. The time is ripe for reform, industrialization, and political maneuvering, yet revolution and upheaval lurk, threatening to reshape the future of the region entirely."
+
+    #ETH Je's
+    ETH_FLAVOR_TEXT:0 "In 1815, the House of Brown returned from a 400-year exile in Madagascar, reclaiming old territories as Emperor Requis IV Brown expanded into the weakening Abyssinian provinces of Egypt. Now, under the young Requis V, the kingdom faces a critical moment: can the Ethiopian state rise to forge a great African empire, learning from past failures, or will history repeat itself? The coming decades will test its ability to modernize, consolidate power, and secure its place among the continent’s leading nations."

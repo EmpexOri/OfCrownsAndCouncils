@@ -1,0 +1,76 @@
+﻿je_polish_controversial_queen_progress_bar = {
+    name = "je_polish_controversial_queen_progress_bar"
+    desc = "je_polish_controversial_queen_progress_bar_desc"
+
+    double_sided_bad = yes
+
+    monthly_progress = {
+        # Negative progress (bad for the Queen)
+        if = {
+            limit = { has_law_or_variant = law_type:law_autocracy }
+            add = { desc = "je_progress_autocracy_penalty" value = -10  }
+        }
+        if = {
+            limit = { has_law_or_variant = law_type:law_oligarchy }
+            add = { desc = "je_progress_oligarchy_penalty" value = -5 }
+        }
+
+        # Positive progress (good for the Queen)
+        if = {
+            limit = { has_law_or_variant = law_type:law_landed_voting }
+            add = { desc = "je_progress_landed_voting_bonus" value = 5 }
+        }
+        if = {
+            limit = { OR = { has_law_or_variant = law_type:law_wealth_voting } }
+            add = { desc = "je_progress_wealth_voting_bonus" value = 10 }
+        }
+
+		# Army opinion
+		if = {
+			limit = { has_interest_group = ig_armed_forces }
+			add = {
+				desc = "je_progress_army_opinion"
+				if = {
+					limit = { interest_group = ig_armed_forces opinion >= 0 }
+					value = 5
+				}
+				if = {
+					limit = { interest_group = ig_armed_forces opinion < 0 }
+					value = -5
+				}
+			}
+		}
+
+		# Devout opinion
+		if = {
+			limit = { has_interest_group = ig_devout }
+			add = {
+				desc = "je_progress_devout_opinion"
+				if = {
+					limit = { interest_group = ig_devout opinion >= 0 }
+					value = 5
+				}
+				if = {
+					limit = { interest_group = ig_devout opinion < 0 }
+					value = -5
+				}
+			}
+		}
+
+        # Technology
+        if = {
+            limit = { has_technology_researched = political_agitation }
+            add = { desc = "je_progress_political_agitation" value = 5 }
+        }
+
+        # Not #1 Great Power
+        if = {
+            limit = { NOT = { is_great_power_rank = 1 } }
+            add = { desc = "je_progress_not_top_great_power" value = 5 }
+        }
+    }
+
+    start_value = 0
+    min_value = 0
+    max_value = 100
+}

@@ -85,7 +85,10 @@ eastern_snow.2 = {
 			name = modifier_polish_internal
 			years = 5
 		}
-        set_variable = je_polish_internal
+        set_variable = {
+            value = je_polish_internal_true
+            name = flag:je_polish_internal_true
+        }
     }
 }
 
@@ -188,6 +191,10 @@ polish_regency.2 = {
     option = {
         name = polish_regency.2.a
         default_option = yes
+        set_variable = {
+            name = polish_regency_ended
+            value = flag:polish_regency_ended_loc
+        }
         remove_modifier = modifier_regency_of_aasa
     }
 }

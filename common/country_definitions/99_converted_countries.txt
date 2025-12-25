@@ -3030,7 +3030,7 @@ GAR ?= {
 }
 
 GBR ?= {
-	color = { 235 189 52 }
+	color = { 235 180 11 }
 	country_type = recognized
 	tier = empire
 	cultures = { scottish }
@@ -6042,6 +6042,7 @@ MUG ?= {
 	tier = empire
 	cultures = { hindustani }
 	dynamic_country_name = yes
+	social_hierarchy = british_indian_caste_system
 	religion = sunni
 	capital = STATE_DELHI
 }
@@ -11623,7 +11624,7 @@ X89 ?= {
 
 X90 ?= {
 	color = { 38 66 71 }
-	country_type = recognized
+	country_type = unrecognized
 	tier = principality
 	cultures = { mordvin }
 	religion = protestant

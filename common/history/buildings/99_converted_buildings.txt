@@ -10741,6 +10741,19 @@
 	s:STATE_EASTERN_NORWAY = {
 		region_state:NOR = {
 			create_building = {
+				building = "building_iron_mine"
+				add_ownership = {
+					building = {
+						type = building_iron_mine
+						country = c:NOR
+						levels = 1
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" }
+			}
+			create_building = {
 				building = "building_fishing_wharf"
 				add_ownership = {
 					building = {
@@ -10776,6 +10789,84 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_basic_port" }
+			}
+			create_building = {
+				building = "building_arts_academy"
+				add_ownership = {
+					building = {
+						type = building_arts_academy
+						country = c:NOR
+						levels = 1
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_paper_mills"
+				add_ownership = {
+					building = {
+						type = building_paper_mills
+						country = c:NOR
+						levels = 2
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_textile_mills"
+				add_ownership = {
+					building = {
+						type = building_textile_mills
+						country = c:NOR
+						levels = 1
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = { 
+					building = {
+						type = building_tooling_workshops
+						country = c:NOR
+						levels = 2
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {  
+					building = {
+						type = building_government_administration
+						country = c:NOR
+						levels = 4
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_construction_sector"
+				add_ownership = {
+					building = {
+						type = building_construction_sector
+						country = c:NOR
+						levels = 2
+						region = STATE_EASTERN_NORWAY
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 		}
 	}
@@ -14171,7 +14262,7 @@
 					building = {
 						type = building_logging_camp
 						country = c:NOR
-						levels = 1
+						levels = 4
 						region = STATE_GOTALAND
 					}
 				}

@@ -13410,7 +13410,12 @@
 			create_pop = {
 				culture = norwegian
 				religion = protestant
-				size = 115390
+				size = 195390
+			}
+			create_pop = {
+				culture = estonian
+				religion = protestant
+				size = 55390
 			}
 		}
 	}

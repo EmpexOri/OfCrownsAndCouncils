@@ -45,6 +45,7 @@ je_the_century_of_iron = {
 	}
     is_shown_when_inactive = {
         is_player = yes
+		c:NOR = THIS
     }
 
 	possible = {
@@ -108,7 +109,6 @@ je_norway_the_century_of_steel = {
 	group = je_group_norway
 
 	possible = {
-		is_player = yes
 		has_variable = focus_production_true
 	}
 
@@ -167,6 +167,7 @@ je_the_century_of_art = {
     # Only show if the player is Norway
     is_shown_when_inactive = {
         is_player = yes
+		c:NOR = THIS
     }
 
     immediate = {
@@ -177,8 +178,6 @@ je_the_century_of_art = {
     }
 
     possible = {
-        # Must be Norway player
-        is_player = yes
         c:NOR = ROOT
         # Must be after 1840
         date >= 1840.1.1
