@@ -2,65 +2,127 @@
     name = "je_polish_controversial_queen_progress_bar"
     desc = "je_polish_controversial_queen_progress_bar_desc"
 
-    double_sided_bad = yes
+    default_bad = yes
 
     monthly_progress = {
-        # Negative progress (bad for the Queen)
-        if = {
-            limit = { has_law_or_variant = law_type:law_autocracy }
-            add = { desc = "je_progress_autocracy_penalty" value = -10  }
-        }
-        if = {
-            limit = { has_law_or_variant = law_type:law_oligarchy }
-            add = { desc = "je_progress_oligarchy_penalty" value = -5 }
-        }
+	# Negative progress (bad for the Queen)
+	if = {
+		limit = { has_law_or_variant = law_type:law_autocracy }
+		add = { desc = "je_progress_autocracy_penalty" value = -10 }
+	}
+	if = {
+		limit = { has_law_or_variant = law_type:law_oligarchy }
+		add = { desc = "je_progress_oligarchy_penalty" value = -10 }
+	}
 
-        # Positive progress (good for the Queen)
-        if = {
-            limit = { has_law_or_variant = law_type:law_landed_voting }
-            add = { desc = "je_progress_landed_voting_bonus" value = 5 }
-        }
-        if = {
-            limit = { OR = { has_law_or_variant = law_type:law_wealth_voting } }
-            add = { desc = "je_progress_wealth_voting_bonus" value = 10 }
-        }
+	# Positive progress (good for the Queen)
+	if = {
+		limit = { has_law_or_variant = law_type:law_landed_voting }
+		add = { desc = "je_progress_landed_voting_bonus" value = -5 }
+	}
+	if = {
+		limit = { has_law_or_variant = law_type:law_wealth_voting }
+		add = { desc = "je_progress_wealth_voting_bonus" value = 10 }
+	}
 
-		# Army opinion
-		if = {
-			limit = { has_interest_group = ig_armed_forces }
-			add = {
-				desc = "je_progress_army_opinion"
-				if = {
-					limit = { interest_group = ig_armed_forces opinion >= 0 }
-					value = 5
-				}
-				if = {
-					limit = { interest_group = ig_armed_forces opinion < 0 }
-					value = -5
+	# Default bonus if none of the above are enacted
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_landed_voting
 				}
 			}
 		}
+		add = { desc = "je_progress_default_bonus" value = 10 }
+	}
 
-		# Devout opinion
-		if = {
-			limit = { has_interest_group = ig_devout }
-			add = {
-				desc = "je_progress_devout_opinion"
-				if = {
-					limit = { interest_group = ig_devout opinion >= 0 }
-					value = 5
-				}
-				if = {
-					limit = { interest_group = ig_devout opinion < 0 }
-					value = -5
-				}
-			}
-		}
+        # Army clout
+        add = {
+            desc = "je_progress_army_clout"
+            value = {
+                ig:ig_armed_forces = {
+                    limit = { is = ig_armed_forces }
+                    value = {
+                        if = { limit = { is_in_government = yes } value = 10 }
+                        if = { limit = { is_in_government = no } value = 5 }
+                        if = { limit = { is_marginal = yes } value = -5 }
+                    }
+                }
+            }
+        }
+
+        # Devout clout
+        add = {
+            desc = "je_progress_devout_clout"
+            value = {
+                ig:ig_devout = {
+                    limit = { is = ig_devout }
+                    value = {
+                        if = { limit = { is_in_government = yes } value = 10 }
+                        if = { limit = { is_in_government = no } value = 5 }
+                        if = { limit = { is_marginal = yes } value = -5 }
+                    }
+                }
+            }
+        }
+
+        # Intellegensia clout
+        add = {
+            desc = "je_progress_intel_clout"
+            value = {
+                ig:ig_intelligentsia = {
+                    limit = { is = ig_intelligentsia }
+                    value = {
+                        if = { limit = { is_in_government = yes } value = -10 }
+                        if = { limit = { is_in_government = no } value = -5 }
+                        if = { limit = { is_marginal = yes } value = 5 }
+                    }
+                }
+            }
+        }
+
+        # Industry clout
+        add = {
+            desc = "je_progress_industrial_clout"
+            value = {
+                ig:ig_industrialists = {
+                    limit = { is = ig_industrialists }
+                    value = {
+                        if = { limit = { is_in_government = yes } value = -10 }
+                        if = { limit = { is_in_government = no } value = -5 }
+                        if = { limit = { is_marginal = yes } value = 5 }
+                    }
+                }
+            }
+        }
+        # Landowners clout
+        add = {
+            desc = "je_progress_landowners_clout"
+            value = {
+                ig:ig_landowners = {
+                    limit = { is = ig_landowners }
+                    value = {
+                        if = { limit = { is_in_government = yes } value = -10 }
+                        if = { limit = { is_in_government = no } value = -5 }
+                        if = { limit = { is_marginal = yes } value = 5 }
+                    }
+                }
+            }
+        }
 
         # Technology
         if = {
-            limit = { has_technology_researched = political_agitation }
-            add = { desc = "je_progress_political_agitation" value = 5 }
+            limit = { has_technology_researched = socialism }
+            add = { desc = "je_progress_socialism" value = 5 }
+        }
+
+        # Internal Focus
+        if = {
+            limit = { has_variable = je_polish_internal_true }
+            add = { desc = "je_progress_internal_focus" value = -5 }
         }
 
         # Not #1 Great Power
@@ -68,9 +130,15 @@
             limit = { NOT = { is_great_power_rank = 1 } }
             add = { desc = "je_progress_not_top_great_power" value = 5 }
         }
+
+		    if = { limit = { has_modifier = republican_concessions_active }
+           add = { value = -5 desc = "je_progress_republican_concessions" } }
+
+			if = { limit = { has_modifier = aristocrat_powers_active }
+				add = { value = -5 desc = "je_progress_aristocrat_powers" } }
     }
 
-    start_value = 0
+    start_value = 50
     min_value = 0
     max_value = 100
 }

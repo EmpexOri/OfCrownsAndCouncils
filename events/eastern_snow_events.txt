@@ -85,10 +85,7 @@ eastern_snow.2 = {
 			name = modifier_polish_internal
 			years = 5
 		}
-        set_variable = {
-            value = je_polish_internal_true
-            name = flag:je_polish_internal_true
-        }
+        set_variable = je_polish_internal_true
     }
 }
 
@@ -191,10 +188,121 @@ polish_regency.2 = {
     option = {
         name = polish_regency.2.a
         default_option = yes
-        set_variable = {
-            name = polish_regency_ended
-            value = flag:polish_regency_ended_loc
-        }
+        set_variable = polish_regency_ended_loc
         remove_modifier = modifier_regency_of_aasa
+    }
+}
+
+namespace = polish_queen_rise
+
+polish_queen_rise.1 = {
+    type = country_event
+    placement = root
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+    title = polish_queen_rise.1.t
+    desc = polish_queen_rise.1.d
+    flavor = polish_queen_rise.1.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+    trigger = {
+        tag = PLC
+    }
+
+    option = {
+        name = polish_queen_rise.1.a
+        default_option = yes
+        ig:ig_armed_forces ?= {
+            remove_ideology = ideology_paternalistic
+            add_ideology = ideology_republican
+        }
+        add_modifier = {
+            name = polish_controversy_in_government
+            years = 5
+        }
+    }
+}
+
+polish_queen_rise.2 = {
+    type = country_event
+    placement = root
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    title = polish_queen_rise.2.t
+    desc = polish_queen_rise.2.d
+    flavor = polish_queen_rise.2.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+    trigger = {
+        tag = PLC
+    }
+
+    option = {
+        name = polish_queen_rise.2.a
+        default_option = yes
+        add_modifier = {
+            name = stability_in_monarchy
+            years = 20
+            is_decaying = yes
+        }
+    }
+}
+
+polish_queen_rise.3 = {
+    type = country_event
+    placement = root
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+    title = polish_queen_rise.3.t
+    desc = polish_queen_rise.3.d
+    flavor = polish_queen_rise.3.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+    trigger = {
+        tag = PLC
+    }
+
+    option = {
+        name = polish_queen_rise.3.a
+        default_option = yes
+
+        add_modifier = {
+            name = stability_in_revolution
+            years = 20
+            is_decaying = yes
+        }
+
+        activate_law = law_type:law_parliamentary_republic
+
+        if = {
+            limit = {
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_oligarchy
+                }
+            }
+            activate_law = law_type:law_wealth_voting
+        }
+    }
+    option = {
+        name = polish_queen_rise.3.b
+        add_modifier = {
+            name = stability_in_military_revolution
+            years = 20
+            is_decaying = yes
+        }
+        activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_autocracy
     }
 }

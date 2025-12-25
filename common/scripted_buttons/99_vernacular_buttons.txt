@@ -321,3 +321,4 @@ je_vernacular_policy_accept_wallonian_button = {
 		value = 1
 	}
 }
+

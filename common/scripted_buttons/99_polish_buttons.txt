@@ -1,0 +1,38 @@
+﻿je_polish_grant_republican_concessions = {
+    name = "je_polish_grant_republican_concessions"
+    desc = "je_polish_grant_republican_concessions_desc"
+
+    visible = {
+        has_law_or_variant = law_type:law_monarchy
+    }
+
+    possible = {
+        NOT = { has_modifier = republican_concessions_active }
+    }
+
+    effect = {
+        add_modifier = {
+            name = republican_concessions_active
+        }
+    }
+}
+
+je_polish_grant_aristocrat_powers = {
+    name = "je_polish_grant_aristocrat_powers"
+    desc = "je_polish_grant_aristocrat_powers_desc"
+
+    visible = {
+        has_law_or_variant = law_type:law_monarchy
+    }
+
+    possible = {
+        NOT = { has_modifier = aristocrat_powers_active }
+    }
+
+    effect = {
+        add_modifier = {
+            name = aristocrat_powers_active
+        }
+    }
+}
+

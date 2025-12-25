@@ -108,17 +108,50 @@
     je_polish_controversial_queen_tt: "With [SCOPE.sCharacter('ruler_scope').GetName] now ruling, the Parliament debates how to define Poland’s next era. [SCOPE.sCharacter('ruler_scope').GetHerHis] youth and vision divide the nation, inspiring both hope and controversy.”
 
     je_polish_controversial_queen: "A controversy in Government"
+    je_polish_controversial_queen_reason: "With the Regency at an end, old compromises begin to fray. The Armed Forces and the Devout, once content to wait behind the throne, now grow restless and suspicious of the Crown’s direction. If their influence is allowed to swell unchecked, their calls for ‘national salvation’ may curdle into open defiance. A prolonged imbalance of power risks plunging the realm into a season of unrest, one that could test the very survival of the Monarchy."
     je_polish_controversial_queen_progress_bar:0 "Rise of the Controversial Queen"
     je_polish_controversial_queen_progress_bar_desc:0 "Discontent with the Monarchy."
 
-    je_progress_autocracy_penalty:0 "Autocracy resists (+ -25)"
-    je_progress_oligarchy_penalty:0 "Oligarchy resists (+ -10)"
-    je_progress_landed_voting_bonus:0 "Landed voting supports (+10)"
-    je_progress_wealth_voting_bonus:0 "Wealth voting supports (+25)"
-    je_progress_army_discontent:0 "Army opposition (+25)"
-    je_progress_devout_unhappy:0 "Devout opposition (+25)"
-    je_progress_political_agitation:0 "Political agitation (+25)"
-    je_progress_not_top_great_power:0 "Not most powerful Great Power (+25)"
+    je_progress_autocracy_penalty:0 "Autocracy Enacted"
+    je_progress_oligarchy_penalty:0 "Oligarchy Enacted"
+    je_progress_landed_voting_bonus:0 "Landed voting Enacted"
+    je_progress_wealth_voting_bonus:0 "Wealth voting Enacted"
+    je_progress_army_clout:0 "Armed Forces position of Power"
+    je_progress_devout_clout:0 "Evangelical position of Power"
+    je_progress_intel_clout:0 "Intelligentsia position of Power"
+    je_progress_industrial_clout:0 "Industrialists position of Power"
+    je_progress_landowners_clout:0 "Landowners position of Power"
+    je_progress_socialism:0 "Socialism is researched"
+    je_progress_internal_focus:0 "Poland has an Internal Focus"
+    je_progress_not_top_great_power:0 "Not most powerful Great Power"
+
+    polish_queen_rise.1.t: "A Foreboding Birthday"
+    polish_queen_rise.1.d: "A Foreboding Declaration in the Halls of Power"
+    polish_queen_rise.1.f: "On the eve of her twenty-fifth birthday, Queen Aasa witnesses an unsettling turn of events within the Parliament of the State.\n\nThe Armed Forces, who had long upheld the monarchy under the guidance of Paternalistic ideology, now step forward to declare their republican sympathies. Their words are measured but ominous, hinting at the eventual end of the monarchy if reforms fail to satisfy their demands.\n\nThe Devout, cautious yet ever-watchful, lend their support to this change, not with the radical fervor of revolutionaries, but with a quiet determination that shifts the balance of influence in the government.\n\nNow, the monarchy faces the delicate challenge of managing these rising republican forces while contending with the Intelligentsia, Industrialists, and Landowners. Each faction holds its own vision for the country: stability, progress, or tradition. Should the republicans gain too much influence unchecked, the very foundations of the monarchy may be imperiled, and unrest could grip the nation."
+    polish_queen_rise.1.a: "Acknowledge the Declaration"
+
+    je_polish_grant_republican_concessions: "Grant Concessions to the Republicans"
+    je_polish_grant_republican_concessions_desc: "The Republicans have been pressing for reform and greater influence within the State. By granting them concessions, we show goodwill and a willingness to adapt, hoping to temper their revolutionary fervor. Yet, such gestures may embolden them, making them a persistent voice in Parliament and potentially unsettling our traditional power structures."
+    je_polish_grant_aristocrat_powers: "Grant Powers to the Aristocrats"
+    je_polish_grant_aristocrat_powers_desc: "The Aristocrats seek to preserve the stability of the Monarchy and the privileges of the landed elite. By granting them powers, we reinforce their authority and appease their demands, securing their loyalty in times of political unrest. But in doing so, we risk alienating the reformist factions and allowing the status quo to dominate, slowing necessary modernization."
+
+    republican_concessions_active: "Concessions to the Republicans"
+    aristocrat_powers_active: "Extra powers granted to the Aristocrats"
+    polish_controversy_in_government: "A controversy in Government"
+
+    polish_queen_rise.2.t: "The Crown Secured"
+    polish_queen_rise.2.d: "A decade has passed since the Armed Forces and the Devout first cast their long shadows over the throne. Through restraint, reform, and careful governance, the State has endured their pressure without yielding to revolution or clerical rule. The Queen remains upon her throne, no longer merely by tradition, but by political reality."
+    polish_queen_rise.2.f: "The Army has returned to its barracks, the pulpit speaks with less fire, and the machinery of the state now hums with measured confidence. Industrialists and Intelligentsia shape policy, Landowners temper reform with continuity, and the Crown stands above them all, not unchallenged, but unquestioned. Poland has not emerged unchanged, but it has emerged intact. Order, once contested, is now entrenched."
+    polish_queen_rise.2.a: "The Monarchy Endures"
+    stability_in_monarchy: "Stability in the Crown"
+
+    polish_queen_rise.3.t: "The Fall of the Crown"
+    polish_queen_rise.3.d:  "The balance has finally broken.""
+    polish_queen_rise.3.f: "What began as pressure has become command, and what was once debate has turned into decree. The Armed Forces, backed openly by the Devout, have moved decisively against the Crown. The Queen is removed not with ceremony, but with finality. Barracks replace salons, sermons replace proclamations, and the symbols of monarchy are stripped from the state. Yet even now, the victors disagree: is this a republic of the people, or a republic of order? The future of Poland will be decided not by the Crown, but by those who seized it."
+    polish_queen_rise.3.a:  "Proclaim a Democratic Republic"
+    polish_queen_rise.3.b:  "Establish a Military Dictatorship"
+    stability_in_revolution: "Stability in Revolution"
+    stability_in_military_revolution: "Stability in the Military"
 
     #SB JE's
     W38_FLAVOR_TEXT:0 "Under the rule of Kyloravian IV von Glaublitz, cousin of Hanover’s Luidolf III, the Sardo-Burgandian Empire seeks to reclaim its place among the great powers. The Emperor aims to restore the Empire’s lost colonial holdings in Magna Meridia, and Arden Aurora, while eyeing the weakened Egyptian territories, now fractured after Tunisia and Nejd reclaimed their former lands. Reestablishing control over these regions would bring great honor to the Imperial nation. Despite its military might, the Empire still lags behind many others in industrial and political development, making careful strategy and calculated expansion essential for its rise."
