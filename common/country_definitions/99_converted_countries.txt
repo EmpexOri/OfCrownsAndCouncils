@@ -10407,9 +10407,9 @@ W65 ?= {
 
 W66 ?= {
 	color = { 136 158 183 }
-	country_type = unrecognized
+	country_type = recognized
 	tier = principality
-	cultures = { estonian }
+	cultures = { estonian karelian }
 	religion = catholic
 	capital = STATE_TVER
 }
@@ -12053,6 +12053,14 @@ Z06 ?= {
 	tier = city_state
 	cultures = { embera }
 	capital = STATE_ANTIOQUIA
+}
+
+E00 ?= {
+	color = { 200 200 20 }
+	country_type = recognized
+	tier = city_state
+	cultures = { estonian }
+	capital = STATE_INGRIA
 }
 
 ZAI ?= {
