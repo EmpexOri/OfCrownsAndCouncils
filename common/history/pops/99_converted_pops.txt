@@ -50690,14 +50690,19 @@
 	s:STATE_TVER = {
 		region_state:W66 = {
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = catholic
 				size = 250685
 			}
 			create_pop = {
-				culture = russian
+				culture = karelian
 				religion = baltic_pagan_reformed
 				size = 26800
+			}
+			create_pop = {
+				culture = estonian
+				religion = catholic
+				size = 231826
 			}
 			create_pop = {
 				culture = russian
@@ -50735,7 +50740,7 @@
 				size = 237270
 			}
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = catholic
 				size = 221184
 			}
@@ -50745,7 +50750,7 @@
 				size = 40312
 			}
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = protestant
 				size = 22022
 			}

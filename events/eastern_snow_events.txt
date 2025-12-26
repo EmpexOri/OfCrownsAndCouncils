@@ -272,3 +272,72 @@ polish_queen_rise.3 = {
         activate_law = law_type:law_autocracy
     }
 }
+
+
+namespace = estonian_nationalism
+
+estonian_nationalism.1 = {
+    type = country_event
+    placement = root
+
+    title = estonian_nationalism.1.t
+    desc = estonian_nationalism.1.d
+    flavor  = estonian_nationalism.1.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    trigger = {
+        OR = {
+            c:PLC ?= THIS
+            was_formed_from = PLC
+        }
+        # has_technology_researched = nationalism
+        NOT = {
+            exists = c:E00
+        }
+        any_scope_state = {
+            region = sr:region_russia
+            state_region = {
+                is_homeland = cu:estonian
+            }
+        }
+    }
+
+    immediate = {
+        random_scope_state = {
+            limit = {
+                region = sr:region_russia
+                state_region = {
+                    is_homeland = cu:estonian
+                }
+            }
+            save_scope_as = east_estonia_scope
+        }
+        create_country = {
+            tag = E00
+            origin = c:W66
+            state = east_estonia_scope
+            on_created = {
+                c:PLC = { 
+                    create_diplomatic_play = {
+                        name = "estonian_rebellion"
+                        target_country = c:E00
+                        type = dp_annex_war
+                    }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = estonian_nationalism.1.a
+    }
+        
+}
