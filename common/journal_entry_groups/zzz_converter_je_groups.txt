@@ -11,3 +11,7 @@ je_group_tanzimat_mug = {}
 je_french_america = {}
 
 je_group_norway = {}
+
+je_group_scotland_reform = {}
+
+je_group_scotland_imperial = {}

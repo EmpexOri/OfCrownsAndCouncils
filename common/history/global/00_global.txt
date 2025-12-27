@@ -91,5 +91,10 @@ GLOBAL = {
 			id = norwegian_century.1
 		}
 	}
+	c:GBR ?= {
+		add_journal_entry = { 
+			type = je_reform_or_revolution
+		}
+	}
 # maybe a future event to generate starting radicals from unrest?
 }

@@ -1,0 +1,292 @@
+﻿namespace = reform_or_revolution_event
+
+reform_or_revolution_event.1 = {
+    type = country_event
+    placement = root
+
+    title = reform_or_revolution_event.1.t
+    desc = reform_or_revolution_event.1.d
+    flavor  = reform_or_revolution_event.1.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+    option = {
+        name = reform_or_revolution_event.1.a
+        default_option = yes
+    }
+}
+
+reform_or_revolution_event.2 = {
+    type = country_event
+    placement = root
+
+    title = reform_or_revolution_event.2.t
+    desc = reform_or_revolution_event.2.d
+    flavor  = reform_or_revolution_event.2.f
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+
+    immediate = {
+        ruler = {
+            save_scope_as = gbr_ruler
+        }
+
+        ig:ig_petty_bourgeoisie = {
+            leader = {
+                save_scope_as = gbr_petty_leader
+            }
+        }
+    }
+
+    option = {
+        name = reform_or_revolution_event.2.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_correct_reforms
+            years = 5
+        }
+    }
+}
+
+reform_or_revolution_event.3 = {
+    type = country_event
+    placement = root
+
+    title = reform_or_revolution_event.3.t
+    desc = reform_or_revolution_event.3.d
+    flavor  = reform_or_revolution_event.3.f
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "votp_agitator_speaking"
+    }
+
+    immediate = {
+        ruler = {
+            save_scope_as = gbr_ruler
+        }
+        # Notify the player in flavor text
+        notify_player = yes
+    }
+
+    option = {
+        name = reform_or_revolution_event.3.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_radical_unrest
+            years = 5
+        }
+    }
+}
+
+namespace = scottish_naval_sun
+
+scottish_naval_sun.1 = {
+    type = country_event
+    placement = root
+
+    title = scottish_naval_sun.1.t
+    desc = scottish_naval_sun.1.d
+    flavor  = scottish_naval_sun.1.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "unspecific_steam_ship"
+    }
+
+    immediate = {
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_naval_sun.1.a
+        default_option = yes
+    }
+}
+
+scottish_naval_sun.2 = {
+    type = country_event
+    placement = root
+
+    title = scottish_naval_sun.2.t
+    desc = scottish_naval_sun.2.d
+    flavor  = scottish_naval_sun.2.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "votp_gunboat_diplomacy"
+    }
+
+    immediate = {
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_naval_sun.2.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_the_grand_old_navy
+        }
+    }
+}
+
+namespace = scottish_imperial_opium
+
+scottish_imperial_opium.1 = {
+    type = country_event
+    placement = root
+
+    title = scottish_imperial_opium.1.t
+    desc = scottish_imperial_opium.1.d
+    flavor  = scottish_imperial_opium.1.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "europenorthamerica_before_the_battle"
+    }
+
+    immediate = {
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_imperial_opium.1.a
+        default_option = yes
+    }
+}
+
+scottish_imperial_opium.2 = {
+    type = country_event
+    placement = root
+
+    title = scottish_imperial_opium.2.t
+    desc = scottish_imperial_opium.2.d
+    flavor  = scottish_imperial_opium.2.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "ip2_india_countryside"
+    }
+
+    immediate = {
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_imperial_opium.2.a
+        add_modifier = {
+            name = modifier_indian_trade
+        }
+    }
+    option = {
+        name = scottish_imperial_opium.2.b
+        default_option = yes
+        add_modifier = {
+            name = modifier_indian_dominance
+        }
+        add_journal_entry = {
+            type = je_india_is_ours
+        }
+    }
+}
+
+scottish_imperial_opium.3 = {
+    type = country_event
+    placement = root
+
+    title = scottish_imperial_opium.3.t
+    desc = scottish_imperial_opium.3.d
+    flavor  = scottish_imperial_opium.3.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "europenorthamerica_native_american"
+    }
+
+    immediate = {
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_imperial_opium.3.a
+        default_option = yes
+
+        c:X69 = {
+            limit = {
+                is_subject_of = ROOT
+            }
+            add_modifier = {
+                name = modifier_nova_scotia_powerful
+            }
+        }
+    }
+}
+
+scottish_imperial_opium.4 = {
+    type = country_event
+    placement = root
+
+    title = scottish_imperial_opium.4.t
+    desc = scottish_imperial_opium.4.d
+    flavor  = scottish_imperial_opium.4.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "ip2_india_urban_scene"
+    }
+
+    immediate = {
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_imperial_opium.4.a
+        default_option = yes
+
+        add_modifier = {
+            name = modifier_indian_governance
+        }
+    }
+}

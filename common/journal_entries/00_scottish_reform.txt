@@ -1,0 +1,369 @@
+﻿je_reform_or_revolution = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	group = je_group_scotland_reform
+
+	is_shown_in_lobby = {
+		c:GBR = THIS
+	}
+
+	possible = { }
+
+	# Fires immediately when the JE starts
+	immediate = {
+		trigger_event = {
+			id = reform_or_revolution_event.1
+			popup = yes
+		}
+	}
+
+	# 10 years
+	timeout = 3650
+
+	complete = {
+		AND = {
+			# Voting law must be better than autocracy / oligarchy / landed voting
+			NOT = {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_landed_voting
+				}
+			}
+
+			OR = {
+				# Must not have hereditary bureaucrats
+				NOT = {
+					has_law_or_variant = law_type:law_hereditary_bureaucrats
+				}
+
+				# Must not have "No Social Security"
+				NOT = {
+					has_law_or_variant = law_type:law_no_social_security
+				}
+			}
+		}
+	}
+
+	modifiers_while_active  = {
+		modifier_unmet_reforms
+	}
+
+	# Instant failure condition
+	fail = {
+		has_law_or_variant = law_type:law_autocracy
+	}
+
+	on_complete = {
+		set_variable = reform_or_revolution_complete
+		trigger_event = {
+			id = reform_or_revolution_event.2
+			popup = yes
+		}
+	}
+
+	# Timeout = failure
+	on_timeout = {
+		set_variable = reform_or_revolution_failed
+		trigger_event = {
+			id = reform_or_revolution_event.3
+			popup = yes
+		}
+	}
+
+	on_fail = {
+		set_variable = reform_or_revolution_failed
+		trigger_event = {
+			id = reform_or_revolution_event.3
+			popup = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+# Power of the Navy
+je_power_in_navy = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_scotland_reform
+
+	is_shown_in_lobby = {
+		c:GBR = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:GBR ?= THIS
+        }
+		has_technology_researched = screw_frigate
+    }
+
+	possible = { 
+		has_technology_researched = ironclad_tech
+	}
+
+	# Fires immediately when the JE starts
+	immediate = {
+		trigger_event = {
+			id = scottish_naval_sun.1
+			popup = yes
+		}
+	}
+
+	complete = {
+		navy_size >= 100
+		any_scope_building = {
+			filter = {
+				is_building_type = building_naval_base
+			}
+			NOR = {
+				building_has_goods_shortage = yes
+			}
+			percent = 0.75
+		}
+		any_military_formation = {
+			filter = {
+				is_navy = yes
+			}
+			any_combat_unit = {
+				has_unit_type = unit_type:combat_unit_type_ironclad
+			}
+			percent >= 0.25
+		}
+	}
+
+	modifiers_while_active  = {
+		modifier_naval_build_up
+	}
+
+	on_complete = {
+		set_variable = scottish_naval_sun_true
+		trigger_event = {
+			id = scottish_naval_sun.2
+			popup = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+# The Opium of the East
+je_opium_in_the_east = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_scotland_imperial
+
+    is_shown_when_inactive = {
+		OR = {
+            c:GBR ?= THIS
+        }
+		has_technology_researched = screw_frigate
+    }
+
+	modifiers_while_active = {
+		modifier_imperial_mandate
+	}
+
+	possible = { 
+		has_modifier = modifier_the_grand_old_navy
+		has_technology_researched = nationalism
+	}
+
+	# Fires immediately when the JE starts
+	immediate = {
+		any_country = { tag = MUG save_scope_as = target }
+		save_scope_as = scottish_opium_entry
+		trigger_event = {
+			id = scottish_imperial_opium.1
+			popup = yes
+		}
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+	}
+
+	complete = {
+		# Scottish Navy requirements
+		navy_size >= 100
+
+		# Must have a treaty port in one of the Mughal provinces
+			any_scope_state = {
+				is_treaty_port = yes
+				state_region = {
+					any_scope_state = {
+						owner = c:MUG
+						has_potential_resource = bg_opium_plantations
+					}
+				}
+			}
+	}
+
+	on_complete = {
+		set_variable = scottish_india_true
+		trigger_event = {
+			id = scottish_imperial_opium.2
+			popup = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+#Example second sub journal
+je_scottish_glory_in_texas = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_scotland_imperial
+
+    is_shown_when_inactive = {
+		OR = {
+            c:GBR ?= THIS
+        }
+		has_technology_researched = screw_frigate
+    }
+
+	possible = { 
+		has_modifier = modifier_the_grand_old_navy
+		has_technology_researched = nationalism
+	}
+
+	# Fires immediately when the JE starts
+	immediate = {
+		save_scope_as = scottish_texas_entry 
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+	}
+
+	modifiers_while_active = {
+		modifier_imperial_mandate_america
+	}
+
+	complete = {
+		# Scottish Navy requirements
+		army_size >= 75
+
+		any_country = {
+				is_subject_of = c:GBR
+
+				AND = {
+					#owns_entire_state_region = STATE_FLORIDA
+					#owns_entire_state_region = STATE_GEORGIA
+					#owns_entire_state_region = STATE_MISSISSIPPI
+					#owns_entire_state_region = STATE_LOUISIANA
+					owns_entire_state_region = STATE_TEXAS
+					owns_entire_state_region = STATE_OKLAHOMA
+				}
+
+				AND = {
+					OR = {
+					owns_entire_state_region = STATE_LOUISIANA
+					owns_entire_state_region = STATE_MISSISSIPPI
+					owns_entire_state_region = STATE_GEORGIA
+					owns_entire_state_region = STATE_FLORIDA
+					owns_entire_state_region = STATE_ALABAMA
+					}
+				}
+				AND = {
+					OR = {
+					owns_entire_state_region = STATE_LOUISIANA
+					owns_entire_state_region = STATE_MISSISSIPPI
+					owns_entire_state_region = STATE_GEORGIA
+					owns_entire_state_region = STATE_FLORIDA
+					owns_entire_state_region = STATE_ALABAMA
+					}
+				}
+				AND = {
+					OR = {
+					owns_entire_state_region = STATE_LOUISIANA
+					owns_entire_state_region = STATE_MISSISSIPPI
+					owns_entire_state_region = STATE_GEORGIA
+					owns_entire_state_region = STATE_FLORIDA
+					owns_entire_state_region = STATE_ALABAMA
+					}
+				}
+		}
+	}
+
+	on_complete = {
+		set_variable = scottish_texas_true
+		trigger_event = {
+			id = scottish_imperial_opium.3
+			popup = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_india_is_ours = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_scotland_imperial
+
+	# Fires immediately when the JE starts
+	immediate = {
+		any_country = { tag = MUG save_scope_as = target }
+        c:MUG = { save_scope_as = mughal_scope }
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        ruler = { save_scope_as = gbr_ruler }
+	}
+
+	complete = {
+	AND = {
+			OR = {
+				owns_entire_state_region = STATE_GUJARAT
+				owns_entire_state_region = STATE_BOMBAY
+				owns_entire_state_region = STATE_HYDERABAD
+				owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				owns_entire_state_region = STATE_ORISSA
+				owns_entire_state_region = STATE_CIRCARS 
+				owns_entire_state_region = STATE_KURNOOL
+				owns_entire_state_region = STATE_MYSORE
+				owns_entire_state_region = STATE_MADRAS
+				owns_entire_state_region = STATE_TRAVANCORE
+			}
+		}
+	AND = {
+			OR = {
+				owns_entire_state_region = STATE_GUJARAT
+				owns_entire_state_region = STATE_BOMBAY
+				owns_entire_state_region = STATE_HYDERABAD
+				owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				owns_entire_state_region = STATE_ORISSA
+				owns_entire_state_region = STATE_CIRCARS 
+				owns_entire_state_region = STATE_KURNOOL
+				owns_entire_state_region = STATE_MYSORE
+				owns_entire_state_region = STATE_MADRAS
+				owns_entire_state_region = STATE_TRAVANCORE
+			}
+		}
+	AND = {
+			OR = {
+				owns_entire_state_region = STATE_GUJARAT
+				owns_entire_state_region = STATE_BOMBAY
+				owns_entire_state_region = STATE_HYDERABAD
+				owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				owns_entire_state_region = STATE_ORISSA
+				owns_entire_state_region = STATE_CIRCARS 
+				owns_entire_state_region = STATE_KURNOOL
+				owns_entire_state_region = STATE_MYSORE
+				owns_entire_state_region = STATE_MADRAS
+				owns_entire_state_region = STATE_TRAVANCORE
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = scottish_imperial_opium.4
+			popup = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
