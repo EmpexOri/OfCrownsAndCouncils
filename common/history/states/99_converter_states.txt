@@ -5084,12 +5084,7 @@
 	s:STATE_MOSCOW = {
 		create_state = {
 			country = c:W66
-			owned_provinces = { x13D91C x43F336 x4DBAEC x632D29 x8B324E xC05614 xE0A021 xE19E7E xE32FD0 xEC68C6 xF75BCA }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X90
-			owned_provinces = { x54C962 }
+			owned_provinces = { x13D91C x43F336 x4DBAEC x632D29 x8B324E xC05614 xE0A021 xE19E7E xE32FD0 xEC68C6 xF75BCA x54C962 }
 			state_type = incorporated
 		}
 		add_homeland = cu:ugrian
@@ -9047,12 +9042,7 @@
 	s:STATE_YAROSLAVL = {
 		create_state = {
 			country = c:W66
-			owned_provinces = { x028EC5 x0D1821 x1053DD x130A3E x221D59 x23F3C4 x2FB453 x2FC308 x40FEDE x4D1D44 x53C6EC x53CD52 x560151 x5C950C x60C080 x64B6B7 x6DD07A x74EDD1 x824587 x89264F x8D7901 x8F478B x9B8556 x9DFD09 xA36510 xABAE9B xB0A39B xB24923 xB9892E xBDF81C xC0C040 xC37BBA xCC840C xCC8451 xCD34E8 xD19951 xD9ACBE xDF20A0 xE02020 xE33B67 xE78F94 xEE2E88 xF04BD2 xF39D33 xF7AA04 xFFEC80 }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X90
-			owned_provinces = { x400383 x461223 x756F52 x912892 xE03FE3 }
+			owned_provinces = { x400383 x461223 x756F52 x912892 xE03FE3 x028EC5 x0D1821 x1053DD x130A3E x221D59 x23F3C4 x2FB453 x2FC308 x40FEDE x4D1D44 x53C6EC x53CD52 x560151 x5C950C x60C080 x64B6B7 x6DD07A x74EDD1 x824587 x89264F x8D7901 x8F478B x9B8556 x9DFD09 xA36510 xABAE9B xB0A39B xB24923 xB9892E xBDF81C xC0C040 xC37BBA xCC840C xCC8451 xCD34E8 xD19951 xD9ACBE xDF20A0 xE02020 xE33B67 xE78F94 xEE2E88 xF04BD2 xF39D33 xF7AA04 xFFEC80 }
 			state_type = incorporated
 		}
 		add_homeland = cu:dynamic-norwegian-vepsian-culture-num1

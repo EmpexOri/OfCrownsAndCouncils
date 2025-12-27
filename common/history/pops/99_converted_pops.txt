@@ -32495,8 +32495,6 @@
 				religion = catholic
 				size = 203292
 			}
-		}
-		region_state:X90 = {
 			create_pop = {
 				culture = ugrian
 				religion = catholic
@@ -56663,8 +56661,6 @@
 				religion = sunni
 				size = 216361
 			}
-		}
-		region_state:X90 = {
 			create_pop = {
 				culture = karelian
 				religion = catholic

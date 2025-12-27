@@ -387,9 +387,19 @@ EGY = { #Egypt, Egyptian (Misri) People
 	ai_will_do = { always = yes }
 }
 EST = { #Estonia, Estonian People
-	use_culture_states = yes
+	states = {
+		STATE_INGRIA
+		STATE_PSKOV
+		STATE_NOVGOROD
+		STATE_TVER
+		STATE_MOSCOW
+		STATE_YAROSLAVL
+		STATE_TALINN
+		STATE_TARTU
+		STATE_RIGA
+	}
 
-	required_states_fraction = 0.75
+	required_states_fraction = 0.65
 	
 	ai_will_do = { always = yes }
 }
