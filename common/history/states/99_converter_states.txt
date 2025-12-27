@@ -6500,17 +6500,11 @@
 	s:STATE_PSKOV = {
 		create_state = {
 			country = c:W66
-			owned_provinces = { x40A060 x201505 x3266DE x4961C9 x55425A x6859CA x6D38D7 x6F9858 x6FD5E3 x8020DF x86F5A3 x87C547 x89D566 x9A8A71 x9CC46F x9ECE91 xA577B1 xA981B3 xB5BA9C xBA361B xD0DA34 xD1D45B xDF3F5C xE7438E xF06F29 }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X29
-			owned_provinces = { x4C8BB8 }
+			owned_provinces = { x4C8BB8 x40A060 x201505 x3266DE x4961C9 x55425A x6859CA x6D38D7 x6F9858 x6FD5E3 x8020DF x86F5A3 x87C547 x89D566 x9A8A71 x9CC46F x9ECE91 xA577B1 xA981B3 xB5BA9C xBA361B xD0DA34 xD1D45B xDF3F5C xE7438E xF06F29 }
 			state_type = incorporated
 		}
 		add_homeland = cu:estonian
 		add_homeland = cu:russian
-		add_claim = c:W66
 	}
 	s:STATE_PUERTO_RICO = {
 		create_state = {

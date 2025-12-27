@@ -320,24 +320,124 @@ estonian_nationalism.1 = {
             }
             save_scope_as = east_estonia_scope
         }
-        create_country = {
-            tag = E00
-            origin = c:W66
-            state = east_estonia_scope
-            on_created = {
-                c:PLC = { 
-                    create_diplomatic_play = {
-                        name = "estonian_rebellion"
-                        target_country = c:E00
-                        type = dp_annex_war
-                    }
-                }
-            }
+        THIS = {
+            save_scope_as = polish_empire_scope
         }
     }
 
     option = {
         name = estonian_nationalism.1.a
+        create_country = {
+            tag = E00
+            origin = THIS
+            state = scope:east_estonia_scope
+            on_created = {
+                c:PLC = { 
+                    create_diplomatic_play = {
+                        name = estonian_rebellion
+                        target_country = c:E00
+                        type = dp_annex_war
+                        # add_target_backers = { c:W66 }
+                    }
+                }
+                c:W66 = {
+                    trigger_event = {
+                        id = estonian_nationalism.2
+                        days = 2
+                        popup = yes
+                    }
+                }
+            }
+        }
     }
         
+}
+
+estonian_nationalism.2 = {
+    type = country_event
+    placement = root
+
+    title = estonian_nationalism.2.t
+    desc = estonian_nationalism.2.d
+    flavor  = estonian_nationalism.2.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    trigger = {}
+
+    option = {
+        name = estonian_nationalism.2.a
+        default_option = yes
+        random_diplomatic_play = {
+            limit = {
+                c:E00 = {
+                    is_diplomatic_play_target = yes
+                }
+            }
+            add_target_backers =  { ROOT }
+        }
+        ai_chance = {
+			base = 100
+		}
+    }
+    option = {
+        name = estonian_nationalism.2.b
+        add_radicals = {
+			value = large_radicals
+		}
+        ai_chance = {
+			base = 0
+		}
+    }
+
+}
+
+estonian_nationalism.3 = {
+    type = country_event
+    placement = root
+
+    title = estonian_nationalism.3.t
+    desc = estonian_nationalism.3.d
+    flavor  = estonian_nationalism.3.f
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    trigger = {
+        OR = {
+            c:W66 ?= THIS
+            was_formed_from = W66
+        }
+        exists = c:E00
+        c:E00 = {
+            is_diplomatic_play_target = no
+        }
+    }
+
+    option = {
+        name = estonian_nationalism.3.a
+        annex = c:E00
+        default_option = yes
+        ai_chance = {
+			base = 100
+		}
+    }
+    option = {
+        name = estonian_nationalism.3.b
+        ai_chance = {
+			base = 0
+		}
+    }
 }
