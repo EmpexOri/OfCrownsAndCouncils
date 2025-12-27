@@ -549,7 +549,7 @@
 		}
 	}
 	c:X90 ?= {
-		add_liberty_desire = 14.696
+		add_liberty_desire = -14.696
 	}
 	c:W66 ?= {
 		create_diplomatic_pact = {
@@ -558,7 +558,7 @@
 		}
 	}
 	c:X29 ?= {
-		add_liberty_desire = 39.446
+		add_liberty_desire = 9.446
 	}
 	c:YEM ?= {
 		create_diplomatic_pact = {

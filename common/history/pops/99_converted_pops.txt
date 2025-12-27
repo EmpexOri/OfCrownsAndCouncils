@@ -21902,6 +21902,11 @@
 				religion = catholic
 				size = 75665
 			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 44171
+			}
 		}
 	}
 	s:STATE_INNER_MAURITANIA = {
@@ -32490,8 +32495,6 @@
 				religion = catholic
 				size = 203292
 			}
-		}
-		region_state:X90 = {
 			create_pop = {
 				culture = ugrian
 				religion = catholic
@@ -41137,8 +41140,6 @@
 				religion = jewish
 				size = 154
 			}
-		}
-		region_state:X29 = {
 			create_pop = {
 				culture = russian
 				religion = catholic
@@ -50690,14 +50691,19 @@
 	s:STATE_TVER = {
 		region_state:W66 = {
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = catholic
 				size = 250685
 			}
 			create_pop = {
-				culture = russian
+				culture = karelian
 				religion = baltic_pagan_reformed
 				size = 26800
+			}
+			create_pop = {
+				culture = estonian
+				religion = catholic
+				size = 231826
 			}
 			create_pop = {
 				culture = russian
@@ -50735,7 +50741,7 @@
 				size = 237270
 			}
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = catholic
 				size = 221184
 			}
@@ -50745,7 +50751,7 @@
 				size = 40312
 			}
 			create_pop = {
-				culture = russian
+				culture = estonian
 				religion = protestant
 				size = 22022
 			}
@@ -56655,8 +56661,6 @@
 				religion = sunni
 				size = 216361
 			}
-		}
-		region_state:X90 = {
 			create_pop = {
 				culture = karelian
 				religion = catholic
