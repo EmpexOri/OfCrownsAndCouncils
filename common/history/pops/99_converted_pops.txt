@@ -21902,6 +21902,11 @@
 				religion = catholic
 				size = 75665
 			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 44171
+			}
 		}
 	}
 	s:STATE_INNER_MAURITANIA = {
@@ -41137,8 +41142,6 @@
 				religion = jewish
 				size = 154
 			}
-		}
-		region_state:X29 = {
 			create_pop = {
 				culture = russian
 				religion = catholic

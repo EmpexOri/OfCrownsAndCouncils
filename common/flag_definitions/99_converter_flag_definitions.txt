@@ -10187,3 +10187,10 @@ ZUL = {
 		trigger = { coa_def_communist_flag_trigger = yes }
 	}
 }
+E00 = {
+	flag_definition = {
+		coa = EST
+		subject_canton = EST
+		priority = 1
+	}
+}

@@ -2133,7 +2133,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
+				activate_production_methods = { "pm_iron_frame_buildings" }
 			}
 			create_building = {
 				building = "building_naval_base"
@@ -11824,7 +11824,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
+				activate_production_methods = { "pm_iron_frame_buildings" }
 			}
 			create_building = {
 				building = "building_port"
@@ -13645,7 +13645,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
+				activate_production_methods = { "pm_iron_frame_buildings" }
 			}
 			create_building = {
 				building = "building_logging_camp"
@@ -25685,6 +25685,30 @@
 				activate_production_methods = { "pm_hardwood" "pm_saw_mills" }
 			}
 			create_building = {
+				building = "bulding_iron_mine"
+				add_ownership = {
+					building = {
+						type = building_financial_district
+						country = c:W66
+						levels = 3
+						region = STATE_MOSCOW
+					}
+				}
+			}
+			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = {
+					building = {
+						type = building_tooling_workshops
+						country = c:W66
+						levels = 1
+						region = STATE_MOSCOW
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
 				building = "building_barracks"
 				add_ownership = {
 					country = {
@@ -27215,7 +27239,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
+				activate_production_methods = { "pm_iron_frame_buildings" }
 			}
 			create_building = {
 				building = "building_barracks"
@@ -28480,7 +28504,6 @@
 	s:STATE_NOVGOROD = {
 		region_state:W66 = {
 			create_building = {
-				create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
@@ -28492,6 +28515,56 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_hardwood" "pm_saw_mills" }
+			}
+			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = {
+					building = {
+						type = building_tooling_workshops
+						country = c:W66
+						levels = 1
+						region = STATE_NOVGOROD
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
+				building = "building_munition_plants"
+				add_ownership = {
+					building = {
+						type = building_munition_plants
+						country = c:W66
+						levels = 1
+						region = STATE_NOVGOROD
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_arms_industry"
+				add_ownership = {
+					building = {
+						type = building_arms_industry
+						country = c:W66
+						levels = 3
+						region = STATE_NOVGOROD
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_barracks"
+				add_ownership = {
+					country = {
+						country = c:W66
+						levels = 6
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 			create_building = {
 				building = "building_rye_farm"
@@ -28506,6 +28579,7 @@
 				reserves = 1
 				activate_production_methods = { "pm_no_secondary" }
 			}
+			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
@@ -38644,6 +38718,45 @@
 					}
 				}
 				reserves = 1
+				activate_production_methods = { "pm_iron_frame_buildings" }
+			}
+			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = {
+					building = {
+						type = building_tooling_workshops
+						country = c:W66
+						levels = 5
+						region = STATE_TVER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
+				building = "building_munition_plants"
+				add_ownership = {
+					building = {
+						type = building_munition_plants
+						country = c:W66
+						levels = 1
+						region = STATE_TVER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_arms_industry"
+				add_ownership = {
+					building = {
+						type = building_arms_industry
+						country = c:W66
+						levels = 3
+						region = STATE_TVER
+					}
+				}
+				reserves = 1
 				activate_production_methods = { }
 			}
 			create_building = {
@@ -38651,7 +38764,7 @@
 				add_ownership = {
 					country = {
 						country = c:W66
-						levels = 3
+						levels = 11
 					}
 				}
 				reserves = 1
@@ -38659,6 +38772,19 @@
 			}
 			create_building = {
 				building = "building_logging_camp"
+				add_ownership = {
+					building = {
+						type = building_logging_camp
+						country = c:W66
+						levels = 1
+						region = STATE_TVER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_hardwood" "pm_saw_mills" }
+			}
+			create_building = {
+				building = "building_"
 				add_ownership = {
 					building = {
 						type = building_logging_camp
@@ -38724,7 +38850,6 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_vertical_filing_cabinets" }
 			}
 		}
 	}
@@ -42692,7 +42817,7 @@
 					building = {
 						type = building_manor_house
 						country = c:W66
-						levels = 1
+						levels = 3
 						region = STATE_YAROSLAVL
 					}
 				}
@@ -42700,7 +42825,7 @@
 					building = {
 						type = building_iron_mine
 						country = c:W66
-						levels = 1
+						levels = 3
 						region = STATE_YAROSLAVL
 					}
 				}
@@ -42729,7 +42854,6 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_vertical_filing_cabinets" }
 			}
 		}
 		region_state:X90 = {

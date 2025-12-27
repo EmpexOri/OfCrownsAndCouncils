@@ -938,11 +938,6 @@ W94 ?= {
 	ai_will_do = { always = no }
 }
 
-W96 ?= {
-	provinces = { x21DFA0 x2505DB x28AD29 x2FE543 x340E79 x37CD87 x434D42 x4394A4 x47E0AE x564079 x5B392A x71BA78 x7B9902 x7F204D x9F49D5 xA060A0 xA7B747 xA7BD05 xA920A8 xAC95C4 xB42F67 xB70239 xB921A7 xC4AD2A xCE72AB xCF6246 xD1FB41 xDCE3DC xE0856C xE44235 xE9B9FB xFC5E47  }
-	ai_will_do = { always = no }
-}
-
 W99 ?= {
 	provinces = { x90C0E0  }
 	ai_will_do = { always = no }

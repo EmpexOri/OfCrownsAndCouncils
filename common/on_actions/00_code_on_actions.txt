@@ -331,6 +331,10 @@ on_monthly_pulse_country = {
 
 		# Sardo Burgundy Events
 		arvorigeg_question.1
+
+		# Estonian Events
+		estonian_nationalism.1
+		estonian_nationalism.3
 	}
 
 	effect = {
