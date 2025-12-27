@@ -25682,7 +25682,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_hardwood" "pm_saw_mills" }
+				activate_production_methods = {"pm_saw_mills" }
 			}
 			create_building = {
 				building = "bulding_iron_mine"
@@ -25694,6 +25694,8 @@
 						region = STATE_MOSCOW
 					}
 				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 			create_building = {
 				building = "building_tooling_workshops"
@@ -25744,19 +25746,6 @@
 				}
 				reserves = 1
 				activate_production_methods = { }
-			}
-		}
-		region_state:X90 = {
-			create_building = {
-				building = "building_barracks"
-				add_ownership = {
-					country = {
-						country = c:X90
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_general_training" }
 			}
 		}
 	}
@@ -42854,43 +42843,6 @@
 					}
 				}
 				reserves = 1
-			}
-		}
-		region_state:X90 = {
-			create_building = {
-				building = "building_construction_sector"
-				add_ownership = {
-					country = {
-						country = c:X90
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { }
-			}
-			create_building = {
-				building = "building_barracks"
-				add_ownership = {
-					country = {
-						country = c:X90
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_general_training" }
-			}
-			create_building = {
-				building = "building_logging_camp"
-				add_ownership = {
-					building = {
-						type = building_logging_camp
-						country = c:X90
-						levels = 1
-						region = STATE_YAROSLAVL
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_no_hardwood" "pm_saw_mills" }
 			}
 		}
 	}

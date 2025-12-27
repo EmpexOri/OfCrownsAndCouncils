@@ -2654,12 +2654,12 @@ EQU ?= {
 }
 
 EST ?= {
-	color = { 179 29 100 }
+	color = { 59 80 179 }
 	country_type = recognized
-	tier = principality
-	cultures = { estonian }
-	religion = protestant
-	capital = STATE_TALINN
+	tier = kingdom
+	cultures = { estonian karelian }
+	religion = catholic
+	capital = STATE_TVER
 }
 
 ETH ?= {
@@ -10406,7 +10406,7 @@ W65 ?= {
 }
 
 W66 ?= {
-	color = { 136 158 183 }
+	color = { 116 143 198 }
 	country_type = recognized
 	tier = principality
 	cultures = { estonian karelian }
