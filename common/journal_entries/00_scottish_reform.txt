@@ -119,7 +119,7 @@ je_power_in_navy = {
 			NOR = {
 				building_has_goods_shortage = yes
 			}
-			percent = 0.75
+			percent >= 0.75
 		}
 		any_military_formation = {
 			filter = {
