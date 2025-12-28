@@ -107,23 +107,54 @@
     eastern_snow.3.a: "Write the Marzec's"
     je_polish_controversial_queen_tt: "With [SCOPE.sCharacter('ruler_scope').GetName] now ruling, the Parliament debates how to define Poland’s next era. [SCOPE.sCharacter('ruler_scope').GetHerHis] youth and vision divide the nation, inspiring both hope and controversy.”
 
-    je_polish_controversial_queen: "A controversy in Government"
+    je_polish_controversial_queen: "A Controversy in Government"
     je_polish_controversial_queen_reason: "With the Regency at an end, old compromises begin to fray. The Armed Forces and the Devout, once content to wait behind the throne, now grow restless and suspicious of the Crown’s direction. If their influence is allowed to swell unchecked, their calls for ‘national salvation’ may curdle into open defiance. A prolonged imbalance of power risks plunging the realm into a season of unrest, one that could test the very survival of the Monarchy."
-    je_polish_controversial_queen_progress_bar:0 "Rise of the Controversial Queen"
-    je_polish_controversial_queen_progress_bar_desc:0 "Discontent with the Monarchy."
+    je_polish_controversial_queen_progress_bar: "Rise of the Controversial Queen"
+    je_polish_controversial_queen_progress_bar_desc: "Discontent with the Monarchy."
+    je_polish_controversial_queen_complete_custom: "The Republicans have taken sway of Government"
 
-    je_progress_autocracy_penalty:0 "Autocracy Enacted"
-    je_progress_oligarchy_penalty:0 "Oligarchy Enacted"
-    je_progress_landed_voting_bonus:0 "Landed voting Enacted"
-    je_progress_wealth_voting_bonus:0 "Wealth voting Enacted"
-    je_progress_army_clout:0 "Armed Forces position of Power"
-    je_progress_devout_clout:0 "Evangelical position of Power"
-    je_progress_intel_clout:0 "Intelligentsia position of Power"
-    je_progress_industrial_clout:0 "Industrialists position of Power"
-    je_progress_landowners_clout:0 "Landowners position of Power"
-    je_progress_socialism:0 "Socialism is researched"
-    je_progress_internal_focus:0 "Poland has an Internal Focus"
-    je_progress_not_top_great_power:0 "Not most powerful Great Power"
+    # Progress modifiers
+    je_progress_autocracy_penalty: "Autocracy Enacted"
+    je_progress_oligarchy_penalty: "Oligarchy Enacted"
+    je_progress_landed_voting_bonus: "Landed Voting Enacted"
+    je_progress_wealth_voting_bonus: "Wealth Voting Enacted"
+    je_progress_other_voting_bonus: "Free voting Enacted"
+
+    je_progress_army_clout_gov: "Armed Forces in Government"
+    je_progress_army_clout_no_gov: "Armed Forces outside Government"
+    je_progress_army_clout_marginal: "Marginal Armed Forces Influence"
+
+    je_progress_devout_clout_gov: "Devout in Government"
+    je_progress_devout_clout_no_gov: "Devout outside Government"
+    je_progress_devout_clout_marginal: "Marginal Devout Influence"
+
+    je_progress_intel_clout_gov: "Intelligentsia in Government"
+    je_progress_intel_clout_no_gov: "Intelligentsia outside Government"
+    je_progress_intel_clout_marginal: "Marginal Intelligentsia Influence"
+
+    je_progress_industry_clout_gov: "Industrialists in Government"
+    je_progress_industry_clout_no_gov: "Industrialists outside Government"
+    je_progress_industry_clout_marginal: "Marginal Industrialists Influence"
+
+    je_progress_landowners_clout_gov: "Landowners in Government"
+    je_progress_landowners_clout_no_gov: "Landowners outside Government"
+    je_progress_landowners_clout_marginal: "Marginal Landowners Influence"
+
+    je_progress_trade_unions_gov: "Trade Unions support Government"
+    je_progress_trade_unions_no_gov: "Trade Unions oppose Government"
+    je_progress_trade_unions_marginal: "Trade Unions have little influence"
+
+    je_progress_socialism: "Socialism Researched"
+    je_progress_internal_focus: "Internal Focus Active"
+    je_progress_not_top_great_power: "Not Top Great Power"
+    je_progress_republican_concessions: "Concessions to the Republicans"
+    je_progress_aristocrat_powers: "Extra Powers to the Aristocrats"
+
+    je_progress_socialism_disabled: "Socialism researched (inactive)"
+    je_progress_internal_focus_disabled: "Internal Focus (inactive)"
+    je_progress_not_top_great_power_disabled: "Great Power status (inactive)"
+    je_progress_republican_concessions_disabled: "Republican concessions (inactive)"
+    je_progress_aristocrat_powers_disabled: "Aristocrat powers (inactive)"
 
     polish_queen_rise.1.t: "A Foreboding Birthday"
     polish_queen_rise.1.d: "A Foreboding Declaration in the Halls of Power"
@@ -152,6 +183,7 @@
     polish_queen_rise.3.b:  "Establish a Military Dictatorship"
     stability_in_revolution: "Stability in Revolution"
     stability_in_military_revolution: "Stability in the Military"
+    je_progress_default_bonus: "Free Voting Enacted"
 
     #SB JE's
     W38_FLAVOR_TEXT:0 "Under the rule of Kyloravian IV von Glaublitz, cousin of Hanover’s Luidolf III, the Sardo-Burgandian Empire seeks to reclaim its place among the great powers. The Emperor aims to restore the Empire’s lost colonial holdings in Magna Meridia, and Arden Aurora, while eyeing the weakened Egyptian territories, now fractured after Tunisia and Nejd reclaimed their former lands. Reestablishing control over these regions would bring great honor to the Imperial nation. Despite its military might, the Empire still lags behind many others in industrial and political development, making careful strategy and calculated expansion essential for its rise."
