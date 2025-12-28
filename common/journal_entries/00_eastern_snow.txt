@@ -16,9 +16,9 @@
 		OR = {
 			c:W66 = { is_subject_of = ROOT }
 			c:PLC = {
-				owns_entire_state_region = STATE_PSKOV
-				owns_entire_state_region = STATE_NOVGOROD
-				owns_entire_state_region = STATE_TVER
+				country_or_subject_owns_entire_state_region = STATE_PSKOV
+				country_or_subject_owns_entire_state_region = STATE_NOVGOROD
+				country_or_subject_owns_entire_state_region = STATE_TVER
 			}
 		}
 	}
@@ -114,16 +114,16 @@ je_gold_of_golden_horde = {
 		OR = {
 			c:X45 = { is_subject_of = ROOT }
 			c:PLC = {
-				owns_entire_state_region = STATE_TOMSK
-				owns_entire_state_region = STATE_SURGUT
-				owns_entire_state_region = STATE_OB
-				owns_entire_state_region = STATE_UPPER_YENISEYSK
-				owns_entire_state_region = STATE_KRASNOYARSK
-				owns_entire_state_region = STATE_YAKUTSK
-				owns_entire_state_region = STATE_OKHOTSK
-				owns_entire_state_region = STATE_KOLYMA
-				owns_entire_state_region = STATE_CHUKOTKA
-				owns_entire_state_region = STATE_KAMCHATKA
+				country_or_subject_owns_entire_state_region = STATE_TOMSK
+				country_or_subject_owns_entire_state_region = STATE_SURGUT
+				country_or_subject_owns_entire_state_region = STATE_OB
+				country_or_subject_owns_entire_state_region = STATE_UPPER_YENISEYSK
+				country_or_subject_owns_entire_state_region = STATE_KRASNOYARSK
+				country_or_subject_owns_entire_state_region = STATE_YAKUTSK
+				country_or_subject_owns_entire_state_region = STATE_OKHOTSK
+				country_or_subject_owns_entire_state_region = STATE_KOLYMA
+				country_or_subject_owns_entire_state_region = STATE_CHUKOTKA
+				country_or_subject_owns_entire_state_region = STATE_KAMCHATKA
 			}
 		}
 	}
@@ -174,34 +174,16 @@ je_polish_southern_expedition = {
 
 			# Direct ownership by PLC
 			c:PLC = {
-				owns_entire_state_region = STATE_AZERBAIJAN
-				owns_entire_state_region = STATE_ELIZAVETPOL
-				owns_entire_state_region = STATE_TABRIZ
-				owns_entire_state_region = STATE_MAZANDARAN
-				owns_entire_state_region = STATE_TURKMENIA
-				owns_entire_state_region = STATE_URALSK
-				owns_entire_state_region = STATE_KHIVA
-				owns_entire_state_region = STATE_SYRDARYA
-				owns_entire_state_region = STATE_UZBEKIA
-				owns_entire_state_region = STATE_MERZ
-			}
-
-			# Ownership via subjects
-			any_country = {
-				is_subject_of = c:PLC
-
-				AND = {
-					owns_entire_state_region = STATE_AZERBAIJAN
-					owns_entire_state_region = STATE_ELIZAVETPOL
-					owns_entire_state_region = STATE_TABRIZ
-					owns_entire_state_region = STATE_MAZANDARAN
-					owns_entire_state_region = STATE_TURKMENIA
-					owns_entire_state_region = STATE_URALSK
-					owns_entire_state_region = STATE_KHIVA
-					owns_entire_state_region = STATE_SYRDARYA
-					owns_entire_state_region = STATE_UZBEKIA
-					owns_entire_state_region = STATE_MERZ
-				}
+				country_or_subject_owns_entire_state_region = STATE_AZERBAIJAN
+				country_or_subject_owns_entire_state_region = STATE_ELIZAVETPOL
+				country_or_subject_owns_entire_state_region = STATE_TABRIZ
+				country_or_subject_owns_entire_state_region = STATE_MAZANDARAN
+				country_or_subject_owns_entire_state_region = STATE_TURKMENIA
+				country_or_subject_owns_entire_state_region = STATE_URALSK
+				country_or_subject_owns_entire_state_region = STATE_KHIVA
+				country_or_subject_owns_entire_state_region = STATE_SYRDARYA
+				country_or_subject_owns_entire_state_region = STATE_UZBEKIA
+				country_or_subject_owns_entire_state_region = STATE_MERZ
 			}
 		}
 	}
@@ -239,22 +221,10 @@ je_polish_northern_expedition = {
 
 			# Direct ownership by PLC
 			c:PLC = {
-				owns_entire_state_region = STATE_COURLAND
-				owns_entire_state_region = STATE_RIGA
-				owns_entire_state_region = STATE_TARTU
-				owns_entire_state_region = STATE_TALINN
-			}
-
-			# Ownership via subjects
-			any_country = {
-				is_subject_of = c:PLC
-
-				AND = {
-					owns_entire_state_region = STATE_COURLAND
-					owns_entire_state_region = STATE_RIGA
-					owns_entire_state_region = STATE_TARTU
-					owns_entire_state_region = STATE_TALINN
-				}
+				country_or_subject_owns_entire_state_region = STATE_COURLAND
+				country_or_subject_owns_entire_state_region = STATE_RIGA
+				country_or_subject_owns_entire_state_region = STATE_TARTU
+				country_or_subject_owns_entire_state_region = STATE_TALINN
 			}
 		}
 	}
@@ -292,26 +262,11 @@ je_polish_western_expedition = {
 
 			# Direct ownership by PLC
 			c:PLC = {
-				owns_entire_state_region = STATE_LOWER_SILESIA
-				owns_entire_state_region = STATE_BRANDENBURG
-				owns_entire_state_region = STATE_MECKLENBURG
-				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-				owns_entire_state_region = STATE_SAXONY
-				owns_entire_state_region = STATE_BOHEMIA
-			}
-
-			# Ownership via subjects
-			any_country = {
-				is_subject_of = c:PLC
-
-				AND = {
-					owns_entire_state_region = STATE_LOWER_SILESIA
-					owns_entire_state_region = STATE_BRANDENBURG
-					owns_entire_state_region = STATE_MECKLENBURG
-					owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-					owns_entire_state_region = STATE_SAXONY
-					owns_entire_state_region = STATE_BOHEMIA
-				}
+				country_or_subject_owns_entire_state_region = STATE_LOWER_SILESIA
+				country_or_subject_owns_entire_state_region = STATE_BRANDENBURG
+				country_or_subject_owns_entire_state_region = STATE_MECKLENBURG
+				country_or_subject_owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+				country_or_subject_owns_entire_state_region = STATE_SAXONY
 			}
 		}
 	}

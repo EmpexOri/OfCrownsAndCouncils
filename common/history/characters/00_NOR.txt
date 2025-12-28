@@ -123,5 +123,19 @@
 			}
 		}
 
+# IG LEADERS
+
+		create_character = {
+			first_name = "Vidkun"
+			last_name = "Goinge"
+			culture = cu:norwegian
+			religion = rel:protestant
+			birth_date = 1808.1.12
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_jingoist_leader
+			ig_leader = yes
+			traits = { cruel }
+		}
+
 	}
 }
