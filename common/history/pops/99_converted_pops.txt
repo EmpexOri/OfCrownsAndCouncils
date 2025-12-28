@@ -5999,8 +5999,8 @@
 	s:STATE_BEKES = {
 		region_state:SLV = {
 			create_pop = {
-				culture = hungarian
-				religion = catholic
+				culture = slovak
+				religion = protestant
 				size = 385364
 			}
 			create_pop = {
@@ -6029,7 +6029,7 @@
 				size = 420968
 			}
 			create_pop = {
-				culture = romanian
+				culture = slovak
 				religion = protestant
 				size = 466001
 			}
@@ -9904,7 +9904,7 @@
 				size = 23329
 			}
 			create_pop = {
-				culture = hungarian
+				culture = slovak
 				religion = catholic
 				size = 208961
 			}
@@ -32373,12 +32373,12 @@
 		}
 		region_state:SLV = {
 			create_pop = {
-				culture = north_german
+				culture = south_german
 				religion = catholic
 				size = 211412
 			}
 			create_pop = {
-				culture = north_german
+				culture = slovak
 				religion = protestant
 				size = 342257
 			}
@@ -45432,9 +45432,9 @@
 				size = 76484
 			}
 			create_pop = {
-				culture = dynamic-hungarian-slovak-culture-num1
+				culture = slovak
 				religion = protestant
-				size = 354275
+				size = 554275
 			}
 			create_pop = {
 				culture = ashkenazi

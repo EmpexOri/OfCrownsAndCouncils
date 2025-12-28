@@ -1268,3 +1268,20 @@ UT0 = { #United Tribes of Australia, Aborigine Peoples
 		has_technology_researched = pan-nationalism
 	}
 }
+
+ROM = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.375 # Romania has 8 possible homeland states total, 3 are required.
+
+	ai_will_do = { always = yes }
+
+	possible = {
+	has_technology_researched = nationalism
+		NOR = {
+			c:AUS ?= this
+			c:KUK ?= this
+			c:SLV ?= this
+		}
+	}
+}

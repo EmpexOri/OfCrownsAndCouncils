@@ -1497,7 +1497,7 @@ BYZ ?= {
 	tier = empire
 	cultures = { greek }
 	religion = sunni
-	capital = STATE_AYDIN
+	capital = STATE_EASTERN_THRACE
 }
 
 C01 ?= {
@@ -8287,7 +8287,7 @@ SLV ?= {
 	country_type = recognized
 	tier = principality
 	dynamic_country_name = yes
-	cultures = { slovak }
+	cultures = { slovak hungarian }
 	religion = protestant
 	capital = STATE_SLOVAKIA
 }

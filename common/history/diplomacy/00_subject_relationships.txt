@@ -599,4 +599,13 @@
 			type = chartered_company
 		}
 	}
+	c:BYZ ?= {
+		create_diplomatic_pact = {
+			country = c:BUL
+			type = protectorate
+		}
+	}
+	c:X62 ?= {
+		add_liberty_desire = 50
+	}
 }
