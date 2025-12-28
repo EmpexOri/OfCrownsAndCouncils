@@ -354,6 +354,17 @@
     scottish_imperial_opium.4.f: "What was once contested ground is now governed with purpose. Officials report rising revenues, secured trade routes, and the steady imposition of imperial order. The banners of Scotland no longer merely fly over these lands—they rule them. For the nation, this achievement stands as proof that our empire is not only forged by force, but sustained by authority and vision."
     scottish_imperial_opium.4.a: "A triumph of governance and national pride."
 
+    je_scottish_union: "The Kings Union"
+    je_scottish_union_reason: "The Union our nation retains with the Duchy of Jülich, if only by threads. They are not rebellious per say, but their government seeks a more local king to oversee their people. One who is not across the channel. But perhaps if we can rebuild some of our power, we can convince them to stay."
+    scottish_loss.1.t:0 "The Union Endures"
+    scottish_loss.1.f:0 "Against expectations, [SCOPE.sCountry('scotland_scope').GetName] has succeeded in restoring its naval prestige and international standing. Though landlocked and distant, [SCOPE.sCountry('julich_scope').GetName] remains bound to the Crown, reassured by renewed confidence in Scottish authority.\n\nThe banners of union still fly, and the authority of [SCOPE.sCharacter('gbr_ruler').GetFullName] is upheld—at least for now."
+    scottish_loss.1.d:0 "Power does not always rest on geography alone. Sometimes, it is prestige that keeps a realm intact."
+    scottish_loss.1.a:0 "The Crown still commands loyalty."
+    scottish_loss.2.t:0 "The Union Fractures"
+    scottish_loss.2.f:0 "With Scottish authority diminished and the bonds of prestige unraveling, [SCOPE.sCountry('julich_scope').GetName] has seized its moment. The personal union has collapsed, and the estates of the duchy have elected a new Duke, ending their allegiance to [SCOPE.sCharacter('gbr_ruler').GetFullName].\n\nFor [SCOPE.sCountry('scotland_scope').GetName], the loss is a quiet one—but no less profound."
+    scottish_loss.2.d:0 "When authority weakens, distance becomes destiny."
+    scottish_loss.2.a:0 "So ends an untenable union."
+
     #SAX JE's
     SAX_FLAVOR_TEXT:0 "As the preeminent power of the German territories and heir to the legacy of the Holy Transalpine Riverine Empire, Hanover stands at the center of opportunity and tension. Though the HTRE dissolved during the Protestant Reformation, its traditions and authority endure, shaping Hanover’s identity and fueling rivalry with the Bavaro-Slovak Kingdom. Across the kingdom, both the lower and upper classes grow restless, inspired by visions of a new German state. The time is ripe for reform, industrialization, and political maneuvering, yet revolution and upheaval lurk, threatening to reshape the future of the region entirely."
 

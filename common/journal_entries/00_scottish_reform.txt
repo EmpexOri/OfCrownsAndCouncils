@@ -148,6 +148,52 @@ je_power_in_navy = {
 	should_be_pinned_by_default = yes
 }
 
+je_scottish_union = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	group = je_group_scotland_reform
+
+	complete = {
+		AND = {
+			game_date >= 1840.1.1
+			has_modifier = modifier_the_grand_old_navy
+		}
+	}
+
+	fail = {
+		OR = {
+			AND = {
+				game_date >= 1840.1.1
+				NOT = { has_modifier = modifier_the_grand_old_navy }
+			}
+			OR = {
+				has_modifier = modifier_radical_unrest
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = scottish_loss.1
+			popup = yes
+		}
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = scottish_loss.2
+			popup = yes
+		}
+		c:W87 = {
+			remove_diplomatic_pact = {
+				country = c:GBR
+				type = personal_union
+			}
+		}
+	}
+
+	weight = 10000
+}
+
 # The Opium of the East
 je_opium_in_the_east = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"

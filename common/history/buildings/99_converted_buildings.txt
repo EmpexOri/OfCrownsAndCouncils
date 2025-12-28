@@ -4730,7 +4730,7 @@
 					building = {
 						type = building_financial_district
 						country = c:SAX
-						levels = 1
+						levels = 4
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4772,7 +4772,7 @@
 					building = {
 						type = building_manor_house
 						country = c:SAX
-						levels = 2
+						levels = 5
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4784,7 +4784,7 @@
 				add_ownership = {
 					country = {
 						country = c:SAX
-						levels = 1
+						levels = 3
 					}
 				}
 				reserves = 1
@@ -4796,7 +4796,7 @@
 					building = {
 						type = building_lead_mine
 						country = c:SAX
-						levels = 1
+						levels = 3
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4809,7 +4809,7 @@
 					building = {
 						type = building_financial_district
 						country = c:SAX
-						levels = 1
+						levels = 5
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4847,7 +4847,7 @@
 					building = {
 						type = building_furniture_manufacturies
 						country = c:SAX
-						levels = 1
+						levels = 4
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4860,7 +4860,7 @@
 					building = {
 						type = building_financial_district
 						country = c:SAX
-						levels = 1
+						levels = 3
 						region = STATE_BOHEMIA
 					}
 				}
@@ -4881,7 +4881,7 @@
 					building = {
 						type = building_iron_mine
 						country = c:SAX
-						levels = 3
+						levels = 7
 						region = STATE_BOHEMIA
 					}
 				}
@@ -5510,7 +5510,7 @@
 				add_ownership = {
 					country = {
 						country = c:PLC
-						levels = 1
+						levels = 7
 					}
 				}
 				reserves = 1
@@ -5522,7 +5522,7 @@
 					building = {
 						type = building_logging_camp
 						country = c:PLC
-						levels = 1
+						levels = 5
 						region = STATE_BREST
 					}
 				}
@@ -5535,7 +5535,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 1
+						levels = 3
 						region = STATE_BREST
 					}
 				}
@@ -5548,7 +5548,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 3
+						levels = 13
 						region = STATE_BREST
 					}
 				}
@@ -11136,6 +11136,17 @@
 				activate_production_methods = { "pm_general_training" }
 			}
 			create_building = {
+				building = "building_naval_base"
+				add_ownership = {
+					country = {
+						country = c:GBR
+						levels = 13
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_no_naval_theory" }
+			}
+			create_building = {
 				building = "building_fishing_wharf"
 				add_ownership = {
 					building = {
@@ -14694,7 +14705,7 @@
 				add_ownership = {
 					country = {
 						country = c:PLC
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -14717,7 +14728,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 2
+						levels = 8
 						region = STATE_GREATER_POLAND
 					}
 				}
@@ -14759,17 +14770,17 @@
 				activate_production_methods = { "pm_lathe" "pm_luxury_furniture" }
 			}
 			create_building = {
-				building = "building_motor_industry"
+				building = "building_arms_industry"
 				add_ownership = {
 					building = {
-						type = building_financial_district
+						type = building_arms_industry
 						country = c:PLC
 						levels = 1
 						region = STATE_GREATER_POLAND
 					}
 				}
 				reserves = 1
-				activate_production_methods = { }
+				activate_production_methods = { "pm_pig_iron" }
 			}
 			create_building = {
 				building = "building_food_industry"
@@ -15669,7 +15680,7 @@
 					building = {
 						type = building_logging_camp
 						country = c:SAX
-						levels = 1
+						levels = 2
 						region = STATE_HANNOVER
 					}
 				}
@@ -15681,7 +15692,7 @@
 				add_ownership = {
 					country = {
 						country = c:SAX
-						levels = 7
+						levels = 25
 					}
 				}
 				reserves = 1
@@ -15693,7 +15704,7 @@
 					building = {
 						type = building_manor_house
 						country = c:SAX
-						levels = 2
+						levels = 5
 						region = STATE_HANNOVER
 					}
 				}
@@ -15706,7 +15717,7 @@
 					building = {
 						type = building_manor_house
 						country = c:SAX
-						levels = 5
+						levels = 7
 						region = STATE_HANNOVER
 					}
 				}
@@ -15719,7 +15730,7 @@
 					building = {
 						type = building_shipyards
 						country = c:SAX
-						levels = 1
+						levels = 2
 						region = STATE_HANNOVER
 					}
 				}
@@ -15732,7 +15743,7 @@
 					building = {
 						type = building_tooling_workshops
 						country = c:SAX
-						levels = 3
+						levels = 5
 						region = STATE_HANNOVER
 					}
 				}
@@ -15745,7 +15756,7 @@
 					building = {
 						type = building_paper_mills
 						country = c:SAX
-						levels = 2
+						levels = 3
 						region = STATE_HANNOVER
 					}
 				}
@@ -15781,7 +15792,7 @@
 				add_ownership = {
 					country = {
 						country = c:SAX
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -16225,6 +16236,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_naval_base"
+				add_ownership = {
+					country = {
+						country = c:GBR
+						levels = 8
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_no_naval_theory" }
 			}
 			create_building = {
 				building = "building_barracks"
@@ -16702,6 +16724,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_artificial_fertilizers" }
+			}
+			create_building = {
+				building = "building_naval_base"
+				add_ownership = {
+					country = {
+						country = c:GBR
+						levels = 12
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_no_naval_theory" }
 			}
 			create_building = {
 				building = "building_logging_camp"
@@ -19101,7 +19134,7 @@
 				add_ownership = {
 					country = {
 						country = c:PLC
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -19113,7 +19146,7 @@
 					building = {
 						type = building_logging_camp
 						country = c:PLC
-						levels = 1
+						levels = 5
 						region = STATE_KAUNAS
 					}
 				}
@@ -19126,7 +19159,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 1
+						levels = 3
 						region = STATE_KAUNAS
 					}
 				}
@@ -19139,7 +19172,7 @@
 					building = {
 						type = building_manor_house
 						country = c:PLC
-						levels = 3
+						levels = 5
 						region = STATE_KAUNAS
 					}
 				}
@@ -22606,11 +22639,35 @@
 				activate_production_methods = { }
 			}
 			create_building = {
+				building = "building_chemical_plants"
+				add_ownership = {
+					country = {
+						country = c:GBR
+						levels = 2
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_artificial_fertilizers" }
+			}
+			create_building = {
+				building = "building_furniture_manufacturies"
+				add_ownership = {
+					building = {
+						type = building_furniture_manufacturies
+						country = c:GBR
+						levels = 2
+						region = STATE_LOWLANDS
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_handcrafted_furniture" "pm_luxury_furniture" }
+			}
+			create_building = {
 				building = "building_naval_base"
 				add_ownership = {
 					country = {
 						country = c:GBR
-						levels = 1
+						levels = 15
 					}
 				}
 				reserves = 1
@@ -22621,7 +22678,7 @@
 				add_ownership = {
 					country = {
 						country = c:GBR
-						levels = 10
+						levels = 29
 					}
 				}
 				reserves = 1
@@ -22677,7 +22734,7 @@
 					building = {
 						type = building_manor_house
 						country = c:GBR
-						levels = 5
+						levels = 12
 						region = STATE_LOWLANDS
 					}
 				}
@@ -24603,6 +24660,17 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_general_training" }
+			}
+			create_building = {
+				building = "building_naval_base"
+				add_ownership = {
+					country = {
+						country = c:GBR
+						levels = 9
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_no_naval_theory" }
 			}
 			create_building = {
 				building = "building_rye_farm"
@@ -42956,7 +43024,7 @@
 					building = {
 						type = building_manor_house
 						country = c:GBR
-						levels = 2
+						levels = 6
 						region = STATE_YORKSHIRE
 					}
 				}

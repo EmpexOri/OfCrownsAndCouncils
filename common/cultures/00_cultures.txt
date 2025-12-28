@@ -38015,7 +38015,7 @@ scottish={
 	religion = protestant
 	heritage = heritage_british
 	language = language_anglophone
-	traditions = { }
+	traditions = { tradition_anglo }
 	obsessions = {
 		liquor
 	}

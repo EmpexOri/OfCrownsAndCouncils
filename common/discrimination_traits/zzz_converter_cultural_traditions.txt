@@ -14,3 +14,7 @@ tradition_feminist = {
 tradition_arpitan = {
 	type = tradition
 }
+
+tradition_anglo = {
+	type = tradition
+}

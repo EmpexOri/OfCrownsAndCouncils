@@ -18,6 +18,7 @@ reform_or_revolution_event.1 = {
     option = {
         name = reform_or_revolution_event.1.a
         default_option = yes
+        add_journal_entry = { type = je_scottish_union }
     }
 }
 
@@ -288,5 +289,63 @@ scottish_imperial_opium.4 = {
         add_modifier = {
             name = modifier_indian_governance
         }
+    }
+}
+
+namespace = scottish_loss
+
+scottish_loss.1 = {
+    type = country_event
+    placement = root
+
+    title = scottish_loss.1.t
+    desc = scottish_loss.1.d
+    flavor  = scottish_loss.1.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "unspecific_military_parade"
+    }
+
+    immediate = {
+        c:W87 = { save_scope_as = julich_scope }
+        c:GBR = { save_scope_as = scotland_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_loss.1.a
+        default_option = yes
+    }
+}
+
+scottish_loss.2 = {
+    type = country_event
+    placement = root
+
+    title = scottish_loss.2.t
+    desc = scottish_loss.2.d
+    flavor  = scottish_loss.2.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "unspecific_military_parade"
+    }
+
+    immediate = {
+        c:W87 = { save_scope_as = julich_scope }
+        c:GBR = { save_scope_as = scotland_scope }
+        ruler = { save_scope_as = gbr_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = scottish_loss.2.a
+        default_option = yes
     }
 }
