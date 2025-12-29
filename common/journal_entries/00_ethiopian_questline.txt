@@ -1,0 +1,244 @@
+﻿je_disunified_region = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_ethiopia
+
+	is_shown_in_lobby = {
+		c:ETH = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:ETH ?= THIS
+        }
+    }
+
+    possible = {
+        OR = {
+            c:ETH ?= THIS
+        }
+		game_date >= 1836.1.1
+		has_technology_researched = line_infantry
+    }
+
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_AMHARA
+		country_or_subject_owns_entire_state_region = STATE_OROMIA
+		country_or_subject_owns_entire_state_region = STATE_GONDER
+		country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+	}
+
+	modifiers_while_active = {
+		modifier_reorganizing_negus
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_unified_negus
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_a_foreign_king = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_ethiopia
+
+	is_shown_in_lobby = {
+		c:ETH = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:ETH ?= THIS
+        }
+    }
+
+    possible = {
+        OR = {
+            c:ETH ?= THIS
+        }
+		game_date >= 1836.1.1
+		has_technology_researched = mass_communication
+    }
+
+	complete = {
+		not = { has_law_or_variant = law_type:law_national_supremacy }
+	}
+
+	modifiers_while_active = {
+		modifier_unifying_government_eth
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_unified_government_eth
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_behind_the_times = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	group = je_group_ethiopia
+
+	is_shown_in_lobby = {
+		c:ETH = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:ETH ?= THIS
+        }
+    }
+
+    possible = {
+        OR = {
+            c:ETH ?= THIS
+        }
+		game_date >= 1836.1.1
+		has_technology_researched = academia
+    }
+
+	modifiers_while_active = {
+		modifier_catching_up_eth
+	}
+
+	complete = {
+		c:ETH = {
+			capital = {
+				any_scope_building = {
+					is_building_type = building_university
+					occupancy >= 0.9
+					level >= 2
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_caught_up_eth
+			years = 10
+			decaying = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_under_industrial = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_ethiopia
+
+	is_shown_in_lobby = {
+		c:ETH = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:ETH ?= THIS
+        }
+    }
+
+    possible = {
+        OR = {
+            c:ETH ?= THIS
+        }
+		game_date >= 1836.1.1
+		has_technology_researched = atmospheric_engine
+    }
+
+	modifiers_while_active = {
+		modifier_industrialing_eth
+	}
+
+	complete = {
+		NOT = {
+			OR = {
+				has_law_or_variant = law_type:law_agrarianism
+				has_law_or_variant = law_type:law_traditionalism
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_industrial_state_eth
+			years = 10
+			decaying = yes
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+# Ready to Colonize
+je_empire_of_the_horn = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_ethiopia
+
+	is_shown_in_lobby = {
+		c:ETH = THIS
+	}
+
+    is_shown_when_inactive = {
+		OR = {
+            c:ETH ?= THIS
+        }
+    }
+
+    possible = {
+        OR = {
+            c:ETH ?= THIS
+        }
+		AND = {
+			has_modifier = modifier_unified_negus
+			has_modifier = modifier_unified_government_eth
+			has_technology_researched = pharmaceuticals
+			has_technology_researched = colonization
+		}
+    }
+
+	modifiers_while_active = {
+		#modifier_industrialing_eth
+	}
+
+	immediate = {
+		add_technology_researched = quinine
+		trigger_event = {
+			id = ethiopian_empire.1
+		}
+	}
+
+	complete = {
+		OR = {
+			country_or_subject_owns_entire_state_region = STATE_KENYA
+			country_or_subject_owns_entire_state_region = STATE_RIFT_VALLEY
+			country_or_subject_owns_entire_state_region = STATE_UGANDA
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_the_new_empire
+			years = 10
+		}
+		show_as_tooltip = {
+			set_country_type = recognized
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

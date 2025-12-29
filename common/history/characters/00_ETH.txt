@@ -24,5 +24,19 @@
 			}
 		}
 
+# IG LEADERS
+
+		create_character = {
+			first_name = "Damarco"
+			last_name = "Cunningham"
+			culture = cu:dynamic-afar-amhara-culture-num1
+			religion = rel:oriental_orthodox
+			birth_date = 1800.3.14
+			interest_group = ig_landowners
+			ideology = ideology_market_liberal
+			ig_leader = yes
+			traits = { cruel grifter }
+		}
+
 	}
 }

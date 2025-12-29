@@ -307,7 +307,7 @@
 
     the_royal_colonies.1.t: "The Vestmark Dominion"
     the_royal_colonies.1.d: "With Vinland secured, attention turns to consolidation."
-    the_royal_colonies.1.f: "The integration of the former Japanese holdings of [SCOPE.sCountry('koko_scope').GetName] and [SCOPE.sCountry('seibei_scope').GetName] has finally secured Vinland in the eyes of the Crown. What were once distant and uncertain frontiers are now firmly anchored within the Norwegian imperial sphere.\n\nSeizing upon this moment, [SCOPE.sCharacter('nor_petty_leader').GetFullName], leader of the Petty Bourgeoisie, has proposed a bold reorganization of our western possessions. The weaker Vinland colonies, long administered separately, should be unified under a single, stronger authority — a new dominion to be known as the Vestmark Dominion, centered upon [SCOPE.sCountry('vestmark_scope').GetName].\n\nSuch a consolidation would streamline governance, strengthen colonial defenses, and stand as a clear symbol of Norwegian prestige abroad. [SCOPE.sCharacter('nor_ruler').GetFullName] has voiced strong support for the proposal, recognizing it as both a practical reform and a declaration of Norway’s arrival as a true imperial power."
+    the_royal_colonies.1.f: "The integration of the former Japanese holdings of [SCOPE.sCountry('koko_scope').GetName] and [SCOPE.sCountry('seibei_scope').GetName] has finally secured Vinland in the eyes of the Crown. What were once distant and uncertain frontiers are now firmly anchored within the Norwegian imperial sphere.\n\nSeizing upon this moment, [SCOPE.sCharacter('nor_petty_leader').GetFullName], leader of the Petty Bourgeoisie, has proposed a bold reorganization of our western possessions. The weaker Vinland colonies, long administered separately, should be unified under a single, stronger authority , a new dominion to be known as the Vestmark Dominion, centered upon [SCOPE.sCountry('vestmark_scope').GetName].\n\nSuch a consolidation would streamline governance, strengthen colonial defenses, and stand as a clear symbol of Norwegian prestige abroad. [SCOPE.sCharacter('nor_ruler').GetFullName] has voiced strong support for the proposal, recognizing it as both a practical reform and a declaration of Norway’s arrival as a true imperial power."
     the_royal_colonies.1.a: "Let Vestmark stand as a testament to Norwegian greatness."
 
     #GBR JE's
@@ -365,23 +365,23 @@
 
     scottish_imperial_opium.3.t: "A Hardened Frontier"
     scottish_imperial_opium.3.d: "With banners planted across the southern lands of [SCOPE.sCountry('usa_scope').GetName] and deep into Texas, a new imperial frontier has been forged. Nova Scotia, no longer a distant and fragile outpost, now stands empowered by conquest and authority."
-    scottish_imperial_opium.3.f: "The expansion south has reshaped the balance of power in the New World. Armed with new territory, wealth, and influence, Nova Scotia casts aside old restraints. Administrators speak openly of efficiency and output, while plantation owners press for higher quotas and fewer limitations. With imperial backing secured, the colony grows bolder—its appetite for labor vast, and its conscience quieted by ambition."
+    scottish_imperial_opium.3.f: "The expansion south has reshaped the balance of power in the New World. Armed with new territory, wealth, and influence, Nova Scotia casts aside old restraints. Administrators speak openly of efficiency and output, while plantation owners press for higher quotas and fewer limitations. With imperial backing secured, the colony grows bolder,its appetite for labor vast, and its conscience quieted by ambition."
     scottish_imperial_opium.3.a: "The empire rewards strength."
     modifier_nova_scotia_powerful: "Secured Power"
     modifier_indian_governance: "Government of India"
     scottish_imperial_opium.4.t: "Order Upon the Subcontinent"
     scottish_imperial_opium.4.d: "With firm governance established across our Indian possessions, the era of uncertainty has ended. Administration, taxation, and law now answer to Edinburgh, and the subcontinent stands integrated into the Scottish imperial system."
-    scottish_imperial_opium.4.f: "What was once contested ground is now governed with purpose. Officials report rising revenues, secured trade routes, and the steady imposition of imperial order. The banners of Scotland no longer merely fly over these lands—they rule them. For the nation, this achievement stands as proof that our empire is not only forged by force, but sustained by authority and vision."
+    scottish_imperial_opium.4.f: "What was once contested ground is now governed with purpose. Officials report rising revenues, secured trade routes, and the steady imposition of imperial order. The banners of Scotland no longer merely fly over these lands,they rule them. For the nation, this achievement stands as proof that our empire is not only forged by force, but sustained by authority and vision."
     scottish_imperial_opium.4.a: "A triumph of governance and national pride."
 
     je_scottish_union: "The Kings Union"
     je_scottish_union_reason: "The Union our nation retains with the Duchy of Jülich, if only by threads. They are not rebellious per say, but their government seeks a more local king to oversee their people. One who is not across the channel. But perhaps if we can rebuild some of our power, we can convince them to stay."
     scottish_loss.1.t:0 "The Union Endures"
-    scottish_loss.1.f:0 "Against expectations, [SCOPE.sCountry('scotland_scope').GetName] has succeeded in restoring its naval prestige and international standing. Though landlocked and distant, [SCOPE.sCountry('julich_scope').GetName] remains bound to the Crown, reassured by renewed confidence in Scottish authority.\n\nThe banners of union still fly, and the authority of [SCOPE.sCharacter('gbr_ruler').GetFullName] is upheld—at least for now."
+    scottish_loss.1.f:0 "Against expectations, [SCOPE.sCountry('scotland_scope').GetName] has succeeded in restoring its naval prestige and international standing. Though landlocked and distant, [SCOPE.sCountry('julich_scope').GetName] remains bound to the Crown, reassured by renewed confidence in Scottish authority.\n\nThe banners of union still fly, and the authority of [SCOPE.sCharacter('gbr_ruler').GetFullName] is upheld,at least for now."
     scottish_loss.1.d:0 "Power does not always rest on geography alone. Sometimes, it is prestige that keeps a realm intact."
     scottish_loss.1.a:0 "The Crown still commands loyalty."
     scottish_loss.2.t:0 "The Union Fractures"
-    scottish_loss.2.f:0 "With Scottish authority diminished and the bonds of prestige unraveling, [SCOPE.sCountry('julich_scope').GetName] has seized its moment. The personal union has collapsed, and the estates of the duchy have elected a new Duke, ending their allegiance to [SCOPE.sCharacter('gbr_ruler').GetFullName].\n\nFor [SCOPE.sCountry('scotland_scope').GetName], the loss is a quiet one—but no less profound."
+    scottish_loss.2.f:0 "With Scottish authority diminished and the bonds of prestige unraveling, [SCOPE.sCountry('julich_scope').GetName] has seized its moment. The personal union has collapsed, and the estates of the duchy have elected a new Duke, ending their allegiance to [SCOPE.sCharacter('gbr_ruler').GetFullName].\n\nFor [SCOPE.sCountry('scotland_scope').GetName], the loss is a quiet one,but no less profound."
     scottish_loss.2.d:0 "When authority weakens, distance becomes destiny."
     scottish_loss.2.a:0 "So ends an untenable union."
 
@@ -390,3 +390,48 @@
 
     #ETH Je's
     ETH_FLAVOR_TEXT:0 "In 1815, the House of Brown returned from a 400-year exile in Madagascar, reclaiming old territories as Emperor Requis IV Brown expanded into the weakening Abyssinian provinces of Egypt. Now, under the young Requis V, the kingdom faces a critical moment: can the Ethiopian state rise to forge a great African empire, learning from past failures, or will history repeat itself? The coming decades will test its ability to modernize, consolidate power, and secure its place among the continent’s leading nations."
+    modifier_disunified_negus: "A Broken Region"
+    modifier_disunified_government_eth: "A Foreign King"
+    modifier_behind_the_times_eth: "Behind the Times"
+    modifier_under_industrial_eth: "Under Industrialized"
+
+    #Variables
+    je_disunified_region_text: "The Empire of the Horn"
+    je_a_foreign_king_text: "Unified Internal Government"
+    je_behind_the_times_text: "Education Efforts Successful"
+    je_under_industrial_text: "An Industrial State"
+
+    #Opening JE's
+    je_group_ethiopia: "The Ethiopian Empire"
+    je_disunified_region: "A Broken Region"
+    je_a_foreign_king: "A Foreign King"
+    je_behind_the_times: "Behind the Times"
+    je_under_industrial: "Under Industrialized"
+    
+    #Opening Event
+    ethiopian_issues.1.t: "An Empire Built on Fracture"
+    ethiopian_issues.1.d: "The crown rests upon uncertain ground."
+    ethiopian_issues.1.f: "The death of Emperor Requis IV Brown has left more than a throne vacant. Though the House of Brown has reclaimed a portion of northern Abyssinia and restored the Ethiopian Kingdom in name, the reality inherited by Requis V Brown is far less secure.\n\nThe realm is a patchwork of rival regions and unresolved loyalties, its people restless and radicalized after generations of foreign rule and sudden reconquest. Many still view the new Negus as an outsider, a foreign king returned from exile, whose authority is rooted more in conquest than in tradition.\n\nBeyond matters of legitimacy, Ethiopia lags centuries behind the powers of Europe. Its institutions are antiquated, its industries few, and its technologies relics of an age long past. Where the empire once stood as a peer to the great states of the world, it now struggles merely to keep pace.\n\nIf Ethiopia is to rise again as a great African empire, it must confront these failures directly. Unity must be forged where division reigns, authority must be proven rather than assumed, and the long work of modernization must begin , lest history repeat itself, and this reborn empire collapse under the weight of its own foundations."
+    ethiopian_issues.1.a: "The work of restoration begins now."
+
+    #Reconstruction Modifiers
+    modifier_reorganizing_negus: "Reunification Efforts"
+    modifier_unifying_government_eth: "Governmental Reunification Efforts"
+    modifier_catching_up_eth: "Education Efforts"
+    modifier_industrialing_eth: "industrialization Effort"
+
+    #Completed Reconstruction
+    modifier_unified_negus: "The Empire of the Horn"
+    modifier_unified_government_eth: "Unified Internal Government"
+    modifier_caught_up_eth: "Education Efforts Successful"
+    modifier_industrial_state_eth: "An Industrial State"
+
+    #Empire of Ethiopia
+    je_empire_of_the_horn: "The Empire of the Horn"
+    je_empire_of_the_horn_reason: "With our nation stable, we can see out into the interior of Africa, where we can gain a hand over our lesser cultures. Doing so will make us an Empire in the truest sense, in such we will be seen as a power, even if still a minor one."
+    modifier_the_new_empire: "The New Empire"
+
+    ethiopian_empire.1.t: "An Empire out of Ethiopia"
+    ethiopian_empire.1.d: "With our power solidified, now we can focus outwards. Live up to our name as an Empire."
+    ethiopian_empire.1.f: "For centuries, Ethiopia stood as an empire in name more than in fact, bound by tradition, yet constrained by fragmentation and decline. Now, with authority restored and the state strengthened, the path forward lies beyond our borders.\n\nThe interior of the Horn of Africa is divided among smaller polities and rival cultures, many lacking the unity or strength to resist incorporation into a greater whole. To bring them under Ethiopian rule is not merely conquest, but the fulfillment of an imperial destiny long deferred.\n\nAn Ethiopian empire forged through expansion and consolidation will command respect across Africa. Though its power may yet be limited, its ambition is clear: Ethiopia shall no longer endure history, it shall shape it."
+    ethiopian_empire.1.a: "Leniguše negešitu!"

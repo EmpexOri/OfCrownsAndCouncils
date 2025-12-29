@@ -1,0 +1,61 @@
+﻿namespace = ethiopian_issues
+
+ethiopian_issues.1 = {
+    type = country_event
+    placement = root
+
+    title = ethiopian_issues.1.t
+    desc = ethiopian_issues.1.d
+    flavor  = ethiopian_issues.1.f
+    icon = "gfx/interface/icons/event_icons/waving_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_soldiers_breaking_protest"
+	}
+
+    option = {
+        name = ethiopian_issues.1.a
+        default_option = yes
+		add_modifier = { 
+			name = modifier_disunified_negus
+		}
+		add_modifier = { 
+			name = modifier_disunified_government_eth
+		}
+		add_modifier = { 
+			name = modifier_behind_the_times_eth
+		}
+		add_modifier = { 
+			name = modifier_under_industrial_eth
+		}
+    }
+}
+
+namespace = ethiopian_empire
+
+ethiopian_empire.1 = {
+    type = country_event
+    placement = root
+
+    title = ethiopian_empire.1.t
+    desc = ethiopian_empire.1.d
+    flavor  = ethiopian_empire.1.f
+    icon = "gfx/interface/icons/event_icons/waving_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_diplomats_negotiating"
+	}
+
+    option = {
+        name = ethiopian_empire.1.a
+        default_option = yes
+        if = {
+            has_law_or_variant = law_type:law_no_colonial_affairs
+        }
+        activate_law = law_type:law_frontier_colonization
+    }
+}

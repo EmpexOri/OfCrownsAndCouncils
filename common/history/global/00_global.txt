@@ -96,5 +96,10 @@ GLOBAL = {
 			type = je_reform_or_revolution
 		}
 	}
+	c:ETH ?= {
+		trigger_event = {
+			id = ethiopian_issues.1
+		}
+	}
 # maybe a future event to generate starting radicals from unrest?
 }
