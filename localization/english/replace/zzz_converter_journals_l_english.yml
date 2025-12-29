@@ -222,9 +222,9 @@
     #NOR JE
     NOR_FLAVOR_TEXT:0 "Following the recent passing of the beloved Queen’s Prince, Lord Vidkun X Göinge, Norway finds itself at a crossroads. A patron of the arts and sciences, his death has left the conservative Aasa IV Paijkull poised to rule, worrying Parliament that the nation may lag behind its neighbors. Discussions abound on how Norway can make the 19th century its own, whether by fostering social sciences, advancing industrial growth, or expanding knowledge through universities. The choices made now will shape the nation's path toward Norway’s Century."
 
-    je_group_norway: "The Norweigan Century"
-    norwegian_century.1.t: "The Norweigan Century Begins"
-    norwegian_century.1.d: "The Norweigan Century Begins"
+    je_group_norway: "The Norwegian Century"
+    norwegian_century.1.t: "The Norwegian Century Begins"
+    norwegian_century.1.d: "The Norwegian Century Begins"
     norwegian_century.1.f: "Following the collapse of our empire in the late fifteenth century, the crowns of Norway passed through hardship and division. Under the rule of the Sten dynasty, and later the House of Paijkull, the realm was reunited and raised beyond its former stature. With the passing of Prince Vidkun X Göinge, authority now rests with his consort, Her Majesty Queen Aasa Paijkull, whose long life has witnessed Norway’s transformation into one of Europe’s foremost centers of scientific thought. In the twilight of her reign, the Queen and her council look not to conquest, but to learning, innovation, and the strengthening of both the homeland and the American colonies. In her honor, we commit ourselves to the advancement of knowledge and the founding of universities, marking the dawn of what shall be remembered as the Norwegian Century."
     norwegian_century.1.a: "Let this century be remembered!"
     je_the_northern_century_begins: "The Norwegian Century Begins"
@@ -289,6 +289,26 @@
     art_century.2.f: "The nation's commitment to education and the arts has borne remarkable fruit. Across Norway, ideas blossom in every university and academy, and the capital pulses with creativity and learning. Yet, as innovation spreads, dissenting circles quietly form, questioning the monarchy and the current order. The Century of Knowledge is at its zenith, but its continuation may depend on the stability of the realm. Norway must safeguard its intellectual and cultural achievements against the shadows of revolution."
     art_century.2.a: "We Must Preserve Our Knowledge"
     modifier_norway_century_of_art_rebels: "Blomstrende, Blooming Minds"
+
+    #Norwegian Army & Colonies
+    je_the_royal_army: "The Royal Army"
+    je_the_royal_army_reason: "Norway has the ability to be a great power, if only we put more focus towards our ability to defend ourselves."
+    modifier_the_royal_army: "The Royal Norwegian Army" 
+
+    the_royal_army.1.t: "Securing the Vinland Colonies"
+    the_royal_army.1.d: "A matter of naval power and imperial foresight."
+    the_royal_army.1.f: "With the recent expansion of the Norwegian fleet, new strategic considerations have emerged. [SCOPE.sCharacter('nor_petty_leader').GetFullName], leader of the Petty Bourgeoisie, has brought a formal warning before [SCOPE.sCharacter('nor_ruler').GetFullName], arguing that naval supremacy demands decisive action.\n\nThe isolated Japanese colonial holdings of [SCOPE.sCountry('koko_scope').GetName] and [SCOPE.sCountry('seibei_scope').GetName] sit uneasily along the maritime frontier of our own possessions in [SCOPE.sCountry('canada_scope').GetName], [SCOPE.sCountry('vestmark_scope').GetName], and [SCOPE.sCountry('horda_scope').GetName]. Though politically detached from the Japanese homeland, these enclaves represent both a strategic vulnerability and a rare opportunity.\n\nTheir reintegration into the Norwegian imperial sphere would secure our colonial borders while simultaneously forcing open channels of trade long denied by Japanese isolation. Under Norwegian administration, these ports could serve as gateways through which commerce, influence, and modernity flow eastward.\n\nThe fleet is ready. The question that remains is whether Norway shall wield it."
+    the_royal_army.1.a: "The fleet exists to be used."
+
+    je_secure_the_colonies: "Securing Vinland"
+    je_secure_the_colonies_reason: "If we do not secure the colonies of Vinland, we will only see the fall of our young empire."
+    modifier_the_new_world_secure: "The New World Secured"
+    modifier_the_western_expansion: "The Western Intergration"
+
+    the_royal_colonies.1.t: "The Vestmark Dominion"
+    the_royal_colonies.1.d: "With Vinland secured, attention turns to consolidation."
+    the_royal_colonies.1.f: "The integration of the former Japanese holdings of [SCOPE.sCountry('koko_scope').GetName] and [SCOPE.sCountry('seibei_scope').GetName] has finally secured Vinland in the eyes of the Crown. What were once distant and uncertain frontiers are now firmly anchored within the Norwegian imperial sphere.\n\nSeizing upon this moment, [SCOPE.sCharacter('nor_petty_leader').GetFullName], leader of the Petty Bourgeoisie, has proposed a bold reorganization of our western possessions. The weaker Vinland colonies, long administered separately, should be unified under a single, stronger authority — a new dominion to be known as the Vestmark Dominion, centered upon [SCOPE.sCountry('vestmark_scope').GetName].\n\nSuch a consolidation would streamline governance, strengthen colonial defenses, and stand as a clear symbol of Norwegian prestige abroad. [SCOPE.sCharacter('nor_ruler').GetFullName] has voiced strong support for the proposal, recognizing it as both a practical reform and a declaration of Norway’s arrival as a true imperial power."
+    the_royal_colonies.1.a: "Let Vestmark stand as a testament to Norwegian greatness."
 
     #GBR JE's
     je_group_scotland_reform: "Scottish Reforms"

@@ -295,39 +295,35 @@ je_scottish_glory_in_texas = {
 				is_subject_of = c:GBR
 
 				AND = {
-					#owns_entire_state_region = STATE_FLORIDA
-					#owns_entire_state_region = STATE_GEORGIA
-					#owns_entire_state_region = STATE_MISSISSIPPI
-					#owns_entire_state_region = STATE_LOUISIANA
-					owns_entire_state_region = STATE_TEXAS
-					owns_entire_state_region = STATE_OKLAHOMA
+					country_or_subject_owns_entire_state_region = STATE_TEXAS
+					country_or_subject_owns_entire_state_region = STATE_OKLAHOMA
 				}
 
 				AND = {
 					OR = {
-					owns_entire_state_region = STATE_LOUISIANA
-					owns_entire_state_region = STATE_MISSISSIPPI
-					owns_entire_state_region = STATE_GEORGIA
-					owns_entire_state_region = STATE_FLORIDA
-					owns_entire_state_region = STATE_ALABAMA
+					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
+					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
+					country_or_subject_owns_entire_state_region = STATE_GEORGIA
+					country_or_subject_owns_entire_state_region = STATE_FLORIDA
+					country_or_subject_owns_entire_state_region = STATE_ALABAMA
 					}
 				}
 				AND = {
 					OR = {
-					owns_entire_state_region = STATE_LOUISIANA
-					owns_entire_state_region = STATE_MISSISSIPPI
-					owns_entire_state_region = STATE_GEORGIA
-					owns_entire_state_region = STATE_FLORIDA
-					owns_entire_state_region = STATE_ALABAMA
+					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
+					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
+					country_or_subject_owns_entire_state_region = STATE_GEORGIA
+					country_or_subject_owns_entire_state_region = STATE_FLORIDA
+					country_or_subject_owns_entire_state_region = STATE_ALABAMA
 					}
 				}
 				AND = {
 					OR = {
-					owns_entire_state_region = STATE_LOUISIANA
-					owns_entire_state_region = STATE_MISSISSIPPI
-					owns_entire_state_region = STATE_GEORGIA
-					owns_entire_state_region = STATE_FLORIDA
-					owns_entire_state_region = STATE_ALABAMA
+					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
+					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
+					country_or_subject_owns_entire_state_region = STATE_GEORGIA
+					country_or_subject_owns_entire_state_region = STATE_FLORIDA
+					country_or_subject_owns_entire_state_region = STATE_ALABAMA
 					}
 				}
 		}
@@ -361,44 +357,44 @@ je_india_is_ours = {
 	complete = {
 	AND = {
 			OR = {
-				owns_entire_state_region = STATE_GUJARAT
-				owns_entire_state_region = STATE_BOMBAY
-				owns_entire_state_region = STATE_HYDERABAD
-				owns_entire_state_region = STATE_CENTRAL_PROVINCES
-				owns_entire_state_region = STATE_ORISSA
-				owns_entire_state_region = STATE_CIRCARS 
-				owns_entire_state_region = STATE_KURNOOL
-				owns_entire_state_region = STATE_MYSORE
-				owns_entire_state_region = STATE_MADRAS
-				owns_entire_state_region = STATE_TRAVANCORE
+				country_or_subject_owns_entire_state_region = STATE_GUJARAT
+				country_or_subject_owns_entire_state_region = STATE_BOMBAY
+				country_or_subject_owns_entire_state_region = STATE_HYDERABAD
+				country_or_subject_owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				country_or_subject_owns_entire_state_region = STATE_ORISSA
+				country_or_subject_owns_entire_state_region = STATE_CIRCARS 
+				country_or_subject_owns_entire_state_region = STATE_KURNOOL
+				country_or_subject_owns_entire_state_region = STATE_MYSORE
+				country_or_subject_owns_entire_state_region = STATE_MADRAS
+				country_or_subject_owns_entire_state_region = STATE_TRAVANCORE
 			}
 		}
 	AND = {
 			OR = {
-				owns_entire_state_region = STATE_GUJARAT
-				owns_entire_state_region = STATE_BOMBAY
-				owns_entire_state_region = STATE_HYDERABAD
-				owns_entire_state_region = STATE_CENTRAL_PROVINCES
-				owns_entire_state_region = STATE_ORISSA
-				owns_entire_state_region = STATE_CIRCARS 
-				owns_entire_state_region = STATE_KURNOOL
-				owns_entire_state_region = STATE_MYSORE
-				owns_entire_state_region = STATE_MADRAS
-				owns_entire_state_region = STATE_TRAVANCORE
+				country_or_subject_owns_entire_state_region = STATE_GUJARAT
+				country_or_subject_owns_entire_state_region = STATE_BOMBAY
+				country_or_subject_owns_entire_state_region = STATE_HYDERABAD
+				country_or_subject_owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				country_or_subject_owns_entire_state_region = STATE_ORISSA
+				country_or_subject_owns_entire_state_region = STATE_CIRCARS 
+				country_or_subject_owns_entire_state_region = STATE_KURNOOL
+				country_or_subject_owns_entire_state_region = STATE_MYSORE
+				country_or_subject_owns_entire_state_region = STATE_MADRAS
+				country_or_subject_owns_entire_state_region = STATE_TRAVANCORE
 			}
 		}
 	AND = {
 			OR = {
-				owns_entire_state_region = STATE_GUJARAT
-				owns_entire_state_region = STATE_BOMBAY
-				owns_entire_state_region = STATE_HYDERABAD
-				owns_entire_state_region = STATE_CENTRAL_PROVINCES
-				owns_entire_state_region = STATE_ORISSA
-				owns_entire_state_region = STATE_CIRCARS 
-				owns_entire_state_region = STATE_KURNOOL
-				owns_entire_state_region = STATE_MYSORE
-				owns_entire_state_region = STATE_MADRAS
-				owns_entire_state_region = STATE_TRAVANCORE
+				country_or_subject_owns_entire_state_region = STATE_GUJARAT
+				country_or_subject_owns_entire_state_region = STATE_BOMBAY
+				country_or_subject_owns_entire_state_region = STATE_HYDERABAD
+				country_or_subject_owns_entire_state_region = STATE_CENTRAL_PROVINCES
+				country_or_subject_owns_entire_state_region = STATE_ORISSA
+				country_or_subject_owns_entire_state_region = STATE_CIRCARS 
+				country_or_subject_owns_entire_state_region = STATE_KURNOOL
+				country_or_subject_owns_entire_state_region = STATE_MYSORE
+				country_or_subject_owns_entire_state_region = STATE_MADRAS
+				country_or_subject_owns_entire_state_region = STATE_TRAVANCORE
 			}
 		}
 	}

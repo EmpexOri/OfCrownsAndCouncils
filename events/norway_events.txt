@@ -244,3 +244,106 @@ art_century.2 = {
         }
     }
 }
+
+namespace = the_royal_army
+
+the_royal_army.1 = {
+    type = country_event
+    placement = root
+
+    title = the_royal_army.1.t
+    desc = the_royal_army.1.d
+    flavor  = the_royal_army.1.f
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "ep1_redcoats"
+	}
+
+    immediate = {
+        c:NOR = { save_scope_as = norway_scope }
+        c:NBS = { save_scope_as = canada_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        c:X25 = { save_scope_as = horda_scope }
+        c:COL = { save_scope_as = koko_scope }
+        c:CAL = { save_scope_as = seibei_scope }
+        ig:ig_petty_bourgeoisie = {
+            leader = {
+                save_scope_as = nor_petty_leader
+            }
+        }
+        ruler = { save_scope_as = nor_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = the_royal_army.1.a
+        default_option = yes
+        add_modifier = {
+            name = modifier_the_royal_army
+        }
+        add_journal_entry = { type = je_secure_the_colonies }
+    }
+}
+
+namespace = the_royal_colonies
+
+the_royal_colonies.1 = {
+    type = country_event
+    placement = root
+
+    title = the_royal_colonies.1.t
+    desc = the_royal_colonies.1.d
+    flavor  = the_royal_colonies.1.f
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+    duration = 3
+    cooldown = { days = very_long_modifier_time }
+
+	event_image = {
+		video = "ep1_redcoats"
+	}
+
+    immediate = {
+        c:NOR = { save_scope_as = norway_scope }
+        c:NBS = { save_scope_as = canada_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        c:X25 = { save_scope_as = horda_scope }
+        c:COL = { save_scope_as = koko_scope }
+        c:CAL = { save_scope_as = seibei_scope }
+        ig:ig_petty_bourgeoisie = {
+            leader = {
+                save_scope_as = nor_petty_leader
+            }
+        }
+        ruler = { save_scope_as = nor_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = the_royal_colonies.1.a
+        default_option = yes
+		c:X22 = {
+            if = {
+                limit = {
+                    exists = c:X22
+                    exists = c:X25
+                }
+            annex_with_incorporation = c:X25
+            }
+            c:NOR = {
+                create_diplomatic_pact = { country = c:X22 type = dominion }
+            }
+            add_modifier = {
+                name = modifier_the_western_expansion
+                years = 10
+            }
+		}
+        add_modifier = {
+            name = modifier_the_new_world_secure
+            decaying = yes
+            years = 10
+        }
+    }
+}

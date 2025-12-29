@@ -46,7 +46,7 @@ je_the_century_of_iron = {
     is_shown_when_inactive = {
 		OR = {
             c:NOR ?= THIS
-            was_formed_from = NOR
+            was_formed_from = c:NOR
         }
     }
 
@@ -170,7 +170,7 @@ je_the_century_of_art = {
     is_shown_when_inactive = {
 		OR = {
             c:NOR ?= THIS
-            was_formed_from = NOR
+            was_formed_from = c:NOR
         }
     }
 
@@ -184,7 +184,7 @@ je_the_century_of_art = {
     possible = {
         OR = {
             c:NOR ?= THIS
-            was_formed_from = NOR
+            was_formed_from = c:NOR
         }
         # Must be after 1840
         date >= 1840.1.1
@@ -242,6 +242,101 @@ je_the_century_of_art = {
 		add_modifier = {
 			name = modifier_norway_century_of_art_realized
 		}
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+# Colonial Quests
+je_the_royal_army = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    group = je_group_norway
+
+    # Only show if the player is Norway
+    is_shown_when_inactive = {
+		OR = {
+            c:NOR ?= THIS
+            was_formed_from = c:NOR
+        }
+    }
+
+    possible = {
+        OR = {
+            c:NOR ?= THIS
+            was_formed_from = c:NOR
+        }
+		game_date >= 1836.6.1
+    }
+
+	complete = {
+		army_size >= 40
+		navy_size >= 40
+
+		any_scope_building = {
+			filter = {
+				is_building_type = building_barracks
+				is_building_type = building_naval_base
+			}
+			NOR = {
+				building_has_goods_shortage = yes
+			}
+			percent >= 0.75
+		}
+
+		# Must have researched corporate charters
+		has_technology_researched = logistics
+	}
+
+    on_complete = {
+        trigger_event = {
+            id = the_royal_army.1
+            popup = yes
+        }
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_secure_the_colonies = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    group = je_group_norway
+
+    possible = {
+        OR = {
+            c:NOR ?= THIS
+            was_formed_from = c:NOR
+        }
+    }
+
+	complete = {
+		any_country = {
+			OR = {
+				is_subject_of = c:NOR
+				is_subject_of = c:SCA
+			}
+			AND = {
+				country_or_subject_owns_entire_state_region = STATE_CALIFORNIA
+				country_or_subject_owns_entire_state_region = STATE_OREGON
+				country_or_subject_owns_entire_state_region = STATE_NEVADA
+				country_or_subject_owns_entire_state_region = STATE_UTAH
+				country_or_subject_owns_entire_state_region = STATE_MONTANA
+				country_or_subject_owns_entire_state_region = STATE_WASHINGTON 
+				country_or_subject_owns_entire_state_region = STATE_BRITISH_COLUMBIA
+				country_or_subject_owns_entire_state_region = STATE_ALASKA 
+				country_or_subject_owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+			}
+		}
+	}
+
+    on_complete = {
+        trigger_event = {
+            id = the_royal_colonies.1
+            popup = yes
+        }
     }
 
     weight = 10000
