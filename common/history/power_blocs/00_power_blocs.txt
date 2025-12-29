@@ -130,4 +130,48 @@
 		}
 	}
 
+	c:MUG = {
+		create_power_bloc = {
+			name = MUG_CALIPHATE
+
+			map_color = { 22 102 22 }
+
+			founding_date = 1740.6.9
+			identity = identity_religious
+			principle = principle_sacred_civics_1
+
+			member = c:YEM
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_internal_trade_1
+			}
+		}
+	}
+
+	c:BYZ = {
+		create_power_bloc = {
+			name = BROTHERHOOD_PACT
+
+			map_color = { 93 22 102 }
+
+			founding_date = 1780.6.9
+			identity = identity_military_treaty_organization
+			principle = principle_defensive_cooperation_1
+
+			member = c:EGY
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}
+
 }
