@@ -1,2 +1,59 @@
 ﻿POWER_BLOCS = {
+	c:BAV = {
+		create_power_bloc = {
+			name = MONTGELAS_EMPIRE
+
+			map_color = { 219 211 157 }
+
+			founding_date = 1815.6.9 # Final agreement of the 1814 Congress of Vienna
+			identity = identity_ideological_union
+			principle = principle_creative_legislature_1
+
+
+			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
+			member = c:VEN
+			member = c:SER
+			member = c:X85
+			member = c:W50
+            member = c:X41
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}
+
+	c:SAX = {
+		create_power_bloc = {
+			name = KIELMANSEGGE_PACT
+
+			map_color = { 147 130 110 }
+
+			founding_date = 1815.6.9 # Final agreement of the 1814 Congress of Vienna
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+
+			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
+			member = c:X63
+			member = c:X62
+			member = c:X80
+			member = c:W37
+            member = c:X10
+            member = c:W93
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_police_coordination_1
+			}
+		}
+	}
+
 }
