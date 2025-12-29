@@ -1,0 +1,63 @@
+﻿je_sardo_reclaim_meridia_button = {
+    name = je_sardo_reclaim_meridia_button
+    desc = je_sardo_reclaim_meridia_button_desc
+
+    visible = {
+        c:W38 ?= THIS
+    }
+
+    possible = {
+        NOR = {
+            is_diplomatic_play_committed_participant = yes
+            is_diplomatic_play_initiator = yes
+            is_diplomatic_play_target = yes
+            has_truce_with = c:BRZ
+            has_modifier = halved_infamy_modifier
+        }
+    }
+
+    effect = {
+        c:W38 = {
+            add_modifier = {
+                name = halved_infamy_modifier
+                days = 35
+            }
+            trigger_event = {
+                id = reclaiming_meridia.3
+                popup = yes
+            }
+        }
+    }
+}
+
+je_sardo_reclaim_aurora_button = {
+    name = je_sardo_reclaim_aurora_button
+    desc = je_sardo_reclaim_aurora_button_desc
+
+    visible = {
+        c:W38 ?= THIS
+    }
+
+    possible = {
+        NOR = {
+            is_diplomatic_play_committed_participant = yes
+            is_diplomatic_play_initiator = yes
+            is_diplomatic_play_target = yes
+            has_truce_with = c:CHL
+            has_modifier = halved_infamy_modifier
+        }
+    }
+
+    effect = {
+        c:W38 = {
+            add_modifier = {
+                name = halved_infamy_modifier
+                days = 35
+            }
+            trigger_event = {
+                id = reclaiming_aurora.3
+                popup = yes
+            }
+        }
+    }
+}

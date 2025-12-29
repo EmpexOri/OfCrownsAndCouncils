@@ -7,13 +7,15 @@
 		c:W38 = THIS
     }
 
+    scripted_button = je_sardo_reclaim_meridia_button
+
 	complete = {
 		OR = {
             c:BRZ = { is_subject_of = ROOT }
             c:BRZ = { 
                 gdp_ownership_ratio = {
                     target = ROOT
-                    value > 0.4
+                    value > 0.2
                 }
             }
         }
@@ -42,13 +44,15 @@ je_reclaiming_aurora = {
 		c:W38 = THIS
     }
 
+    scripted_button = je_sardo_reclaim_aurora_button
+
 	complete = {
 		OR = {
             c:CHL = { is_subject_of = ROOT }
             c:CHL = { 
                 gdp_ownership_ratio = {
                     target = ROOT
-                    value > 0.4
+                    value > 0.2
                 }
             }
         }

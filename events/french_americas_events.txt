@@ -72,6 +72,34 @@ reclaiming_meridia.2 = {
     }
 }
 
+reclaiming_meridia.3 = {
+    type = country_event
+    placement = root
+
+    title = reclaiming_meridia.3.t
+    desc = reclaiming_meridia.3.d
+    flavor  = reclaiming_meridia.3.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 1
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    event_image = {
+		video = "unspecific_military_parade"
+	}
+
+    trigger = {}
+
+    option = {
+        name = reclaiming_meridia.3.a
+        default_option = yes
+        create_diplomatic_play = {
+            name = meridian_reconquest
+            target_country = c:BRZ
+            type = dp_make_dominion
+        }
+    }
+}
+
 namespace = reclaiming_aurora
 
 reclaiming_aurora.1 = {
@@ -129,6 +157,34 @@ reclaiming_aurora.2 = {
         add_modifier = {
             name = modifier_southern_gold
             years = 5
+        }
+    }
+}
+
+reclaiming_aurora.3 = {
+    type = country_event
+    placement = root
+
+    title = reclaiming_aurora.3.t
+    desc = reclaiming_aurora.3.d
+    flavor  = reclaiming_aurora.3.f
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    duration = 1
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    event_image = {
+		video = "unspecific_military_parade"
+	}
+
+    trigger = {}
+
+    option = {
+        name = reclaiming_aurora.3.a
+        default_option = yes
+        create_diplomatic_play = {
+            name = auroran_reconquest
+            target_country = c:CHL
+            type = dp_make_dominion
         }
     }
 }

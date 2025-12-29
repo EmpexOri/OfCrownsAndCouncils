@@ -201,6 +201,12 @@
     reclaiming_meridia.2.d: "Meridia is Ours"
     reclaiming_meridia.2.f: "With the levers of trade, administration, and finance in Sardo-Burgandian hands once more, Magna Meridia is no longer a distant memory of imperial decline but a functioning pillar of the Empire’s economic order. The great trading houses reclaim their routes, bureaucrats reassert regulation over colonial revenues, and investors speak openly of renewed confidence in overseas enterprise. Though scars of its loss remain, control over Meridia’s economy signals to rival powers that the Empire’s reach, and relevance, has been restored."
     reclaiming_meridia.2.a: "Viva La Meridia! Viva La Sardo-Burgandy!"
+    je_sardo_reclaim_meridia_button: "Demand Magna Meridia to submit"
+    je_sardo_reclaim_meridia_button_desc: "Give Magna Meridia our demands of becoming a Sardo Burgundian dominion once again. Create a Make Dominion diplomatic play with infamy gain halved."
+    reclaiming_meridia.3.t: "Meridian ultimatum"    # TODO
+    reclaiming_meridia.3.d: "We present our ultimatum to the leaders or Magna Meridia. They will be welcomed back under our banner, either willingly or by force."
+    reclaiming_meridia.3.f: "The army is ready."
+    reclaiming_meridia.3.a: "Begin!"
     company_possible_tt: "New company focused on exploiting the Amazon - Compagnie Amazon de Meridia, can be established."
 
     reclaiming_aurora.1.t: "Arden Aurora is Ours"
@@ -218,6 +224,13 @@
     modifier_southern_gold: "The Gold of the South"
     je_sb_panama_canal: "Construction of the Panama Canal"
     je_sb_panama_canal_reason: "Now that we control mining operations in Arden Aurora we must secure a quicker and more profitable root back to Europe. Panama has been suggested as a possible location of a canal that would massively decrease travel time and cost."
+
+    je_sardo_reclaim_aurora_button: "Demand Arden Aurora to submit"
+    je_sardo_reclaim_aurora_button_desc: "Give Arden Aurora our demands of becoming a Sardo Burgundian dominion once again. Create a Make Dominion diplomatic play with infamy gain halved."
+    reclaiming_aurora.3.t: "Arden ultimatum"    # TODO
+    reclaiming_aurora.3.d: "We present our ultimatum to the leaders or Arden Aurora. They will be welcomed back under our banner, either willingly or by force."
+    reclaiming_aurora.3.f: "The army is ready."
+    reclaiming_aurora.3.a: "Begin!"
 
     #NOR JE
     NOR_FLAVOR_TEXT:0 "Following the recent passing of the beloved Queen’s Prince, Lord Vidkun X Göinge, Norway finds itself at a crossroads. A patron of the arts and sciences, his death has left the conservative Aasa IV Paijkull poised to rule, worrying Parliament that the nation may lag behind its neighbors. Discussions abound on how Norway can make the 19th century its own, whether by fostering social sciences, advancing industrial growth, or expanding knowledge through universities. The choices made now will shape the nation's path toward Norway’s Century."
