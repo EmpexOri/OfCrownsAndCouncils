@@ -14201,6 +14201,19 @@
 				activate_production_methods = { }
 			}
 			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = {
+					building = {
+						type = building_tooling_workshops
+						country = c:ETH
+						levels = 1
+						region = STATE_GONDER
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
+			}
+			create_building = {
 				building = "building_dye_plantation"
 				add_ownership = {
 					building = {
