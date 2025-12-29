@@ -163,6 +163,7 @@
 			principle = principle_defensive_cooperation_1
 
 			member = c:EGY
+			member = c:NEJ
 		}
 		if = {
 			limit = {

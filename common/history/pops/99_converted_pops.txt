@@ -51587,7 +51587,7 @@
 		}
 	}
 	s:STATE_URAL = {
-		region_state:TAR = {
+		region_state:W96 = {
 			create_pop = {
 				culture = tatar
 				religion = tengri_pagan_reformed
@@ -51629,7 +51629,7 @@
 				size = 11155
 			}
 			create_pop = {
-				culture = tatar
+				culture = ugrian
 				religion = gelugpa
 				size = 9817
 			}
@@ -51639,12 +51639,12 @@
 				size = 18753
 			}
 			create_pop = {
-				culture = tatar
+				culture = ugrian
 				religion = sunni
 				size = 118165
 			}
 			create_pop = {
-				culture = tatar
+				culture = ugrian
 				religion = protestant
 				size = 78560
 			}
