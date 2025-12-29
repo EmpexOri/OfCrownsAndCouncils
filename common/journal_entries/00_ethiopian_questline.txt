@@ -36,6 +36,9 @@
 		add_modifier = {
 			name = modifier_unified_negus
 		}
+		remove_modifier = { 
+			name = modifier_disunified_negus
+		}
 	}
 
 	weight = 10000
@@ -76,6 +79,9 @@ je_a_foreign_king = {
 	on_complete = {
 		add_modifier = {
 			name = modifier_unified_government_eth
+		}
+		remove_modifier = { 
+			name = modifier_disunified_government_eth
 		}
 	}
 
@@ -128,6 +134,9 @@ je_behind_the_times = {
 			years = 10
 			decaying = yes
 		}
+		remove_modifier = { 
+			name = modifier_behind_the_times_eth
+		}
 	}
 
 	weight = 10000
@@ -175,6 +184,9 @@ je_under_industrial = {
 			name = modifier_industrial_state_eth
 			years = 10
 			decaying = yes
+		}
+		remove_modifier = { 
+			name = modifier_under_industrial_eth
 		}
 	}
 
