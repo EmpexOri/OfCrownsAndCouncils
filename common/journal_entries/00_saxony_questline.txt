@@ -11,15 +11,18 @@
 			has_law_or_variant = law_type:law_tenant_farmers
 			has_law_or_variant = law_type:law_serfdom
 		}
+		c:SAX = THIS
 	}
 
 	possible = { 
 		game_date >= 1838.1.1
+		
 		OR = {
 			has_law_or_variant = law_type:law_tenant_farmers
 			has_law_or_variant = law_type:law_serfdom
 		}
 
+        c:SAX ?= THIS
 		has_technology_researched = labor_movement
 
 	}

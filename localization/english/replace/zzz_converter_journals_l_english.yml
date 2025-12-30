@@ -413,6 +413,12 @@
     modifier_behind_the_times_eth: "Behind the Times"
     modifier_under_industrial_eth: "Under Industrialized"
 
+    Reunified_Crowns_Eth: "The Crowns become reunified. Lose the #yellow 'A Broken Region' #!modifier; Gain the #yellow 'The Empire of the Horn' #!Modifier"
+    Foreign_King_Eth: "The laws are more accepting of us. Lose the #yellow 'A Foreign King' #!modifier; Gain the #yellow 'Unified Internal Government' #!Modifier"
+    Behind_Times_Eth: "The academics have a place to share ideas. Lose the #yellow 'Behind the Times' #!modifier; Gain the #yellow 'Education Efforts Successful' #!Modifier"
+    Behind_Industrial_Eth: "With some early industrial progress ready we can innovate. Lose the #yellow 'Under Industrialized' #!modifier; Gain the #yellow 'An Industrial State' #!Modifier"
+    African_Empire: "We establish the Empire of Africa"
+
     #Variables
     je_disunified_region_text: "The Empire of the Horn"
     je_a_foreign_king_text: "Unified Internal Government"

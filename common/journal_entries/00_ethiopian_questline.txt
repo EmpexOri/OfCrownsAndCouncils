@@ -22,10 +22,12 @@
     }
 
 	complete = {
-		country_or_subject_owns_entire_state_region = STATE_AMHARA
-		country_or_subject_owns_entire_state_region = STATE_OROMIA
-		country_or_subject_owns_entire_state_region = STATE_GONDER
-		country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+		c:ETH = {
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+		}
 	}
 
 	modifiers_while_active = {
@@ -33,11 +35,17 @@
 	}
 
 	on_complete = {
-		add_modifier = {
-			name = modifier_unified_negus
+		custom_tooltip = {
+			add_modifier = {
+				name = modifier_unified_negus
+			}
+			text = "Reunified_Crowns_Eth"
 		}
-		remove_modifier = { 
-			name = modifier_disunified_negus
+		custom_tooltip = {
+			remove_modifier = { 
+				name = modifier_disunified_negus
+			}
+			text = "Reunified_Crowns_Eth"
 		}
 	}
 
@@ -77,11 +85,17 @@ je_a_foreign_king = {
 	}
 
 	on_complete = {
-		add_modifier = {
-			name = modifier_unified_government_eth
+		custom_tooltip = {
+			add_modifier = {
+				name = modifier_unified_government_eth
+			}
+			text = "Foreign_King_Eth"
 		}
-		remove_modifier = { 
-			name = modifier_disunified_government_eth
+		custom_tooltip = {
+			remove_modifier = { 
+				name = modifier_unified_government_eth
+			}
+			text = "Foreign_King_Eth"
 		}
 	}
 
@@ -129,13 +143,19 @@ je_behind_the_times = {
 	}
 
 	on_complete = {
-		add_modifier = {
-			name = modifier_caught_up_eth
-			years = 10
-			decaying = yes
+		custom_tooltip = {
+			add_modifier = {
+				name = modifier_caught_up_eth
+				years = 10
+				decaying = yes
+			}
+			text = "Behind_Times_Eth"
 		}
-		remove_modifier = { 
-			name = modifier_behind_the_times_eth
+		custom_tooltip = {
+			remove_modifier = { 
+				name = modifier_behind_the_times_eth
+			}
+			text = "Behind_Times_Eth"
 		}
 	}
 
@@ -180,13 +200,19 @@ je_under_industrial = {
 	}
 
 	on_complete = {
-		add_modifier = {
-			name = modifier_industrial_state_eth
-			years = 10
-			decaying = yes
+		custom_tooltip = {
+			add_modifier = {
+				name = modifier_industrial_state_eth
+				years = 10
+				decaying = yes
+			}
+			text = "Behind_Industrial_Eth"
 		}
-		remove_modifier = { 
-			name = modifier_under_industrial_eth
+		custom_tooltip = {
+			remove_modifier = { 
+				name = modifier_under_industrial_eth
+			}
+			text = "Behind_Industrial_Eth"
 		}
 	}
 
@@ -235,16 +261,21 @@ je_empire_of_the_horn = {
 
 	complete = {
 		OR = {
-			country_or_subject_owns_entire_state_region = STATE_KENYA
-			country_or_subject_owns_entire_state_region = STATE_RIFT_VALLEY
-			country_or_subject_owns_entire_state_region = STATE_UGANDA
+			c:ETH = {
+				country_or_subject_owns_entire_state_region = STATE_KENYA
+				country_or_subject_owns_entire_state_region = STATE_RIFT_VALLEY
+				country_or_subject_owns_entire_state_region = STATE_UGANDA
+			}
 		}
 	}
 
 	on_complete = {
-		add_modifier = {
-			name = modifier_the_new_empire
-			years = 10
+		custom_tooltip = {
+			add_modifier = {
+				name = modifier_the_new_empire
+				years = 10
+			}
+			text = "African_Empire"
 		}
 		show_as_tooltip = {
 			set_country_type = recognized
