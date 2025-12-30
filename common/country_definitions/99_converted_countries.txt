@@ -3030,7 +3030,7 @@ GAR ?= {
 }
 
 GBR ?= {
-	color = { 235 180 11 }
+	color = { 255 166 85 }
 	country_type = recognized
 	tier = empire
 	cultures = { scottish }
@@ -10725,7 +10725,7 @@ WAL ?= {
 	tier = principality
 	cultures = { romanian }
 	religion = protestant
-	capital = STATE_BUKOVINA
+	capital = STATE_WALLACHIA
 }
 
 WAS ?= {

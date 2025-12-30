@@ -87,6 +87,19 @@
 				inept 
 			}
 		}
+# IG LEADERS
+
+		create_character = {
+			first_name = "Maximilian_BAV"
+			last_name = "Montgelas_BAV"
+			culture = cu:south_german
+			religion = rel:catholic
+			birth_date = 1759.9.12
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			ig_leader = yes
+			traits = { meticulous persistent cautious }
+		}
 
 	}
 }

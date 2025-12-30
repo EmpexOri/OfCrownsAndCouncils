@@ -1,0 +1,129 @@
+﻿je_luddites_of_germany = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_hannover_social_unrest  # You can create a separate group if desired
+
+	is_shown_in_lobby = {
+		c:SAX = THIS
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			has_law_or_variant = law_type:law_tenant_farmers
+			has_law_or_variant = law_type:law_serfdom
+		}
+	}
+
+	possible = { 
+		game_date >= 1838.1.1
+		OR = {
+			has_law_or_variant = law_type:law_tenant_farmers
+			has_law_or_variant = law_type:law_serfdom
+		}
+
+		has_technology_researched = labor_movement
+
+	}
+
+	immediate = {
+
+		# Optionally create a radical Luddite political movement
+		if = {
+			limit = { NOT = { any_political_movement = { is_political_movement_type = movement_land_reform } } }
+			create_political_movement = { type = movement_land_reform }
+		}
+
+		random_political_movement = {
+			limit = { is_political_movement_type = movement_land_reform }
+			save_scope_as = luddite_movement_scope
+		}
+
+		scope:luddite_movement_scope = {
+			set_core_ideology = ideology_agrarian
+			add_character_ideology = ideology_luddite
+		}
+
+		# Initialize a timer variable for monthly tracking
+		set_variable = { name = luddite_timer_var value = 0 }
+
+		create_character = {
+			template = SAX_Theodore_Luddite
+			save_scope_as = SAX_Theodore_Luddite
+		}
+
+		# Trigger the first event of the movement
+		trigger_event = { id = sax_luddites.1 popup = yes }
+	}
+
+	complete = {
+		OR = {
+			# Case 1: Tenant farmers or serfdom abolished AND Combination Acts or Guild system abolished
+			AND = {
+				NOT = {
+					has_law_or_variant = law_type:law_tenant_farmers
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_serfdom
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_combination_acts
+				}
+				NOT = {
+					has_law_or_variant = law_type:law_guild_system
+				}
+			}
+
+			# Case 2: Industry banned
+			has_law_or_variant = law_type:law_industry_banned
+		}
+	}
+
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { scope:luddite_movement_scope ?= { political_movement_support >= 0.05 } }
+				change_variable = { name = luddite_timer_var add = 1 }
+			}
+			else = {
+				set_variable = { name = luddite_timer_var value = 0 }
+			}
+		}
+
+		# Trigger random events that affect the Land Reform movement
+		random_events = {
+			40 = sax_luddites.2  # Support rises
+			30 = sax_luddites.5  # Support rises, Peaceful Protest
+			20 = sax_luddites.3  # Radicalism rises
+			10 = sax_luddites.4  # Crackdown: support drops, radicalism rises
+		}
+	}
+
+	fail = {
+		OR = {
+			# Fail if the leader character is exiled
+			scope:SAX_Theodore_Luddite ?= {
+				custom_tooltip = {
+					was_exiled = yes
+					text = "theo_was_exiled"
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		set_variable = { name = completed_luddite_uprising value = 1 }
+		trigger_event = { id = sax_luddites.7 popup = yes } # optional failure event
+	}
+
+	on_complete = {
+		# Movement ended
+		set_variable = { name = completed_luddite_uprising }
+		trigger_event = { id = sax_luddites.6 popup = yes }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	transferable = no
+	can_revolution_inherit = no
+
+}

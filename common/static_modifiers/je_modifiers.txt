@@ -593,3 +593,66 @@ modifier_the_new_empire = {
 	country_prestige_from_army_power_projection_mult = 0.1
 	country_prestige_from_navy_power_projection_mult = 0.1
 }
+
+	# HANNOVER
+
+#Luddites Quest
+modifier_luddite_support_gain = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+    political_movement_pop_attraction_mult = 0.5
+}
+
+modifier_luddite_radical_gain = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+    political_movement_pop_attraction_mult = 0.25
+	political_movement_radicalism_add = 0.25
+}
+
+modifier_luddite_nobility_crackdown  = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	political_movement_radicalism_add = -0.1
+	political_movement_pop_attraction_mult = -0.15
+}
+
+modifier_luddite_protest  = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	political_movement_pop_attraction_mult = 0.5
+	building_group_bg_agriculture_throughput_add = -0.25
+}
+
+modifier_luddite_unrest = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+
+	political_movement_pop_attraction_mult = 2
+	political_movement_radicalism_add = 0.25
+	country_peasants_pol_str_mult = 0.25
+
+}
+
+modifier_farmers_empowered  = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	interest_group_ig_rural_folk_pol_str_mult = 1.0
+	state_farmers_investment_pool_efficiency_mult = 0.25
+	interest_group_ig_industrialists_pol_str_mult = -0.25
+	interest_group_ig_landowners_pol_str_mult = -0.25
+}
+
+modifier_peasants_empowered  = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	state_peasants_education_access_add = 0.25
+	state_farmers_investment_pool_efficiency_mult = -0.25
+	interest_group_ig_industrialists_pol_str_mult = -0.25
+	interest_group_ig_landowners_pol_str_mult = -0.25
+}
+
+modifier_luddites_enraged  = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_farmers_pol_str_mult = 0.5
+	political_movement_radicalism_add = 0.5
+	interest_group_ig_industrialists_pol_str_mult = 0.5
+	interest_group_ig_landowners_pol_str_mult = 0.5
+}
+
+modifier_protected_leader = {
+	set_character_immortal = yes
+}

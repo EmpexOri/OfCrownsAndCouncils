@@ -111,7 +111,7 @@ je_power_in_navy = {
 	}
 
 	complete = {
-		navy_size >= 100
+		navy_size >= 150
 		any_scope_building = {
 			filter = {
 				is_building_type = building_naval_base

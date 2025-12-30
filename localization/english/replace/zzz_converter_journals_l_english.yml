@@ -1,4 +1,9 @@
 ﻿l_english:
+    #Misc Law
+    capital_in_americas_tt: "Capital is in the New World"
+
+    #MUG
+
     je_converter_colonization_numbered_treaties:0 "The Numbered Treaties"
     je_converter_colonization_numbered_treaties_reason:0 "As we settle more lands, it may prove prudent to come to a formal agreement with the natives."
     je_converter_colonization_numbered_treaties_status:0 "Decentralized nations may sign an agreement with us."
@@ -448,3 +453,65 @@
     ethiopian_empire.1.d: "With our power solidified, now we can focus outwards. Live up to our name as an Empire."
     ethiopian_empire.1.f: "For centuries, Ethiopia stood as an empire in name more than in fact, bound by tradition, yet constrained by fragmentation and decline. Now, with authority restored and the state strengthened, the path forward lies beyond our borders.\n\nThe interior of the Horn of Africa is divided among smaller polities and rival cultures, many lacking the unity or strength to resist incorporation into a greater whole. To bring them under Ethiopian rule is not merely conquest, but the fulfillment of an imperial destiny long deferred.\n\nAn Ethiopian empire forged through expansion and consolidation will command respect across Africa. Though its power may yet be limited, its ambition is clear: Ethiopia shall no longer endure history, it shall shape it."
     ethiopian_empire.1.a: "Leniguše negešitu!"
+
+    #SAX
+
+    #Monarchy
+    sax_monarchy.1.t: "The Coronation of [SCOPE.sCharacter('new_king').GetFullName]"
+    sax_monarchy.1.d: "[SCOPE.sCharacter('new_king').GetFirstName] has ascended the throne of Hannover, bringing hope for a prosperous reign."
+    sax_monarchy.1.f: "After the passing of the previous ruler, [SCOPE.sCharacter('new_king').GetFullName] steps into the crown. May [SCOPE.sCharacter('new_king').GetHerHis] reign be wise, just, and glorious."
+    sax_monarchy.1.a: "Hail [SCOPE.sCharacter('new_king').GetFullName] as our sovereign."
+    sax_dynastic_succession_tt: "Coronate [SCOPE.sCharacter('new_king').GetFullName] as the rightful sovereign of Hannover. Guide [SCOPE.sCharacter('new_king').GetHerHis] reign to stability and glory."
+
+    sax_monarchy.2.t: "The Coronation of [SCOPE.sCharacter('new_king').GetFullName]"
+    sax_monarchy.2.d: "[SCOPE.sCharacter('new_king').GetFirstName] now takes the throne of Hannover following [SCOPE.sCharacter('new_king').GetHerHis] predecessor’s passing."
+    sax_monarchy.2.f: "With the death of the former ruler, [SCOPE.sCharacter('new_king').GetFullName] is crowned as the new sovereign. May [SCOPE.sCharacter('new_king').GetHerHis] reign bring honor and stability to the kingdom."
+    sax_monarchy.2.a: "Swear allegiance to [SCOPE.sCharacter('new_king').GetFullName]."
+    sax_dynastic_succession_tt_2: "Crown [SCOPE.sCharacter('new_king').GetFullName] as the new ruler of Hannover, following the passing of [SCOPE.sCharacter('new_king').GetHerHis] predecessor. Ensure [SCOPE.sCharacter('new_king').GetHerHis] rule is honored by all."
+
+    #Luddites of Germany
+    je_hannover_social_unrest: "Social Unrest in Hannover"
+    je_luddites_of_germany: "The Luddites of Germany"
+    je_luddites_of_germany_reason: "Rapid industrial change has unsettled much of the population. New machines and factory discipline have disrupted traditional rural life, leaving many fearful of what the future holds."
+    
+    sax_luddites.1.t: "The Luddites of Germany Rise"
+    sax_luddites.1.d: "A long-oppressed populace stirs under the strain of industrialization and the heavy hand of [SCOPE.sCharacter('sax_ruler').GetFullName]."
+    sax_luddites.1.f: "[SCOPE.sCharacter('sax_rural_leader').GetFullName], a man of lower nobility and sharp social insight, has emerged as the figurehead of this movement. Advocating a return to simpler, agrarian ways and demanding land reforms, he has mobilized the rural masses with a blend of practical demands and ideological rhetoric. The peasants, while inspired by his ideas, seem primarily driven by the hope of reclaiming land long denied to them."
+    sax_luddites.1.a: "[SCOPE.sCharacter('sax_ruler').GetFullName] Should not worry about such rebels"
+    sax_luddites.2.t: "The Peasants Rally"
+    sax_luddites.2.d: "The peasants have responded enthusiastically to [SCOPE.sCharacter('sax_rural_leader').GetFullName]'s call, swelling the ranks of the land reform movement."
+    sax_luddites.2.f: "Flags wave through the fields and villages, signaling growing confidence in the Luddite cause. Their chants echo the demands for justice and redistribution."
+    sax_luddites.2.a: "As they will"
+    sax_luddites.3.t: "Revolt in the Provinces"
+    sax_luddites.3.d: "In several local states, peasants emboldened by [SCOPE.sCharacter('sax_rural_leader').GetFullName] have begun open revolt. The activism of the land reform movement surges, though unrest threatens to spiral beyond control."
+    sax_luddites.3.f: "Smoke rises from distant villages, banners fly in defiance of local authorities, and the Luddite fervor grows stronger by the day. [SCOPE.sCharacter('sax_rural_leader').GetFirstName] continues to inspire action."
+    sax_luddites.3.a: "What rabble"
+    sax_luddites.4.t: "Nobility Crackdown"
+    sax_luddites.4.d: "The local nobility have moved to suppress [SCOPE.sCharacter('sax_rural_leader').GetFullName] and the rural folk. Support for the movement drops slightly, but the radicalism of the Luddite cause remains high."
+    sax_luddites.4.f: "Lords march through villages, quelling uprisings with force. Fires of resistance flare, even as fear spreads among some peasants. [SCOPE.sCharacter('sax_rural_leader').GetFirstName] remains steadfast, rallying his followers."
+    sax_luddites.4.a: "That will make them quiet"
+    sax_luddites.5.t: "A Peaceful Luddite Protest"
+    sax_luddites.5.d: "The peasants of [SCOPE.sCountry('hannover_scope').GetAdjective] have taken to the streets in a calm but determined demonstration. They call for land reform and better treatment under the new industrial policies. The movement is led by [SCOPE.sCharacter('sax_rural_leader').GetFullName], whose influence continues to grow among the rural population."
+    sax_luddites.5.f: "In [SCOPE.sCountry('hannover_scope').GetName], [SCOPE.sCharacter('sax_rural_leader').GetFullName] has organized a peaceful Luddite protest. While the [SCOPE.sCharacter('sax_landowners_leader').GetFullName] watches nervously, the king, [SCOPE.sCharacter('sax_ruler').GetFullName], observes from the palace. The peasants chant for reform and respect, making it clear that their grievances are serious but not violent. This event strengthens the Land Reform movement among the rural folk, signaling their rising power in the political landscape."
+    sax_luddites.5.a: "Better peaceful than not"
+    sax_luddites.6.t: "The Luddite Uprising Concludes"
+    sax_luddites.6.d: "After months of unrest, the Luddite movement in [SCOPE.sCountry('hannover_scope').GetName] has been quelled. [SCOPE.sCharacter('sax_rural_leader').GetFullName] remains influential but must choose the path forward."
+    sax_luddites.6.f: "The rural folk and peasants look to [SCOPE.sCharacter('sax_rural_leader').GetFullName] for guidance. Should the reforms favor the broader peasant population, or empower the rural landholding communities? This decision will shape the future political landscape of [SCOPE.sCountry('hannover_scope').GetName]."
+    sax_luddites.6.a: "Empower the Rural Folk"
+    sax_luddites.6.b: "Empower the Peasants"
+    sax_luddites.7.t: "The Luddite Leader Exiled"
+    sax_luddites.7.d: "The exile of [SCOPE.sCharacter('sax_rural_leader').GetFullName] has sent shockwaves through [SCOPE.sCountry('hannover_scope').GetName]. Without their guiding hand, the Luddite movement flares up into widespread protests."
+    sax_luddites.7.f: "Despite the leader’s absence, the rural folk and peasants refuse to stay silent. Streets fill with chants and banners demanding reform, forcing [SCOPE.sCharacter('sax_ruler').GetFullName] to confront the unrest directly. The Land Reform movement gains renewed vigor and threatens to destabilize the region further."
+    sax_luddites.7.a: "Face the Protests"
+
+    modifier_luddite_unrest: "Luddite Unrest"
+    modifier_luddite_unrest_desc: "The Luddites have stirred dissatisfaction among the rural population, increasing unrest across Hanover."
+
+    modifier_luddite_support_gain: "Growing Peasant Support"
+    modifier_luddite_support_gain_desc: "The peasants have rallied behind [SCOPE.sCharacter('sax_rural_leader').GetFullName], boosting the popularity of the land reform movement."
+
+    modifier_luddite_radical_gain: "Rising Radicalism"
+    modifier_luddite_radical_gain_desc: "Local revolts and Luddite agitation have intensified [SCOPE.sCharacter('sax_rural_leader').GetFirstName]'s movement, increasing its radicalism."
+
+    modifier_luddite_nobility_crackdown: "Nobility Crackdown"
+    modifier_luddite_nobility_crackdown_desc: "The nobility have attempted to suppress [SCOPE.sCharacter('sax_rural_leader').GetFullName]'s movement, lowering popular support but fueling radical fervor."

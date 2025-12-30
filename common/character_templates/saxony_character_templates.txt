@@ -1,0 +1,53 @@
+﻿### Saxony  template file ###
+
+SAX_Luidolf_IV = { #Luidolf_IV
+	first_name = Luidolf_IV
+	last_name = von_Glaubitz
+	culture = primary_culture
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_protectionist
+	heir = yes
+	birth_date = 1833.12.26
+	dna = dna_luidolf_iv
+	traits = {
+		erudite
+		romantic
+		sickly
+	}
+	on_created = {
+
+	}
+	trait_generation = {
+
+	}
+}
+
+SAX_Heinreich_X = { #SAX_Heinreich_X
+	first_name = heinrich_x
+	last_name = von_Glaubitz
+	culture = primary_culture
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_ethno_nationalist
+	heir = yes
+	birth_date = 1856.6.15 
+	traits = {
+		arrogant
+		bigoted
+		alcoholic
+	}
+}
+
+SAX_Theodore_Luddite = { #Luddite Leader
+	first_name = theodore_sax
+	last_name = loquacious_sax
+	culture = primary_culture
+	interest_group = ig_rural_folk
+	ideology = ideology_luddite
+	ig_leader = yes
+	birth_date = 1816.6.15 
+	traits = {
+		social_bandit
+		charismatic
+		honorable
+	}
+}

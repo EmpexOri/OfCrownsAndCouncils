@@ -1,0 +1,19 @@
+﻿### Hannover Monarchs
+on_new_ruler = {
+    effect = {
+        # Hannover succession
+        if = {
+            limit = {
+                owner ?= {
+                    c:SAX ?= this
+                    has_law_or_variant = law_type:law_monarchy
+                }
+                is_ruler = yes
+            }
+            sax_ruler_succession_chain_effect = yes
+        }
+
+        # Any other on_new_ruler logic for SAX goes here
+        # combine, don't add another 'effect = {}' block
+    }
+}

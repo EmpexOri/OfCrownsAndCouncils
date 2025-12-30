@@ -1,0 +1,17 @@
+sax_ruler_succession_chain_effect = {
+	if = {
+		limit = { NOT = { owner = { has_variable = sax_succession_1_fired } } }
+		owner = {
+			set_variable = sax_succession_1_fired
+			trigger_event = { id = sax_monarchy.1 popup = yes }
+		}
+	}
+	else_if = {
+		limit = { NOT = { owner = { has_variable = sax_succession_2_fired } } }
+		owner = {
+			set_variable = sax_succession_2_fired
+			trigger_event = { id = sax_monarchy.2 popup = yes }
+		}
+	}
+	# add more else_if branches for additional heirs
+}
