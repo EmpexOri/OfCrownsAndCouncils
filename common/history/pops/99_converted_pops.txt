@@ -2591,8 +2591,6 @@
 				religion = jewish
 				size = 575
 			}
-		}
-		region_state:X65 = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
@@ -7272,12 +7270,12 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 22706
+				size = 12706
 			}
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 34940
+				size = 24940
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -7287,12 +7285,12 @@
 			create_pop = {
 				culture = polish
 				religion = catholic
-				size = 34223
+				size = 24223
 			}
 			create_pop = {
 				culture = polish
 				religion = protestant
-				size = 50730
+				size = 30730
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -10534,8 +10532,6 @@
 				religion = jewish
 				size = 4063
 			}
-		}
-		region_state:W95 = {
 			create_pop = {
 				culture = tatar
 				religion = sunni
@@ -20129,6 +20125,36 @@
 				religion = jewish
 				size = 268
 			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 270730
+			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 155174
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 828
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 1035
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 704
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 497
+			}
 		}
 		region_state:W37 = {
 			create_pop = {
@@ -20165,36 +20191,6 @@
 				culture = ashkenazi
 				religion = jewish
 				size = 527
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 270730
-			}
-			create_pop = {
-				culture = north_german
-				religion = protestant
-				size = 155174
-			}
-			create_pop = {
-				culture = ashkenazi
-				religion = jewish
-				size = 828
-			}
-			create_pop = {
-				culture = ashkenazi
-				religion = jewish
-				size = 1035
-			}
-			create_pop = {
-				culture = ashkenazi
-				religion = jewish
-				size = 704
-			}
-			create_pop = {
-				culture = ashkenazi
-				religion = jewish
-				size = 497
 			}
 		}
 		region_state:X10 = {
@@ -24711,7 +24707,7 @@
 		}
 	}
 	s:STATE_KHARKOV = {
-		region_state:PLC = {
+		region_state:W95 = {
 			create_pop = {
 				culture = ukrainian
 				religion = catholic
@@ -24752,8 +24748,6 @@
 				religion = jewish
 				size = 22012
 			}
-		}
-		region_state:W95 = {
 			create_pop = {
 				culture = ukrainian
 				religion = catholic
@@ -25197,8 +25191,6 @@
 				religion = jewish
 				size = 58298
 			}
-		}
-		region_state:W95 = {
 			create_pop = {
 				culture = ukrainian
 				religion = catholic
@@ -27837,6 +27829,11 @@
 				religion = jewish
 				size = 9879
 			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 53417
+			}
 		}
 		region_state:W50 = {
 			create_pop = {
@@ -27863,11 +27860,6 @@
 				culture = north_german
 				religion = protestant
 				size = 334195
-			}
-			create_pop = {
-				culture = north_german
-				religion = norse_pagan_reformed
-				size = 53417
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -40796,12 +40788,12 @@
 			create_pop = {
 				culture = polish
 				religion = catholic
-				size = 159671
+				size = 169671
 			}
 			create_pop = {
 				culture = polish
 				religion = protestant
-				size = 230545
+				size = 250545
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -40892,6 +40884,21 @@
 				culture = ashkenazi
 				religion = jewish
 				size = 2720
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 7960
+			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 12950
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 720
 			}
 		}
 	}
@@ -42152,8 +42159,6 @@
 				religion = jewish
 				size = 836
 			}
-		}
-		region_state:X80 = {
 			create_pop = {
 				culture = south_german
 				religion = catholic
@@ -44429,8 +44434,6 @@
 				religion = jewish
 				size = 69
 			}
-		}
-		region_state:X41 = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
@@ -50785,7 +50788,7 @@
 				size = 20165
 			}
 		}
-		region_state:X62 = {
+		region_state:X63 = {
 			create_pop = {
 				culture = south_german
 				religion = catholic
@@ -50801,8 +50804,6 @@
 				religion = norse_pagan_reformed
 				size = 7028
 			}
-		}
-		region_state:X63 = {
 			create_pop = {
 				culture = south_german
 				religion = catholic
@@ -51363,8 +51364,6 @@
 				religion = jewish
 				size = 1938
 			}
-		}
-		region_state:SLV = {
 			create_pop = {
 				culture = czech
 				religion = catholic
@@ -54788,8 +54787,6 @@
 				religion = jewish
 				size = 258
 			}
-		}
-		region_state:X80 = {
 			create_pop = {
 				culture = north_german
 				religion = catholic

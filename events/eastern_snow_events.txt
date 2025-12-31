@@ -298,7 +298,7 @@ estonian_nationalism.1 = {
             c:PLC ?= THIS
             was_formed_from = PLC
         }
-        has_technology_researched = nationalism
+        has_global_variable = peoples_springtime_happening
         NOT = {
             exists = c:E00
         }
