@@ -2103,6 +2103,12 @@
 			institution = institution_schools
 			level = 3
 		}
+		add_company = company_type:company_hbc
+		company:company_hbc = {
+			set_company_establishment_date = 1670.5.2
+			set_company_state_region = s:STATE_LOWLANDS
+			add_owned_country = c:W74 #links the country to this company
+		}
 	}
 	c:GML ?= {
 		add_technology_researched = enclosure
