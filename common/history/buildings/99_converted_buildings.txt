@@ -13220,8 +13220,15 @@
 					building = {
 						type = building_manor_house
 						country = c:X69
-						levels = 5
+						levels = 2
 						region = STATE_FLORIDA
+					}
+				}
+				add_ownership={
+					company={
+						type=company_spc
+						country="c:GBR"
+						levels=3
 					}
 				}
 				reserves = 1
@@ -14212,8 +14219,15 @@
 					building = {
 						type = building_manor_house
 						country = c:X69
-						levels = 10
+						levels = 6
 						region = STATE_GEORGIA
+					}
+				}
+				add_ownership={
+					company={
+						type=company_spc
+						country="c:GBR"
+						levels = 4
 					}
 				}
 				reserves = 1
@@ -23092,13 +23106,24 @@
 				activate_production_methods = { }
 			}
 			create_building = {
-				building = "building_dye_plantation"
-				add_ownership = {
-					building = {
-						type = building_manor_house
-						country = c:W74
-						levels = 4
-						region = STATE_LUZON
+				building = "building_coffee_plantation"
+				add_ownership={
+					company={
+						type=company_spc
+						country="c:GBR"
+						levels=5
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
+				building = "building_tobacco_plantation"
+				add_ownership={
+					company={
+						type=company_spc
+						country="c:GBR"
+						levels=1
 					}
 				}
 				reserves = 1
