@@ -10194,6 +10194,24 @@ E00 = {
 		priority = 1
 	}
 }
+X22 = {
+	flag_definition = {
+		coa = SWE
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SWE_canton
+		priority = 1
+	}
+}
+W74 = {
+	flag_definition = {
+		coa = PHI
+		subject_canton = PHI
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = PHI_subject
+		priority = 1
+	}
+}
 GBR = { # Great Britain / United Kingdom
 	flag_definition = {
 		coa = GBR
