@@ -525,3 +525,15 @@
     #Unification of Hannover & Tyrol
     unified_tyrol_ulm_text: "Has unified #yellow Fraconia & Ulm"
     modifier_unified_of_hannover: "Unifier of Fraconia"
+    je_hannovers_puppets: "Der Deutscher Staat"
+    je_hannovers_puppets_reason: "Ever since the collapse of the Holy Transalpine Riverine Empire during the Protestant reformation our state has been split between the Bavarian sphere of influence and ours. We must begin federating our home, starting with our closest allies."
+
+    sax_early_nationalism.1.t: "A Crown Made Whole"
+    sax_early_nationalism.1.d: "The question of authority within [SCOPE.sCountry('hannover_scope').GetName] can no longer be postponed. The age of loose unions and inherited compromises is drawing to a close."
+    sax_early_nationalism.1.f: "For generations, [SCOPE.sCountry('hannover_scope').GetAdjective] rule has rested upon a delicate lattice of personal unions, charters, and mutual assurances, strong enough to endure peace, yet fragile in the face of ambition. Now, as the winds of nationalism stir across the German lands, such arrangements appear increasingly anachronistic.\n\n[SCOPE.sCharacter('new_king').GetFullName], sovereign of [SCOPE.sCountry('hannover_scope').GetName], understands this truth well. To rule effectively is not merely to inherit titles, but to command institutions. The courts of [SCOPE.sCountry('east_fraconia').GetName] and [SCOPE.sCountry('ulm_nation').GetName] still bow to the same crown, yet their laws, armies, and loyalties remain frustratingly their own.\n\nIf the [SCOPE.sCountry('hannover_scope').GetNameNoFlag] is to endure, and perhaps even lead, it must cease to be a collection of realms and instead become a single state, unified in purpose as much as in name."
+    sax_early_nationalism.1.a: "A divided crown cannot endure."
+    sax_early_nationalism.2.t: "The Realm Made One"
+    sax_early_nationalism.2.d: "The age of personal unions gives way to a single state, bound by law, crown, and purpose."
+    sax_early_nationalism.2.f: "The work of centralization has borne its final fruit. With institutions aligned and loyalties secured, there remains no reason for [SCOPE.sCountry('east_fraconia').GetName] or [SCOPE.sCountry('ulm_nation').GetName] to exist apart from the crown they already serve.\n\nBefore assembled ministers and jurists, [SCOPE.sCharacter('new_king').GetFullName] affixes seal and signature to the acts of integration. The ancient particularisms of the lesser realms are dissolved, their administrations folded into that of [SCOPE.sCountry('hannover_scope').GetName], not as conquered lands, but as constituent parts of a greater whole.\n\nCourt historians speak openly of revival. The old chronicles of the Holy Transalpine Riverine Empire, long consigned to memory and myth, are once more invoked in earnest. Under the banner of [SCOPE.sCountry('hannover_scope').GetAdjective] unity, the legacy of the House of von Dreistrom stirs again, and the rivers of Central Europe may yet flow toward a single throne."
+    sax_early_nationalism.2.a: "Let the rivers run as one."
+

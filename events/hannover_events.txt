@@ -388,6 +388,8 @@ sax_early_nationalism.1 = {
 	immediate = {
 		ruler = { save_scope_as = new_king }
 		root = { save_scope_as = hannover_scope }
+		c:X41 = { save_scope_as = east_fraconia }
+		c:X62 = { save_scope_as = ulm_nation }
 	}
 
 	option = {
@@ -405,7 +407,7 @@ sax_early_nationalism.2 = {
 	flavor = sax_early_nationalism.2.f
 
 	event_image = {
-		video = "unspecific_ruler_speaking_to_people"
+		video = "unspecific_signed_contract"
 	}
 	icon = "gfx/interface/icons/event_icons/event_monarchy.dds"
 
@@ -415,6 +417,8 @@ sax_early_nationalism.2 = {
 	immediate = {
 		ruler = { save_scope_as = new_king }
 		root = { save_scope_as = hannover_scope }
+		c:X41 = { save_scope_as = east_fraconia }
+		c:X62 = { save_scope_as = ulm_nation }
 	}
 
 	option = {
