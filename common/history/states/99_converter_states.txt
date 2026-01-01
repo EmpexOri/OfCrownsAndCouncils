@@ -1329,7 +1329,6 @@
 			state_type = incorporated
 		}
 		add_homeland = cu:french
-		add_homeland = cu:north_german
 	}
 	s:STATE_BURYATIA = {
 		create_state = {
@@ -4776,6 +4775,7 @@
 			state_type = incorporated
 		}
 		add_homeland = cu:sorb
+		add_homeland = cu:north_german
 	}
 	s:STATE_MEKONG = {
 		create_state = {
@@ -6425,6 +6425,7 @@
 		add_homeland = cu:old_pommeranian
 		add_homeland = cu:polish
 		add_homeland = cu:sorb
+		add_homeland = cu:north_german
 		add_claim = c:X65
 	}
 	s:STATE_POSEN = {
