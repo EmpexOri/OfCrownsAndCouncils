@@ -521,3 +521,7 @@
 
     modifier_luddite_nobility_crackdown: "Nobility Crackdown"
     modifier_luddite_nobility_crackdown_desc: "The nobility have attempted to suppress [SCOPE.sCharacter('sax_rural_leader').GetFullName]'s movement, lowering popular support but fueling radical fervor."
+
+    #Unification of Hannover & Tyrol
+    unified_tyrol_ulm_text: "Has unified #yellow Fraconia & Ulm"
+    modifier_unified_of_hannover: "Unifier of Fraconia"

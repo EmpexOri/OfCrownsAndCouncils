@@ -656,3 +656,11 @@ modifier_luddites_enraged  = {
 modifier_protected_leader = {
 	set_character_immortal = yes
 }
+
+# Saxony Unification
+modifier_unified_of_hannover = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+
+	country_prestige_add = 25
+
+}

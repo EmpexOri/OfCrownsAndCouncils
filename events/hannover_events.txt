@@ -366,3 +366,68 @@ sax_luddites.7 = {
         }
 	}
 }
+
+namespace = sax_early_nationalism
+
+sax_early_nationalism.1 = {
+	type = country_event
+	placement = root
+
+	title = sax_early_nationalism.1.t
+	desc = sax_early_nationalism.1.d
+	flavor = sax_early_nationalism.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	icon = "gfx/interface/icons/event_icons/event_monarchy.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_early_nationalism.1.a
+		default_option = yes
+	}
+}
+
+sax_early_nationalism.2 = {
+	type = country_event
+	placement = root
+
+	title = sax_early_nationalism.2.t
+	desc = sax_early_nationalism.2.d
+	flavor = sax_early_nationalism.2.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	icon = "gfx/interface/icons/event_icons/event_monarchy.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_early_nationalism.2.a
+		default_option = yes
+
+		annex_with_incorporation = c:X62
+		annex_with_incorporation = c:X41
+
+		add_modifier = {
+			name = modifier_unified_of_hannover
+			decaying = yes
+			years = 10
+		}
+	}
+}

@@ -130,3 +130,85 @@
 	can_revolution_inherit = no
 
 }
+
+#The Release of Italy
+je_hannovers_puppets = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_hannover_social_unrest  # You can create a separate group if desired
+
+	is_shown_when_inactive = {
+		c:SAX = THIS
+	}
+
+	possible = { 
+        c:SAX ?= THIS
+		has_technology_researched = nationalism
+		AND = {
+			OR = {
+				c:X62 = {
+					has_technology_researched = nationalism
+				}
+				c:X41 = {
+					has_technology_researched = nationalism
+				}
+			}
+			c:X40 = {
+				has_technology_researched = nationalism
+			}
+		}
+	}
+
+	immediate = {
+		trigger_event = { id = sax_early_nationalism.1 popup = yes }
+	}
+
+	complete = {
+		AND = {
+			OR = {
+				c:X40 = {
+					OR = {
+						NOT = { is_subject_of = c:SAX }
+					}
+				}
+				c:NOR = {
+					owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+				}
+			}
+			c:X62 = {
+				liberty_desire <= 25
+				is_subject_of = c:SAX
+			}
+			c:X41 = {
+				liberty_desire <= 25
+				is_subject_of = c:SAX
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+
+	}
+
+	fail = {
+
+	}
+
+	on_fail = {
+
+	}
+
+	on_complete = {
+		trigger_event = { id = sax_early_nationalism.2 popup = yes }
+		# Movement ended
+		custom_tooltip = {
+			set_global_variable = { name = unified_tyrol_ulm }
+			text = unified_tyrol_ulm_text
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	transferable = no
+	can_revolution_inherit = no
+
+}

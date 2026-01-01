@@ -285,6 +285,13 @@ je_north_german_unification = {
 			#has_global_variable = schleswig_holstein_question_solved
 			#text = je_schleswig_holstein_question_solved_trigger_desc
 		#}
+		OR = {
+			game_date >= 1852.1.1
+			custom_tooltip = {
+				has_global_variable = unified_tyrol_ulm
+				text = unified_tyrol_ulm_text
+			}
+		}
 		hidden_trigger = {
 			has_variable = je_unification_progress
 		}

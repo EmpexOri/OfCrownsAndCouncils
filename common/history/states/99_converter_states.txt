@@ -273,7 +273,7 @@
 	}
 	s:STATE_ALSACE_LORRAINE = {
 		create_state = {
-			country = c:W38
+			country = c:W37
 			owned_provinces = { x6E4891 xCC3250 }
 			state_type = unincorporated
 		}
@@ -934,17 +934,12 @@
 	s:STATE_BAVARIA = {
 		create_state = {
 			country = c:BAV
-			owned_provinces = { x010AD7 x3101A0 x318021 x565185 x8C26DD xA7094D xB08021 xFE59E7 }
+			owned_provinces = { x010AD7 x3101A0 x318021 x565185 x8C26DD xA7094D xB08021 xFE59E7 x18A2E1 x68CE1C x6EA29B x704A5F xB00121 xC347B1 xE75868 xE76994 }
 			state_type = incorporated
 		}
 		create_state = {
 			country = c:W93
 			owned_provinces = { x82F4B9 }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X63
-			owned_provinces = { x18A2E1 x68CE1C x6EA29B x704A5F xB00121 xC347B1 xE75868 xE76994 }
 			state_type = incorporated
 		}
 		add_homeland = cu:south_german
@@ -1654,7 +1649,7 @@
 	}
 	s:STATE_CHAMPAGNE = {
 		create_state = {
-			country = c:X85
+			country = c:W38
 			owned_provinces = { x4B7684 x5FEA2F x600883 x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
 			state_type = incorporated
 		}
@@ -2881,17 +2876,12 @@
 	s:STATE_GELRE = {
 		create_state = {
 			country = c:NET
-			owned_provinces = { x41C0A0 xAF3A54 xC0C0A0 }
+			owned_provinces = { x41C0A0 xAF3A54 xC0C0A0 x4C4894 }
 			state_type = incorporated
 		}
 		create_state = {
 			country = c:W87
 			owned_provinces = { x0000DF }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X85
-			owned_provinces = { x4C4894 }
 			state_type = incorporated
 		}
 		add_homeland = cu:dutch
@@ -3375,12 +3365,7 @@
 	s:STATE_HOLLAND = {
 		create_state = {
 			country = c:NET
-			owned_provinces = { x777732 x80C0A0 xC04021 }
-			state_type = incorporated
-		}
-		create_state = {
-			country = c:X85
-			owned_provinces = { x01C0A0 }
+			owned_provinces = { x777732 x80C0A0 xC04021 x01C0A0 }
 			state_type = incorporated
 		}
 		add_homeland = cu:dutch
@@ -4424,13 +4409,8 @@
 	}
 	s:STATE_LORRAINE = {
 		create_state = {
-			country = c:W38
-			owned_provinces = { x7FC1E6 }
-			state_type = incorporated
-		}
-		create_state = {
 			country = c:X85
-			owned_provinces = { x282DCC x3080E0 x70BFA0 xB080E0 xC5F13A }
+			owned_provinces = { x282DCC x3080E0 x70BFA0 xB080E0 xC5F13A x7FC1E6 }
 			state_type = incorporated
 		}
 		add_homeland = cu:french

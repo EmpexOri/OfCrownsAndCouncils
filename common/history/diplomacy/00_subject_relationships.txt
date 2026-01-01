@@ -526,11 +526,11 @@
 	}
 	c:SAX ?= {
 		create_diplomatic_pact = {
-			country = c:X63
+			country = c:X41
 			type = puppet
 		}
 	}
-	c:X63 ?= {
+	c:X41 ?= {
 		add_liberty_desire = 25
 	}
 	c:W52 ?= {

@@ -11,6 +11,7 @@
 
 
 			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
+			member = c:X63
 			member = c:VEN
 			member = c:SER
 			member = c:X85
@@ -39,7 +40,6 @@
 
 
 			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
-			member = c:X63
 			member = c:X62
 			member = c:X80
 			member = c:W37

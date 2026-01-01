@@ -10343,11 +10343,11 @@
 		}
 	}
 	s:STATE_CHAMPAGNE = {
-		region_state:X85 = {
+		region_state:W38 = {
 			create_pop = {
 				culture = french
 				religion = catholic
-				size = 307475
+				size = 207475
 			}
 			create_pop = {
 				culture = french
@@ -10372,7 +10372,7 @@
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 43933
+				size = 143933
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -10397,7 +10397,7 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 341639
+				size = 241639
 			}
 			create_pop = {
 				culture = north_german
