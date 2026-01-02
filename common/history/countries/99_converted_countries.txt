@@ -5057,13 +5057,13 @@
 		add_technology_researched = urbanization
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_colonial_resettlement
-		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_protectionism
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_no_health_system
@@ -5076,6 +5076,9 @@
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_women_own_property
+		ig:ig_landowners = {
+ 			add_ideology = ideology_anti_slavery
+ 		}
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 1
@@ -5090,7 +5093,7 @@
 		}
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 2
 		}
 	}
 	c:UTE ?= {

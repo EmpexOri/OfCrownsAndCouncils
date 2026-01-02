@@ -19,3 +19,5 @@ je_group_scotland_imperial = {}
 je_group_ethiopia = {}
 
 je_hannover_social_unrest = {}
+
+je_group_usa = {}

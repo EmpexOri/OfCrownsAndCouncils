@@ -684,3 +684,32 @@ modifier_unified_of_hannover = {
 	country_prestige_add = 25
 
 }
+
+	#USA Modifiers
+modifier_the_new_states = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+
+	country_prestige_add = 25
+	state_contiguous_incorporation_speed_mult = 0.5
+
+}
+
+modifier_the_new_mans_nation = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+
+	state_pop_support_movement_pro_slavery_mult = -0.5
+	state_pop_support_movement_anti_slavery_mult = 0.5
+	interest_group_ig_landowners_pol_str_mult = -0.5
+	country_tech_research_speed_mult = 0.25
+
+}
+
+modifier_ruler_of_america = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds"
+
+	interest_group_ig_armed_forces_pol_str_mult = 0.5
+	state_contiguous_incorporation_speed_mult = 0.5
+	state_construction_mult = 0.25
+	country_military_tech_research_speed_mult = 0.25
+
+}

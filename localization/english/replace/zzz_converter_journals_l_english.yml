@@ -544,3 +544,29 @@
     sax_early_nationalism.2.f: "The work of centralization has borne its final fruit. With institutions aligned and loyalties secured, there remains no reason for [SCOPE.sCountry('east_fraconia').GetName] or [SCOPE.sCountry('ulm_nation').GetName] to exist apart from the crown they already serve.\n\nBefore assembled ministers and jurists, [SCOPE.sCharacter('new_king').GetFullName] affixes seal and signature to the acts of integration. The ancient particularisms of the lesser realms are dissolved, their administrations folded into that of [SCOPE.sCountry('hannover_scope').GetName], not as conquered lands, but as constituent parts of a greater whole.\n\nCourt historians speak openly of revival. The old chronicles of the Holy Transalpine Riverine Empire, long consigned to memory and myth, are once more invoked in earnest. Under the banner of [SCOPE.sCountry('hannover_scope').GetAdjective] unity, the legacy of the House of von Dreistrom stirs again, and the rivers of Central Europe may yet flow toward a single throne."
     sax_early_nationalism.2.a: "Let the rivers run as one."
 
+    # USA JOURNALS
+    je_group_usa: "The New United States"
+    manifest_usa.1.t: "A Nation at a Crossroads"
+    manifest_usa.1.d: "With the recent conquest of Texas and Oklahoma from [SCOPE.sCountry('mexico_scope').GetName], [SCOPE.sCountry('usa_nation_scope').GetName] finds itself at a turning point. [SCOPE.sCharacter('usa_ruler').GetFullName] and their cabinet debate the nation's next steps: should they push the frontier further into [SCOPE.sCountry('norway_scope').GetName]’s colony of [SCOPE.sCountry('vestmark_scope').GetName], expanding the reach of the new states, or should they turn inward, addressing internal stresses and systemic grievances left by previous Scottish colonial rule?"
+    manifest_usa.1.f: "The new territories promise opportunity and influence, yet the young nation bears the weight of unresolved issues. Citizens demand representation in a system shaped under the old colonial masters. Administrators weigh the allure of expansion against the need for domestic stability. Each choice carries consequences for the identity and unity of [SCOPE.sCountry('usa_nation_scope').GetName]."
+    manifest_usa.1.a: "Advance into [SCOPE.sCountry('vestmark_scope').GetName], expanding the reach of our newly won states."
+    manifest_usa.1.b: "Focus on internal governance, addressing the democratic and systemic grievances of our people."
+
+    manifest_usa.2.t: "Securing the Central Plains"
+    manifest_usa.2.d: "With [SCOPE.sCountry('vestmark_scope').GetName] now firmly under [SCOPE.sCountry('usa_nation_scope').GetName]'s control, [SCOPE.sCharacter('usa_ruler').GetFullName] and their cabinet can bask in newfound prestige and authority. The central plains, once part of [SCOPE.sCountry('norway_scope').GetName]’s distant holdings, are ripe for development, offering fertile lands, strategic ports, and the promise of industrial expansion."
+    manifest_usa.2.f: "The conquest brings not only land but leverage. Local resources, rivers, and infrastructure can now be directed toward industrial growth. Administrators and entrepreneurs alike see opportunity in every corner, while the citizenry marvels at the nation's rising might. The stage is set for [SCOPE.sCountry('usa_nation_scope').GetName] to transform the central plains into a backbone of commerce and industry."
+    manifest_usa.2.a: "Leverage our victory to build industry swiftly in the central plains."
+
+    manifest_usa.3.t: "A Nation Reborn"
+    manifest_usa.3.d: "Choosing a path of internal reform, [SCOPE.sCharacter('usa_ruler').GetFullName] and their cabinet turn their attention inward. The unequal voting laws inherited from former Scottish colonial governance are reformed, and new citizenship laws are enacted, giving the people a stronger voice and a more just stake in the nation’s future."
+    manifest_usa.3.f: "With domestic grievances addressed and the legal framework modernized, [SCOPE.sCountry('usa_nation_scope').GetName] begins to innovate. Freed from the constraints of past injustices, and with slavery increasingly outlawed, the nation can channel its energies toward education, industry, and technological progress. Citizens grow more engaged, and the foundations for a prosperous and equitable society are laid."
+    manifest_usa.3.a: "Focus on internal reform, building a fairer and stronger nation."
+
+    je_ruler_of_america: "The Ruler of America"
+    je_ruler_of_america_reason: "With the central plains now firmly under our control, [SCOPE.sCharacter('usa_ruler').GetFullName] and the cabinet can harness the land’s potential to build industry and solidify national prestige."
+
+    je_the_first_mans_state: "A New Path for the Nation"
+    je_the_first_mans_state_reason: "Turning inward, [SCOPE.sCharacter('usa_ruler').GetFullName] reforms the electoral and citizenship laws, addressing grievances left by previous colonial rule, and lays the foundations for a more just and innovative society."
+
+    je_viceroy_texas: "Conquering the Southwest"
+    je_viceroy_texas_reason: "The states of Texas and Oklahoma are now under our control. The leadership of [SCOPE.sCharacter('usa_ruler').GetFullName] contemplates the next steps: expand further into [SCOPE.sCountry('vestmark_scope').GetName], or consolidate and address internal pressures inherited from the old Scottish colonial system."

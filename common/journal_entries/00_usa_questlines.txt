@@ -1,0 +1,132 @@
+﻿je_viceroy_texas = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_usa
+
+	is_shown_in_lobby = {
+		c:USA = THIS
+    }
+
+    is_shown_when_inactive = {
+		OR = {
+            c:USA ?= THIS
+        }
+    }
+
+	possible = {
+		AND = {
+			NOT = {
+				owns_entire_state_region = STATE_TEXAS
+				owns_entire_state_region = STATE_OKLAHOMA
+			}
+			c:USA = {
+				country_rank >= rank_value:major_power
+				has_technology_researched = nationalism
+			}
+		} 
+	}
+
+	immediate = {
+        c:USA = { save_scope_as = usa_nation_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_OKLAHOMA
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = manifest_usa.1
+		}
+	}
+	weight = 10000
+
+	should_be_pinned_by_default = yes
+}
+
+je_ruler_of_america = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_usa
+
+	is_shown_in_lobby = {
+		c:USA = THIS
+    }
+
+	immediate = {
+        c:USA = { save_scope_as = usa_nation_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_PENNSYLVANIA
+		owns_entire_state_region = STATE_NEW_YORK
+		owns_entire_state_region = STATE_MAINE
+		owns_entire_state_region = STATE_INDIANA
+		OR = {
+			owns_entire_state_region = STATE_MICHIGAN
+			owns_entire_state_region = STATE_ILLINOIS
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = manifest_usa.2
+		}
+	}
+	weight = 10000
+
+	should_be_pinned_by_default = yes
+}
+
+je_the_first_mans_state = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_usa
+
+	is_shown_in_lobby = {
+		c:USA = THIS
+    }
+
+	immediate = {
+        c:USA = { save_scope_as = usa_nation_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+	}
+
+	complete = {
+		OR = {
+			NOT = { has_law_or_variant = law_type:law_autocracy }
+			NOT = { has_law_or_variant = law_type:law_oligarchy }
+			NOT = { has_law_or_variant = law_type:law_landed_voting }
+		}
+
+		OR = {
+			NOT = { has_law_or_variant = law_type:law_hereditary_bureaucrats }
+			NOT = { has_law_or_variant = law_type:law_appointed_bureaucrats }
+		}
+		
+		NOT = { has_law_or_variant = law_type:law_national_supremacy }
+		NOT = { has_law_or_variant = law_type:law_guild_system }
+		
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = manifest_usa.3
+		}
+	}
+	weight = 10000
+
+	should_be_pinned_by_default = yes
+}

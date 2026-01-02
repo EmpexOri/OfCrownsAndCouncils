@@ -1,0 +1,117 @@
+﻿namespace = manifest_usa
+
+manifest_usa.1 = {
+    type = country_event
+    placement = root
+
+    title = manifest_usa.1.t
+    desc = manifest_usa.1.d
+    flavor  = manifest_usa.1.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+    immediate = {
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = manifest_usa.1.a
+        default_option = yes
+        add_journal_entry = { type = je_ruler_of_america }
+        add_modifier = { 
+            name = modifier_the_new_states 
+            decaying = yes
+            years = 10
+        }
+    }
+    option = {
+        name = manifest_usa.1.b
+        default_option = yes
+        add_journal_entry = { type = je_the_first_mans_state }
+        add_modifier = { 
+            name = modifier_the_new_states 
+            decaying = yes
+            years = 10
+        }
+    }
+}
+
+manifest_usa.2 = {
+    type = country_event
+    placement = root
+
+    title = manifest_usa.2.t
+    desc = manifest_usa.2.d
+    flavor  = manifest_usa.2.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+    immediate = {
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = manifest_usa.2.a
+        default_option = yes
+        add_modifier = { 
+            name = modifier_ruler_of_america 
+            decaying = yes
+            years = 10
+        }
+    }
+}
+
+manifest_usa.3 = {
+    type = country_event
+    placement = root
+
+    title = manifest_usa.3.t
+    desc = manifest_usa.3.d
+    flavor  = manifest_usa.3.f
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "europenorthamerica_sufferage"
+	}
+
+    immediate = {
+        c:USA = { save_scope_as = usa_scope }
+        c:MEX = { save_scope_as = mexico_scope }
+        c:NOR = { save_scope_as = norway_scope }
+        c:X22 = { save_scope_as = vestmark_scope }
+        ruler = { save_scope_as = usa_ruler }
+        notify_player = yes
+    }
+
+    option = {
+        name = manifest_usa.3.a
+        default_option = yes
+        add_modifier = { 
+            name = modifier_the_new_mans_nation 
+            decaying = yes
+            years = 10
+        }
+    }
+}

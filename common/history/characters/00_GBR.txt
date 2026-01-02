@@ -110,9 +110,6 @@
 				opium_addiction
 			}
 			executive_usage = {
-				country_trigger = {
-					has_dlc_feature = mp1_content
-				}
 				company_trigger = {
 					is_company_type = company_type:company_spc
 				}
