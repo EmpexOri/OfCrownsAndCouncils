@@ -272,15 +272,19 @@ je_scottish_glory_in_texas = {
 	possible = { 
 		has_modifier = modifier_the_grand_old_navy
 		has_technology_researched = nationalism
+		c:CLM = {
+			exists = yes
+		}
 	}
 
 	# Fires immediately when the JE starts
 	immediate = {
 		save_scope_as = scottish_texas_entry 
-        c:MUG = { save_scope_as = mughal_scope }
-        c:USA = { save_scope_as = usa_scope }
-        c:MEX = { save_scope_as = mexico_scope }
+        c:CAS = { save_scope_as = cas_scope }
+        c:X69 = { save_scope_as = nova_scope }
+        c:CLM = { save_scope_as = colombia_scope }
         ruler = { save_scope_as = gbr_ruler }
+        root = { save_scope_as = gbr_nation }
 	}
 
 	modifiers_while_active = {
@@ -291,42 +295,17 @@ je_scottish_glory_in_texas = {
 		# Scottish Navy requirements
 		army_size >= 75
 
-		any_country = {
-				is_subject_of = c:GBR
-
-				AND = {
-					country_or_subject_owns_entire_state_region = STATE_TEXAS
-					country_or_subject_owns_entire_state_region = STATE_OKLAHOMA
-				}
-
-				AND = {
-					OR = {
-					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
-					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
-					country_or_subject_owns_entire_state_region = STATE_GEORGIA
-					country_or_subject_owns_entire_state_region = STATE_FLORIDA
-					country_or_subject_owns_entire_state_region = STATE_ALABAMA
-					}
-				}
-				AND = {
-					OR = {
-					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
-					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
-					country_or_subject_owns_entire_state_region = STATE_GEORGIA
-					country_or_subject_owns_entire_state_region = STATE_FLORIDA
-					country_or_subject_owns_entire_state_region = STATE_ALABAMA
-					}
-				}
-				AND = {
-					OR = {
-					country_or_subject_owns_entire_state_region = STATE_LOUISIANA
-					country_or_subject_owns_entire_state_region = STATE_MISSISSIPPI
-					country_or_subject_owns_entire_state_region = STATE_GEORGIA
-					country_or_subject_owns_entire_state_region = STATE_FLORIDA
-					country_or_subject_owns_entire_state_region = STATE_ALABAMA
-					}
-				}
+		c:CLM = {
+			is_subject_of = c:GBR
 		}
+	}
+
+	fail = { 
+		NOT = { exists = c:CLM }
+	}
+
+	on_fail = {
+		set_variable = scottish_texas_false
 	}
 
 	on_complete = {

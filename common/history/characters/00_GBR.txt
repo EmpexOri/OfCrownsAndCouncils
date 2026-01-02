@@ -105,7 +105,20 @@
 			interest_group = ig_landowners
 			ideology = ideology_market_liberal
 			traits = {
+				innovative
+				engineer
 				opium_addiction
+			}
+			executive_usage = {
+				country_trigger = {
+					has_dlc_feature = mp1_content
+				}
+				company_trigger = {
+					is_company_type = company_type:company_spc
+				}
+				earliest_usage_date = 1836.1.1
+				latest_usage_date = 1900.12.27
+				chance = 100
 			}
 		}
 

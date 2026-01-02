@@ -463,9 +463,29 @@ modifier_nova_scotia_powerful = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds"
 
 	building_group_bg_extraction_throughput_add = 0.10
+	building_group_bg_agriculture_throughput_add = 0.10
 	state_pop_support_movement_anti_slavery_mult = -0.10
 	state_pop_support_movement_pro_slavery_mult = 0.10
 	country_legitimacy_base_add = 10
+	country_liberty_desire_add = -10
+}
+
+modifier_coffee_investment = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+
+	country_officers_pol_str_mult = 0.25
+	building_group_bg_coffee_plantations_throughput_add = 0.5
+	country_prestige_add = 15
+	
+}
+
+modifier_colonial_system = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+
+	country_legitimacy_base_add = 5
+	country_liberty_desire_add = -5
+	building_group_bg_agriculture_throughput_add = 0.1
+
 }
 
 modifier_indian_governance = {

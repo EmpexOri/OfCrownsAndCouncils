@@ -237,11 +237,24 @@ scottish_imperial_opium.3 = {
     }
 
     immediate = {
-        c:MUG = { save_scope_as = mughal_scope }
-        c:USA = { save_scope_as = usa_scope }
-        c:MEX = { save_scope_as = mexico_scope }
+        c:CAS = { save_scope_as = cas_scope }
+        c:X69 = { save_scope_as = nova_scope }
+        c:CLM = { save_scope_as = colombia_scope }
         ruler = { save_scope_as = gbr_ruler }
+        root = { save_scope_as = gbr_nation }
         notify_player = yes
+		random_scope_state = {
+			limit = {
+				OR = {
+					region = sr:region_gran_colombia
+				}
+			}
+			save_scope_as = coffee_state
+		}
+
+        c:GBR = {
+            create_diplomatic_pact = { country = c:CLM type = colony }
+        }
     }
 
     option = {
@@ -249,12 +262,56 @@ scottish_imperial_opium.3 = {
         default_option = yes
 
         c:X69 = {
-            limit = {
+            add_modifier = {
+                name = modifier_colonial_system
+                years = 20
+            }
+        }
+        c:CLM = {
+            add_modifier = {
+                name = modifier_colonial_system
+                years = 20
+            }
+        }
+    }
+    option = {
+        name = scottish_imperial_opium.3.b
+
+        is_shown = {
+            c:X69 = {
                 is_subject_of = ROOT
             }
+
+        c:X69 = {
             add_modifier = {
                 name = modifier_nova_scotia_powerful
+                years = 20
             }
+        }
+
+        }
+
+        c:X69 = {
+            annex_with_incorporation = c:CLM
+            add_modifier = {
+                name = modifier_nova_scotia_powerful
+                years = 20
+            }
+        }
+    }
+    option = {
+        name = scottish_imperial_opium.3.c
+
+        is_shown = {
+            c:CLM = { is_subject_of = ROOT }
+        }
+
+        annex = c:CLM
+
+        add_modifier = {
+            name = modifier_coffee_investment
+            decaying = yes
+            years = 20
         }
     }
 }

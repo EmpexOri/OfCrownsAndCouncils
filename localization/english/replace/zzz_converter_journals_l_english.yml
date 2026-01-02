@@ -370,7 +370,7 @@
     modifier_imperial_mandate: "Imperial Mandate: East"
     modifier_imperial_mandate_america: "Imperial Mandate: West
 
-    je_scottish_glory_in_texas_reason: "Scotland’s imperial ambitions in the New World demand secure footholds. Texas and Oklahoma are seen as vital prizes, while influence across the southern states will ensure dominance over the Americas and provide Nova Scotia with the strength it sorely lacks."
+    je_scottish_glory_in_texas_reason: "For too long, [SCOPE.sCountry('colombia_scope').GetName] has lain untamed and unclaimed, a land rich with fertile soil and the promise of coffee. Its ports bustle quietly, waiting for order, its hills whisper potential, and its people, though wary, long for stability. As [SCOPE.sCountry('gbr_nation').GetName]'s navy rises anew, we see a chance to secure wealth, influence, and trade. Whether through guidance from [SCOPE.sCountry('nova_scope').GetName], self-governance, or direct Scottish oversight, our dreams are bound to this land, and its coffee shall become the fruit of our ambition."
     je_opium_in_the_east_reason: "The opium trade is the lifeblood of modern empire, yet it remains firmly under the control of the [SCOPE.sCountry('mughal_scope').GetAdjective] state. To reclaim its imperial honour, Scotland must break this monopoly and assert its power across the Eastern seas."
 
     scottish_imperial_opium.2.t: "A New Jewel of the Empire"
@@ -381,11 +381,18 @@
     modifier_indian_trade: "A Focus on Trade"
     modifier_indian_dominance: "A Focus on Expansion"
 
-    scottish_imperial_opium.3.t: "A Hardened Frontier"
-    scottish_imperial_opium.3.d: "With banners planted across the southern lands of [SCOPE.sCountry('usa_scope').GetName] and deep into Texas, a new imperial frontier has been forged. Nova Scotia, no longer a distant and fragile outpost, now stands empowered by conquest and authority."
-    scottish_imperial_opium.3.f: "The expansion south has reshaped the balance of power in the New World. Armed with new territory, wealth, and influence, Nova Scotia casts aside old restraints. Administrators speak openly of efficiency and output, while plantation owners press for higher quotas and fewer limitations. With imperial backing secured, the colony grows bolder,its appetite for labor vast, and its conscience quieted by ambition."
-    scottish_imperial_opium.3.a: "The empire rewards strength."
-    modifier_nova_scotia_powerful: "Secured Power"
+    scottish_imperial_opium.3.t: "Eyes on Colombia"
+    scottish_imperial_opium.3.d: "The colony of [SCOPE.sCountry('colombia_scope').GetName] has long simmered with untapped potential. Once under [SCOPE.sCountry('cas_scope').GetName], it broke free during the upheavals of the 1780s. Now, with [SCOPE.sCountry('gbr_nation').GetName]'s navy being rebuilt, our eyes turn to its rich coffee lands. The question is whether to grant it autonomy, fold it under [SCOPE.sCountry('nova_scope').GetName], or bring it fully under Scottish oversight."
+    scottish_imperial_opium.3.f: "The fertile hills and bustling ports of [SCOPE.sCountry('colombia_scope').GetName] promise wealth and influence. Its people remember old struggles and seek stability, yet loyalty remains uncertain. Our choice will determine the colony’s destiny: independent prosperity, guidance from Nova Scotia, or direct rule from Scotland. Regardless, the allure of coffee and opportunity beckons."
+    scottish_imperial_opium.3.a: "Allow [SCOPE.sCountry('colombia_scope').GetName] self-governance, letting it flourish on its own."
+    scottish_imperial_opium.3.b: "Integrate [SCOPE.sCountry('colombia_scope').GetName] into Nova Scotia, strengthening our regional control."
+    scottish_imperial_opium.3.c: "Annex [SCOPE.sCountry('colombia_scope').GetName] directly, bringing it fully under Scottish oversight and seizing its coffee wealth."
+    
+    
+    modifier_nova_scotia_powerful: "The New Nova Scotia"
+    modifier_coffee_investment: "Our Investments in Colombia"
+    modifier_colonial_system: "The Two Colony System"
+
     modifier_indian_governance: "Government of India"
     scottish_imperial_opium.4.t: "Order Upon the Subcontinent"
     scottish_imperial_opium.4.d: "With firm governance established across our Indian possessions, the era of uncertainty has ended. Administration, taxation, and law now answer to Edinburgh, and the subcontinent stands integrated into the Scottish imperial system."
