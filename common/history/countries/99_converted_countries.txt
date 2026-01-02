@@ -5076,7 +5076,7 @@
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_women_own_property
-		ig:ig_landowners = {
+		ig:ig_petty_bourgeoisie = {
  			add_ideology = ideology_anti_slavery
  		}
 		set_institution_investment_level = {

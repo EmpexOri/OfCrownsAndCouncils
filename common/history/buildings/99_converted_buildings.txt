@@ -22498,6 +22498,19 @@
 				activate_production_methods = { "pm_general_training" }
 			}
 			create_building = {
+				building = "building_sugar_plantation"
+				add_ownership = {
+					building = {
+						type = building_financial_district
+						country = c:USA
+						levels = 7
+						region = STATE_LOUISIANA
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
 				building = "building_livestock_ranch"
 				add_ownership = {
 					building = {
@@ -24149,7 +24162,7 @@
 				add_ownership = {
 					country = {
 						country = c:USA
-						levels = 1
+						levels = 4
 					}
 				}
 				reserves = 1
@@ -24160,7 +24173,7 @@
 				add_ownership = {
 					country = {
 						country = c:USA
-						levels = 5
+						levels = 15
 					}
 				}
 				reserves = 1
@@ -24172,7 +24185,7 @@
 					building = {
 						type = building_manor_house
 						country = c:USA
-						levels = 1
+						levels = 7
 						region = STATE_MASSACHUSETTS
 					}
 				}
@@ -24185,7 +24198,7 @@
 					building = {
 						type = building_coal_mine
 						country = c:USA
-						levels = 1
+						levels = 4
 						region = STATE_MASSACHUSETTS
 					}
 				}
@@ -24198,7 +24211,7 @@
 					building = {
 						type = building_shipyards
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_MASSACHUSETTS
 					}
 				}
@@ -24221,7 +24234,7 @@
 				add_ownership = {
 					country = {
 						country = c:USA
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -26864,7 +26877,7 @@
 				add_ownership = {
 					country = {
 						country = c:USA
-						levels = 2
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -26876,7 +26889,7 @@
 					building = {
 						type = building_manor_house
 						country = c:USA
-						levels = 2
+						levels = 5
 						region = STATE_NEW_YORK
 					}
 				}
@@ -26889,7 +26902,7 @@
 					building = {
 						type = building_arts_academy
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_NEW_YORK
 					}
 				}
@@ -26900,9 +26913,9 @@
 				building = "building_iron_mine"
 				add_ownership = {
 					building = {
-						type = building_manor_house
+						type = building_financial_district
 						country = c:USA
-						levels = 1
+						levels = 3
 						region = STATE_NEW_YORK
 					}
 				}
@@ -26910,7 +26923,7 @@
 					building = {
 						type = building_iron_mine
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_NEW_YORK
 					}
 				}
@@ -26923,7 +26936,7 @@
 					building = {
 						type = building_furniture_manufacturies
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_NEW_YORK
 					}
 				}
@@ -26962,12 +26975,25 @@
 					building = {
 						type = building_paper_mills
 						country = c:USA
-						levels = 1
+						levels = 4
 						region = STATE_NEW_YORK
 					}
 				}
 				reserves = 1
 				activate_production_methods = { "pm_pulp_pressing" }
+			}
+			create_building = {
+				building = "building_arms_industry"
+				add_ownership = {
+					building = {
+						type = building_financial_district
+						country = c:USA
+						levels = 2
+						region = STATE_NEW_YORK
+					}
+				}
+				reserves = 1
+				activate_production_methods = { }
 			}
 			create_building = {
 				building = "building_government_administration"
@@ -28878,7 +28904,7 @@
 					building = {
 						type = building_manor_house
 						country = c:USA
-						levels = 1
+						levels = 10
 						region = STATE_OHIO
 					}
 				}
@@ -28891,7 +28917,7 @@
 					building = {
 						type = building_manor_house
 						country = c:USA
-						levels = 1
+						levels = 4
 						region = STATE_OHIO
 					}
 				}
@@ -28912,7 +28938,7 @@
 					building = {
 						type = building_paper_mills
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_OHIO
 					}
 				}
@@ -28925,7 +28951,7 @@
 					building = {
 						type = building_furniture_manufacturies
 						country = c:USA
-						levels = 1
+						levels = 2
 						region = STATE_OHIO
 					}
 				}
@@ -28937,7 +28963,7 @@
 				add_ownership = {
 					country = {
 						country = c:USA
-						levels = 1
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -28953,6 +28979,19 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_horizontal_drawer_cabinets" }
+			}
+			create_building = {
+				building = "building_tooling_workshops"
+				add_ownership = {
+					building = {
+						type = building_financial_district
+						country = c:USA
+						levels = 2
+						region = STATE_OHIO
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_pig_iron" }
 			}
 		}
 	}

@@ -1,7 +1,8 @@
 ﻿CHARACTERS = {
 	c:USA = {
 		create_character = {
-			first_name = "Fraser_Gilchrist"
+			first_name = "Grayson"
+			last_name = "McGowan"
 			ruler = yes
 			culture = cu:dixie
 			religion = rel:protestant
@@ -9,6 +10,8 @@
 			traits = {
 				ambitious 
 			}
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_corporatist
 		}
 
 		create_character = {
