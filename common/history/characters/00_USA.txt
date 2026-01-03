@@ -12,6 +12,7 @@
 			}
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_corporatist
+			ig_leader = yes
 		}
 
 		create_character = {
