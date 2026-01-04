@@ -903,12 +903,12 @@
 		}
 	}
 	s:STATE_ALSACE_LORRAINE = {
-		region_state:W38 = {
+		region_state:W37 = {
 			create_building = {
 				building = "building_university"
 				add_ownership = {
 					country = {
-						country = c:W38
+						country = c:W37
 						levels = 1
 					}
 				}
@@ -920,7 +920,7 @@
 				add_ownership = {
 					building = {
 						type = building_financial_district
-						country = c:W38
+						country = c:W37
 						levels = 1
 						region = STATE_ALSACE_LORRAINE
 					}
@@ -928,7 +928,7 @@
 				add_ownership = {
 					building = {
 						type = building_coal_mine
-						country = c:W38
+						country = c:W37
 						levels = 1
 						region = STATE_ALSACE_LORRAINE
 					}
@@ -941,7 +941,7 @@
 				add_ownership = {
 					building = {
 						type = building_manor_house
-						country = c:W38
+						country = c:W37
 						levels = 3
 						region = STATE_ALSACE_LORRAINE
 					}
@@ -949,6 +949,8 @@
 				reserves = 1
 				activate_production_methods = { "pm_citrus_orchards" }
 			}
+		}
+		region_state:W85 = {
 			create_building = {
 				building = "building_barracks"
 				add_ownership = {
