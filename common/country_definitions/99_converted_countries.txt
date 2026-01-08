@@ -6494,7 +6494,7 @@ NOR ?= {
 	color = { 117 165 188 }
 	country_type = recognized
 	tier = kingdom
-	cultures = { estonian }
+	cultures = { estonian norwegian }
 	dynamic_country_name = yes
 	religion = protestant
 	capital = STATE_EASTERN_NORWAY
@@ -7965,7 +7965,7 @@ SCA ?= {
 	country_type = recognized
 	tier = empire
 	cultures = { danish dynamic-norwegian-culture-num1 dynamic-norwegian-sapmi-culture-num1 dynamic-norwegian-vepsian-culture-num1 icelandic norwegian swedish }
-	capital = STATE_SVEALAND
+	capital = STATE_EASTERN_NORWAY
 }
 
 SCH ?= {

@@ -2293,7 +2293,6 @@
 		}
 		add_homeland = cu:greek
 		add_claim = c:BYZ
-		add_claim = c:PLC
 	}
 	s:STATE_EAST_AEGEAN_ISLANDS = {
 		create_state = {
@@ -2836,11 +2835,9 @@
 			owned_provinces = { x25E8A6 x5E8636 x61562C x6C039E x6E239F x823348 xD0936B xD53291 xFEF0CB }
 			state_type = unincorporated
 		}
-		add_homeland = cu:dynamic-norwegian-vepsian-culture-num1
 		add_homeland = cu:karelian
 		add_homeland = cu:tatar
 		add_homeland = cu:ugrian
-		add_claim = c:PLC
 		add_claim = c:X45
 	}
 	s:STATE_GALICIA = {
@@ -3311,7 +3308,6 @@
 			owned_provinces = { x0C1520 x0E7C03 x20E000 x314E1F x37518E x3CFF08 x47C5CD x5B0884 x637BE8 x662BE7 x80DB90 x84625B x8E7728 xB7B8EA xCCBBD1 xF00652 xF78F29 xFACCE3 xFBDD5D }
 			state_type = incorporated
 		}
-		add_homeland = cu:dynamic-norwegian-culture-num1
 		add_homeland = cu:scottish
 	}
 	s:STATE_HILL_PUNJAB = {
@@ -3559,7 +3555,6 @@
 			state_type = unincorporated
 		}
 		add_homeland = cu:estonian
-		add_homeland = cu:norwegian
 		add_claim = c:W66
 	}
 	s:STATE_INNER_MAURITANIA = {
@@ -5189,7 +5184,6 @@
 		add_homeland = cu:dynamic-norwegian-vepsian-culture-num1
 		add_homeland = cu:karelian
 		add_homeland = cu:ugrian
-		add_claim = c:PLC
 		add_claim = c:X45
 	}
 	s:STATE_NEVADA = {
@@ -5848,7 +5842,6 @@
 			owned_provinces = { x0C0B91 x3E0E98 x4C6679 x54C324 x62D485 x7F6E38 x834B21 x8399C9 x8A28DB x952176 xC7C158 xCDE8A8 xCE92C5 xD2A34C xD2AF21 xDA4154 xF69FA2 x03F85A x04598A x05F14E x0AE75F x0BB972 x0BBA97 x16B74D x1A2B02 x20B928 x2FA786 x3988B7 x3CBDA1 x3ECBC8 x4020DF x42C9C5 x4394A5 x4706A4 x4BA77A x5357F0 x559AAA x57940A x60DEEE x64C8B4 x68E99E x6D9FEE x6F52F8 x6F7ECE x704EB0 x7D5607 x7EFD2D x80AA34 x867ADD x88E955 x89E2E6 x8B9F17 xA00000 xA90928 xAB60B3 xABC7C5 xAE2050 xB69A40 xB6FE8B xC1B0C9 xC4D5AC xC617F1 xD34803 xD475F6 xD7127A xE2021A xE35415 xE7DAD6 xF2F837 xF42F56 }
 			state_type = incorporated
 		}
-		add_homeland = cu:dynamic-norwegian-vepsian-culture-num1
 		add_homeland = cu:estonian
 		add_homeland = cu:karelian
 		add_homeland = cu:russian
@@ -5915,7 +5908,6 @@
 		}
 		add_homeland = cu:tatar
 		add_homeland = cu:ugrian
-		add_claim = c:PLC
 		add_claim = c:X45
 	}
 	s:STATE_OHIO = {
@@ -6355,7 +6347,6 @@
 		}
 		add_homeland = cu:tatar
 		add_homeland = cu:ugrian
-		add_claim = c:PLC
 		add_claim = c:X45
 	}
 	s:STATE_PERNAMBUCO = {
@@ -7557,7 +7548,6 @@
 		}
 		add_homeland = cu:tatar
 		add_homeland = cu:ugrian
-		add_claim = c:PLC
 		add_claim = c:X45
 	}
 	s:STATE_SUZHOU = {
@@ -8265,8 +8255,7 @@
 		}
 		add_homeland = cu:dynamic-mongol-culture-num3
 		add_homeland = cu:tatar
-		add_homeland = cu:ugrian
-		add_claim = c:PLC
+		add_homeland = cu:ugrian		
 		add_claim = c:X45
 	}
 	s:STATE_URALSK = {
@@ -8702,7 +8691,6 @@
 		}
 		add_homeland = cu:greek
 		add_claim = c:BYZ
-		add_claim = c:PLC
 	}
 	s:STATE_WESTPHALIA = {
 		create_state = {
@@ -8981,7 +8969,6 @@
 			owned_provinces = { x400383 x461223 x756F52 x912892 xE03FE3 x028EC5 x0D1821 x1053DD x130A3E x221D59 x23F3C4 x2FB453 x2FC308 x40FEDE x4D1D44 x53C6EC x53CD52 x560151 x5C950C x60C080 x64B6B7 x6DD07A x74EDD1 x824587 x89264F x8D7901 x8F478B x9B8556 x9DFD09 xA36510 xABAE9B xB0A39B xB24923 xB9892E xBDF81C xC0C040 xC37BBA xCC840C xCC8451 xCD34E8 xD19951 xD9ACBE xDF20A0 xE02020 xE33B67 xE78F94 xEE2E88 xF04BD2 xF39D33 xF7AA04 xFFEC80 }
 			state_type = incorporated
 		}
-		add_homeland = cu:dynamic-norwegian-vepsian-culture-num1
 		add_homeland = cu:karelian
 		add_homeland = cu:mordvin
 		add_homeland = cu:tatar
