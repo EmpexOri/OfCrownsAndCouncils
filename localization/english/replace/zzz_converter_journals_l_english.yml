@@ -544,6 +544,18 @@
     sax_early_nationalism.2.f: "The work of centralization has borne its final fruit. With institutions aligned and loyalties secured, there remains no reason for [SCOPE.sCountry('east_fraconia').GetName] or [SCOPE.sCountry('ulm_nation').GetName] to exist apart from the crown they already serve.\n\nBefore assembled ministers and jurists, [SCOPE.sCharacter('new_king').GetFullName] affixes seal and signature to the acts of integration. The ancient particularisms of the lesser realms are dissolved, their administrations folded into that of [SCOPE.sCountry('hannover_scope').GetName], not as conquered lands, but as constituent parts of a greater whole.\n\nCourt historians speak openly of revival. The old chronicles of the Holy Transalpine Riverine Empire, long consigned to memory and myth, are once more invoked in earnest. Under the banner of [SCOPE.sCountry('hannover_scope').GetAdjective] unity, the legacy of the House of von Dreistrom stirs again, and the rivers of Central Europe may yet flow toward a single throne."
     sax_early_nationalism.2.a: "Let the rivers run as one."
 
+    sax_early_nationalism.3.t: "Ferrara demands independence"
+    sax_early_nationalism.3.d: "Ferraran diplomats have given us a declaration of full independence."
+    sax_early_nationalism.3.f: "Fueled by anxiety of potential absorbtion into the [SCOPE.sCountry('hannover_scope').GetName] just as the nations of East Franconia and Ulm, Ferrara declares its independece. We must consider our options - should we focus on a purely German state, or aim to restore the borders of the Holy Transalpine Riverine Empire?"
+    sax_early_nationalism.3.a: "We cannot risk an incident now, especially with other great powers watching us carefully."
+    sax_early_nationalism.3.b: "Prepare our armies."
+
+    sax_early_nationalism.4.t: "Ferrara requests our aid"
+    sax_early_nationalism.4.d: "Ferrara has just declared independence on the fear of being integrated into the [SCOPE.sCountry('hannover_scope').GetName]. They have requested our diplomatic and military help."
+    sax_early_nationalism.4.f: "With [SCOPE.sCountry('hannover_scope').GetName] integrating the nations of Ulm and East Franconia they are becoming a truly threatening force. We can use this opportunity to extract concessions or outright prevent their rise to power, but we have to be extremely careful when dealing with them."
+    sax_early_nationalism.4.a: "Throw our support behind the Ferraran cause."
+    sax_early_nationalism.4.b: "We have nothing to gain from this."
+
     # USA JOURNALS
     je_group_usa: "The New United States"
     manifest_usa.1.t: "A Nation at a Crossroads"

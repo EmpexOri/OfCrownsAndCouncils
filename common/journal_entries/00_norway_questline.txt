@@ -219,13 +219,11 @@ je_the_century_of_art = {
 		}
 
 		# Capital must have an urban center of at least size 10
-		c:NOR = {
-			capital = {
-				any_scope_building = {
-					is_building_type = building_urban_center
-					level >= 10
-					occupancy >= 0.9
-				}
+		capital = {
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+				occupancy >= 0.9
 			}
 		}
 
@@ -315,8 +313,7 @@ je_secure_the_colonies = {
 	complete = {
 		any_country = {
 			OR = {
-				is_subject_of = c:NOR
-				is_subject_of = c:SCA
+				is_subject_of = THIS
 			}
 			AND = {
 				country_or_subject_owns_entire_state_region = STATE_CALIFORNIA
