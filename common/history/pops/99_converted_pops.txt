@@ -1730,7 +1730,7 @@
 		}
 	}
 	s:STATE_ALSACE_LORRAINE = {
-		region_state:W38 = {
+		region_state:W37 = {
 			create_pop = {
 				culture = south_german
 				religion = catholic
