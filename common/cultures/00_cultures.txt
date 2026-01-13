@@ -9250,8 +9250,8 @@ lithuanian={
 czech={
 	color= hsv{ 0.66 0.32 0.99 }
 	religion = protestant
-	heritage = heritage_baltic
-	language = language_baltic
+	heritage = heritage_west_slavic
+	language = language_west_slavic
 	traditions = { }
 	obsessions = {
 		liquor
@@ -9686,7 +9686,7 @@ russian={
 	religion = catholic
 	heritage = heritage_east_slavic
 	language = language_east_slavic
-	traditions = { tradition_russosphere }
+	traditions = { }
 	obsessions = {
 		liquor
 	}
@@ -13378,7 +13378,7 @@ tatar={
 	religion = protestant
 	heritage = heritage_tatar
 	language = language_kipchak
-	traditions = { tradition_russosphere }
+	traditions = { }
 	male_common_first_names={
 		tt_Axmat tt_Amir tt_Alim tt_Almas tt_Anvar tt_Arslan tt_Arislan tt_Ayaz tt_Aydar
 		tt_Aynur tt_Ayrat tt_Azat tt_Bikbay tt_Bikbulat tt_Bulat tt_Damir tt_Denis tt_Deniz
@@ -39730,7 +39730,7 @@ bashkir={
 	religion = sunni
 	heritage = heritage_tatar
 	language = language_kipchak
-	traditions = { tradition_russosphere }
+	traditions = { }
 	male_common_first_names={
 		Abdey Adigut Adyl Abdrashit Araslanbek Abdulzyalil Abdulla
 		Bazargul Batyrkai Bepenya
@@ -40234,7 +40234,7 @@ east_german= {
 	religion = protestant
 	heritage = heritage_germanic
 	language = language_germanophone
-	traditions = { tradition_russosphere }
+	traditions = { }
 	male_common_first_names = {
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf Alfred August Andreas
 		Bernhard Benignus

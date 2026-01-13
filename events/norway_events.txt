@@ -263,7 +263,7 @@ the_royal_army.1 = {
 	}
 
     immediate = {
-        c:NOR = { save_scope_as = norway_scope }
+        save_scope_as = norway_scope
         c:NBS = { save_scope_as = canada_scope }
         c:X22 = { save_scope_as = vestmark_scope }
         c:X25 = { save_scope_as = horda_scope }
@@ -306,7 +306,7 @@ the_royal_colonies.1 = {
 	}
 
     immediate = {
-        c:NOR = { save_scope_as = norway_scope }
+        save_scope_as = norway_scope
         c:NBS = { save_scope_as = canada_scope }
         c:X22 = { save_scope_as = vestmark_scope }
         c:X25 = { save_scope_as = horda_scope }
@@ -330,16 +330,14 @@ the_royal_colonies.1 = {
                     exists = c:X22
                     exists = c:X25
                 }
-            annex_with_incorporation = c:X25
-            }
-            c:NOR = {
-                create_diplomatic_pact = { country = c:X22 type = dominion }
+                annex_with_incorporation = c:X25
             }
             add_modifier = {
                 name = modifier_the_western_expansion
                 years = 10
             }
 		}
+        create_diplomatic_pact = { country = c:X22 type = dominion }
         add_modifier = {
             name = modifier_the_new_world_secure
             decaying = yes

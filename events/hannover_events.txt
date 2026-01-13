@@ -433,5 +433,114 @@ sax_early_nationalism.2 = {
 			decaying = yes
 			years = 10
 		}
+
+		trigger_event = { 
+			id = sax_early_nationalism.3 
+			days = 15
+			popup = yes 
+		}
+	}
+}
+
+sax_early_nationalism.3 = {
+	type = country_event
+	placement = root
+
+	title = sax_early_nationalism.3.t
+	desc = sax_early_nationalism.3.d
+	flavor = sax_early_nationalism.3.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	trigger = {
+		OR = {
+            c:SAX ?= THIS
+            was_formed_from = SAX
+        }
+		c:X40 = {
+			has_subject_relation_with = ROOT
+		}
+	}
+
+	option = {
+		name = sax_early_nationalism.3.a
+		default_option = yes
+		c:X40 = {
+			make_independent = yes
+		}
+	}
+
+	option = {
+		name = sax_early_nationalism.3.b
+		c:X40 = { 
+			create_diplomatic_play = {
+				name = ferrara_independence
+				target_country = ROOT
+				type = dp_independence
+			}
+		}
+		if = {
+			limit = {
+				exists = c:NOR
+			}
+			c:NOR = {
+				trigger_event = {
+					id = sax_early_nationalism.4
+					days = 2
+					popup = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = {
+				trigger_event = {
+					id = sax_early_nationalism.4
+					days = 2
+					popup = yes
+				}
+			}
+		}
+	}
+}
+
+sax_early_nationalism.4 = {
+	type = country_event
+	placement = root
+
+	title = sax_early_nationalism.4.t
+	desc = sax_early_nationalism.4.d
+	flavor = sax_early_nationalism.4.f
+
+	event_image = {
+		video = "votp_barricade"
+	}
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	option = {
+		name = sax_early_nationalism.4.a
+		default_option = yes
+		random_diplomatic_play = {
+            limit = {
+                c:X40 = {
+                    is_diplomatic_play_initiator = yes
+                }
+            }
+            add_target_backers =  { ROOT }
+        }
+	}
+
+	option = {
+		name = sax_early_nationalism.4.b
 	}
 }

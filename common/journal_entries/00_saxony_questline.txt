@@ -143,16 +143,11 @@ je_hannovers_puppets = {
 	possible = { 
         c:SAX ?= THIS
 		has_technology_researched = nationalism
-		AND = {
-			OR = {
-				c:X62 = {
-					has_technology_researched = nationalism
-				}
-				c:X41 = {
-					has_technology_researched = nationalism
-				}
+		OR = {
+			c:X62 = {
+				has_technology_researched = nationalism
 			}
-			c:X40 = {
+			c:X41 = {
 				has_technology_researched = nationalism
 			}
 		}
@@ -164,23 +159,15 @@ je_hannovers_puppets = {
 
 	complete = {
 		AND = {
-			OR = {
-				c:X40 = {
-					OR = {
-						NOT = { is_subject_of = c:SAX }
-					}
-				}
-				c:NOR = {
-					owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-				}
-			}
 			c:X62 = {
 				liberty_desire <= 25
 				is_subject_of = c:SAX
+				has_technology_researched = nationalism
 			}
 			c:X41 = {
 				liberty_desire <= 25
 				is_subject_of = c:SAX
+				has_technology_researched = nationalism
 			}
 		}
 	}
