@@ -132,7 +132,7 @@
 
 	c:MUG = {
 		create_power_bloc = {
-			name = MUG_HEGEMONY
+			name = MUG_KHANATE
 
 			map_color = { 22 102 22 }
 
