@@ -2012,6 +2012,7 @@
 		}
 	}
 	c:GBR ?= {
+		set_next_election_date = 1836.11.1
 		add_technology_researched = academia
 		add_technology_researched = admiralty
 		add_technology_researched = army_reserves

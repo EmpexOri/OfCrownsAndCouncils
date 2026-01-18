@@ -329,6 +329,48 @@
     the_royal_colonies.1.a: "Let Vestmark stand as a testament to Norwegian greatness."
 
     #GBR JE's
+    je_scotland_create_whig_seats:0 "Create Whig Seats"
+    je_scotland_create_whig_seats_desc:0 "Redistribute parliamentary representation in favour of reformist Whig interests, strengthening liberal voices within the Commons and Lords."
+
+    je_scotland_expand_borough_franchise:0 "Expand the Borough Franchise"
+    je_scotland_expand_borough_franchise_desc:0 "Extend the vote within Scotland’s boroughs, broadening political participation beyond traditional property holders."
+
+    je_scotland_reform_rotten_boroughs:0 "Reform Rotten Boroughs"
+    je_scotland_reform_rotten_boroughs_desc:0 "via the abolition or consolidation of underpopulated constituencies, we are allowing representation to reflect Scotland’s changing social and economic realities. A quick and easy way to reform our voting system."
+
+    je_scotland_suppress_radicals:0 "Suppress Radical Agitation"
+    je_scotland_suppress_radicals_desc:0 "Employ state authority and press controls to curb radical movements threatening public order and parliamentary stability."
+
+    je_scotland_extend_power_of_law:0 "Extend the Power of the Law"
+    je_scotland_extend_power_of_law_desc:0 "Expand the authority of law enforcement to maintain order as reform falters, prioritising stability over concession."
+
+    scotland_whig_seats_created:0 "Whig Seats Established"
+    scotland_whig_seats_created_desc:0 "Parliamentary representation has been adjusted to favour reform-minded Whig interests."
+
+    scotland_borough_franchise_expanded:0 "Borough Franchise Expanded"
+    scotland_borough_franchise_expanded_desc:0 "Voting rights within Scottish boroughs have been extended to a broader segment of society."
+
+    scotland_rotten_boroughs_reformed:0 "Rotten Boroughs Reformed"
+    scotland_rotten_boroughs_reformed_desc:0 "Underpopulated and corrupt constituencies have been abolished or merged, strengthening the legitimacy of Parliament."
+
+    scotland_radicals_suppressed:0 "Radical Movements Suppressed"
+    scotland_radicals_suppressed_desc:0 "State intervention and censorship have weakened radical political movements."
+
+    scotland_power_of_law_extended:0 "Power of the Law Extended"
+    scotland_power_of_law_extended_desc:0 "Law enforcement authority has been expanded to preserve order amid political unrest."
+
+    scottish_radical_population:0 "At least 15% of our population is radicalized"
+
+    ror_progress_bar_below_50:0 "Reform Patience is Below 25%"
+
+    je_reform_or_revolution_complete_tt:0 "Reform has triumphed over reaction, reshaping Scotland’s political future."
+
+    je_reform_or_revolution_failed_tt:0 "Reform has collapsed, leaving unrest and reaction in its wake."
+    je_reform_or_revolution_progress_bar_desc: "Patience for Reform"
+    je_reform_or_revolution_progress_bar: "Our only choice is to institute a Royal Dictatorship"
+    modifier_fight_agaisnt_radicals_gbr: "Abolished Parliament"
+    modifier_radical_unrest: "The Fight for Reform Continues"
+
     je_group_scotland_reform: "Scottish Reforms"
     GBR_FLAVOR_TEXT:0 "Under the rule of Robert VI Forbes, the Greater Scottish Empire remains a resilient but humbled power. Fifty years ago, most of its colonial holdings in the New World were lost, leaving only a small loyalist coalition in Florida and Georgia, known as 'Nova Scotia.' Despite these setbacks, Scotland retains its influence, yet it faces the urgent need to rebuild a formidable navy and assert dominance among the great powers. Within Parliament, particular attention turns to the weakened Mughal Empire, whose struggles over internal administration and trade present opportunities to control the lucrative production of opium for both medicine and export, bolstering the Empire’s recovery and ambition."
     reform_or_revolution_event.1.t: "Reform or Revolution"
@@ -336,7 +378,7 @@
     reform_or_revolution_event.1.f: "King Robert VI Forbes ascends the throne of Scotland at the age of forty-four, inheriting not merely a crown, but the unresolved anxieties of an entire kingdom. Since the death of the childless Robert III in 1833, Parliament was consumed by three long years of bitter deliberation, torn between the fiery reformist visions of Prince James and the steadier hand of Robert, then serving as Royal Prince in Nova Scotia. The compromise that crowned Robert VI has brought peace in name, but not in spirit.\n\nFrom the benches of Parliament to the streets of Edinburgh and Glasgow, tension simmers. Industrialists and intellectuals call for representation worthy of a modern nation, while landowners and traditional institutions cling to laws forged in a bygone age. Radical pamphlets circulate openly, strikes and demonstrations grow bolder, and whispers of revolution, once unthinkable, now pass freely between taverns and universities alike.\n\nThough a moderate by temperament, King Robert VI is no fool. He has watched the fractures deepen, and understands that Scotland stands upon a narrow precipice. Reform, once delayed, now demands urgency. Should the Crown and Parliament fail to enact meaningful change, others may soon attempt to do so by force. The question before the Kingdom is no longer whether reform will come, but whether it shall come through law, or through fire."
     reform_or_revolution_event.1.a: "The future of Scotland must be decided."
     je_reform_or_revolution: "Reform or Revolution"
-    je_reform_or_revolution_reason: "The Voting System is outdated and no longer serves the people of Scotland fairly. Aristocrats retain disproportionate sway over parliamentary decisions, even in constituencies where their estates lie abandoned. Corruption runs deep, and the system rewards privilege over merit, leaving both industrious citizens and emerging intellectual voices frustrated and disenfranchised.\n\nMeanwhile, the machinery of governance itself faces stagnation. Hereditary bureaucrats and entrenched nobility maintain excessive control, stifling reform and innovation. The Crown must either curb the power of these ancient institutions or find alternative means to appease the populace. Poor laws and modest financial handouts to workers may offer temporary relief, yet the underlying systemic inequities demand decisive attention.\n\nThe choice before Scotland is stark: meaningful reform or the risk of revolution. To avert chaos, Parliament and the Crown must act swiftly, updating the voting system and addressing the imbalance of power between the nobility, bureaucracy, and common citizens. Failure to do so may invite radical elements to seize the moment, shaping Scotland’s future through unrest rather than law."
+    je_reform_or_revolution_reason:0 "Scotland’s voting system no longer reflects the realities of its society. Aristocratic interests retain disproportionate influence, even in decayed constituencies long abandoned by their patrons. Corruption and privilege dominate parliamentary life, alienating both the industrious classes and the growing intelligentsia.\n\nGovernance itself has grown stagnant. Hereditary bureaucrats and entrenched noble power obstruct reform, limiting innovation and responsiveness. While poor laws and limited concessions may ease unrest temporarily, they fail to address the underlying imbalance of power.\n\nScotland now stands at a crossroads: enact meaningful reform, or risk political upheaval. Without decisive action to modernize representation and curb entrenched interests, radical forces may shape the nation’s future through unrest rather than law."
     reform_or_revolution_event.2.t: "Reform over Revolution"
     reform_or_revolution_event.2.d: "Parliament makes change!"
     reform_or_revolution_event.2.f: "Under the careful guidance of [SCOPE.sCharacter('gbr_ruler').GetFullName], Scotland has managed to enact meaningful reforms that stabilize the kingdom and strengthen the bonds between Crown, Parliament, and people.\n\nThe outdated voting system has been overhauled, curbing aristocratic dominance and empowering the industrious and intellectual classes. Hereditary bureaucrats and entrenched nobles now share authority more equitably with elected representatives, and financial relief measures for workers have been implemented, quelling unrest.\n\nThe leader of the Petite Bourgeoisie, [SCOPE.sCharacter('gbr_petty_leader').GetFullName], long a champion for moderate reform, has been recognized for their tireless efforts in negotiating between entrenched interests. Their influence ensures that Scotland moves forward with unity, innovation, and a renewed sense of purpose, averting the fires of revolution and securing a stable foundation for the future."
@@ -346,6 +388,7 @@
     reform_or_revolution_event.3.d: "Failure to enact meaningful parliamentary reform has pushed Scotland to the brink. The discontented masses, long frustrated by systemic corruption and entrenched aristocratic power, now fill the streets in open revolt."
     reform_or_revolution_event.3.f: "The streets of Edinburgh, Glasgow, and other major cities teem with angry citizens. Bonfires illuminate the night as symbols of monarchy and government offices are torched, banners of reform waved defiantly overhead.\n\nIndustrial workers, petty bourgeois merchants, and university students march together, unified by their demand for political representation and social justice. Their chants echo through the narrow streets, calling for a new order and the dismantling of the old aristocratic privileges.\n\[SCOPE.sCharacter('gbr_ruler').GetFullName] and the Parliament watch in horror as their authority is challenged. Despite the Crown's attempts to quell unrest through negotiation or force, the Scottish people are determined to make their voices heard, signaling that the path to reform can no longer be postponed. Scotland stands at the precipice of revolution, and the monarchy’s survival hangs in the balance."
     reform_or_revolution_event.3.a: "We fear the old ways may be done"
+    reform_or_revolution_event.3.b: "We have given Parliament enough Leeway. Its abolishment is our only way."
     modifier_unmet_reforms: "Failure to Reform"
     je_power_in_navy: "Rebuild the Grand Old Navy"
 

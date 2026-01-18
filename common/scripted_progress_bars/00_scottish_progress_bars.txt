@@ -1,0 +1,73 @@
+je_reform_or_revolution_progress_bar = {
+    name = "je_reform_or_revolution_progress_bar"
+    desc = "je_reform_or_revolution_progress_bar_desc"
+
+    default_bad = yes
+
+    start_value = 150
+    min_value = 0
+    max_value = 200
+
+    monthly_progress = {
+
+        # Base pressure toward unrest (≈ -30 over 5 years)
+        add = {
+            desc = "je_reform_progress_stagnation"
+            value = -0.5
+        }
+
+        # -------- Voting Laws --------
+        if = {
+            limit = { has_law_or_variant = law_type:law_landed_voting }
+            add = { desc = "je_reform_landed_voting" value = -1 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_wealth_voting }
+            add = { desc = "je_reform_wealth_voting" value = 0.5 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_census_voting }
+            add = { desc = "je_reform_census_voting" value = 1 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_universal_suffrage }
+            add = { desc = "je_reform_universal_suffrage" value = 2 }
+        }
+
+        # -------- Bureaucracy --------
+        if = {
+            limit = { has_law_or_variant = law_type:law_hereditary_bureaucrats }
+            add = { desc = "je_reform_hereditary_bureaucrats" value = -1 }
+        }
+
+        # -------- Social Security --------
+        if = {
+            limit = { has_law_or_variant = law_type:law_no_social_security }
+            add = { desc = "je_reform_no_social_security" value = -1 }
+        }
+
+        if = {
+            limit = {
+                NOT = { has_law_or_variant = law_type:law_no_social_security }
+            }
+            add = { desc = "je_reform_social_security_present" value = 0.5 }
+        }
+
+        # -------- Economic System --------
+        if = {
+            limit = { has_law_or_variant = law_type:law_guild_system }
+            add = { desc = "je_reform_guild_system" value = -0.5 }
+        }
+        # Modifiers from buttons
+        if = { limit = { has_modifier = scotland_whig_seats_created } add = { desc = "je_scotland_create_whig_seats_desc" value = 0.5 } }
+        else = { add = { desc = "je_scotland_create_whig_seats_disabled" value = 0 } }
+
+        if = { limit = { has_modifier = scotland_borough_franchise_expanded } add = { desc = "je_scotland_expand_borough_franchise_desc" value = 0.5 } }
+        else = { add = { desc = "je_scotland_expand_borough_franchise_disabled" value = 0 } }
+
+        if = { limit = { has_modifier = scotland_power_of_law_extended } add = { desc = "scotland_power_of_law_extended_desc" value = 2.0 } }
+    }
+}

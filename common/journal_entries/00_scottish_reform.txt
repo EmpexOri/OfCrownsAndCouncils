@@ -1,85 +1,78 @@
 ﻿je_reform_or_revolution = {
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	group = je_group_scotland_reform
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    group = je_group_scotland_reform
 
-	is_shown_in_lobby = {
+    is_shown_in_lobby = {
+        c:GBR = THIS
+    }
+    is_shown_when_inactive = {
+        c:GBR = THIS
+    }
+
+	possible = {
 		c:GBR = THIS
+		game_date >= 1836.11.1
 	}
 
-	possible = { }
+    timeout = 3650
 
-	# Fires immediately when the JE starts
-	immediate = {
-		trigger_event = {
-			id = reform_or_revolution_event.1
-			popup = yes
-		}
-	}
+    scripted_progress_bar = je_reform_or_revolution_progress_bar
 
-	# 10 years
-	timeout = 3650
+    immediate = {
+        trigger_event = {
+            id = reform_or_revolution_event.1
+            popup = yes
+        }
+    }
 
-	complete = {
-		AND = {
-			# Voting law must be better than autocracy / oligarchy / landed voting
-			NOT = {
-				OR = {
-					has_law_or_variant = law_type:law_autocracy
-					has_law_or_variant = law_type:law_oligarchy
-					has_law_or_variant = law_type:law_landed_voting
-				}
-			}
+    # COMPLETE AT 100
+    complete = {
+        custom_tooltip = {
+            scope:journal_entry = {
+                "scripted_bar_progress(je_reform_or_revolution_progress_bar)" >= 200
+            }
+            text = je_reform_or_revolution_complete_tt
+        }
+    }
 
-			OR = {
-				# Must not have hereditary bureaucrats
-				NOT = {
-					has_law_or_variant = law_type:law_hereditary_bureaucrats
-				}
-
-				# Must not have "No Social Security"
-				NOT = {
-					has_law_or_variant = law_type:law_no_social_security
-				}
+    # FAIL AT 0
+    fail = {
+		custom_tooltip = {
+			text = je_reform_or_revolution_failed_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(je_reform_or_revolution_progress_bar)" <= 0
 			}
 		}
-	}
+    }
 
-	modifiers_while_active  = {
-		modifier_unmet_reforms
-	}
+    modifiers_while_active = {
+        modifier_unmet_reforms
+    }
 
-	# Instant failure condition
-	fail = {
-		has_law_or_variant = law_type:law_autocracy
-	}
+    on_complete = {
+        set_variable = reform_or_revolution_complete
+        trigger_event = {
+            id = reform_or_revolution_event.2
+            popup = yes
+        }
+    }
 
-	on_complete = {
-		set_variable = reform_or_revolution_complete
-		trigger_event = {
-			id = reform_or_revolution_event.2
-			popup = yes
-		}
-	}
+    on_fail = {
+        set_variable = reform_or_revolution_failed
+        trigger_event = {
+            id = reform_or_revolution_event.3
+            popup = yes
+        }
+    }
 
-	# Timeout = failure
-	on_timeout = {
-		set_variable = reform_or_revolution_failed
-		trigger_event = {
-			id = reform_or_revolution_event.3
-			popup = yes
-		}
-	}
+	scripted_button = je_scotland_create_whig_seats
+	scripted_button = je_scotland_expand_borough_franchise
+	scripted_button = je_scotland_reform_rotten_boroughs
+	scripted_button = je_scotland_suppress_radicals
+	scripted_button = je_scotland_extend_power_of_law
 
-	on_fail = {
-		set_variable = reform_or_revolution_failed
-		trigger_event = {
-			id = reform_or_revolution_event.3
-			popup = yes
-		}
-	}
-
-	weight = 10000
-	should_be_pinned_by_default = yes
+    weight = 10000
+    should_be_pinned_by_default = yes
 }
 
 # Power of the Navy

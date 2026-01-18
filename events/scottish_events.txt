@@ -90,6 +90,19 @@ reform_or_revolution_event.3 = {
             years = 5
         }
     }
+    option = {
+        name = reform_or_revolution_event.3.b
+        add_modifier = {
+            name = modifier_radical_unrest
+            years = 5
+        }
+        add_modifier = {
+            name = modifier_fight_agaisnt_radicals_gbr
+            years = 5
+        }
+        activate_law = law_type:law_autocracy
+        activate_law = law_type:law_national_guard
+    }
 }
 
 namespace = scottish_naval_sun

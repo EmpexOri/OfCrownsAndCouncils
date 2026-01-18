@@ -1,0 +1,113 @@
+je_scotland_create_whig_seats = {
+    name = "je_scotland_create_whig_seats"
+    desc = "je_scotland_create_whig_seats_desc"
+
+    possible = {
+        NOT = { has_modifier = scotland_whig_seats_created }
+    }
+
+    effect = {
+        add_modifier = {
+            name = scotland_whig_seats_created
+            years = 10
+        }
+    }
+}
+
+je_scotland_expand_borough_franchise = {
+    name = "je_scotland_expand_borough_franchise"
+    desc = "je_scotland_expand_borough_franchise_desc"
+
+    possible = {
+        NOT = { has_modifier = scotland_borough_franchise_expanded }
+    }
+
+    effect = {
+        add_modifier = {
+            name = scotland_borough_franchise_expanded
+            years = 10
+        }
+    }
+}
+
+je_scotland_reform_rotten_boroughs = {
+    name = "je_scotland_reform_rotten_boroughs"
+    desc = "je_scotland_reform_rotten_boroughs_desc"
+
+    possible = {
+        NOT = { has_modifier = scotland_rotten_boroughs_reformed }
+		AND = {
+			OR = {
+				is_enacting_law = law_type:law_wealth_voting 
+				is_enacting_law = law_type:law_census_voting 
+			}
+		enactment_phase >= 1
+		}	
+    }
+
+    effect = {
+        add_modifier = {
+            name = scotland_rotten_boroughs_reformed
+            years = 10
+        }
+        if = {
+            limit = { is_enacting_law = law_type:law_wealth_voting }
+            activate_law = law_type:law_wealth_voting
+        }
+        else_if = {
+            limit = { is_enacting_law = law_type:law_census_voting }
+            activate_law = law_type:law_census_voting
+		}
+    }
+}
+
+je_scotland_suppress_radicals = {
+    name = "je_scotland_suppress_radicals"
+    desc = "je_scotland_suppress_radicals_desc"
+
+    possible = {
+        NOT = { has_modifier = scotland_radicals_suppressed }
+		custom_tooltip = {
+			text = scottish_radical_population
+			radical_population_fraction >= 0.15
+		}
+    }
+
+    effect = {
+        add_modifier = {
+            name = scotland_radicals_suppressed
+            years = 10
+        }
+		activate_law = law_type:law_censorship
+    }
+}
+
+je_scotland_extend_power_of_law = {
+    name = "je_scotland_extend_power_of_law"
+    desc = "je_scotland_extend_power_of_law_desc"
+
+    possible = {
+        NOT = { has_modifier = scotland_power_of_law_extended }
+
+        # Must have some form of police
+        NOT = { has_law_or_variant = law_type:law_no_police }
+		institution_investment_level = {
+			institution = institution_police
+			value = 2
+		}
+
+        # Only when reforms are faltering
+		custom_tooltip = {
+			text = ror_progress_bar_below_50
+			"scripted_bar_progress(je_reform_or_revolution_progress_bar)" < 50
+		}
+    }
+
+    effect = {
+        add_modifier = {
+            name = scotland_power_of_law_extended
+            years = 1
+			decaying = yes
+        }
+    }
+}
