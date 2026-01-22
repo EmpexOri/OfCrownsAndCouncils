@@ -199,3 +199,133 @@ je_hannovers_puppets = {
 	can_revolution_inherit = no
 
 }
+
+je_kulture_kampf = {
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    group = je_hannover_social_unrest
+
+	scripted_progress_bar = je_kulture_kampf_progress_bar
+
+    is_shown_when_inactive = {
+        c:SAX = {
+            game_date >= 1856.1.1
+            NOT = { has_law_or_variant = law_type:law_state_religion }
+        }
+    }
+
+    possible = {
+        c:SAX ?= THIS
+    }
+
+    immediate = {
+        trigger_event = { id = sax_kulturekampf.1 popup = yes }
+    }
+
+	modifiers_while_active = {
+		kulturekamp_modifier
+	}
+
+    # COMPLETE AT 100
+    complete = {
+        custom_tooltip = {
+            scope:journal_entry = {
+                "scripted_bar_progress(je_kulture_kampf_progress_bar)" >= 200
+            }
+            text = je_je_kulture_kampf_complete_tt
+        }
+    }
+
+    # FAIL AT 0
+    fail = {
+		custom_tooltip = {
+			text = je_je_kulture_kampf_failed_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(je_kulture_kampf_progress_bar)" <= 0
+			}
+		}
+    }
+
+    on_complete = {
+        trigger_event = { id = sax_kulturekampf.2 }
+    }
+
+    on_fail = {
+        trigger_event = { id = sax_kulturekampf.3 }
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+    transferable = yes
+    can_revolution_inherit = no
+
+	scripted_button = je_expand_secular_admin
+	scripted_button = je_expand_religious_admin
+}
+
+je_kirchenkrieg = {
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    group = je_hannover_social_unrest
+
+	#scripted_progress_bar = je_kulture_kampf_progress_bar
+
+    possible = {
+        c:SAX ?= THIS
+    }
+
+    immediate = {
+		if = {
+			limit = { NOT = { any_political_movement = { is_political_movement_type = movement_religious_majority } } }
+			create_political_movement = { type = movement_religious_majority }
+		}
+
+		random_political_movement = {
+			limit = { is_political_movement_type = movement_religious_majority }
+			save_scope_as = religious_movement_scope
+		}
+
+		scope:religious_movement_scope = {
+			ig:ig_landowners = {
+				interest_group_supports_political_movement = yes
+			}
+			set_core_ideology = ideology_theocratic_movement
+			add_modifier = {
+				name = je_kirchenkrieg_modifier_movement
+			}
+		}
+
+		# Initialize a timer variable for monthly tracking
+		set_variable = { name = religious_timer_var value = 0 }
+    }
+
+	modifiers_while_active = {
+		je_kirchenkrieg_modifier
+	}
+
+    complete = {
+		has_law_or_variant = law_type:law_theocracy
+    }
+
+    # FAIL AT 0
+    fail = {
+		has_law_or_variant = law_type:law_state_atheism
+    }
+
+    on_complete = {
+        trigger_event = { id = sax_kulturekampf.1 }
+		scope:religious_movement_scope = {
+			remove_modifier = je_kirchenkrieg_modifier_movement
+		}
+    }
+
+    on_fail = {
+        trigger_event = { id = sax_kulturekampf.2 }
+		scope:religious_movement_scope = {
+			remove_modifier = je_kirchenkrieg_modifier_movement
+		}
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+    transferable = yes
+    can_revolution_inherit = no
+}

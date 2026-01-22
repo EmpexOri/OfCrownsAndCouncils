@@ -527,7 +527,8 @@
 
     #Luddites of Germany
     je_hannover_social_unrest: "Social Unrest in Hannover"
-    je_luddites_of_germany: "The Luddites of Germany"
+    je_luddites_of_germany: "Bauernaufstand"
+    je_luddites_of_germany_lobby: "Rapid industrial change has unsettled much of the population. With many moving to the factories, the agrarian peasant population is rallying around ideas of reform for their role in society. All they require now is a leader."
     je_luddites_of_germany_reason: "Rapid industrial change has unsettled much of the population. New machines and factory discipline have disrupted traditional rural life, leaving many fearful of what the future holds."
     
     sax_luddites.1.t: "The Luddites of Germany Rise"
@@ -598,6 +599,93 @@
     sax_early_nationalism.4.f: "With [SCOPE.sCountry('hannover_scope').GetName] integrating the nations of Ulm and East Franconia they are becoming a truly threatening force. We can use this opportunity to extract concessions or outright prevent their rise to power, but we have to be extremely careful when dealing with them."
     sax_early_nationalism.4.a: "Throw our support behind the Ferraran cause."
     sax_early_nationalism.4.b: "We have nothing to gain from this."
+
+    #Saxon Kulturekampf
+    je_kulture_kampf:0 "Kulturkampf"
+    je_kulture_kampf_reason:0 "The relationship between faith, culture, and the state has become a source of mounting tension. Traditional religious institutions, rural communities, and landed elites resist the growing influence of secular administration and modern political thought. Whether this struggle ends in accommodation or domination will shape the moral and political character of the realm."
+    je_kulture_kampf_progress_bar:0 "Cultural Tension"
+    je_kulture_kampf_progress_bar_desc:0 "Our Struggle over the Church."
+    je_je_kulture_kampf_complete_tt:0 "Secular authority prevails, decisively subordinating religious institutions to the state."
+    je_je_kulture_kampf_failed_tt:0 "Religious and local forces assert dominance, reshaping governance along confessional and cultural lines."
+    kulturekamp_modifier:0 "Kulturkampf"
+    kulturekamp_modifier_desc:0 "The state is embroiled in a struggle over cultural authority, education, and the role of religion in public life."
+    je_kulture_kampf_rural_power:0 "Rural Communities Defend Tradition"
+    je_kulture_kampf_rural_weak:0 "Rural Influence Waning"
+
+    je_kulture_kampf_landowners_power:0 "Landed Elites Support Religious Authority"
+    je_kulture_kampf_landowners_weak:0 "Landed Influence Marginalized"
+
+    je_kulture_kampf_devout_power:0 "The Faithful Mobilize"
+    je_kulture_kampf_devout_weak:0 "Religious Institutions Fragmented"
+    je_kulture_kampf_intelligentsia:0 "Secular Intellectual Leadership"
+    je_kulture_kampf_weak_intelligentsia:0 "Disorganized Intellectual Opposition"
+
+    je_kulture_kampf_trade_unions:0 "Urban Political Mobilization"
+    je_kulture_kampf_weak_trade_unions:0 "Limited Worker Coordination"
+    je_kulture_kampf_charity_hospitals:0 "Church-Run Charitable Care"
+    je_kulture_kampf_secular_hospitals:0 "State-Administered Healthcare"
+
+    je_kulture_kampf_religious_schools:0 "Religious Education Dominates"
+    je_kulture_kampf_secular_schools:0 "Secular Schooling Expands"
+
+    je_kulture_kampf_state_religion:0 "Confessional State Authority"
+    je_kulture_kampf_free_religion:0 "Religious Pluralism Maintained"
+    je_kulture_kampf_weak_religion:0 "Religion Marginalized in Public Life"
+    je_kulture_kampf_banned_religion:0 "Religion Suppressed by the State"
+
+    je_kulture_kampf_resurgence_encouraged:0 "Catholic Resurgence Encouraged"
+    je_kulture_kampf_secular_admin:0 "Secular Administration Expanded"
+    je_expand_secular_admin:0 "Expand Secular Administration"
+    je_expand_secular_admin_desc:0 "Reduce the influence of religious institutions by strengthening secular bureaucratic authority, professional administration, and state oversight of public services."
+    je_expand_religious_admin:0 "Empower Religious Institutions"
+    je_expand_religious_admin_desc:0 "Entrust education, charity, and moral governance to religious authorities, reinforcing traditional values and local autonomy."
+
+    sax_secular_administration_expanded:0 "Expanded Secular Administration"
+    sax_secular_administration_expanded_desc:0 "The state has asserted greater control over civil administration, reducing the role of religious authorities."
+
+    sax_catholic_resurgence_encouraged:0 "Empowered Religious Institutions"
+    sax_catholic_resurgence_encouraged_desc:0 "Religious institutions have regained influence in public life, education, and local governance."
+
+    sax_kulturekampf.1.t: "The Kulturkampf"
+    sax_kulturekampf.1.d: "Tensions between religious institutions and the state have erupted into open political struggle. Questions of education, charity, and moral authority now divide government and society alike."
+    sax_kulturekampf.1.f: "What began as a question at schools and hospitals soon reveals itself as a struggle over the soul of the state. Clergymen speak of ancient rights and moral duty, while reformers argue that loyalty to crown and constitution must supersede allegiance to altar and tradition. Though Saxony is no theocracy, faith has long filled the spaces where state authority failed to reach.\n\nNow, as administrative reach expands and civil institutions grow more confident, the balance is unsettled. Parish records, charitable trusts, and local customs fall under scrutiny, not by decree but through regulation and reform. Many see this as overdue modernization; others fear it as a quiet erosion of communal and cultural identity.\n\nThe conflict remains restrained-for now. Yet beneath its legal language lies a deeper unease: whether the modern state can command obedience without the sanction of belief, or whether belief itself must bend to the needs of governance."
+
+    sax_kulturekampf.1.a: "Let the struggle between Church and State begin."
+
+    sax_kulturekampf.2.t: "The Triumph of the State"
+    sax_kulturekampf.2.d: "Secular authority has prevailed. Religious institutions have been subordinated to state oversight, and governance now rests firmly in civil hands."
+    sax_kulturekampf.2.f: "Through patient legislation and administrative resolve, the state has asserted its authority where custom once ruled unchecked. Schools answer to civil standards, charities to public oversight, and records once guarded by the clergy now pass through government offices. The machinery of governance turns more smoothly, free from rival jurisdictions.\n\nSupporters hail this as a victory for rational administration and equal citizenship, arguing that faith need not vanish to be restrained. Yet the cost is not invisible. In villages and parishes, many feel their voice diminished, their traditions reduced to relics of a passing age.\n\nThe Kulturkampf ends not with banners or arrests, but with quiet compliance. Whether this settlement endures or merely conceals resentment behind orderly ledgers remains a question for the future."
+
+    sax_kulturekampf.2.a: "The state stands supreme."
+
+    sax_kulturekampf.3.t: "A Return to the true Faith"
+    sax_kulturekampf.3.d: "Religious institutions have reasserted their influence, reshaping public life and limiting the reach of secular authority."
+    sax_kulturekampf.3.f: "The state’s advance has slowed, and in its hesitation the Church finds new confidence. Parish organizations revive, charitable networks expand beyond civil reach, and sermons once cautious now speak openly of moral authority beyond statute and decree. What reformers called inefficiency, many citizens called familiarity.\n\nOfficials assure themselves that no law has been overturned, no constitution broken. Yet influence need not be written to be felt. In towns and countryside alike, loyalty once divided now leans again toward pulpit and parish hall.\n\nThe Kulturkampf ends not in defeat, but in retreat. The state remains sovereign, yet its reach is tempered by concession leaving unanswered whether governance has gained stability, or merely postponed a deeper reckoning."
+
+    sax_kulturekampf.3.a: "Tradition prevails."
+    sax_kulturekampf.3.b: "Perhaps tradition should be supreme?"
+
+    successful_kulturekamp_modifier: "The Superiority of the State"
+    failed_kulturekamp_modifier: "A Curtailed State"
+
+    je_kirchenkrieg: "Der Kirchenkrieg"
+    je_kirchenkrieg_reason: "With the political momentum of the state faltering, we can take advantage of the political climate to aquire power over the state..."
+
+    sax_kirchenkrieg.1.t:0 "Der Kirchenkrieg"
+    sax_kirchenkrieg.1.d:0 "The Church Moves to Reclaim the State"
+    sax_kirchenkrieg.1.f:0 "What reformers once framed as modernization is now condemned as overreach. From pulpits and parish halls alike, a unified message emerges: the state has strayed from its spiritual foundations. Protestant clergy, long tolerant of administrative reform, now rally openly against secular encroachment.\n\nAssociations form, petitions circulate, and loyal officials find themselves pressured by moral authority rather than statute. The language is not rebellion, but restoration—of order, duty, and a divinely sanctioned hierarchy. Where civil servants hesitate, church networks act decisively.\n\nThe campaign succeeds not through force, but conviction. Schools, charities, and local governance return to confessional guidance, and the vision of a Greater Protestant State briefly takes form—one where faith and governance walk in lockstep once more."
+    sax_kirchenkrieg.1.a:0 "The State Must Bow to the Faith"
+
+    sax_kirchenkrieg.2.t:0 "Der Kirchenkrieg Falters"
+    sax_kirchenkrieg.2.d:0 "The Limits of Spiritual Authority"
+    sax_kirchenkrieg.2.f:0 "The call for a Protestant restoration echoes loudly—but not universally. While clergy and devout communities mobilize, the institutions of the state hold firm. Civil administrators refuse to yield jurisdiction, and legal authority remains stubbornly secular.\n\nUrban populations and reform-minded elites dismiss the campaign as reactionary, while even among the faithful there is hesitation to upend stability for doctrine. The movement finds itself divided between moral fervor and political reality.\n\nThe Kirchenkrieg ends without triumph. The Church retains influence, but its ambition to shape the state in its own image is checked. Faith remains powerful—yet no longer supreme."
+    sax_kirchenkrieg.2.a:0 "The State Endures"
+
+    successful_kirchenkrieg_modifier:0 "Triumph of the Protestant Order"
+    successful_kirchenkrieg_modifier_desc:0 "The Church has successfully reasserted its influence over state institutions. Religious authorities regain control over education, charity, and moral regulation, strengthening social cohesion among the faithful while constraining secular administration."
+
+    failed_kirchenkrieg_modifier:0 "The Limits of Clerical Power"
+    failed_kirchenkrieg_modifier_desc:0 "The Church's attempt to reclaim authority over the state has faltered. While faith remains influential, its political ambitions are curtailed, reinforcing the primacy of civil administration and secular law."
 
     # USA JOURNALS
     je_group_usa: "The New United States"

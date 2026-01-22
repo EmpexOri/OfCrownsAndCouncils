@@ -1,0 +1,103 @@
+je_kulture_kampf_progress_bar = {
+    name = "je_kulture_kampf_progress_bar"
+    desc = "je_kulture_kampf_progress_bar_desc"
+
+    start_value = 100
+    min_value = 0
+    max_value = 200
+
+    default = yes
+
+    monthly_progress = {
+
+        # Base cultural tension (slow escalation)
+        #add = {
+        #    desc = "je_kulture_kampf_base_tension"
+        #    value = 0
+        #}
+
+        # -------------------------------
+        # CONSERVATIVE / LOCAL PRESSURE
+        # -------------------------------
+
+        if = {
+            limit = { ig:ig_rural_folk = { is_powerful = yes } }
+            add = { desc = "je_kulture_kampf_rural_power" value = -1 }
+        } else = {
+            add = { desc = "je_kulture_kampf_rural_weak" value = 0 }
+        }
+
+        if = {
+            limit = { ig:ig_landowners = { is_powerful = yes } }
+            add = { desc = "je_kulture_kampf_landowners_power" value = -1 }
+        } else = {
+            add = { desc = "je_kulture_kampf_landowners_weak" value = 0 }
+        }
+
+        if = {
+            limit = { ig:ig_devout = { is_powerful = yes } }
+            add = { desc = "je_kulture_kampf_devout_power" value = -1 }
+        } else = {
+            add = { desc = "je_kulture_kampf_devout_weak" value = 0 }
+        }
+
+        # -------------------------------
+        # LIBERAL / CENTRALISING FORCES
+        # -------------------------------
+
+        if = {
+            limit = { ig:ig_intelligentsia = { is_powerful = yes } }
+            add = { desc = "je_kulture_kampf_intelligentsia" value = 1 }
+        } else = {
+            add = { desc = "je_kulture_kampf_weak_intelligentsia" value = 0 }
+        }
+
+        if = {
+            limit = { ig:ig_trade_unions = { is_powerful = yes } }
+            add = { desc = "je_kulture_kampf_trade_unions" value = 1 }
+        } else = {
+            add = { desc = "je_kulture_kampf_weak_trade_unions" value = 0 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_charitable_health_system }
+            add = { desc = "je_kulture_kampf_charity_hospitals" value = -0.5 }
+        } else = {
+         add = { desc = "je_kulture_kampf_secular_hospitals" value = 0.5 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_religious_schools }
+            add = { desc = "je_kulture_kampf_religious_schools" value = -1 }
+        } else = {
+         add = { desc = "je_kulture_kampf_secular_schools" value = 0.5 }
+        }
+
+        if = {
+            limit = { has_law_or_variant = law_type:law_state_religion }
+            add = { desc = "je_kulture_kampf_state_religion" value = -1 }
+        } else_if = {
+            limit = { has_law_or_variant = law_type:law_freedom_of_conscience }
+            add = { desc = "je_kulture_kampf_free_religion" value = -0 }
+        } else_if = {
+            limit = { has_law_or_variant = law_type:law_total_separation }
+            add = { desc = "je_kulture_kampf_weak_religion" value = 0.5 }
+        } else = {
+            add = { desc = "je_kulture_kampf_banned_religion" value = 1.0 }  
+        }
+
+        # -------------------------------
+        # PLAYER ACTION MODIFIERS
+        # -------------------------------
+
+        if = {
+            limit = { has_modifier = sax_catholic_resurgence_encouraged }
+            add = { desc = "je_kulture_kampf_resurgence_encouraged" value = -1 }
+        }
+
+        if = {
+            limit = { has_modifier = sax_secular_administration_expanded }
+            add = { desc = "je_kulture_kampf_secular_admin" value = 1 }
+        }
+    }
+}

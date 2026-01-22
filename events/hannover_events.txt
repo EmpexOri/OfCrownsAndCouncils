@@ -544,3 +544,171 @@ sax_early_nationalism.4 = {
 		name = sax_early_nationalism.4.b
 	}
 }
+
+namespace = sax_kulturekampf
+
+sax_kulturekampf.1 = {
+	type = country_event
+	placement = root
+
+	title = sax_kulturekampf.1.t
+	desc = sax_kulturekampf.1.d
+	flavor = sax_kulturekampf.1.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_kulturekampf.1.a
+		default_option = yes
+	}
+}
+
+sax_kulturekampf.2 = {
+	type = country_event
+	placement = root
+
+	title = sax_kulturekampf.2.t
+	desc = sax_kulturekampf.2.d
+	flavor = sax_kulturekampf.2.f
+
+	event_image = {
+		video = "europenorthamerica_sufferage"
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_kulturekampf.2.a
+		default_option = yes
+		add_modifier = {
+			name = successful_kulturekamp_modifier
+			years = 10
+		}
+	}
+}
+
+sax_kulturekampf.3 = {
+	type = country_event
+	placement = root
+
+	title = sax_kulturekampf.3.t
+	desc = sax_kulturekampf.3.d
+	flavor = sax_kulturekampf.3.f
+
+	event_image = {
+		video = "europenorthamerica_judaism"
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_kulturekampf.3.a
+		default_option = yes
+		add_modifier = {
+			name = failed_kulturekamp_modifier
+			years = 10
+		}
+	}
+	option = {
+		name = sax_kulturekampf.3.b
+		default_option = yes
+		add_modifier = {
+			name = failed_kulturekamp_modifier
+			years = 10
+		}
+		add_journal_entry = {
+			type = je_kirchenkrieg
+		}
+	}
+}
+
+namespace = sax_kirchenkrieg
+
+sax_kirchenkrieg.1 = {
+	type = country_event
+	placement = root
+
+	title = sax_kirchenkrieg.1.t
+	desc = sax_kirchenkrieg.1.d
+	flavor = sax_kirchenkrieg.1.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_kirchenkrieg.1.a
+		default_option = yes
+		add_modifier = {
+			name = successful_kirchenkrieg_modifier
+			years = 10
+			decaying = yes
+		}
+	}
+}
+
+sax_kirchenkrieg.2 = {
+	type = country_event
+	placement = root
+
+	title = sax_kirchenkrieg.2.t
+	desc = sax_kirchenkrieg.2.d
+	flavor = sax_kirchenkrieg.2.f
+
+	event_image = {
+		video = "europenorthamerica_sufferage"
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	immediate = {
+		ruler = { save_scope_as = new_king }
+		root = { save_scope_as = hannover_scope }
+	}
+
+	option = {
+		name = sax_kirchenkrieg.2.a
+		default_option = yes
+		add_modifier = {
+			name = failed_kirchenkrieg_modifier
+			years = 10
+			decaying = yes
+		}
+	}
+}

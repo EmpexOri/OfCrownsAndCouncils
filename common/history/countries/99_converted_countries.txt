@@ -2079,7 +2079,7 @@
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_tenant_farmers
 		ig:ig_intelligentsia = {
@@ -5076,7 +5076,7 @@
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_no_womens_rights
 		ig:ig_petty_bourgeoisie = {
  			add_ideology = ideology_anti_slavery
  		}
