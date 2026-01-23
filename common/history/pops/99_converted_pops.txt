@@ -18459,6 +18459,11 @@
 				religion = confucian
 				size = 629255
 			}
+			create_pop = {
+				culture = polish
+				religion = catholic
+				size = 54223
+			}
 		}
 	}
 	s:STATE_GUANGXI = {

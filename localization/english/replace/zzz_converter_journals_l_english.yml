@@ -327,6 +327,7 @@
     the_royal_colonies.1.d: "With Vinland secured, attention turns to consolidation."
     the_royal_colonies.1.f: "The integration of the former Japanese holdings of [SCOPE.sCountry('koko_scope').GetName] and [SCOPE.sCountry('seibei_scope').GetName] has finally secured Vinland in the eyes of the Crown. What were once distant and uncertain frontiers are now firmly anchored within the Norwegian imperial sphere.\n\nSeizing upon this moment, [SCOPE.sCharacter('nor_petty_leader').GetFullName], leader of the Petty Bourgeoisie, has proposed a bold reorganization of our western possessions. The weaker Vinland colonies, long administered separately, should be unified under a single, stronger authority , a new dominion to be known as the Vestmark Dominion, centered upon [SCOPE.sCountry('vestmark_scope').GetName].\n\nSuch a consolidation would streamline governance, strengthen colonial defenses, and stand as a clear symbol of Norwegian prestige abroad. [SCOPE.sCharacter('nor_ruler').GetFullName] has voiced strong support for the proposal, recognizing it as both a practical reform and a declaration of Norway’s arrival as a true imperial power."
     the_royal_colonies.1.a: "Let Vestmark stand as a testament to Norwegian greatness."
+    the_royal_colonies.1.b: "Perhaps it is best if Kanadia stands alone as our ward of Vinland."
 
     #GBR JE's
     je_scotland_create_whig_seats:0 "Create Whig Seats"

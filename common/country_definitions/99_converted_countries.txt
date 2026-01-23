@@ -3057,7 +3057,7 @@ GEO ?= {
 }
 
 GER ?= {
-	color = { 71 71 66 }
+	color = { 15 15 15 }
 	country_type = recognized
 	tier = empire
 	cultures = { north_german south_german }
@@ -6491,7 +6491,7 @@ NNV ?= {
 }
 
 NOR ?= {
-	color = { 117 165 188 }
+	color = { 140 20 20 }
 	country_type = recognized
 	tier = kingdom
 	cultures = { estonian norwegian }

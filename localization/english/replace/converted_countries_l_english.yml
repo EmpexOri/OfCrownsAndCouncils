@@ -6,11 +6,13 @@
  CHL: "Arden Aurora"
  CHL_ADJ: "Arden"
  
- SAX: "Hanover"
+ SAX: "Hannover"
  SAX_ADJ: "Hanovarian"
- dyn_c_hanover_monarchy: "Kingdom of Hanover"
+ dyn_c_hanover_monarchy: "Kingdom of Hannover"
  dyn_c_hanover_republic: "Hanoverian Federal Republic"
  dyn_c_union_riverine_states: "Union of Riverine Socialist States"
+ dyn_c_sax_theocracy_autocratic: "Holy Ecclesiocracy of Hannover"
+ dyn_c_sax_theocracy_democratic: "Ecclesiocracy of Federal Hannover"
 
  NOR: "Norway"
  NOR_ADJ: "Norwegian"
@@ -36,7 +38,7 @@
  dyn_c_polish_lithuanian_commonwealth: "Polish Empire"
  dyn_c_polish_lithuanian_republic: "Republic of Poland"
  dyn_c_polish_lithuanian_peoples_republic: "Polish People's Soviet"
- dyn_c_polish_lithuanian_state: "Polish State"
+ dyn_c_polish_lithuanian_state: "Imperium Lechitów"
 
  ETH: "Ethiopia"
  ETH_ADJ: "Ethiopian"
@@ -76,9 +78,9 @@
 
  BAV: "Bavaria"
  BAV_ADJ: "Bavarian"
- dyn_c_bavarian_slv_union_monarchy: "Bavaro-Slovak Empire"
- dyn_c_bavarian_slv_union_republic: "United Bavaro-Slovak States"
- dyn_c_bavarian_monarchy: "Bavarian Kingdom"
+ dyn_c_bavarian_slovak_dual_monarchy: "Bavaro-Slovak Empire"
+ dyn_c_bavarian_slovak_federation: "United Bavaro-Slovak States"
+ dyn_c_bavarian_monarchy: "Bavarian Empire"
  dyn_c_bavarian_republic: "Bavarian Republic"
  dyn_c_bavarian_communist: "Bavarian People's Republic"
 
@@ -483,7 +485,8 @@
  X70_ADJ: "Viceroyalty of Texas"
  X71: "Maroantsetra"
  X71_ADJ: "Maroantsetra"
- X72: "Spanish Brittany"
+ X72: "Brittany"
+ X72_Subject: "Principality of Brittany"
  X72_ADJ: "Spanish Brittany"
  X73: "Kaua`i"
  X73_ADJ: "Kauaian"

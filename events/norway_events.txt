@@ -344,4 +344,28 @@ the_royal_colonies.1 = {
             years = 10
         }
     }
+
+    option = {
+        name = the_royal_colonies.1.b
+		c:NBS = {
+            if = {
+                limit = {
+                    exists = c:X22
+                    exists = c:X25
+                }
+                annex_with_incorporation = c:X25
+                annex_with_incorporation = c:X22
+            }
+            add_modifier = {
+                name = modifier_the_western_expansion
+                years = 10
+            }
+		}
+        create_diplomatic_pact = { country = c:NBS type = dominion }
+        add_modifier = {
+            name = modifier_the_new_world_secure
+            decaying = yes
+            years = 10
+        }
+    }
 }

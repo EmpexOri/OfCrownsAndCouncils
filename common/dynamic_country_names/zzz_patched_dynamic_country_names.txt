@@ -85,6 +85,43 @@ SAX = {
             }
         }
     }
+
+    dynamic_country_name = {
+        name = dyn_c_sax_theocracy_autocratic
+        adjective = SAX_ADJ
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_theocracy
+                OR = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_oligarchy
+                    has_law_or_variant = law_type:law_single_party_state
+                    has_law_or_variant = law_type:law_technocracy
+                }
+            }
+        }
+    }
+    dynamic_country_name = {
+        name = dyn_c_sax_theocracy_democratic
+        adjective = SAX_ADJ
+        is_main_tag_only = yes
+        priority = 2
+
+        trigger = {
+            scope:actor ?= {
+                has_law_or_variant = law_type:law_theocracy
+                NOT = {
+                    has_law_or_variant = law_type:law_autocracy
+                    has_law_or_variant = law_type:law_oligarchy
+                    has_law_or_variant = law_type:law_single_party_state
+                    has_law_or_variant = law_type:law_technocracy
+                }
+            }
+        }
+    }
 }
 
 NOR = {
@@ -546,16 +583,11 @@ BAV = {
 		priority = 1
 
 		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law_or_variant = law_type:law_monarchy
-				exists = scope:overlord
-				scope:overlord = {
-					country = c:SLV
-				}
-			}
+                c:SLV = {
+                    is_subject_of = c:BAV
+                }
+			} 
 		}
-	}
 
 	# =====================================
 	# Bavarian–Slovak Dual Republic
@@ -568,17 +600,14 @@ BAV = {
 		priority = 1
 
 		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				exists = scope:overlord
-				scope:overlord = {
-					country = c:SLV
-				}
-				OR = {
-					has_law_or_variant = law_type:law_parliamentary_republic
-					has_law_or_variant = law_type:law_presidential_republic
-				}
-			}
+            AND = {
+                c:SLV = {
+                    is_subject_of = c:BAV
+                }
+                NOT = {
+                    has_law_or_variant = law_type:law_monarchy
+                }
+            }
 		}
 	}
 
@@ -596,6 +625,11 @@ BAV = {
 			scope:actor ?= {
 				has_law_or_variant = law_type:law_monarchy
 			}
+            c:SLV = {
+                NOT = {
+                    is_subject_of = c:BAV
+                }
+            }
 		}
 	}
 
@@ -616,6 +650,11 @@ BAV = {
 					has_law_or_variant = law_type:law_presidential_republic
 				}
 			}
+            c:SLV = {
+                NOT = {
+                    is_subject_of = c:BAV
+                }
+            }
 		}
 	}
 
@@ -627,7 +666,7 @@ BAV = {
 		adjective = BAV_ADJ
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = 3
 
 		trigger = {
 			scope:actor ?= {
@@ -659,6 +698,11 @@ BAV = {
 					has_law_or_variant = law_type:law_council_republic
 				}
 			}
+            c:SLV = {
+                NOT = {
+                    is_subject_of = c:BAV
+                }
+            }
 		}
 	}
 }
@@ -1310,6 +1354,28 @@ X67 = {
                 }
                 NOT = { has_law_or_variant = law_type:law_monarchy }
                 NOT = { has_law_or_variant = law_type:law_council_republic }
+            }
+        }
+    }
+}
+
+X72 = {
+
+    ### SUBJECT OF MUG (OVERRIDES EVERYTHING) ###
+    dynamic_country_name = {
+        name = X72_Subject
+        adjective = X72_ADJ
+        use_overlord_prefix = yes
+
+        priority = 100
+
+        trigger = {
+            exists = scope:actor
+            scope:actor ?= {
+                is_subject = yes
+                overlord = {
+                    tag = CAS
+                }
             }
         }
     }

@@ -311,10 +311,7 @@ je_secure_the_colonies = {
     }
 
 	complete = {
-		any_country = {
-			OR = {
-				is_subject_of = THIS
-			}
+		root = {
 			AND = {
 				country_or_subject_owns_entire_state_region = STATE_CALIFORNIA
 				country_or_subject_owns_entire_state_region = STATE_OREGON

@@ -110,7 +110,7 @@
 	c:CAS ?= {
 		create_diplomatic_pact = {
 			country = c:X72
-			type = puppet
+			type = personal_union
 		}
 	}
 	c:X72 ?= {

@@ -208,8 +208,13 @@ je_kulture_kampf = {
 
     is_shown_when_inactive = {
         c:SAX = {
-            game_date >= 1856.1.1
-            NOT = { has_law_or_variant = law_type:law_state_religion }
+			OR = {
+				game_date >= 1856.1.1
+				NOT = { has_law_or_variant = law_type:law_state_religion }
+			}
+			OR = {
+				game_date >= 1864.1.1
+			}
         }
     }
 
