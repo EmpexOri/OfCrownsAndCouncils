@@ -10528,7 +10528,7 @@ W79 ?= {
 	tier = kingdom
 	cultures = { andalucian }
 	religion = sunni
-	capital = STATE_BADAJOZ
+	capital = STATE_ANDALUSIA
 }
 
 W80 ?= {

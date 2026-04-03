@@ -40333,3 +40333,76 @@ east_german= {
 		1 = caucasian
 	}
 }
+
+griqua= {
+	color= rgb{ 92 123 131 }
+	religion = protestant
+	heritage = heritage_southern_bantu
+	language = language_dutch
+	traditions = { }
+
+	male_common_first_names = {
+		Adam Andries Alfred Abraham Albert
+		Barend
+		Conrad Cornelius Carl Christoffel Christian
+		David Diederik
+		Eduard
+		Frederik
+		Gert
+		Hermanus Hendrik
+		Isaak
+		Joseph Johannes Jan Jan_Philip Jakobus
+		Klaas
+		Lodewyk
+		Moses
+		Petrus Paul
+		Reuben
+		Stephanus Samuel
+		Thomas
+		Willem
+	}
+	female_common_first_names = {
+		Amelia
+		Catharina Cecilia
+		Dorothy
+		Elizabeth
+		Grietje
+		Hendrina
+		Johanna Jacoba
+		Maria Magdalena Margaritta Martha
+		Rachel
+		Susanna Saartje
+	}
+
+	# surnames pulled from rolls of soldiers from Griqualands West and East during the frontier wars and the Second Boer War, and a few Orlam names
+	common_last_names = {
+		Adamson Allard Angman Anderson Aling Arnot Adrian Aylward
+		Brophy Bees Beukes Bezeudenhout Boag Britz Burmeister Beggs Booysen Botha Boucher de_Brayn Busse de_Bouin Bloem Barends
+		Cusins Cairnthers Cloete Colyn Crube Cowie Cathcart Coetzer
+		Doonan Delbies Dorning Diesel Dewet Domings Donngo Diergaardt Dreyer Durandt Daines Demmer Dippenaar Dolke Dyason
+		Ehlert Ede Erasmus Earley Ekron Epelboum Etchills
+		Framjee Ferrar Fischer
+		Goch Gordall Goss Gringle Gast Glofse Goosen Goliath Groblaar Grossman Gust Gardner Gerber Gilson Grouse
+		Hooyman Hinton Hauser Hendricks Hansen Hodson Hogge Hutt Hack Hearn Holder Hannell Huch
+		Idensohn Impey
+		Jeppe Jubber Jiegler van_Jarsueldt Jacobs Junius Jagger Joyner
+		Kok Koen Kayot Kearney Klynhans Kromhoat Kritschener Keversage Kyd
+		Ling Loots Lowe Lubbe Landsberg Lupke Lindros Lambert Link Lock Ludik
+		Marks Maartens Malan Marko Molstrom Myburg Mamming McNab Menne Marais
+		Nittmarney Nel Nourse
+		Okeden Osselair Oesttingen Oosthinzsen Orlofse
+		Parkin du_Prez Palvie Petersen Phillips Pretorius Pfeiffer Pitout Posthinzen Pringle Putter Pyke
+		Roper Runchman Roets Roux Routledge Raw Ray Rheeder Roodt van_Rensburg Rutters Reid
+		Slatter Seitz Sims Smit Suckermeyer Scard Seelig Sparkling Studd Schutte Semell Seyman Siegruhm Snyman Stadd Salter Schroeter Strachen
+		Tonkin Tyndell Tarr Thompson Thirk Trollip Tibot Taaibosch
+		Vanaardt van_Vuuren de_Vries Vanheerden Vinnicombe Vosloo Vlermuis
+		Whelan van_der_Walt Wentzel Wollfer Winter Wollenschlager Witvoet
+		Zennenberg Zeitoman
+	}
+
+	graphics = european
+	ethnicities = {
+		2 = african_diaspora
+		1 = african
+	}
+}

@@ -1,23 +1,43 @@
 ﻿je_group_converter_historical_content = {
-
+    context = country
 }
 
 je_group_converter_new = {
-
+    context = country
 }
 
-je_group_tanzimat_mug = {}
+je_group_tanzimat_mug = {
+    context = country
+}
 
-je_french_america = {}
+je_french_america = {
+    context = country
+}
 
-je_group_norway = {}
+je_group_norway = {
+    context = country
+}
 
-je_group_scotland_reform = {}
+je_group_scotland_reform = {
+    context = country
+}
 
-je_group_scotland_imperial = {}
+je_group_scotland_imperial = {
+    context = country
+}
 
-je_group_ethiopia = {}
+je_group_ethiopia = {
+    context = country
+}
 
-je_hannover_social_unrest = {}
+je_hannover_social_unrest = {
+    context = country
+}
 
-je_group_usa = {}
+je_group_usa = {
+    context = country
+}
+
+je_group_poland_new = {
+    context = country
+}

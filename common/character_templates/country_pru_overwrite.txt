@@ -2,7 +2,7 @@
 
 # Prussia - PRU
 
-PRU_otto_von_bismarck = {
+REPLACE:PRU_otto_von_bismarck = {
 	first_name = Otto
 	last_name = von_Bismarck
 	historical = yes
@@ -13,16 +13,35 @@ PRU_otto_von_bismarck = {
 	dna = dna_otto_von_bismarck
 	ideology = ideology_royalist
 	traits = {
-		direct
-		cautious
+		persistent
+		ambitious
+		masterful_diplomat
+		experienced_political_operator
+		demagogue
 	}
+	interest_group_leader_usage = {
+    	country_trigger = {
+			should_have_male_characters = yes
+    		uses_pru_ger_characters = yes
+			has_law = law_type:law_monarchy
+			has_technology_researched = pan-nationalism
+			NOT = {
+				has_global_variable = bismarck_variable
+			}
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1846.1.1
+    	latest_usage_date = 1890.3.18
+    	chance = 100
+    }
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_otto_von_bismarck
+		set_global_variable = bismarck_variable
+		owner = {
+			trigger_event = { id = german_unification.3 }
 		}
-		fix_variable_error = { variable = converter_otto_von_bismarck }
+		converter_standard_template_effect = { TARGET = cu:north_german }
 	}
 }
 
@@ -37,22 +56,41 @@ fem_PRU_otto_von_bismarck = {
 	dna = dna_otto_von_bismarck
 	ideology = ideology_royalist
 	traits = {
-		direct
-		cautious
+		persistent
+		ambitious
+		masterful_diplomat
+		experienced_political_operator
+		demagogue
 	}
+	interest_group_leader_usage = {
+    	country_trigger = {
+			should_have_female_characters = yes
+    		uses_pru_ger_characters = yes
+			has_law = law_type:law_monarchy
+			has_technology_researched = pan-nationalism
+			NOT = {
+				has_global_variable = bismarck_variable
+			}
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1846.1.1
+    	latest_usage_date = 1890.3.18
+    	chance = 100
+    }
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_otto_von_bismarck
+		set_global_variable = bismarck_variable
+		owner = {
+			trigger_event = { id = german_unification.3 }
 		}
-		fix_variable_error = { variable = converter_otto_von_bismarck }
+		converter_standard_template_effect = { TARGET = cu:north_german }
 	}
 }
 
 ### Executives
 
-PRU_alfred_krupp = { # Alfred Krupp, Fried. Krupp AG
+REPLACE:PRU_alfred_krupp = { # Alfred Krupp, Fried. Krupp AG
 	first_name = Alfred
 	last_name = Krupp
 	historical = yes
@@ -135,7 +173,7 @@ fem_PRU_alfred_krupp = { # Alfred Krupp, Fried. Krupp AG
 	}
 }
 
-PRU_werner_von_siemens = { # Werner von Siemens, Siemens and Halske
+REPLACE:PRU_werner_von_siemens = { # Werner von Siemens, Siemens and Halske
 	first_name = Werner
 	last_name = von_Siemens
 	historical = yes

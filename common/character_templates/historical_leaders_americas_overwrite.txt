@@ -1,5 +1,5 @@
 ﻿# Mexico - MEX
-mex_juarez_character_template = {
+REPLACE:mex_juarez_character_template = {
 	first_name = Benito
 	last_name = Juarez
 	historical = yes
@@ -31,7 +31,7 @@ mex_juarez_character_template = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia

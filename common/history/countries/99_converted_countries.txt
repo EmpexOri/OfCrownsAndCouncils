@@ -1223,6 +1223,7 @@
 		add_technology_researched = steelworking
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_canton_system
@@ -1721,6 +1722,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_elected_bureaucrats
@@ -2345,6 +2347,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_hereditary_bureaucrats
@@ -2583,6 +2586,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_elected_bureaucrats
@@ -2758,6 +2762,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_freedom_of_conscience
@@ -6023,6 +6028,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_closed_borders
@@ -6704,6 +6710,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_appointed_bureaucrats
@@ -6838,6 +6845,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_colonial_resettlement
 		activate_law = law_type:law_debt_slavery
@@ -8130,6 +8138,7 @@
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urban_planning
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_colonial_resettlement
 		activate_law = law_type:law_national_supremacy
@@ -9239,6 +9248,7 @@
 		add_technology_researched = steelworking
 		add_technology_researched = tech_bureaucracy
 		add_technology_researched = urbanization
+		add_technology_researched = sericulture
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_freedom_of_conscience

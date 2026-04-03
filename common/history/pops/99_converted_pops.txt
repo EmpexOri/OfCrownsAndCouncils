@@ -1942,7 +1942,7 @@
 				size = 1078
 			}
 			create_pop = {
-				culture = maghrebi
+				culture = andalucian
 				religion = sunni
 				size = 74947
 			}
@@ -2445,7 +2445,7 @@
 			}
 		}
 	}
-	s:STATE_ANDALUSIA = {
+	s:STATE_LOWER_ANDALUSIA = {
 		region_state:W79 = {
 			create_pop = {
 				culture = andalucian
@@ -4406,7 +4406,7 @@
 			}
 		}
 	}
-	s:STATE_BADAJOZ = {
+	s:STATE_UPPER_ANDALUSIA = {
 		region_state:W79 = {
 			create_pop = {
 				culture = andalucian
@@ -5314,7 +5314,7 @@
 			}
 		}
 	}
-	s:STATE_BALEARES = {
+	s:STATE_BALEARIC_ISLANDS = {
 		region_state:W38 = {
 			create_pop = {
 				culture = french
@@ -5532,6 +5532,15 @@
 				culture = thai
 				religion = theravada
 				size = 212952
+			}
+		}
+	}
+	s:STATE_BASQUE_COUNTRY = {
+		region_state:CAS = {
+			create_pop = {
+				culture = basque
+				religion = catholic
+				size = 327746
 			}
 		}
 	}
@@ -9352,7 +9361,7 @@
 			}
 		}
 	}
-	s:STATE_CASTILE = {
+	s:STATE_OLD_CASTILE = {
 		region_state:CAS = {
 			create_pop = {
 				culture = spanish
@@ -12059,197 +12068,245 @@
 			}
 		}
 	}
-	s:STATE_CUBA = {
-		region_state:CUB = {
+	s:STATE_CENTRAL_CUBA = {
+		region_state:X20 = {
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 28159
-			}
-			create_pop = {
-				culture = taino
-				religion = animist
-				size = 2151
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 186006
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 14208
+				size = 4929
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 13207
+				size = 4673
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 24415
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 23146
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1009
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 81171
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 6200
+				size = 3309
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 8259
+				size = 3137
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 12030
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 11405
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 631
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 35300
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 2696
+				size = 4777
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 15441
+				size = 4529
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 20566
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 19496
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1180
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 75307
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 5752
+				size = 3211
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 17613
+				size = 3043
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 16797
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 15924
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1345
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 80395
-			}
-			create_pop = {
-				culture = neo-caribbean_colony-arpitan
-				religion = catholic
-				size = 6141
+				size = 8943
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 10831
+				size = 8478
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 45744
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 43366
+			}
+		}
+	}
+	s:STATE_EASTERN_CUBA = {
+		region_state:X20 = {
+			create_pop = {
+				culture = taino
+				religion = animist
+				size = 7222
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 827
+				size = 5277
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 58138
+				size = 24512
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 4441
+				size = 17909
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 16499
+				size = 12962
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1260
+				size = 9471
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 106918
+				size = 50505
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 8167
+				size = 36901
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 23738
+				size = 6560
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1813
+				size = 4793
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 150498
+				size = 23851
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 11496
+				size = 17427
+			}
+		}
+	}
+	s:STATE_WESTERN_CUBA = {
+		region_state:X20 = {
+			create_pop = {
+				culture = taino
+				religion = animist
+				size = 14197
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 16366
+				size = 11282
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 75758
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 60200
 			}
 			create_pop = {
 				culture = taino
 				religion = animist
-				size = 1250
+				size = 5035
+			}
+			create_pop = {
+				culture = taino
+				religion = animist
+				size = 4001
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 175186
+				size = 26344
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = catholic
-				size = 13381
+				size = 20935
+			}
+			create_pop = {
+				culture = taino
+				religion = animist
+				size = 10109
+			}
+			create_pop = {
+				culture = taino
+				religion = animist
+				size = 8033
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 87249
+			}
+			create_pop = {
+				culture = neo-caribbean_colony-arpitan
+				religion = catholic
+				size = 69332
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = protestant
-				size = 11724
+				size = 7241
 			}
 			create_pop = {
 				culture = neo-caribbean_colony-arpitan
 				religion = protestant
-				size = 895
+				size = 5754
 			}
 		}
 	}
@@ -15679,6 +15736,25 @@
 			}
 		}
 	}
+	s:STATE_ENTRE_DOURO_E_MINHO = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				religion = catholic
+				size = 132807
+			}
+			create_pop = {
+				culture = galician
+				religion = protestant
+				size = 14742
+			}
+			create_pop = {
+				culture = galician
+				religion = catholic
+				size = 143860
+			}
+		}
+	}
 	s:STATE_ESTREMADURA = {
 		region_state:CAS = {
 			create_pop = {
@@ -15705,6 +15781,30 @@
 			}
 			create_pop = {
 				culture = andalucian
+				religion = sunni
+				size = 221323
+			}
+		}
+	}
+	s:STATE_EXTREMADURA = {
+		region_state:W79 = {
+			create_pop = {
+				culture = andalucian
+				religion = sunni
+				size = 258210
+			}
+			create_pop = {
+				culture = andalucian
+				religion = sunni
+				size = 221323
+			}
+			create_pop = {
+				culture = dynamic-berber-culture-num3
+				religion = sunni
+				size = 221323
+			}
+			create_pop = {
+				culture = dynamic-berber-culture-num3
 				religion = sunni
 				size = 221323
 			}
@@ -18087,84 +18187,6 @@
 				culture = swedish
 				religion = protestant
 				size = 18355
-			}
-		}
-	}
-	s:STATE_GRANADA = {
-		region_state:CAS = {
-			create_pop = {
-				culture = dynamic-berber-culture-num1
-				religion = sunni
-				size = 55338
-			}
-			create_pop = {
-				culture = dynamic-berber-culture-num1
-				religion = catholic
-				size = 83280
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 416
-			}
-		}
-		region_state:W79 = {
-			create_pop = {
-				culture = andalucian
-				religion = sunni
-				size = 190600
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 572
-			}
-			create_pop = {
-				culture = andalucian
-				religion = sunni
-				size = 233918
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 702
-			}
-		}
-		region_state:X48 = {
-			create_pop = {
-				culture = andalucian
-				religion = sunni
-				size = 69992
-			}
-			create_pop = {
-				culture = andalucian
-				religion = shiite
-				size = 4182
-			}
-			create_pop = {
-				culture = andalucian
-				religion = catholic
-				size = 142417
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 650
-			}
-			create_pop = {
-				culture = andalucian
-				religion = sunni
-				size = 97475
-			}
-			create_pop = {
-				culture = andalucian
-				religion = catholic
-				size = 188425
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 859
 			}
 		}
 	}
@@ -29838,6 +29860,20 @@
 			}
 		}
 	}
+	s:STATE_LEON = {
+		region_state:CAS = {
+			create_pop = {
+				culture = galician
+				religion = catholic
+				size = 175212
+			}
+			create_pop = {
+				culture = spanish
+				religion = catholic				
+				size = 90296
+			}
+		}
+	}
 	s:STATE_MAURITANIA = {
 		region_state:CAS = {
 			create_pop = {
@@ -32865,7 +32901,7 @@
 			}
 		}
 	}
-	s:STATE_NAVARRA = {
+	s:STATE_MURCIA = {
 		region_state:CAS = {
 			create_pop = {
 				culture = spanish
@@ -32873,22 +32909,22 @@
 				size = 537648
 			}
 			create_pop = {
-				culture = spanish
+				culture = dynamic-berber-culture-num1
 				religion = hellenic_pagan_reformed
 				size = 62221
 			}
 			create_pop = {
-				culture = catalan
+				culture = dynamic-berber-culture-num1
 				religion = catholic
 				size = 348936
 			}
 			create_pop = {
-				culture = catalan
+				culture = dynamic-berber-culture-num1
 				religion = protestant
 				size = 61178
 			}
 			create_pop = {
-				culture = basque
+				culture = andalusian
 				religion = catholic
 				size = 306056
 			}
@@ -49682,7 +49718,7 @@
 			}
 		}
 	}
-	s:STATE_TOLEDO = {
+	s:STATE_NEW_CASTILE = {
 		region_state:CAS = {
 			create_pop = {
 				culture = dynamic-berber-culture-num3
@@ -49690,7 +49726,7 @@
 				size = 112579
 			}
 			create_pop = {
-				culture = dynamic-berber-culture-num3
+				culture = spanish
 				religion = catholic
 				size = 226438
 			}
