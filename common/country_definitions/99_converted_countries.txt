@@ -1777,7 +1777,7 @@ CAS ?= {
 	tier = kingdom
 	cultures = { spanish }
 	religion = catholic
-	capital = STATE_GALICIA
+	capital = STATE_OLD_CASTILE
 }
 
 CAT ?= {
@@ -9752,7 +9752,7 @@ V34 ?= {
 
 V35 ?= {
 	color = { 81 141 85 }
-	country_type = decentralized
+	country_type = unrecognized
 	tier = kingdom
 	cultures = { yao }
 	religion = sunni
@@ -10528,7 +10528,7 @@ W79 ?= {
 	tier = kingdom
 	cultures = { andalucian }
 	religion = sunni
-	capital = STATE_ANDALUSIA
+	capital = STATE_LOWER_ANDALUSIA
 }
 
 W80 ?= {
@@ -11430,7 +11430,7 @@ X68 ?= {
 	cultures = { hindustani }
 	dynamic_country_name = yes
 	religion = sunni
-	capital = STATE_HAIL
+	capital = STATE_BAGHDAD
 }
 
 X69 ?= {
