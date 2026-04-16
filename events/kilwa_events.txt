@@ -1,0 +1,238 @@
+namespace = kilwa_civil_war
+
+kilwa_civil_war.1 = {
+    type = country_event
+    placement = root
+
+    title = kilwa_civil_war.1.t
+    desc = kilwa_civil_war.1.d
+    flavor  = kilwa_civil_war.1.f
+    icon = "gfx/interface/icons/event_icons/waving_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_soldiers_breaking_protest"
+	}
+
+    option = {
+        name = kilwa_civil_war.1.a
+        default_option = yes
+		add_modifier = { 
+			name = modifier_disunity_kilwa
+		}
+        add_modifier = { 
+			name = modifier_overstretched_admin_kilwa
+		}
+    }
+}
+
+kilwa_civil_war.2 = {
+    type = country_event
+    placement = root
+
+    title = kilwa_civil_war.2.t
+    desc = kilwa_civil_war.2.d
+    flavor  = kilwa_civil_war.2.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_soldiers_breaking_protest"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    trigger = {
+        OR = {
+            c:V35 ?= THIS
+            was_formed_from = V35
+        }
+        year > 1845
+    }
+
+    option = {
+        name = kilwa_civil_war.2.a
+        c:GBR = {
+            trigger_event = {
+                id = kilwa_civil_war.4
+                days = 1
+                popup = yes
+            }
+        }
+        c:W38 = {
+            trigger_event = {
+                id = kilwa_civil_war.4
+                days = 1
+                popup = yes
+            }
+        }
+        c:NOR = {
+            trigger_event = {
+                id = kilwa_civil_war.4
+                days = 1
+                popup = yes
+            }
+        }
+        c:W79 = {
+            trigger_event = {
+                id = kilwa_civil_war.4
+                days = 1
+                popup = yes
+            }
+        }
+        c:V35 = {
+            trigger_event = {
+                id = kilwa_civil_war.3
+                days = 30
+                popup = yes
+            }
+        }
+    }
+}
+
+kilwa_civil_war.3 = {
+    type = country_event
+    placement = root
+
+    title = kilwa_civil_war.3.t
+    desc = kilwa_civil_war.3.d
+    flavor  = kilwa_civil_war.3.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    trigger = {
+        OR = {
+            c:V35 ?= THIS
+            was_formed_from = V35
+        }
+    }
+
+    option = {
+        name = kilwa_civil_war.3.a
+        create_country = {
+            tag = MSH
+            origin = THIS
+            state = s:STATE_ZAMBEZI.region_state:V35
+        }
+
+        create_country = {
+            tag = Q52
+            origin = THIS
+            state = s:STATE_CONGO_ORIENTALE.region_state:V35
+            state = s:STATE_KATANGA.region_state:V35
+            state = s:STATE_ZAMBIA.region_state:V35
+        }
+
+        create_country = {
+            tag = Q51
+            origin = THIS
+            state = s:STATE_MOCAMBIQUE.region_state:V35
+            state = s:STATE_ZANZIBAR.region_state:V35
+            state = s:STATE_KENYA.region_state:V35
+            state = s:STATE_LOURENCO_MARQUES.region_state:V35
+            state = s:STATE_TRANSVAAL.region_state:V35
+            state = s:STATE_ZULULAND.region_state:V35
+            state = s:STATE_SOMALILAND.region_state:V35
+            state = s:STATE_OROMIA.region_state:V35
+        
+            on_created = {
+                c:Q51 = {
+                    create_diplomatic_play = {
+                        name = kilwa_civil_war
+                        target_country = c:V35
+                        type = dp_revolution
+                        add_initiator_backers = { c:Q52 }
+                    }
+                }
+                c:ETH = {
+                    trigger_event = {
+                        id = kilwa_civil_war.5
+                        days = 2
+                        popup = yes
+                    }
+                }
+            }
+        }
+
+        # create_country = {
+        #     tag = Q53
+        #     origin = c:Q51
+        #     state = s:STATE_OROMIA.region_state:Q51
+
+        # }
+    }  
+}
+
+kilwa_civil_war.4 = {
+    type = country_event
+    placement = root
+
+    title = kilwa_civil_war.4.t
+    desc = kilwa_civil_war.4.d
+    flavor  = kilwa_civil_war.4.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_soldiers_breaking_protest"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    option = {
+        name = kilwa_civil_war.4.a
+        add_declared_interest = region_zanj
+    }
+
+    option = {
+        name = kilwa_civil_war.4.b
+    }
+}
+
+kilwa_civil_war.5 = {
+    type = country_event
+    placement = root
+
+    title = kilwa_civil_war.5.t
+    desc = kilwa_civil_war.5.d
+    flavor  = kilwa_civil_war.5.f
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3
+    cooldown = { days = never_fire_again_modifier_time }
+
+	event_image = {
+		video = "africa_soldiers_breaking_protest"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+    option = {
+        name = kilwa_civil_war.5.a
+        s:STATE_OROMIA.region_state:Q51 = {
+            set_state_owner = ROOT
+        }
+        random_diplomatic_play = {
+            limit = {
+                c:Q51 = {
+                    is_diplomatic_play_initiator = yes
+                }
+            }
+            add_initiator_backers =  { ROOT }
+        }
+    }
+
+    option = {
+        name = kilwa_civil_war.5.b
+        
+    }
+}

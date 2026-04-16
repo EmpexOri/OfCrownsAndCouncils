@@ -44161,4 +44161,49 @@
 			}
 		}
 	}
+	s:STATE_LINDI = {
+		region_state:V35 = {
+			create_building = {
+				building = "building_barracks"
+				add_ownership = {
+					country = {
+						country = c:V35
+						levels = 30
+					}
+				}
+				reserves = 1
+				activate_production_methods = {}
+			}
+		}
+	}
+	s:STATE_MOCAMBIQUE = {
+		region_state:V35 = {
+			create_building = {
+				building = "building_barracks"
+				add_ownership = {
+					country = {
+						country = c:V35
+						levels = 20
+					}
+				}
+				reserves = 1
+				activate_production_methods = {}
+			}
+		}
+	}
+	s:STATE_CONGO_ORIENTALE = {
+		region_state:V35 = {
+			create_building = {
+				building = "building_barracks"
+				add_ownership = {
+					country = {
+						country = c:V35
+						levels = 5
+					}
+				}
+				reserves = 1
+				activate_production_methods = {}
+			}
+		}
+	}
 }

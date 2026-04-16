@@ -5982,7 +5982,7 @@ MSC ?= {
 
 MSH ?= {
 	color = { 193 189 151 }
-	country_type = decentralized
+	country_type = unrecognized
 	tier = principality
 	cultures = { shona }
 	capital = STATE_ZAMBEZI
@@ -9752,7 +9752,7 @@ V34 ?= {
 
 V35 ?= {
 	color = { 81 141 85 }
-	country_type = decentralized
+	country_type = unrecognized
 	tier = kingdom
 	cultures = { yao }
 	religion = sunni
@@ -12111,5 +12111,29 @@ ZUL ?= {
 	cultures = { zulu }
 	religion = animist
 	capital = STATE_ZULULAND
+}
+
+Q51 ?= {
+	color = { 200 20 20 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { swahili }
+	capital = STATE_MOCAMBIQUE
+}
+
+Q52 ?= {
+	color = { 20 20 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { luba }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+Q53 ?= {
+	color = { 20 20 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { oromo }
+	capital = STATE_OROMIA
 }
 

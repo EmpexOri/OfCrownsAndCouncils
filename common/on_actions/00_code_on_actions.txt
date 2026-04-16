@@ -335,6 +335,9 @@ on_monthly_pulse_country = {
 		# Estonian Events
 		estonian_nationalism.1
 		estonian_nationalism.3
+
+		# Kilwa events
+		kilwa_civil_war.2
 	}
 
 	effect = {

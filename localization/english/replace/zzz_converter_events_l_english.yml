@@ -201,3 +201,30 @@
  estonian_nationalism.3.f: "Now, the question arises - should we honor the wishes of our Brothers in Ingria and integrate them into our country, or do we deem it too risky politically?"
  estonian_nationalism.3.a: "Welcome Brothers! Today all Estonians rejoice!"
  estonian_nationalism.3.b: "They must understand that the current situation does not allow for that."
+
+ kilwa_civil_war.1.t: "The time of troubles"
+ kilwa_civil_war.1.d: "The government has become weak, corrupt and overstreched."
+ kilwa_civil_war.1.f: ""
+ kilwa_civil_war.1.a: "Dark times are coming."
+
+ kilwa_civil_war.2.t: "Breaking point"
+ kilwa_civil_war.2.d: "The Swahili speaking majority on the coast is protesting against the Yao domination of the country."
+ kilwa_civil_war.2.f: "Many great powers will be looking on with interest..."
+ kilwa_civil_war.2.a: "Dark times are coming."
+
+ kilwa_civil_war.3.t: "Uprising!"
+ kilwa_civil_war.3.d: "Disaster! Swahili speakers have declared a new Kilwa Sultanate with the intention of overthrowing our government."
+ kilwa_civil_war.3.f: ""
+ kilwa_civil_war.3.a: "Crush those fools!"
+
+ kilwa_civil_war.4.t: "A conflict brewing in Kilwa"
+ kilwa_civil_war.4.d: "Africas largest kingdom, the Kilwan empire is rife with instability and conflict. A conflict between Swahili and Yao tribes has brought the country to the breaking point, with militian forming on the street conducting civilian massacres."
+ kilwa_civil_war.4.f: "We can use their weakness to our advantage, or help them stabilise their country."
+ kilwa_civil_war.4.a: "Watch the situation carefully. (Adds an interest to the Zanj region. If you already have all interests declared you will need to change one of them manually instead)"
+ kilwa_civil_war.4.b: "Why shoud we be concerned with some tribes fighting in africa?"
+
+ kilwa_civil_war.5.t: "Kilwan rebels ask for support"
+ kilwa_civil_war.5.d: "Newly created Kilwa Sultanate has asked as for support, offering land in Oromia inhabited by our kin."
+ kilwa_civil_war.5.f: ""
+ kilwa_civil_war.5.a: "This is to our benefit. To war!"
+ kilwa_civil_war.5.b: "We cannot afford a large regional war right now. We can take those lands back later."

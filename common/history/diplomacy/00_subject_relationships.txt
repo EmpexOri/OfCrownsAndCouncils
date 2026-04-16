@@ -578,15 +578,6 @@
 	c:GAO ?= {
 		add_liberty_desire = -48.569
 	}
-	c:V35 ?= {
-		create_diplomatic_pact = {
-			country = c:X71
-			type = puppet
-		}
-	}
-	c:X71 ?= {
-		add_liberty_desire = -50
-	}
 	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:W74

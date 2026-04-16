@@ -467,7 +467,6 @@
 		set_relations = { country = c:MAH value = 100 }
 		set_relations = { country = c:NOR value = -100 }
 		set_relations = { country = c:W38 value = -200 }
-		set_relations = { country = c:X71 value = 35 }
 	}
 	c:VEN ?= {
 		set_relations = { country = c:CAS value = 50 }
@@ -788,9 +787,6 @@
 	}
 	c:X70 ?= {
 		set_relations = { country = c:MEX value = 10 }
-	}
-	c:X71 ?= {
-		set_relations = { country = c:V35 value = 35 }
 	}
 	c:X72 ?= {
 		set_relations = { country = c:CAS value = 10 }
